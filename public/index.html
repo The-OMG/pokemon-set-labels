@@ -312,6 +312,8 @@
       <legend>Sheet printing <small>Only used by Print sheet and the Sheet preview.</small></legend>
       <label class="field"><span class="lbl">Paper</span>
         <select id="paper"><option value="letter">Letter</option><option value="a4">A4</option><option value="index">3 × 5 index card</option></select></label>
+      <label class="field"><span class="lbl">Paper orientation</span>
+        <select id="porient"><option value="auto">As listed (Letter/A4 tall, index card wide)</option><option value="portrait">Portrait (tall)</option><option value="landscape">Landscape (wide)</option></select></label>
       <label class="field"><span class="lbl">Page margin <small>millimetres. 0 packs the most labels on a page; raise it only if your printer clips the edge.</small></span><input type="number" id="margin" min="0" max="25" step="0.5" value="0"></label>
       <label class="field"><span class="lbl">Gap between labels <small>millimetres. 0 = labels share a cut line.</small></span><input type="number" id="gap" min="0" max="15" step="0.5" value="0"></label>
       <label class="field"><span class="lbl">Dashed cut guides</span><input type="checkbox" id="guides" checked></label>
@@ -346,7 +348,7 @@
     preset: '40x60', cw: 40, ch: 60, orient: 'auto', pw: '', ph: '', layout: 'auto', pad: 2, sym: 20, fs: 100, mono: false,
     font: 'Jost', tstyle: 'caps', rule: true,
     abbrmode: 'auto', abbrsize: 'small', icondate: '2023-03-31', numbering: 'seq', special: 'badge', cards: 'total',
-    paper: 'letter', margin: 0, gap: 0, guides: true, zoom: 3, preview: 'label', v: 3,
+    paper: 'letter', porient: 'auto', margin: 0, gap: 0, guides: true, zoom: 3, preview: 'label', v: 3,
     types: { 'Main Series Expansion': true, 'Special Expansion': true, 'Other': false }, onlyNew: false, series: null, selected: [], current: null
   };
   let state = load();
@@ -548,8 +550,16 @@
   }
 
   // Sheet pagination: a fixed grid of cols × rows per page, so preview and print place labels identically.
+  function paperSpec() {
+    const base = PAPERS[state.paper] || PAPERS.letter;
+    if (state.porient !== 'portrait' && state.porient !== 'landscape') return base;   // as listed
+    const land = state.porient === 'landscape';
+    const w = land ? Math.max(base.w, base.h) : Math.min(base.w, base.h), h = land ? Math.min(base.w, base.h) : Math.max(base.w, base.h);
+    const css = /^[A-Za-z]+$/.test(base.css) ? base.css + (land ? ' landscape' : ' portrait') : w + 'mm ' + h + 'mm';
+    return { w, h, css };
+  }
   function buildPages() {
-    const p = PAPERS[state.paper] || PAPERS.letter;
+    const p = paperSpec();
     const [lw, lh] = dims();
     const gap = Math.max(0, Number(state.gap) || 0), m = Math.max(0, Number(state.margin) || 0);
     const iw = p.w - 2 * m, ih = p.h - 2 * m;
@@ -663,7 +673,7 @@
 
   // ---------- wiring ----------
   const fields = ['preset', 'cw', 'ch', 'orient', 'pw', 'ph', 'layout', 'pad', 'sym', 'fs', 'mono', 'font', 'tstyle', 'rule',
-    'abbrmode', 'abbrsize', 'icondate', 'numbering', 'special', 'cards', 'paper', 'margin', 'gap', 'guides', 'zoom', 'preview'];
+    'abbrmode', 'abbrsize', 'icondate', 'numbering', 'special', 'cards', 'paper', 'porient', 'margin', 'gap', 'guides', 'zoom', 'preview'];
   function bind() {
     fields.forEach(id => {
       const el = $(id); if (!el) return;
