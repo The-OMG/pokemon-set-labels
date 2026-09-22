@@ -77,3 +77,5 @@ and the digits are constructed to the same stem width and cap height (3 is the t
 The box geometry in `index.html` is measured from the 480 px Scarlet & Violet original: outer margin 5.1% of the
 box height, white inner stroke 4%, corner radius 14%, letters 58% of the height; the English "EN" tag follows the
 Delta Reign original (baseline-aligned, about half the main cap height).
+`pipeline/font/enhanced/<CODE>.png` holds upscaled symbol images (Topaz) that replace the Bulbapedia source for
+their letters when larger; drop a better image there and rerun the builder.

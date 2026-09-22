@@ -19,17 +19,22 @@ SB = 80              # side bearing, ~0.115 cap height, measured from the SVI or
 sets = json.load(open(os.path.join(HERE, 'sets_data.json'), encoding='utf-8'))
 era = [s for s in sets if s['release'] >= '2023-03-31' and s['type'] != 'Other' and s.get('symbol_img')]
 
-# ---------- best source image per letter ----------
 def box_of(path):
     im = Image.open(path).convert('RGBA'); a = np.array(im)
     ys, xs = np.where(a[:, :, 3] > 128)
     return a[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
-best = {}
-for s in era:
-    a = box_of(s['symbol_img']); h = a.shape[0]
-    for ch in s['abbr']:
-        if h > best.get(ch, (0, None))[0]: best[ch] = (h, s)
+# ---------- candidate source images per letter, best first ----------
+sources = []                                   # (box height, code, image path)
+for st in era:
+    sources.append((box_of(st['symbol_img']).shape[0], st['abbr'], st['symbol_img']))
+ENH = os.path.join(HERE, 'enhanced')           # enhanced/<CODE>.png: upscaled images (e.g. Topaz) beat originals
+if os.path.isdir(ENH):
+    for fn in sorted(os.listdir(ENH)):
+        if fn.lower().endswith('.png'):
+            path = os.path.join(ENH, fn); code = os.path.splitext(fn)[0].upper()
+            sources.append((box_of(path).shape[0], code, path)); print(f'  enhanced source {code}: box {box_of(path).shape[0]}px')
+sources.sort(key=lambda t: -t[0])
 
 # ---------- connected components ----------
 def label(mask):
@@ -49,9 +54,11 @@ def label(mask):
 
 FLAT = set('ABDEFHIJKLMNPRTVWXYZ')   # letters with a flat top or bottom: define the cap height / baseline
 
-glyph_bitmaps = {}   # ch -> (bool array, scale, baseline_row)
-for s in {id(v[1]): v[1] for v in best.values()}.values():
-    a = box_of(s['symbol_img']); H, W = a.shape[:2]
+_extracted = {}
+def extract(path, code):
+    """Split a symbol image into per-letter strips. Returns {letter: (bitmap, scale, baseline)} or None."""
+    if path in _extracted: return _extracted[path]
+    a = box_of(path); H, W = a.shape[:2]
     m = int(round(0.12 * H))
     white = (a[:, :, 3] > 128) & (a[:, :, 0] > 190) & (a[:, :, 1] > 190) & (a[:, :, 2] > 190)
     white[:m, :] = False; white[-m:, :] = False; white[:, :m] = False; white[:, -m:] = False
@@ -62,18 +69,28 @@ for s in {id(v[1]): v[1] for v in best.values()}.values():
         if len(ys) < 0.001 * H * W: continue
         comps.append((xs.min(), xs.max(), ys.min(), ys.max(), i))
     comps.sort()
-    code = s['abbr']
     if len(comps) != len(code):
-        print(f'  ! {code}: {len(comps)} components for {len(code)} letters, skipping'); continue
+        print(f'  ! {code} ({H}px): {len(comps)} components for {len(code)} letters, unusable'); _extracted[path] = None; return None
     flats = [c for c, ch in zip(comps, code) if ch in FLAT] or comps
     top = min(c[2] for c in flats); bottom = max(c[3] for c in flats)
     scale = CAP / (bottom - top + 1)
+    out = {}
     for c, ch in zip(comps, code):
-        if best[ch][1] is not s: continue
         x0, x1, y0, y1, i = c
-        bm = (lab[:, x0:x1 + 1] == i)          # full height strip so baseline/top are shared
-        glyph_bitmaps[ch] = (bm, scale, bottom, x0)
-        print(f'  {ch} <- {code} ({H}px box, {(x1-x0+1)*scale:.0f} units wide)')
+        if (y1 - y0 + 1) < 0.85 * (bottom - top + 1) and ch not in 'O0CGSQ': continue   # small language tag etc.
+        out[ch] = (lab[:, x0:x1 + 1] == i, scale, bottom, H)
+    _extracted[path] = out; return out
+
+glyph_bitmaps = {}
+letters = sorted({ch for _, code, _ in sources for ch in code})
+for ch in letters:
+    for h, code, path in sources:
+        if ch not in code: continue
+        got = extract(path, code)
+        if got and ch in got:
+            glyph_bitmaps[ch] = got[ch][:3]; print(f'  {ch} <- {code} ({h}px box)'); break
+    else:
+        print(f'  ? no usable source for {ch}')
 
 # ---------- trace ----------
 def trace(bm, scale, baseline):
@@ -99,7 +116,7 @@ def trace(bm, scale, baseline):
     return contours
 
 glyphs = {}   # ch -> contours (font units, y up, x starting anywhere)
-for ch, (bm, scale, baseline, x0) in glyph_bitmaps.items():
+for ch, (bm, scale, baseline) in glyph_bitmaps.items():
     glyphs[ch] = trace(bm, scale, baseline)
 
 def bounds(contours):
@@ -202,14 +219,43 @@ for ch in list(hand):
     if ch == 'Q': hand['Q'] = glyphs['O'] + match(hand['Q'][len(glyphs['O']):])
     elif ch == '0': hand['0'] = glyphs['O']
     else: hand[ch] = match(hand[ch])
-for ch in ('0', '3'):            # the only sources for these are 40 px: prefer the constructed glyphs
-    glyphs.pop(ch, None); glyph_bitmaps.pop(ch, None)
+for ch in ('0', '3'):            # drop 40 px traces of these; keep them when an enhanced source provided them
+    if ch in glyph_bitmaps and glyph_bitmaps[ch][0].shape[0] < 100: glyphs.pop(ch, None); glyph_bitmaps.pop(ch, None)
 # 3 = the traced B with its stem removed (the bowls keep their true Futura shape)
 if 'B' in glyph_bitmaps:
-    bmB, scB, baseB, x0B = glyph_bitmaps['B']
+    bmB, scB, baseB = glyph_bitmaps['B']
     bm3 = bmB.copy(); cols = np.where(bm3.any(axis=0))[0]; stem_px = int(round(STEM / scB * 1.12))
     bm3[:, :cols.min() + stem_px] = False
     hand['3'] = shift(trace(bm3, scB, baseB), 0, 0); x0, y0, x1, y1 = bounds(hand['3']); hand['3'] = shift(hand['3'], SB - x0, -y0)
+# Flatten every constructed glyph into one non-overlapping outline (Chrome's DirectWrite path renders
+# overlapping contours badly). Polygons only: exteriors follow the traced glyphs' direction, holes the opposite.
+from shapely.geometry import Polygon
+from shapely.ops import unary_union
+def flatten(contours):
+    polys = []
+    for c in contours:
+        pts = [seg[-1] for seg in c]
+        if len(pts) >= 3: polys.append(Polygon(pts).buffer(0))
+    # a contour lying entirely inside another is a hole (the inner ring of 0/6/8/9), everything else is solid
+    holes = [q for q in polys if any(o is not q and o.contains(q) for o in polys)]
+    solid = [q for q in polys if q not in holes]
+    u = unary_union(solid)
+    if holes: u = u.difference(unary_union(holes))
+    u = u.buffer(0)
+    if u.geom_type == 'MultiPolygon':                       # drop slivers
+        big = max(g.area for g in u.geoms); u = unary_union([g for g in u.geoms if g.area > big * 0.01])
+    geoms = list(u.geoms) if u.geom_type == 'MultiPolygon' else [u]
+    out = []
+    for g in geoms:
+        ext = list(g.exterior.coords)[:-1]; ext_c = [('move', ext[0])] + [('line', q) for q in ext[1:]]
+        out.append(ext_c if (signed_area(ext_c) > 0) == (ref_sign > 0) else reverse(ext_c))
+        for hole in g.interiors:
+            h = list(hole.coords)[:-1]; h_c = [('move', h[0])] + [('line', q) for q in h[1:]]
+            out.append(h_c if (signed_area(h_c) > 0) == (ref_sign < 0) else reverse(h_c))
+    return out
+for ch in list(hand):
+    if ch in ('0', '3', 'Q'): continue           # traced (curves) or traced + tail: leave as is
+    if all(seg[0] != 'curve' for c in hand[ch] for seg in c): hand[ch] = flatten(hand[ch])
 for ch, c in hand.items():
     if ch not in glyphs: glyphs[ch] = c
 
