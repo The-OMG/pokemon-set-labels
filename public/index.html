@@ -255,6 +255,10 @@
       <label class="field two" id="customrow"><span class="lbl">Custom width × height <small>millimetres</small></span><input type="number" id="cw" min="15" max="120" step="0.5" value="40" aria-label="Custom width in mm"><span>×</span><input type="number" id="ch" min="15" max="200" step="0.5" value="60" aria-label="Custom height in mm"></label>
       <label class="field"><span class="lbl">Orientation</span>
         <select id="orient"><option value="portrait">Tall (portrait)</option><option value="landscape">Wide (landscape)</option></select></label>
+      <details class="adv" id="driverpage"><summary>Printer driver lacks my roll size</summary>
+        <p class="hint">Phomemo's driver only lists a few paper sizes. Pick the closest size the driver offers that is at least as big as your label; the label prints in its top-left corner and the printer stops at the gap. Leave blank to print at the label size.</p>
+        <label class="field two"><span class="lbl">Driver page width × height <small>millimetres, e.g. 50 × 30</small></span><input type="number" id="pw" min="10" max="300" step="0.5" placeholder="50" aria-label="Driver page width in mm"><span>×</span><input type="number" id="ph" min="10" max="300" step="0.5" placeholder="30" aria-label="Driver page height in mm"></label>
+      </details>
     </fieldset>
 
     <fieldset>
@@ -326,7 +330,7 @@
   const STORE = 'setLabelPress.v1';   // key kept for continuity; the stored object carries its own version (v)
 
   const defaults = {
-    preset: '40x60', cw: 40, ch: 60, orient: 'portrait', layout: 'auto', pad: 2, sym: 20, fs: 100, mono: false,
+    preset: '40x60', cw: 40, ch: 60, orient: 'portrait', pw: '', ph: '', layout: 'auto', pad: 2, sym: 20, fs: 100, mono: false,
     font: 'Jost', tstyle: 'caps', rule: true,
     abbrmode: 'auto', abbrsize: 'small', icondate: '2023-03-31', numbering: 'seq', special: 'badge', cards: 'total',
     paper: 'letter', margin: 0, gap: 0, guides: true, zoom: 3, preview: 'label', v: 3,
@@ -586,8 +590,16 @@
     const root = $('print-root'); root.innerHTML = ''; root.className = mode;
     const [w, h] = dims();
     if (mode === 'labels') {
-      pageStyle.textContent = '@page { size: ' + w + 'mm ' + h + 'mm; margin: 0; }';
-      makeLabels(state.selected.map(i => SETS[i]).filter(Boolean)).forEach(el => root.appendChild(el));
+      // Optional driver page: the label sits top-left on a page of the size the printer driver actually offers.
+      const pw = Number(state.pw) || 0, ph = Number(state.ph) || 0;
+      const usePage = pw >= w && ph >= h;
+      pageStyle.textContent = '@page { size: ' + (usePage ? pw + 'mm ' + ph + 'mm' : w + 'mm ' + h + 'mm') + '; margin: 0; }';
+      makeLabels(state.selected.map(i => SETS[i]).filter(Boolean)).forEach(el => {
+        if (!usePage) { root.appendChild(el); return; }
+        const pg = document.createElement('div'); pg.className = 'sheetpage'; pg.style.width = pw + 'mm'; pg.style.height = ph + 'mm';
+        pg.style.gridTemplateColumns = w + 'mm'; pg.style.gridAutoRows = h + 'mm'; pg.appendChild(el); root.appendChild(pg);
+      });
+      if (usePage) root.className = 'sheet';   // page-per-label break rules
     } else {
       const b = buildPages();
       pageStyle.textContent = '@page { size: ' + b.paper.css + '; margin: 0; }';
@@ -600,13 +612,14 @@
   $('btn-sheet').onclick = () => print('sheet');
 
   // ---------- wiring ----------
-  const fields = ['preset', 'cw', 'ch', 'orient', 'layout', 'pad', 'sym', 'fs', 'mono', 'font', 'tstyle', 'rule',
+  const fields = ['preset', 'cw', 'ch', 'orient', 'pw', 'ph', 'layout', 'pad', 'sym', 'fs', 'mono', 'font', 'tstyle', 'rule',
     'abbrmode', 'abbrsize', 'icondate', 'numbering', 'special', 'cards', 'paper', 'margin', 'gap', 'guides', 'zoom', 'preview'];
   function bind() {
     fields.forEach(id => {
       const el = $(id); if (!el) return;
-      if (el.type === 'checkbox') el.checked = !!state[id]; else el.value = state[id];
+      if (el.type === 'checkbox') el.checked = !!state[id]; else el.value = state[id] ?? '';
     });
+    $('driverpage').open = !!(Number(state.pw) && Number(state.ph));
   }
   fields.forEach(id => {
     const el = $(id); if (!el) return;
