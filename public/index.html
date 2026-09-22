@@ -214,7 +214,7 @@
       <p>A free label press for Pokémon Trading Card Game collectors. Tick the expansions you own, choose a label size, and print binder or storage-box labels that carry the set symbol, the HD set logo, the expansion number, release date, generation and card count, including secret rares. It covers every English expansion from Base Set (1999) through the current Mega Evolution series, plus special sets, McDonald's promos, POP packs and Trick or Trade.</p>
       <h2>How to print</h2>
       <ol>
-        <li><strong>Label printer roll</strong> (Phomemo M110 and similar): pick your roll under Label size, press <em>Print labels</em>, choose the label printer in the print dialog, set scale to 100% and margins to none. Each label is its own page.</li>
+        <li><strong>Label printer roll</strong> (Phomemo M110 and similar): install Phomemo's Windows or Mac driver so the printer shows up as a normal printer, pick your roll under Label size, press <em>Print labels</em>. In the print dialog choose the Phomemo as the destination, open "More settings", set <em>Paper size</em> to the same roll size, <em>Margins</em> to None, <em>Scale</em> to 100%, and turn <em>Background graphics</em> on. Each label is its own page. If the dialog only lists the driver's default size, add your roll size in the printer's preferences in Windows (Printing Preferences → Page Setup) once, and it will appear in the list.</li>
         <li><strong>Color printer sheet</strong>: press <em>Print sheet</em>. Labels are laid out at true size on Letter, A4 or 3 × 5 index cards with optional cut guides. The Sheet preview shows the exact pages first.</li>
       </ol>
       <h2>Where the data comes from</h2>
@@ -230,12 +230,22 @@
       <legend>Label size <small>Pick the roll or card you are printing on.</small></legend>
       <label class="field"><span class="lbl">Size</span>
         <select id="preset">
-          <optgroup label="Phomemo M110 rolls">
+          <optgroup label="Phomemo M110 / M120 / M220 rolls (width × height)">
+            <option value="25x15">25 × 15 mm</option>
+            <option value="30x15">30 × 15 mm</option>
+            <option value="30x20">30 × 20 mm</option>
+            <option value="40x20">40 × 20 mm</option>
+            <option value="40x25">40 × 25 mm</option>
             <option value="40x30">40 × 30 mm</option>
-            <option value="50x30">50 × 30 mm</option>
+            <option value="40x40">40 × 40 mm</option>
             <option value="40x60" selected>40 × 60 mm</option>
-            <option value="50x80">50 × 80 mm</option>
+            <option value="45x30">45 × 30 mm</option>
+            <option value="50x30">50 × 30 mm</option>
+            <option value="50x40">50 × 40 mm</option>
             <option value="50x50">50 × 50 mm</option>
+            <option value="50x80">50 × 80 mm</option>
+            <option value="60x40">60 × 40 mm (M220)</option>
+            <option value="70x40">70 × 40 mm (M220)</option>
           </optgroup>
           <optgroup label="Paper">
             <option value="index">Half of a 3 × 5 index card</option>
@@ -308,7 +318,9 @@
   'use strict';
   const SETS = (window.POKEMON_SETS || []).map((s, i) => ({ ...s, i }));
   const $ = (id) => document.getElementById(id);
-  const PRESETS = { '40x30': [40, 30], '50x30': [50, 30], '40x60': [40, 60], '50x80': [50, 80], '50x50': [50, 50], 'index': [63.5, 76.2] };
+  const PRESETS = { 'index': [63.5, 76.2] };
+  ['25x15', '30x15', '30x20', '40x20', '40x25', '40x30', '40x40', '40x60', '45x30', '50x30', '50x40', '50x50', '50x80', '60x40', '70x40']
+    .forEach(k => { const [w, h] = k.split('x').map(Number); PRESETS[k] = [w, h]; });
   const PAPERS = { letter: { w: 215.9, h: 279.4, css: 'letter' }, a4: { w: 210, h: 297, css: 'A4' }, index: { w: 127, h: 76.2, css: '5in 3in' } };
   const MM = 96 / 25.4;
   const STORE = 'setLabelPress.v1';   // key kept for continuity; the stored object carries its own version (v)
