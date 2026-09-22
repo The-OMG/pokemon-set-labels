@@ -170,7 +170,8 @@
     border: 0.2mm solid currentColor; border-radius: 0.3em; padding: 0.22em 0 0.16em; width: calc(var(--sym) * 1.15); text-align: center; white-space: nowrap; box-sizing: border-box; }
   .label .logo { flex: 1 1 0; min-height: 0; display: flex; align-items: center; justify-content: center; position: relative; }
   /* promo sets: the era's base-set logo over a black promo star */
-  .label .logo.promo .star { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); height: 72%; width: auto; max-width: 72%; object-fit: contain; }
+  /* outline star fills the logo area: side tips reach the label edges (or the height, whichever binds first) */
+  .label .logo.promo .star { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: contain; object-position: center center; }
   /* every promo logo in the same box: 10% down from the top of the logo area, 38% of its height, centred */
   .label .logo.promo img.logoimg { position: absolute; z-index: 1; left: 4%; top: 31%; width: 92%; height: 38%; max-height: none; max-width: none; object-fit: contain; object-position: center center; }
   .label .symbox.star { margin-left: auto; margin-right: calc(var(--sym) * 0.12); }
@@ -585,7 +586,8 @@
   const PROMO_LOGO = { WP: 'base-set', NP: 'ex-ruby-sapphire', DPP: 'diamond-pearl', HSP: 'heartgold-soulsilver', BWP: 'black-white', XYP: 'xy', SMP: 'sun-moon', SWSD: 'sword-shield', SVP: 'scarlet-violet', MEP: 'mega-evolution' };
   // plain five-point black star (the Black Star Promo mark), as an SVG data URI so it tints and prints like the icons
   const STAR_SVG = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50.0 4.0 60.3 35.8 93.7 35.8 66.7 55.4 77.0 87.2 50.0 67.6 23.0 87.2 33.3 55.4 6.3 35.8 39.7 35.8z" fill="#000" stroke="#000" stroke-width="4" stroke-linejoin="round"/></svg>');   // the Black Star Promo mark: regular pentagram, rounded tips
-  const PROMO_STAR = STAR_SVG;                                                   // plain star: background only
+  const STAR_OUTLINE_SVG = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50.0 4.0 60.3 35.8 93.7 35.8 66.7 55.4 77.0 87.2 50.0 67.6 23.0 87.2 33.3 55.4 6.3 35.8 39.7 35.8z" fill="none" stroke="#000" stroke-width="2.6" stroke-linejoin="round"/></svg>');   // border-only star for the background
+  const PROMO_STAR = STAR_OUTLINE_SVG;                                           // background: outline star, tips to the edges
   const PROMO_ICON = (SETS.find(x => x.abbr === 'WP') || {}).symbol_img || STAR_SVG;   // the "PROMO" star symbol: the icon
   function labelEl(s) {
     const [w, h] = labelDims();
