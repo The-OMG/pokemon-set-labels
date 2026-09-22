@@ -583,7 +583,7 @@
   // Black Star Promo sets: era logo + promo star; the star is also their symbol (next to the code box from S&V on)
   const PROMO_LOGO = { WP: 'base-set', NP: 'ex-ruby-sapphire', DPP: 'diamond-pearl', HSP: 'heartgold-soulsilver', BWP: 'black-white', XYP: 'xy', SMP: 'sun-moon', SWSD: 'sword-shield', SVP: 'scarlet-violet', MEP: 'mega-evolution' };
   // plain five-point black star (the Black Star Promo mark), as an SVG data URI so it tints and prints like the icons
-  const STAR_SVG = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50.0 6.0 60.9 35.0 91.8 36.4 67.6 55.7 75.9 85.6 50.0 68.5 24.1 85.6 32.4 55.7 8.2 36.4 39.1 35.0z" fill="#000" stroke="#fff" stroke-width="4.0" stroke-linejoin="round" paint-order="stroke"/></svg>');   // the promo star, same proportions, no lettering
+  const STAR_SVG = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50.0 4.0 60.3 35.8 93.7 35.8 66.7 55.4 77.0 87.2 50.0 67.6 23.0 87.2 33.3 55.4 6.3 35.8 39.7 35.8z" fill="#000" stroke="#000" stroke-width="4" stroke-linejoin="round"/></svg>');   // the Black Star Promo mark: regular pentagram, rounded tips
   const PROMO_STAR = STAR_SVG;
   function labelEl(s) {
     const [w, h] = labelDims();
