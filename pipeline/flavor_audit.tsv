@@ -1,0 +1,1026 @@
+n	name	score	cards	games	flags	short	alt1
+1	Bulbasaur	8.9	4	4		A strange seed was planted on its back at birth.	For some time after its birth, it grows by gaining nourishment from the seed on its back.
+2	Ivysaur	8.4	3	8		When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower's coming bloom.	Exposure to sunlight adds to its strength. Sunlight also makes the bud on its back grow larger.
+3	Venusaur	6.36	2	8		After a rainy day, the flower on its back smells stronger.	By spreading the broad petals of its flower and catching the sun's rays, it fills its body with power.
+4	Charmander	11.46	11	3		From the time it is born, a flame burns at the tip of its tail.	The flame on its tail indicates Charmander's life force.
+5	Charmeleon	9.36	5	2		If it becomes agitated during battle, it spouts intense flames, incinerating its surroundings.	In the rocky mountains where Charmeleon live, their fiery tails shine at night like stars.
+6	Charizard	9.4	7	2		It spits fire that is hot enough to melt boulders.	It is said that Charizard's fire burns hotter if it has experienced harsh battles.
+7	Squirtle	11.7	9	8		It shelters itself in its shell, then strikes back with spouts of water at every opportunity.	When it retracts its long neck into its shell, it squirts out water with vigorous force.
+8	Wartortle	9.2	4	8		It is said to live 10,000 years. Its furry tail is popular as a symbol of longevity.	It cleverly controls its furry ears and tail to maintain its balance while swimming.
+9	Blastoise	8.4	3	7		The jets of water it spouts from the rocket cannons on its shell can punch through thick steel.	It crushes its foe under its heavy body to cause fainting.
+10	Caterpie	11.12	6	4		Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.	For protection, it releases a horrible stench from the antennae on its head to drive away enemies.
+11	Metapod	8.4	3	8		A steel-hard shell protects its tender body. It quietly endures hardships while awaiting evolution.	Even though it is encased in a sturdy shell, the body inside is tender.
+12	Butterfree	8.5	3	3		It collects honey every day. It rubs honey onto the hairs on its legs to carry it back to its nest.	It loves the honey of flowers and can locate flower patches that have even tiny amounts of pollen.
+13	Weedle	11.0	7	3		Its poison stinger is very powerful. Its bright-colored body is intended to warn off its enemies.	Often found in forests and grasslands. It has a sharp, toxic barb of around two inches on top of its head.
+14	Kakuna	11.32	8	8		While awaiting evolution, it hides from predators under leaves and in nooks of branches.	Almost incapable of moving, this Pokémon can only harden its shell to protect itself when it is in danger.
+15	Beedrill	10.4	7	2		May appear in a swarm. Flies at violent speeds, all the while stabbing with the toxic stinger on its rear.	Its best attack involves flying around at high speed, striking with poison needles, then flying off.
+16	Pidgey	11.12	6	4		A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.	It is docile and prefers to avoid conflict. If disturbed, however, it can ferociously strike back.
+17	Pidgeotto	9.9	4	4		Very protective of its sprawling territorial area, this Pokémon will fiercely peck at any intruder.	Very protective of its sprawling territory, this Pokémon will fiercely peck at any intruder.
+18	Pidgeot	9.12	6	4	names:Magikarp	When hunting, it skims the surface of water at high speed to pick off unwary prey such as Magikarp.	By flapping its wings with all its might, Pidgeot can make a gust of wind capable of bending tall trees.
+19	Rattata	8.5	3	3		Bites anything when it attacks. Small and very quick, it is a common sight in many places.	Cautious in the extreme, its hardy vitality lets it live in any kind of environment.
+20	Raticate	6.36	2	6		It whittles its constantly growing fangs by gnawing on hard things.	With its long fangs, this surprisingly violent Pokémon can gnaw away even thick concrete with ease.
+21	Spearow	8.06	2	4		Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne.	Very protective of its territory, it flaps its short wings busily to dart around at high speed.
+22	Fearow	9.1	3	4		With its huge and magnificent wings, it can keep aloft without ever having to land for rest.	It has the stamina to fly all day on its broad wings.
+23	Ekans	9.1	3	4		The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest.	It sneaks through grass without making a sound and strikes unsuspecting prey from behind.
+24	Arbok	7.7	4	2		The pattern on its belly appears to be a frightening face.	It is rumored that the ferocious warning markings on its belly differ from area to area.
+25	Pikachu	11.32	8	5	override	When several of these Pokémon gather, their electricity can build and cause lightning storms.	Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.
+26	Raichu	11.7	9	5		Its tail discharges electricity into the ground, protecting it from getting shocked.	Its long tail serves as a ground to protect itself from its own high-voltage power.
+27	Sandshrew	6.46	2	3		Disliking water, it lives in deep burrows in arid areas.	To protect itself from attackers, it curls up into a ball.
+28	Sandslash	9.1	3	4		Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.	It curls up, then rolls into foes with its back.
+29	Nidoran♀	7.36	2	7		While it does not prefer to fight, even one drop of the poison it secretes from barbs can be fatal.	Although small, its venomous barbs render this Pokémon dangerous.
+30	Nidorina	7.9	3	2		The female's horn develops slowly. Prefers physical attacks such as clawing and biting.	When it senses danger, it raises all the barbs on its body.
+31	Nidoqueen	9.3	4	3		Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.	It uses its scaly, rugged body to seal the entrance of its nest and protect its young from predators.
+32	Nidoran♂	8.2	4	8		It scans its surroundings by raising its ears out of the grass.	Stiffens its ears to sense danger. The larger, more powerful of its horns secretes venom.
+33	Nidorino	8.9	4	4		An aggressive Pokémon that is quick to attack.	It has a violent disposition and stabs foes with its horn, which oozes poison upon impact.
+34	Nidoking	8.4	3	8		One swing of its mighty tail can snap a telephone pole as if it were a matchstick.	Uses its powerful tail in battle to smash, constrict, then break its prey's bones.
+35	Clefairy	10.42	6	5		It is said that happiness will come to those who see a gathering of Clefairy dancing under a full moon.	The moonlight that it stores in the wings on its back apparently gives it the ability to float in midair.
+36	Clefable	12.02	8	5		A timid Fairy Pokémon that is rarely seen. It will run and hide the moment it senses people.	It has an acute sense of hearing. It can easily hear a pin being dropped nearly 1,100 yards away.
+37	Vulpix	11.0	7	3		While young, it has six gorgeous tails. When it grows, several new tails are sprouted.	It controls balls of fire. As it grows, its six tails split from their tips to make more tails.
+38	Ninetales	12.02	8	5		Very smart and very vengeful. Grabbing one of its many tails could result in a 1,000-year curse.	Its nine tails are said to be imbued with a mystic power.
+39	Jigglypuff	8.4	3	5		When it wavers its big, round eyes, it begins singing a lullaby that makes everyone drowsy.	When its huge eyes waver, it sings a mysteriously soothing melody that lulls its enemies to sleep.
+40	Wigglytuff	9.9	4	4		The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size.	It has a very fine fur. Take care not to make it angry, or it may inflate steadily and hit with a Body Slam.
+41	Zubat	5.4	1	2		Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets.	While flying, it constantly emits ultrasonic waves from its mouth to check its surroundings.
+42	Golbat	6.86	2	2		Once it bites, it will not stop draining energy from the victim even if it gets too heavy to fly.	It can drink more than 10 ounces of blood at once.
+43	Oddish	10.42	8	3		During the day, it stays in the cold underground to avoid the sun.	It often plants its root feet in the ground during the day and sows seeds as it walks about at night.
+44	Gloom	9.52	6	3		What appears to be drool is actually sweet honey.	The honey it drools from its mouth smells so atrocious, it can curl noses more than a mile away.
+45	Vileplume	10.12	6	5		The larger its petals, the more toxic pollen it contains.	It has the world's largest petals. With every step, the petals shake out heavy clouds of toxic pollen.
+46	Paras	7.46	2	3		Burrows to suck tree roots. The mushrooms on its back grow by drawing nutrients from the bug host.	Mushrooms named tochukaso grow on its back. They grow along with the host Paras.
+47	Parasect	8.5	3	3		The larger the mushroom on its back grows, the stronger the mushroom spores it scatters.	A host-parasite pair in which the parasite mushroom has taken over the host bug.
+48	Venonat	7.4	3	8		Its big eyes are actually clusters of tiny eyes.	Lives in the shadows of tall trees where it eats insects.
+49	Venomoth	8.5	3	3		The dust-like scales covering its wings are color coded to indicate the kinds of poison it has.	The scales it scatters will paralyze anyone who touches them, making that person unable to stand.
+50	Diglett	8.5	3	3		If a Diglett digs through a field, it leaves the soil perfectly tilled and ideal for planting crops.	Its skin is very thin. If it is exposed to light, its blood heats up, causing it to grow weak.
+51	Dugtrio	9.36	5	2		In battle, it digs through the ground and strikes the unsuspecting foe from an unexpected direction.	A team of Diglett triplets. It triggers huge earthquakes by burrowing 60 miles underground.
+52	Meowth	10.4	7	2		Adores round objects. It wanders the streets on a nightly basis to look for dropped loose change.	It is nocturnal in nature. If it spots something shiny, its eyes glitter brightly.
+53	Persian	9.1	3	4		Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness.	Its lithe muscles allow it to walk without making a sound.
+54	Psyduck	8.7	4	2		It is constantly wracked by a headache. When the headache turns intense, it begins using mysterious powers.	While lulling its enemies with its vacant look, this wily Pokémon will use psychokinetic powers.
+55	Golduck	7.9	3	2		When it swims at full speed using its long, webbed limbs, its forehead somehow begins to glow.	It is seen swimming dynamically and elegantly using its well-developed limbs and flippers.
+56	Mankey	9.2	4	8		It lives in treetop colonies. If one becomes enraged, the whole colony rampages for no reason.	It lives in groups in the treetops. If it loses sight of its group, it becomes infuriated by its loneliness.
+57	Primeape	7.4	4	1		Some researchers theorize that Primeape remains angry even when inside a Poké Ball.	It grows angry if you see its eyes and gets angrier if you run.
+58	Growlithe	10.56	5	4		It has a brave and trustworthy nature. It fearlessly stands up to bigger and stronger foes.	A Pokémon with a loyal nature. It will remain motionless until it is given an order by its Trainer.
+59	Arcanine	9.2	4	5		Its proud and regal appearance has captured the hearts of people since long ago.	The sight of it running over 6,200 miles in a single day and night has captivated many people.
+60	Poliwag	5.4	1	2		Because it is inept at walking on its newly grown legs, it always swims around in water.	Its skin is so thin, its internal organs are visible.
+61	Poliwhirl	6.86	2	2		Capable of living in or out of water. When out of water, it sweats to keep its body slimy.	The skin on most of its body is moist. However, the skin on its belly spiral feels smooth.
+62	Poliwrath	7.9	3	2		Although an energetic, skilled swimmer that uses all of its muscles, it lives on dry land.	With its extremely tough muscles, it can keep swimming in the Pacific Ocean without resting.
+63	Abra	7.9	3	2		Using its ability to read minds, it will identify impending danger and teleport to safety.	Abra can teleport in its sleep. Apparently the more deeply Abra sleeps, the farther its teleportations go.
+64	Kadabra	6.0	3	0		It emits special alpha waves from its body that induce headaches even to those just nearby.	This Pokémon's telekinesis is immensely powerful.
+65	Alakazam	7.9	3	2		Its brain can outperform a supercomputer. Its intelligence quotient is said to be 5000.	It has an incredibly high level of intelligence.
+66	Machop	8.5	3	3		Its whole body is composed of muscles. Even though it's the size of a human child, it can hurl 100 grown-ups.	Loves to build its muscles. It trains in all styles of martial arts to become even stronger.
+67	Machoke	9.1	3	5		Its muscular body is so powerful, it must wear a power-save belt to be able to regulate its motions.	Its formidable body never gets tired. It helps people by doing work such as the moving of heavy goods.
+68	Machamp	9.96	5	3		It quickly swings its four arms to rock its opponents with ceaseless punches and chops from all angles.	Its four ruggedly developed arms can launch a flurry of 1,000 punches in just two seconds.
+69	Bellsprout	9.96	5	3		Even though its body is extremely skinny, it is blindingly fast when catching its prey.	Its bud looks like a human face. Because of the bud, it is rumored to be a type of legendary mandrake plant.
+70	Weepinbell	9.9	4	4		It spits out Poison Powder to immobilize the enemy and then finishes it with a spray of Acid.	The leafy parts act as cutters for slashing foes.
+71	Victreebel	11.12	6	4		Said to live in huge colonies deep in jungles, although no one has ever returned from there.	Once ingested into this Pokémon's body, even the hardest object will melt into nothing.
+72	Tentacool	6.86	2	2		Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid.	Drifts in shallow seas. Anglers who hook them by accident are often punished by their stingers.
+73	Tentacruel	6.6	1	4		The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey.	In battle, it extends all 80 of its tentacles to entrap its opponent inside a poisonous net.
+74	Geodude	9.9	4	4		Found in fields and mountains. Mistaking them for boulders, people often step or trip on them.	At rest, it looks just like a rock. Carelessly stepping on it will make it swing its fists angrily.
+75	Graveler	8.5	3	3		With a free and uncaring nature, it doesn't mind if pieces break off while it rolls down mountains.	Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction.
+76	Golem	6.86	2	2		Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage.	It tumbles down mountains, leaving grooves from peak to base.
+77	Ponyta	10.9	7	6		As a newborn, it can barely stand. However, through galloping, its legs are made tougher and faster.	About an hour after birth, its fiery mane and tail grow out, giving it an impressive appearance.
+78	Rapidash	10.56	5	4		Very competitive, this Pokémon will chase anything that moves fast in the hopes of racing it.	It gallops at nearly 150 mph. With its mane blazing ferociously, it races as if it were an arrow.
+79	Slowpoke	9.96	5	3		It lazes vacantly near water. If something bites its tail, it won't even notice for a whole day.	It is always vacantly lost in thought, but no one knows what it is thinking about.
+80	Slowbro	5.36	2	7	names:Shellder	Though usually dim witted, it seems to become inspired if the Shellder on its tail bites down.	Naturally dull to begin with, it lost its ability to feel pain due to Shellder's seeping poison.
+81	Magnemite	7.9	3	2		It moves while constantly hovering. It discharges Thunder Wave and so on from the units at its sides.	It sends out electromagnetic waves, which let it float through the air.
+82	Magneton	6.9	3	2		Formed by several Magnemites linked together.	Generates strange radio signals. It raises the temperature by 3.6 degrees Fahrenheit within 3,300 feet.
+83	Farfetch’d	8.4	3	7		It can't live without the stalk it holds. That's why it defends the stalk from attackers with its life.	The plant stalk it holds is its weapon. The stalk is used like a sword to cut all sorts of things.
+84	Doduo	10.9	7	8		The brains in its two heads appear to communicate emotions to each other with a telepathic power.	A bird that makes up for its poor flying with its fast foot speed.
+85	Dodrio	8.7	4	2		An odd species that is rarely found. The three heads respectively represent joy, sadness, and anger.	Uses its three brains to execute complex plans.
+86	Seel	7.36	2	6		A Pokémon that lives on icebergs. It swims in the sea using the point on its head to break up ice.	Thanks to its thick fat, cold seas don't bother it at all, but it gets tired pretty easily in warm waters.
+87	Dewgong	7.9	3	2		Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.	In snow, the pure white coat covering its body obscures it from predators.
+88	Grimer	7.4	3	5		It was born when sludge in a dirty stream was exposed to the moon's X-rays.	Born from sludge, these Pokémon now gather in polluted places and increase the bacteria in their bodies.
+89	Muk	8.5	3	3		Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison.	Its body is made of a powerful poison. Touching it accidentally will cause a fever that requires bed rest.
+90	Shellder	9.9	4	5		Its hard shell repels any kind of attack. It is vulnerable only when its shell is open.	Clamping on to an opponent reveals its vulnerable parts, so it uses this move only as a last resort.
+91	Cloyster	8.5	3	3		Cloyster that live in seas with harsh tidal currents grow large, sharp spikes on their shells.	Once it slams its shell shut, it is impossible to open, even by those with superior strength.
+92	Gastly	10.9	7	7		Born from gases, anyone would faint if engulfed by its gaseous body, which contains poison.	It wraps its opponent in its gas-like body, slowly weakening its prey by poisoning it through the skin.
+93	Haunter	9.96	5	3		Because of its ability to slip through block walls, it is said to be from another dimension.	It likes to lurk in the dark and tap shoulders with a gaseous hand.
+94	Gengar	8.7	4	2		On the night of a full moon, if shadows move on their own and laugh, it must be Gengar's doing.	The leer that floats in darkness belongs to a Gengar delighting in casting curses on people.
+95	Onix	9.96	5	3		It rapidly bores through the ground at 50 mph by squirming and twisting its massive, rugged body.	It twists and squirms through the ground. The thunderous roar of its tunneling echoes a long way.
+96	Drowzee	6.86	2	2		It remembers every dream it eats. It rarely eats the dreams of adults because children's are much tastier.	When it twitches its nose, it can tell where someone is sleeping and what that person is dreaming about.
+97	Hypno	9.3	4	3		When it locks eyes with an enemy, it will use a mix of psi moves such as Hypnosis and Confusion.	Seeing its swinging pendulum can induce sleep in three seconds, even in someone who just woke up.
+98	Krabby	9.9	4	4		If it senses danger approaching, it cloaks itself with bubbles from its mouth so it will look bigger.	It can be found near the sea. The large pincers grow back if they are torn out of their sockets.
+99	Kingler	5.4	1	2		Its oversized claw is very powerful, but when it's not in battle, the claw just gets in the way.	Its large and hard pincer has 10,000-horsepower strength.
+100	Voltorb	10.82	8	2		Usually found in power plants. Easily mistaken for a Poké Ball, it has zapped many people.	It looks just like a Poké Ball. It is dangerous because it may electrocute or explode on touch.
+101	Electrode	9.86	5	7		It is known to drift on winds if it is bloated to bursting with stored electricity.	It stores an overflowing amount of electric energy inside its body.
+102	Exeggcute	8.4	3	8		Its six eggs converse using telepathy. They can quickly gather if they become separated.	Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms.
+103	Exeggutor	7.2	4	8	names:Exeggcute	It is called "The Walking Jungle." If a head grows too big, it falls off and becomes an Exeggcute.	Legend has it that on rare occasions, one of its heads will drop off and continue on as an Exeggcute.
+104	Cubone	7.46	2	3		Because it never removes its skull helmet, no one has ever seen this Pokémon's real face.	When it thinks of its dead mother, it cries. Its crying makes the skull it wears rattle hollowly.
+105	Marowak	9.9	4	4		The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to K.O. targets.	From its birth, this savage Pokémon constantly holds bones.
+106	Hitmonlee	9.96	5	3		The legs freely contract and stretch. The stretchy legs allow it to hit a distant foe with a rising kick.	If it starts kicking repeatedly, both legs will stretch even longer to strike a fleeing foe.
+107	Hitmonchan	10.52	6	3		Its punches slice the air. However, it seems to need a short break after fighting for three minutes.	The arm-twisting punches it throws pulverize even concrete.
+108	Lickitung	7.46	2	3		Its long tongue, slathered with a gooey saliva, sticks to anything, so it is very useful.	It checks out whatever's around it by licking everything.
+109	Koffing	8.36	5	2		Its thin, balloon-like body is inflated by horribly toxic gases.	Its body is full of poisonous gas. It floats into garbage dumps, seeking out the fumes of raw, rotting trash.
+110	Weezing	6.96	5	3	names:Koffing	If one of the twin Koffing inflates, the other one deflates.	Very rarely, a sudden mutation can result in two small Koffing twins becoming conjoined as a Weezing.
+111	Rhyhorn	10.52	6	3		Strong, but not too bright, this Pokémon can shatter even a skyscraper with its charging Tackles.	It is inept at turning because of its four short legs.
+112	Rhydon	9.96	5	3		Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees Fahrenheit.	Protected by an armor-like hide, it is capable of living in molten lava of 3600 degrees.
+113	Chansey	8.4	3	5		A kindly Pokémon that lays highly nutritious eggs and shares them with injured Pokémon or people.	It walks carefully to prevent its egg from breaking.
+114	Tangela	9.96	5	3		It tangles any moving thing with its vines. Their subtle shaking is ticklish if you get ensnared.	Many writhing vines cover it, so its true identity remains unknown.
+115	Kangaskhan	7.3	3	1		The infant rarely ventures out of its mother's protective pouch until it is three years old.	If it is safe, the young gets out of the belly pouch to play.
+116	Horsea	10.9	7	8		It makes its nest in the shade of corals. If it senses danger, it spits murky ink and flees.	Known to shoot down flying bugs with precision blasts of ink from the surface of the water.
+117	Seadra	7.9	3	2		It is capable of swimming backwards by rapidly flapping its winglike pectoral fins and stout tail.	Its spines provide protection. Its fins and bones are prized as traditional medicine ingredients.
+118	Goldeen	9.56	5	4		Its dorsal, pectoral and tail fins wave elegantly in water.	Though it appears very elegant when swimming with fins unfurled, it can jab powerfully with its horn.
+119	Seaking	8.5	3	3		Using its horn, it bores holes in riverbed boulders, making nests to prevent its eggs from washing away.	In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks.
+120	Staryu	9.36	5	2		It appears in large numbers by seashores. At night, its central core flashes with a red light.	An enigmatic Pokémon that can effortlessly regenerate any appendage it loses in battle.
+121	Starmie	9.2	4	6		At the center of its body is a red core, which sends mysterious radio signals into the night sky.	Its central core glows with the seven colors of the rainbow.
+122	Mr. Mime	8.7	4	2		It is adept at conning people. It is said to be able to create walls out of thin air by miming.	It shapes an invisible wall in midair by minutely vibrating its fingertips to stop molecules in the air.
+123	Scyther	9.96	5	3		It slashes through grass with its sharp scythes, moving too fast for the human eye to track.	The sharp scythes on its forearms become increasingly sharp by cutting through hard objects.
+124	Jynx	6.86	2	2		It rocks its body rhythmically. It appears to alter the rhythm depending on how it is feeling.	It wiggles its hips as it walks. It can cause people to dance in unison with it.
+125	Electabuzz	7.9	3	2		It loves to feed on strong electricity. It occasionally appears around large power plants and so on.	Normally found near power plants, it can wander away and cause major blackouts in cities.
+126	Magmar	7.9	3	2		Its body always burns with an orange glow that enables it to hide perfectly among flames.	It dislikes cold places, so it blows scorching flames to make the environment suitable for itself.
+127	Pinsir	7.4	3	6		It grips prey with its pincers until the prey is torn in half.	If it fails to crush the victim in its pincers, it will swing its victim around and toss it hard.
+128	Tauros	9.3	4	3		When it targets an enemy, it charges furiously while whipping its body with its long tails.	After heightening its will to fight by whipping itself with its three tails, it charges at full speed.
+129	Magikarp	9.9	4	4		In the distant past, it was somewhat stronger than the horribly weak descendants that exist today.	An underpowered, pathetic Pokémon. It may jump high on rare occasions, but never more than seven feet.
+130	Gyarados	12.02	8	4		Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.	Once it appears, it goes on a rampage. It remains enraged until it demolishes everything around it.
+131	Lapras	8.2	4	5		It loves crossing the sea with people and Pokémon on its back.	Crossing icy seas is no issue for this cold-resistant Pokémon.
+132	Ditto	7.9	3	2		Its transformation ability is perfect. However, if made to laugh, it can't maintain its disguise.	It has the ability to reconstitute its entire cellular structure to transform into whatever it sees.
+133	Eevee	13.17	14	4		Thanks to its unstable genetic makeup, this special Pokémon conceals many different possible evolutions.	It has the ability to alter the composition of its body to suit its surrounding environment.
+134	Vaporeon	9.96	5	3		When Vaporeon's fins begin to vibrate, it is a sign that rain will come within a few hours.	Its cell composition is similar to water molecules.
+135	Jolteon	7.9	3	2		It concentrates the weak electric charges emitted by its cells and launches wicked lightning bolts.	If it is angered or startled, the fur all over its body bristles like sharp needles that pierce foes.
+136	Flareon	7.9	3	2		When storing thermal energy in its body, its temperature could soar to over 1600 degrees.	Inhaled air is heated in the flame sac in its body to an intense fire over 3,000 degrees Fahrenheit.
+137	Porygon	5.86	2	2		A Pokémon that consists entirely of programming code.	Roughly 20 years ago, it was artificially created, utilizing the latest technology of the time.
+138	Omanyte	7.46	2	3		Revived from an ancient fossil, this Pokémon uses air stored in its shell to sink and rise in water.	Although long extinct, in rare cases, it can be genetically resurrected from fossils.
+139	Omastar	7.36	2	7		It is thought that this Pokémon became extinct because its spiral shell grew too large.	Once wrapped around its prey, it never lets go.
+140	Kabuto	6.86	2	2		A Pokémon that was resurrected from a fossil found in what was once the ocean floor eons ago.	It is thought to have inhabited beaches 300 million years ago.
+141	Kabutops	7.9	3	2		Its sleek shape is perfect for swimming. It slashes prey with its claws and drains the body fluids.	It is thought that this Pokémon came onto land because its prey adapted to life on land.
+142	Aerodactyl	7.46	2	3		A ferocious prehistoric Pokémon that goes for the enemy's throat with its serrated saw-like fangs.	A Pokémon that roamed the skies in the dinosaur era.
+143	Snorlax	12.27	14	3		It is not satisfied unless it eats over 880 pounds of food every day.	Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.
+144	Articuno	11.6	7	4		A legendary bird Pokémon that is said to appear to doomed people who are lost in icy mountains.	A legendary bird Pokémon. It can create blizzards by freezing moisture in the air.
+145	Zapdos	10.7	9	8		A legendary Pokémon that is said to live in thunderclouds.	A legendary bird Pokémon that is said to appear from clouds while dropping enormous lightning bolts.
+146	Moltres	10.9	7	8		One of the legendary bird Pokémon. It is said that its appearance indicates the coming of spring.	Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames.
+147	Dratini	8.5	3	3		Long considered a mythical Pokémon until recently, when a small colony was found living underwater.	It is called the "Mirage Pokémon" because so few have seen it.
+148	Dragonair	8.2	4	7		If its body takes on an aura, the weather changes instantly.	Its crystalline orbs appear to give this Pokémon the power to freely control the weather.
+149	Dragonite	8.86	5	8		It is said to make its home somewhere in the sea.	An extremely rarely seen marine Pokémon. Its intelligence is said to match that of humans.
+150	Mewtwo	11.05	10	8		A Pokémon created by recombining Mew's genes.	It was created by a scientist after years of horrific gene-splicing and DNA-engineering experiments.
+151	Mew	10.52	6	3		Its DNA is said to contain the genetic codes of all Pokémon, so it can use all kinds of techniques.	Because it can use all kinds of moves, many scientists believe Mew to be the ancestor of Pokémon.
+152	Chikorita	8.86	5	8		It uses the leaf on its head to determine the temperature and humidity.	A sweet aroma gently wafts from the leaf on its head.
+153	Bayleef	9.1	3	4		A spicy aroma emanates from around its neck. The aroma acts as a stimulant to restore health.	The buds that ring its neck give off a spicy aroma that perks people up.
+154	Meganium	9.56	5	4		Meganium's breath has the power to revive dead grass and plants.	The aroma that rises from its petals contains a substance that calms aggressive feelings.
+155	Cyndaquil	9.86	5	8		It has a timid nature. If it is startled, the flames on its back burn more vigorously.	It usually stays hunched over. If it is angry or surprised, it shoots flames out of its back.
+156	Quilava	8.1	3	4	override	Be careful if it turns its back during battle. It means that it will attack with the fire on its back.	This Pokémon is fully covered by nonflammable fur.
+157	Typhlosion	11.12	6	4		It has a secret, devastating move. It rubs its blazing fur together to cause huge explosions.	If its rage peaks, it becomes so hot that anything that touches it will instantly go up in flames.
+158	Totodile	12.02	8	4		It is small but rough and tough. It won't hesitate to take a bite out of anything that moves.	Its powerful, well-developed jaws are capable of crushing anything.
+159	Croconaw	10.6	7	4		If it loses a fang, a new one grows back in its place.	Once it bites down, it won't let go until it loses its fangs.
+160	Feraligatr	9.96	5	3		When it bites with its massive and powerful jaws, it shakes its head and savagely tears its victim up.	It usually moves slowly, but it goes at blinding speed when it attacks and bites prey.
+161	Sentret	7.46	2	3		A very cautious Pokémon, it raises itself up using its tail to get a better view of its surroundings.	It has a very nervous nature. It stands up high on its tail so it can scan wide areas.
+162	Furret	8.1	3	4		It makes a nest to suit its long and skinny body.	The mother puts its offspring to sleep by curling up around them.
+163	Hoothoot	9.9	4	5		It always stands on one foot. It changes feet so fast, the movement can rarely be seen.	It has a perfect sense of time. Whatever happens, it keeps rhythm by precisely tilting its head in time.
+164	Noctowl	9.9	4	5		When it needs to think, it rotates its head 180 degrees to sharpen its intellectual power.	Its eyes are specially adapted. They concentrate even faint light and enable it to see in the dark.
+165	Ledyba	7.46	2	3		When the weather turns cold, lots of Ledyba gather from everywhere to cluster and keep each other warm.	It is so timid, it can't move if it isn't with a swarm of others.
+166	Ledian	8.06	2	4		When the stars flicker in the night sky, it flutters about, scattering a glowing powder.	It uses starlight as energy. When more stars appear at night, the patterns on its back grow larger.
+167	Spinarak	9.1	3	4		It lies still in the same pose for days in its web, waiting for its unsuspecting prey to wander close.	It spins a web using fine – but durable – thread.
+168	Ariados	7.06	5	1		It spews threads from its mouth to catch its prey.	It attaches silk to its prey and sets it free.
+169	Crobat	8.06	2	4		It flies so silently through the dark on its four wings that it may not be noticed even when nearby.	Having four wings allows it to fly more quickly and quietly so it can sneak up on prey without its noticing.
+170	Chinchou	10.56	5	5		On the dark ocean floor, its only means of communication is its constantly flashing lights.	It discharges positive and negative electricity from its antenna tips to shock its foes.
+171	Lanturn	9.1	3	4		The light it emits is so bright that it can illuminate the sea's surface from a depth of over three miles.	This Pokémon flashes a bright light that blinds its prey.
+172	Pichu	7.06	2	4		Despite its small size, it can zap even adult humans.	The electric sacs in its cheeks are small. If even a little electricity leaks, it becomes shocked.
+173	Cleffa	13.06	11	5		Because of its unusual, star-like silhouette, people believe that it came here on a meteor.	Its silhouette is like a star. It is believed to arrive riding on shooting stars.
+174	Igglybuff	7.46	2	3		Its extremely flexible and elastic body makes it bounce continuously—anytime, anywhere.	It has a very soft body. If it starts to roll, it will bounce all over and be impossible to stop.
+175	Togepi	9.9	4	4		A proverb claims that happiness will come to anyone who can make a sleeping Togepi stand up.	The shell seems to be filled with joy. It is said that it will share good luck when treated kindly.
+176	Togetic	9.76	5	5	deictic	They say that it will appear before kindhearted, caring people and shower them with happiness.	It grows dispirited if it is not with kind people.
+177	Natu	10.56	5	4		It usually forages for food on the ground but may, on rare occasions, hop onto branches to peck at shoots.	Because its wings aren't yet fully grown, it has to hop to get around.
+178	Xatu	9.76	5	5	deictic	They say that it stays still and quiet because it is seeing both the past and future at the same time.	This odd Pokémon can see both the past and the future.
+179	Mareep	8.7	4	2		It stores lots of air in its soft fur, allowing it to stay cool in summer and warm in winter.	Its fleece grows continually. In the summer, the fleece is fully shed, but it grows back in a week.
+180	Flaaffy	9.42	6	6		If its coat becomes fully charged with electricity, its tail lights up.	As a result of storing too much electricity, it developed patches where even downy wool won't grow.
+181	Ampharos	10.6	7	5		The tail's tip shines brightly and can be seen from far away.	The tip of its tail shines brightly. In the olden days, people sent signals using the tail's light.
+182	Bellossom	8.4	3	8		When the heavy rainfall season ends, it is drawn out by warm sunlight to dance in the open.	Plentiful in the tropics. When it dances, its petals rub together and make a pleasant ringing sound.
+183	Marill	8.7	4	2		The fur on its body naturally repels water. It can stay dry, even when it plays in the water.	The tip of its tail is filled with oil that is lighter than water, so it acts as a float.
+184	Azumarill	9.36	5	2		The bubble-like pattern on its stomach helps it camouflage itself when it's in the water.	Its long ears are superb sensors. It can distinguish the movements of things in water and tell what they are.
+185	Sudowoodo	8.1	3	5		It disguises itself as a tree to avoid attack.	Although it always pretends to be a tree, its composition appears more similar to rock than to vegetation.
+186	Politoed	9.9	4	4		Whenever three or more of these get together, they sing in a loud voice that sounds like bellowing.	It gathers groups of others as their leader. Its cries make Poliwag obey.
+187	Hoppip	10.42	6	8		It drifts on winds. It is said that when Hoppip gather in fields and mountains, spring is on the way.	Its body is so light, it must grip the ground firmly with its feet to keep from being blown away.
+188	Skiploom	9.9	4	4		It spreads its petals to absorb sunlight. It also floats in the air to get closer to the sun.	The bloom on top of its head opens and closes as the temperature fluctuates up and down.
+189	Jumpluff	7.9	3	2		Even in the fiercest wind, it can control its fluff to make its way to any place in the world it wants.	Blown by seasonal winds, it circles the globe, scattering cotton spores as it goes.
+190	Aipom	9.1	3	4		Its tail is so powerful that it can use it to grab a tree branch and hold itself up in the air.	It lives atop tall trees. When leaping from branch to branch, it deftly uses its tail for balance.
+191	Sunkern	7.06	2	4		It lives by drinking only dewdrops from under the leaves of plants.	It suddenly falls out of the sky in the morning.
+192	Sunflora	8.4	3	6		It gets energy from warm sunlight and is known for its habit of moving in pursuit of it.	It converts sunlight into energy. In the darkness after sunset, it closes its petals and becomes still.
+193	Yanma	11.6	7	4		If it flaps its wings really fast, it can generate shock waves that will shatter windows in the area.	Its eyes can see 360 degrees without moving its head.
+194	Wooper	7.46	2	3		When it walks around on the ground, it coats its body with a slimy, poisonous film.	This Pokémon lives in cold water. It will leave the water to search for food when it gets cold outside.
+195	Quagsire	8.5	3	3		Due to its relaxed and carefree attitude, it often bumps its head on boulders and boat hulls as it swims.	It has an easygoing nature. It doesn't care if it bumps its head on boats and boulders while swimming.
+196	Espeon	8.5	3	3		It uses the fine hair that covers its body to sense air currents and predict its enemy's actions.	Its fur is so sensitive, it can sense minute shifts in the air and predict the weather.
+197	Umbreon	8.6	4	3		When exposed to the moon's aura, the rings on its body glow faintly and it gains a mysterious power.	When agitated, this Pokémon protects itself by spraying poisonous sweat from its pores.
+198	Murkrow	11.6	7	4		Feared and loathed by many, it is believed to bring misfortune to all those who see it at night.	It is said that when chased, it lures its attacker onto dark mountain trails where the foe will get lost.
+199	Slowking	8.06	2	4		It has incredible intellect and intuition. Whatever the situation, it remains calm and collected.	When its head was bitten, toxins entered Slowpoke's head and unlocked an extraordinary power.
+200	Misdreavus	9.96	5	3		It loves to bite and yank people's hair from behind without warning, just to see their shocked reactions.	It likes playing mischievous tricks such as screaming and wailing to startle people at night.
+201	Unown	13.95	25	2		Shaped like ancient writing, it is a huge mystery whether language or Unown came first.	Their shapes look like hieroglyphs on ancient tablets.
+202	Wobbuffet	9.56	5	5		To keep its pitch-black tail hidden, it lives quietly in the darkness.	It hates light and shock. If attacked, it inflates its body to build up its counterstrike.
+203	Girafarig	7.2	3	2		Its tail has a small brain of its own. Beware! If you get close, it may react to your scent by biting.	Its tail has a small brain of its own. Beware! If you get close, it may react to your scent and bite.
+204	Pineco	10.42	8	3		It likes to make its shell thicker by adding layers of tree bark.	It looks just like a pinecone. Its shell protects it from bird Pokémon that peck it by mistake.
+205	Forretress	7.36	2	8		It is encased in a steel shell. Its peering eyes are all that can be seen of its mysterious innards.	Its entire body is shielded by a steel-hard shell.
+206	Dunsparce	9.1	3	4		When spotted, this Pokémon escapes backward by furiously boring into the ground with its tail.	It digs into the ground with its tail and makes a mazelike nest.
+207	Gligar	11.6	7	4		It flies straight at its target's face, then clamps down on the startled victim to inject poison.	It usually clings to cliffs. When it spots its prey, it spreads its wings and glides down to attack.
+208	Steelix	9.2	4	4		It is thought its body transformed as a result of iron accumulating internally from swallowing soil.	Tempered underground under high pressure and heat, its body is harder than any metal.
+209	Snubbull	9.9	4	4		It has an active, playful nature. Many women like to frolic with it because of its affectionate ways.	Small Pokémon flee from its scary face. It is, however, considered by women to be cute.
+210	Granbull	7.36	2	8		It is timid in spite of its looks. If it becomes enraged, however, it will strike with its huge fangs.	Because its fangs are too heavy, it always keeps its head tilted down.
+211	Qwilfish	9.9	4	4		To fire its poison spikes, it must inflate its body by drinking over 2.6 gallons of water all at once.	The small spikes covering its body developed from scales.
+212	Scizor	7.46	2	3		Its wings are not used for flying. They are flapped at high speed to adjust its body temperature.	It swings its eye patterned pincers up to scare its foes.
+213	Shuckle	11.12	6	5		It stores berries inside its shell. To avoid attacks, it hides beneath rocks and remains completely still.	The Berries it stores in its vaselike shell decompose and become a gooey liquid.
+214	Heracross	8.3	3	4	deictic	This powerful Pokémon thrusts its prized horn under its enemies' bellies, then lifts and throws them.	With its Herculean powers, it can easily throw around an object that is 100 times its own weight.
+215	Sneasel	9.9	4	5		Its paws conceal sharp claws. If attacked, it suddenly extends the claws and startles its enemy.	It feeds on eggs stolen from nests. Its sharply hooked claws rip vulnerable spots on prey.
+216	Teddiursa	9.9	4	4		Before food becomes scarce in wintertime, its habit is to hoard food in many hidden locations.	If it finds honey, its crescent mark glows. It always licks its paws because they are soaked with honey.
+217	Ursaring	8.4	3	7		In its territory, it leaves scratches on trees that bear delicious berries or fruits.	Although it has a large body, it is quite skilled at climbing trees.
+218	Slugma	10.9	7	8		Its body is made of magma. If it doesn't keep moving, its body will cool and harden.	A common sight in volcanic areas, it slowly slithers around in a constant search for warm places.
+219	Magcargo	9.9	4	4		Its brittle shell occasionally spouts intense flames that circulate throughout its body.	Its body is as hot as lava and is always billowing.
+220	Swinub	8.1	3	5		It rubs its snout on the ground to find and dig up food.	If it smells something enticing, it dashes off headlong to find the source of the aroma.
+221	Piloswine	9.1	3	4		Because the long hair all over its body obscures its sight, it just keeps charging repeatedly.	If it charges at an enemy, the hairs on its back stand up straight.
+222	Corsola	7.36	2	5		Many live in the clean seas of the south. They apparently can't live in polluted waters.	It continuously sheds and grows. The tip of its head is prized as a treasure because of its beauty.
+223	Remoraid	7.9	4	5	names:Mantine	Using its dorsal fin as a suction pad, it clings to a Mantine's underside to scavenge for leftovers.	It has superb accuracy. The water it shoots out can strike even moving prey from more than 300 feet.
+224	Octillery	10.52	6	3		It traps enemies with its suction cupped tentacles then smashes them with its rockhard head.	It traps foes with the suction cups on its tentacles, then smashes them with its rock-hard head.
+225	Delibird	7.46	2	3		It carries food all day long. There are tales about lost people who were saved by the food it had.	It carries food rolled up in its tail. It has the habit of sharing food with people lost in mountains.
+226	Mantine	6.0	1	3		Swimming freely in open seas, it may fly out of the water and over the waves if it builds up enough speed.	If it builds up enough speed swimming, it can jump out above the waves and glide for over 300 feet.
+227	Skarmory	9.9	4	4		After nesting in bramble bushes, the wings of its chicks grow hard from scratches by thorns.	Despite being clad entirely in iron-hard armor, it flies at speeds over 180 mph.
+228	Houndour	10.56	5	4		To corner prey, they check each other's location using barks that only they can understand.	It is smart enough to hunt in packs. It uses a variety of cries for communicating with others.
+229	Houndoom	10.52	6	3		Upon hearing its eerie howls, other Pokémon get the shivers and head straight back to their nests.	Long ago, people imagined its eerie howls to be the call of the grim reaper.
+230	Kingdra	9.36	5	2		It stores energy by sleeping at underwater depths at which no other life-forms can survive.	It lives in caves on the seafloor and creates giant whirlpools every time it moves.
+231	Phanpy	10.9	7	8		It is strong despite its compact size. It can easily pick up and carry an adult human on its back.	It swings its long snout around playfully, but, because it is so strong, that can be dangerous.
+232	Donphan	9.1	3	4		It has sharp, hard tusks and a rugged hide. Its tackle is strong enough to knock down a house.	The longer and bigger its tusks, the higher its rank in its herd.
+233	Porygon2	6.76	2	3		With planetary development software installed, it became capable of working in space.	Further research enhanced its abilities. Sometimes, it may exhibit motions that were not programmed.
+234	Stantler	9.3	4	3		The curved antlers subtly change the flow of air to create a strange space where reality is distorted.	Staring at its antlers creates an odd sensation as if one were being drawn into their centers.
+235	Smeargle	9.9	4	4		Once it becomes an adult, it has a tendency to let its comrades plant footprints on its back.	It draws symbols with the fluid that oozes from the tip of its tail.
+236	Tyrogue	8.06	2	5		It is always bursting with energy. To make itself stronger, it keeps on fighting even if it loses.	Even though it is small, it can't be ignored because it will slug any handy target without warning.
+237	Hitmontop	10.56	5	4		It launches kicks while spinning. If it spins at high speed, it may bore its way into the ground.	If you become enchanted by its smooth, elegant, dancelike kicks, you may get drilled hard.
+238	Smoochum	6.0	1	3		It always rocks its head slowly backwards and forwards as if it is trying to kiss someone.	It tests everything by touching with its lips, which remember what it likes and dislikes.
+239	Elekid	6.0	1	3		Even in the most vicious storm, this Pokémon plays happily if thunder rumbles in the sky.	It rotates its arms to generate electricity, but it tires easily, so it charges up only a little bit.
+240	Magby	5.4	1	2		Each and every time it inhales and exhales, hot embers dribble out of its mouth and nostrils.	This Pokémon makes its home near volcanoes.
+241	Miltank	7.36	2	7		It is said that kids who drink Miltank's milk grow up to become hearty, healthy adults.	Its milk is packed with nutrition, making it the ultimate beverage for the sick or weary.
+242	Blissey	9.2	4	6		The eggs it lays are filled with happiness. Eating even one bite will bring a smile to anyone.	Anyone who takes even one bite of Blissey's egg becomes unfailingly caring and pleasant to everyone.
+243	Raikou	8.1	3	4		The rain clouds it carries let it fire thunderbolts at will.	This rough Pokémon stores energy inside its body, then sweeps across the land, shooting off electricity.
+244	Entei	11.7	9	8		It is said that when it roars, a volcano erupts somewhere around the globe.	A Pokémon that races across the land. It is said that one is born every time a new volcano appears.
+245	Suicune	9.7	7	2		Said to be the embodiment of north winds, it can instantly purify filthy, murky water.	This Pokémon races across the land. It is said that north winds will somehow blow whenever it appears.
+246	Larvitar	8.22	8	4	long	Born deep underground, it comes aboveground and becomes a pupa once it has finished eating the surrounding soil.	It feeds on soil. After it has eaten a large mountain, it will fall asleep so it can grow.
+247	Pupitar	10.12	6	4		Its shell is as hard as sheet rock, and it is also very strong.	Even sealed in its shell, it can move freely.
+248	Tyranitar	9.9	4	5		Its body can't be harmed by any sort of attack, so it is very eager to make challenges against enemies.	If it rampages, it knocks down mountains and buries rivers.
+249	Lugia	13.35	12	4		It is said to be the guardian of the seas. It is rumored to have been seen on the night of a storm.	It is said that it quietly spends its time deep at the bottom of the sea, because its powers are too strong.
+250	Ho-Oh	9.3	4	3		Legends claim this Pokémon flies the world's skies continuously on its magnificent, seven-colored wings.	It will reveal itself before a pure-hearted Trainer by shining its bright, rainbow-colored wings.
+251	Celebi	9.86	5	8		It has the power to travel across time, but it is said to appear only in peaceful times.	This Pokémon wanders across time. Grass and trees flourish in the forests in which it has appeared.
+252	Treecko	9.86	5	7		The soles of its feet are covered by countless tiny spikes, enabling it to walk on walls and ceilings.	Small hooks on the bottom of its feet catch on walls and ceilings.
+253	Grovyle	11.32	8	8		It lives in dense jungles. While closing in on its prey, it leaps from branch to branch.	Its strongly developed thigh muscles give it astounding agility and jumping performance.
+254	Sceptile	8.6	4	3		It agilely leaps about the jungle and uses the sharp leaves on its arms to strike its prey.	The leaves that grow on its arms can slice down thick trees.
+255	Torchic	9.25	10	1		A fire burns inside, so it feels very warm to hug.	A fire burns inside, so it feels very warm to hug.
+256	Combusken	8.2	4	8		Its kicking mastery lets it loose 10 kicks per second.	During a battle, the hot flame in its body increases.
+257	Blaziken	7.5	3	3		When facing a tough foe, it looses flames from its wrists.	It can clear a 30-story building in a leap. Its fiery punches scorch its foes.
+258	Mudkip	10.7	9	8		To alert it, the fin on its head senses the flow of water.	Its large tail fin propels it through water with powerful acceleration.
+259	Marshtomp	7.8	3	3		Living on muddy ground that provides poor footing has made its legs sturdy.	Its sturdy legs give it sure footing, even in mud.
+260	Swampert	9.86	5	8		It can swim while towing a large ship. It bashes down foes with a swing of its thick arms.	Its arms are rock-hard. With one swing, they can batter down its foe. It makes its nest on beautiful beaches.
+261	Poochyena	9.86	5	8		A Pokémon with a persistent nature, it chases its chosen prey until the prey becomes exhausted.	It has a very tenacious nature. Its acute sense of smell lets it chase a chosen prey without ever losing track.
+262	Mightyena	8.96	5	3		It will always obey the commands of a skilled Trainer.	It chases down prey in a pack of around ten. They defeat foes with perfectly coordinated teamwork.
+263	Zigzagoon	7.4	4	1		A Pokémon with abundant curiosity. It shows an interest in everything, so it always zigzags.	It walks in zigzag fashion. It is good at finding items in the grass and even in the ground.
+264	Linoone	7.36	2	8		It charges prey at speeds over 60 mph. However, because it can only run straight, it often fails.	It uses its explosive speed and razor-sharp claws to bring down prey.
+265	Wurmple	7.6	4	3		It lives among the tall grass and in forests.	Often targeted by bird Pokémon, it desperately resists by releasing poison from its tail spikes.
+266	Silcoon	8.4	3	6		It wraps silk around the branches of a tree. It drinks rainwater on its silk while awaiting evolution.	It drinks dew that collects on its silk and waits for evolution.
+267	Beautifly	8.0	4	2		It has an aggressive nature. It stabs prey with its long, narrow mouth to drain the prey's fluids.	Despite its looks, it is aggressive. It jabs with its long, thin mouth if disturbed while collecting pollen.
+268	Cascoon	8.86	5	6		It never forgets any attack it endured while in the cocoon.	Its body, which is made of soft silk, hardens over time.
+269	Dustox	7.2	3	2		A nocturnal Pokémon. Drawn by streetlights, they messily eat the leaves of trees lining boulevards.	It violently flutters its wings to scatter toxic dust when attacked.
+270	Lotad	9.9	4	4		It searches about for clean water. If it does not drink water for too long, the leaf on its head wilts.	It looks like an aquatic plant and serves as a ferry to Pokémon that can't swim.
+271	Lombre	9.86	5	8		It has a mischievous spirit. If it spots an angler, it will tug on the fishing line to interfere.	It lives at the water's edge where it is sunny.
+272	Ludicolo	9.9	4	4		The rhythm of bright, festive music activates Ludicolo's cells, making it more powerful.	If it hears festive music, all its muscles fill with energy.
+273	Seedot	9.9	7	8		When it dangles from a tree branch, it looks just like an acorn.	It attaches itself to a tree branch using the top of its head.
+274	Nuzleaf	10.42	6	4		It lives deep in forests. With the leaf on its head, it makes a flute whose song makes listeners uneasy.	The sound of its grass flute makes its listeners uneasy.
+275	Shiftry	10.12	6	4		A Pokémon that was feared as a forest guardian.	By flapping its leafy fan, it can whip up gusts of 100 ft/second that can level houses.
+276	Taillow	8.2	4	8		It has a gutsy spirit that makes it bravely take on tough foes.	It dislikes cold seasons. They migrate to other lands in search of warmth, flying over 180 miles a day.
+277	Swellow	6.8	3	3		It dives at a steep angle as soon as it spots its prey.	If its two tail feathers are standing at attention, it is proof of good health.
+278	Wingull	7.6	4	3		It soars high in the sky, riding on updrafts like a glider.	It makes its nest on steep sea cliffs. Riding updrafts, it soars to great heights.
+279	Pelipper	9.2	4	5		It is a messenger of the skies, carrying small Pokémon and eggs to safety in its bill.	It is a flying transporter that carries small Pokémon in its beak.
+280	Ralts	11.7	9	7		If its horns capture the warm feelings of people or Pokémon, its body warms up slightly.	It is highly attuned to the emotions of people and Pokémon.
+281	Kirlia	11.32	8	6		If its Trainer becomes happy, it overflows with energy, dancing joyously while spinning about.	It has a psychic power that enables it to distort the space around it and see into the future.
+282	Gardevoir	10.56	5	4		It has the power to predict the future. Its power peaks when it is protecting its Trainer.	To protect its Trainer, it will expend all its psychic power to create a small black hole.
+283	Surskit	9.2	4	8		It appears as if it is skating on water. It draws prey with a sweet scent from the tip of its head.	They usually live on ponds, but after an evening shower, they may appear on puddles in towns.
+284	Masquerain	8.4	3	8		Its antennae have eye patterns on them. Its four wings enable it to hover and fly in any direction.	It flaps its four wings to hover and fly freely in any direction–to and fro and sideways.
+285	Shroomish	9.3	4	3		It prefers damp places. By day it remains still in the forest shade. It releases toxic powder from its head.	It spouts poison spores from the top of its head.
+286	Breloom	8.86	5	8		Its short arms stretch when it throws punches.	It scatters poisonous spores and throws powerful punches while its foe is hampered by inhaled spores.
+287	Slakoth	7.8	3	3		The way Slakoth lolls around makes anyone who watches it feel like doing the same.	It spends nearly all its time in a day sprawled out.
+288	Vigoroth	6.8	3	3		Its stress level rises if it cannot keep moving constantly.	Its heartbeat is fast and its blood so agitated that it can't sit still for one second.
+289	Slaking	8.4	3	5		The world's laziest Pokémon. When it is lounging, it is actually saving energy for striking back.	The world's laziest Pokémon. It moves to another spot when there's no food left within its reach.
+290	Nincada	8.4	3	7		It grows underground, sensing its surroundings using antennae instead of its virtually blind eyes.	It can sometimes live underground for more than 10 years.
+291	Ninjask	8.86	5	8		Because it moves so quickly, it sometimes becomes unseeable.	Its cry leaves a lasting headache if heard for too long.
+292	Shedinja	8.4	3	8		A discarded bug shell that came to life. Peering into the crack on its back is said to steal one's spirit.	A most peculiar Pokémon that somehow appears in a Poké Ball when a Nincada evolves.
+293	Whismur	8.6	4	3		If it senses danger, it scares the foe by crying out with the volume of a jet-plane engine.	Usually, its cries are like quiet murmurs. If frightened, it shrieks at the same volume as a jet plane.
+294	Loudred	9.42	6	8		The shock waves from its cries can tip over trucks.	It shouts loudly by inhaling air, and then using its well-developed stomach muscles to exhale.
+295	Exploud	8.4	3	8		Its howls can be heard over six miles away. It emits all sorts of noises from the ports on its body.	Its roar in battle shakes the ground like a tremor–or like an earthquake has struck.
+296	Makuhita	8.2	4	7		It toughens its body by slamming into thick trees.	It toughens up by slamming into thick trees over and over.
+297	Hariyama	7.4	3	8		It loves to match power with big-bodied Pokémon.	It stomps on the ground to build power. It can send a 10-ton truck flying with a straight-arm punch.
+298	Azurill	6.16	2	2		A Pokémon that lives by water. It moves quickly on land by bouncing on its big tail.	Its tail bounces like a rubber ball. It flings that tail around to fight opponents bigger than itself.
+299	Nosepass	7.8	3	3		When endangered, it may protect itself by raising its magnetism and drawing iron objects to its body.	Its magnetic nose consistently faces north. Travelers check Nosepass to get their bearings.
+300	Skitty	10.42	6	6		It can't stop itself from chasing moving things, and it runs in a circle, chasing its own tail.	It shows its cute side by chasing its own tail until it gets dizzy.
+301	Delcatty	9.42	6	6		It is highly popular among female Trainers for its sublime fur.	It dislikes dirty places. It often searches for a comfortable place in which to groom itself.
+302	Sableye	10.3	7	3		It dwells in the darkness of caves. It uses its sharp claws to dig up gems to nourish itself.	It hides in the darkness of caves. Its diet of gems has transformed its eyes into gemstones.
+303	Mawile	10.72	8	3		It chomps with its gaping mouth. Its huge jaws are actually steel horns that have been transformed.	Attached to its head is a huge set of jaws formed by horns.
+304	Aron	9.86	5	6		It usually lives deep in mountains. However, hunger may drive it to eat railroad tracks and cars.	When it evolves, it sheds the steel carapace that covered its whole body and develops a new one.
+305	Lairon	8.6	4	3		It loves iron ore. Groups of them fight for territory by bashing one another with their steel bodies.	For food, it digs up iron ore. It smashes its steely body against others to fight over territory.
+306	Aggron	9.2	4	6		While seeking iron for food, it digs tunnels by breaking through bedrock with its steel horns.	Aggron has a horn sharp enough to perforate thick iron sheets.
+307	Meditite	9.7	7	2		It eats just one berry a day. By enduring hunger, its spirit is tempered and made sharper.	It always trains deep in mountains. It levitates when it heightens its spiritual power through meditation.
+308	Medicham	10.3	7	3		Through yoga training, it gained the psychic power to predict its foe's next move.	It elegantly avoids attacks with dance-like steps, then launches a devastating blow in the same motion.
+309	Electrike	11.02	8	4		It stores static electricity in its fur for discharging.	Using electricity stored in its fur, it stimulates its muscles to heighten its reaction speed.
+310	Manectric	12.05	10	8		It discharges electricity from its mane. It creates a thundercloud overhead to drop lightning bolts.	It stimulates its own muscles with electricity, so it can move quickly.
+311	Plusle	9.9	7	8		It cheers on friends with pom-poms made of sparks.	It absorbs electricity from telephone poles. It shorts out its body to create crackling noises.
+312	Minun	11.7	9	8		It cheers on friends. If its friends are losing, its body lets off more and more sparks.	Exposure to electricity from Minun and Plusle promotes blood circulation and relaxes muscles.
+313	Volbeat	7.46	2	3		It lives around clean ponds. At night, its rear lights up. It converses with others by flashing its light.	It communicates with others by lighting up its rear at night.
+314	Illumise	6.4	3	8	names:Volbeat	With its sweet aroma, it guides Volbeat to draw signs with light in the night sky.	Its fragrance attracts a swarm of Volbeat, so they draw over 200 patterns in the night sky.
+315	Roselia	9.3	4	3		Its flowers give off a relaxing fragrance. The stronger its aroma, the healthier the Roselia is.	The more healthy the Roselia, the more pleasant its flowers' aroma.
+316	Gulpin	6.0	1	3		There is nothing its stomach can't digest. While it is digesting, vile, overpowering gases are expelled.	Almost all its body is its stomach. Its harsh digestive juices quickly dissolve anything it swallows.
+317	Swalot	8.4	3	8		It swallows anything whole. It sweats toxic fluids from its follicles to douse foes.	It gulps anything that fits in its mouth. Its special enzymes can dissolve anything.
+318	Carvanha	5.6	3	1		With its sturdy jaws and fangs, it can easily chomp wooden boats to splinters.	These Pokémon have sharp fangs and powerful jaws.
+319	Sharpedo	5.9	1	8		Its fangs rip through sheet iron. It swims at 75 mph and is known as "The Bully of the Sea."	It drinks in seawater and jets it from its rear to propel itself.
+320	Wailmer	7.66	5	2		It shows off by spraying jets of seawater from the nostrils above its eyes.	On sunny days, it lands on beaches to bounce like a ball and play.
+321	Wailord	8.4	3	6		The biggest of all Pokémon. It can dive to a depth of almost 10,000 feet on only one breath.	It can sometimes knock out opponents with the shock created by breaching and crashing its big body onto the water.
+322	Numel	9.2	4	6		Its humped back stores intensely hot magma. In rain, the magma cools, slowing its movement.	The magma in its body reaches 2,200 degrees Fahrenheit.
+323	Camerupt	8.6	4	3		The volcanoes on its back have a major eruption every 10 years–or whenever it becomes really angry.	It has volcanoes on its back. If magma builds up in its body, it shudders, then erupts violently.
+324	Torkoal	10.42	6	9		It burns coal inside its shell for energy. It blows out black soot if it is endangered.	You find abandoned coal mines full of them. They dig tirelessly in search of coal.
+325	Spoink	7.6	4	3		It bounces around on its tail to keep its heart pumping.	It bounces constantly, using its tail like a spring.
+326	Grumpig	6.8	3	3		It uses black pearls to amplify its psychic power.	It uses black pearls to amplify its psychic power.
+327	Spinda	8.2	4	8		No two Spinda have the same pattern of spots.	The chances of two Spinda having identical spot patterns is less than one in four billion.
+328	Trapinch	7.36	2	5		It makes a conical pit in desert sand and lies in wait at the bottom for prey to come tumbling down.	It makes an inescapable conical pit and lies in wait at the bottom for prey to come tumbling down.
+329	Vibrava	9.2	4	4		The ultrasonic waves it generates by rubbing its two wings together cause severe headaches.	It violently shudders its wings, generating ultrasonic waves to induce headaches in people.
+330	Flygon	9.26	5	3		Known as "The Desert Spirit," this Pokémon hides in the sandstorms it causes by beating its wings.	This Pokémon hides in the heart of sandstorms it creates and seldom appears where people can see it.
+331	Cacnea	8.96	5	3		It prefers harsh environments such as deserts.	By storing water in its body, this desert dweller can survive for 30 days without water.
+332	Cacturne	9.2	4	8		It becomes active at night, seeking prey that is exhausted from the day's desert heat.	Packs of them follow travelers through the desert until the travelers can no longer move.
+333	Swablu	11.8	9	3		It constantly grooms its cotton-like wings. It takes a shower to clean itself if it becomes dirty.	It can't relax if it or its surroundings are not clean.
+334	Altaria	10.45	10	3		On sunny days, it flies freely through the sky and blends into the clouds.	If it bonds with a person, it will gently envelop the friend with its soft wings, then hum.
+335	Zangoose	4.8	3	3	names:Seviper	Its fur would all stand on end if it smelled a Seviper nearby.	It has feuded with Seviper for many generations.
+336	Seviper	6.9	3	2		It sharpens its swordlike tail on hard rocks.	Constant polishing makes the edge of the blade on its tail extremely sharp.
+337	Lunatone	9.2	4	6		Because it turns active on nights of the full moon, it is said to have some link to the lunar phases.	The phase of the moon apparently has some effect on its power.
+338	Solrock	9.26	5	3		When it rotates itself, it gives off light similar to the sun, thus blinding its foes.	Solar energy is the source of its power, so it is strong during the daytime.
+339	Barboach	6.6	3	1		Its two whiskers provide a sensitive radar. Even in muddy waters, it can detect its prey's location.	Its slimy body is hard to grasp. In one region, it is said to have been born from hardened mud.
+340	Whiscash	9.9	4	4		It makes its nest at the bottom of swamps. It will eat anything—if it is alive, Whiscash will eat it.	It is extremely protective of its territory. If any foe approaches, it attacks using vicious tremors.
+341	Corphish	7.4	3	6		Its hardy vitality enables it to adapt to any environment.	No matter how dirty the water in the river, it will adapt and thrive.
+342	Crawdaunt	7.36	2	6		It is a ruffian that uses its pincers to pick up and toss out other Pokémon from its pond.	A rough customer that wildly flails its giant claws.
+343	Baltoy	9.86	5	6		It moves by spinning on its foot. It is a rare Pokémon that was discovered in ancient ruins.	It was discovered in ancient ruins. While moving, it constantly spins. It stands on one foot even when asleep.
+344	Claydol	8.46	5	3	deictic	This mysterious Pokémon started life as an ancient clay figurine made over 20,000 years ago.	An ancient clay figurine that came to life as a Pokémon from exposure to a mysterious ray of light.
+345	Lileep	7.36	2	8		It lived on the seafloor 100 million years ago and was reanimated scientifically.	In ancient times, it lived in warm seas.
+346	Cradily	7.36	2	8		It lives in the shallows of warm seas. When the tide goes out, it digs up prey from beaches.	It ensnares prey with its eight tentacles. It then melts the prey with a strong acid before feeding.
+347	Anorith	6.36	2	8		A Pokémon ancestor that was reanimated from a fossil.	This Pokémon was restored from a fossil.
+348	Armaldo	5.9	1	7		It went ashore after evolving. Its entire body is clad in a sturdy armor.	Protected by a hard shell, its body is very sturdy.
+349	Feebas	9.2	4	6		It is a shabby and ugly Pokémon. However, it is very hardy and can survive on little water.	Although unattractive and unpopular, this Pokémon's marvelous vitality has made it a subject of research.
+350	Milotic	7.4	3	5		Its lovely scales are described as rainbow colored.	Milotic has provided inspiration to many artists.
+351	Castform	9.2	4	5		Its appearance changes with the weather. Recently, its molecules were found to be just like water.	Its form changes depending on the weather. The rougher conditions get, the rougher Castform's disposition!
+352	Kecleon	8.4	3	8		It can freely change its body's color. The zigzag pattern on its belly doesn't change, however.	It changes its shading to match its surroundings so it can sneak up on prey.
+353	Shuppet	10.42	6	6		It loves vengeful emotions and hangs in rows under the eaves of houses where vengeful people live.	There's a proverb that says, "Shun the house where Shuppet gather in the growing dusk."
+354	Banette	7.5	3	3		Strong feelings of hatred turned a puppet into a Pokémon.	Resentment at being cast off made it spring into being.
+355	Duskull	8.82	6	3		It doggedly pursues its prey wherever it goes.	If it finds bad children who won't listen to their parents, it will spirit them away—or so it's said.
+356	Dusclops	8.5	3	3		Its body is entirely hollow. When it opens its mouth, it sucks everything in as if it were a black hole.	Its body is hollow. It is said that those who look into its body are sucked into the void.
+357	Tropius	7.9	3	2		It lives in tropical jungles. The bunch of fruit around its neck is delicious. The fruit grows twice a year.	The bunch of fruit around its neck ripens twice a year and is delicious.
+358	Chimecho	8.66	5	2		Emitting ultrasonic cries, it floats on winds to travel great distances.	Its cries echo inside its hollow body to emerge as beautiful notes for startling and repelling foes.
+359	Absol	6.46	2	3		It appears when it senses an impending natural disaster.	Swift as the wind, Absol races through fields and mountains.
+360	Wynaut	6.6	1	4		It tends to move in a pack with others. They cluster in a tight group to sleep in a cave.	It grows strong by pushing up against others en masse.
+361	Snorunt	9.2	4	6		It is said that several Snorunt gather under giant leaves and live together in harmony.	In the snow country, certain folklore says a house will prosper if a Snorunt lives there.
+362	Glalie	8.4	3	5		It prevents prey from escaping by instantaneously freezing moisture in the air.	It has a body of ice that won't melt, even with fire.
+363	Spheal	8.4	3	5		It rolls across ice floes to reach shore because its body is poorly shaped for swimming.	Its body is covered in fluffy fur. The fur keeps it from feeling cold while it is rolling on ice.
+364	Sealeo	8.4	3	5		It habitually spins things on its nose. By doing so, it learns textures and odors.	It has a very sensitive nose. It touches new things with its nose to examine them.
+365	Walrein	9.86	5	6		It shatters ice with its big tusks. Its thick blubber repels not only the cold, but also enemy attacks.	It shatters drift ice with its strong tusks. Its thick layer of blubber repels enemy attacks.
+366	Clamperl	7.46	2	3		It is protected by a sturdy shell. Once in a lifetime, it makes a magnificent pearl.	It makes a single pearl during its lifetime. The pearl is said to amplify psychic power.
+367	Huntail	8.4	3	8		It lives deep in the sea. With a tail shaped like a small fish, it attracts unsuspecting prey.	It lives deep in the sea where no light ever filters down.
+368	Gorebyss	8.5	3	3		Its swimming form is exquisitely elegant. With its thin mouth, it feeds on seaweed that grows between rocks.	It lives at the bottom of the sea. In the springtime, its pink body turns more vivid for some reason.
+369	Relicanth	8.86	5	8		A rare Pokémon discovered during a deep-sea exploration.	Discovered by chance during deep-sea explorations, it has not changed since ancient times.
+370	Luvdisc	8.4	3	8		It lives in warm seas. It is said that a couple finding this Pokémon will be blessed with eternal love.	Its heart-shaped body makes it popular. In some places, you would give a Luvdisc to someone you love.
+371	Bagon	11.32	8	8		Dreaming of one day flying, it practices by leaping off cliffs every day.	With its steel-hard stone head, it headbutts indiscriminately.
+372	Shelgon	8.86	5	8		Within its rugged shell, its cells have begun changing.	Its armored body makes all attacks bounce off.
+373	Salamence	7.36	2	7		As a result of its long-held dream of flying, its cellular structure changed, and wings grew out.	It's uncontrollable if enraged. It flies around spouting flames and scorching fields and mountains.
+374	Beldum	7.4	3	6		It converses with others by using magnetic pulses.	The magnetic force generated by its body repels the ground's natural magnetism, letting it float.
+375	Metang	7.86	5	6	names:Beldum	It is formed by two Beldum joining together. Its steel body won't be scratched if it collides with a jet.	It is formed by two Beldum joining together. Its two brains are linked, amplifying its psychic power.
+376	Metagross	7.86	5	6	names:Metang	Metang combined to form it. With four brains, it has the intelligence of a supercomputer.	With four linked brains, it's more intelligent than a supercomputer, and it uses calculations to analyze foes.
+377	Regirock	8.6	4	3		The same rocks that form its body have been found in ground layers around the world.	Its entire body is made of rock. If any part chips off in battle, it attaches rocks to repair itself.
+378	Regice	8.4	3	8		Its body is made of ice from the ice age. It controls frigid air of -328 degrees Fahrenheit.	It is said to have slept in a glacier for thousands of years.
+379	Registeel	8.4	3	8		Tempered by pressure underground over tens of thousands of years, its body cannot be scratched.	Its body is said to be harder than any kind of metal.
+380	Latias	10.0	7	3		It can telepathically communicate with people.	It communicates using telepathy. Its body is covered in down that refracts light to make it invisible.
+381	Latios	9.86	5	8		A highly intelligent Pokémon. By folding back its wings in flight, it can overtake jet planes.	It understands human speech and is highly intelligent.
+382	Kyogre	9.9	7	8		It is said to have widened the seas by causing downpours.	A mythical Pokémon said to have swelled the seas with rain and tidal waves.
+383	Groudon	8.72	6	3	deictic	This legendary Pokémon is said to represent the land.	Said to have expanded the lands by evaporating water with raging heat.
+384	Rayquaza	10.9	7	8		It lives in the ozone layer far above the clouds and cannot be seen from the ground.	It flies in the ozone layer, way up high in the sky.
+385	Jirachi	12.36	11	8		It is said to have the ability to grant any wish for just one week every thousand years.	Generations have believed that any wish written on a note on its head will come true when it awakens.
+386	Deoxys	11.32	8	8		An alien virus that fell to earth on a meteor underwent a DNA mutation to become this Pokémon.	DNA from a space virus mutated and became a Pokémon.
+387	Turtwig	9.3	7	3		It undertakes photosynthesis with its body, making oxygen.	The shell on its back is made of soil. On a very healthy Turtwig, the shell should feel moist.
+388	Grotle	9.2	4	7		It knows where pure water wells up. It carries fellow Pokémon there on its back.	It lives along water in forests. In the daytime, it leaves the forest to sunbathe its treed shell.
+389	Torterra	8.6	4	3		Small Pokémon occasionally gather on its unmoving back to begin building their nests.	Some Pokémon are born on a Torterra's back and spend their entire life there.
+390	Chimchar	8.86	5	4		The gas made in its belly burns from its rear end.	It is very agile. Before going to sleep, it extinguishes the flame on its tail to prevent fires.
+391	Monferno	7.6	4	3		It uses ceilings and walls to launch aerial attacks.	It skillfully controls the intensity of the fire on its tail to keep its foes at an ideal distance.
+392	Infernape	9.2	4	4		It tosses its enemies around with agility. It uses all its limbs to fight in its own unique style.	Its crown of fire is indicative of its fiery nature.
+393	Piplup	10.9	7	5		A poor walker, it often falls down. However, its strong pride makes it puff up its chest without a care.	Because it is very proud, it hates accepting food from people.
+394	Prinplup	8.4	3	5		Because every Prinplup considers itself to be the most important, they can never form a group.	It lives a solitary life. Its wings deliver wicked blows that can snap even the thickest of trees.
+395	Empoleon	9.2	4	5		If anyone were to hurt its pride, it would slash them with wings that can cleave through an ice floe.	The three horns that extend from its beak attest to its power.
+396	Starly	8.62	6	4	deictic	They flock around mountains and fields, chasing after bug Pokémon.	They flock in great numbers. Though small, they flap their wings with great power.
+397	Staravia	8.6	4	3		It lives in forests and fields. Squabbles over territory occur when flocks collide.	Recognizing their own weakness, they always live in a group.
+398	Staraptor	7.4	3	5		It never stops attacking even if it is injured.	When Staravia evolve into Staraptor, they leave the flock to live alone.
+399	Bidoof	9.3	7	3		It constantly gnaws on logs and rocks to whittle down its front teeth.	With nerves of steel, nothing can perturb it.
+400	Bibarel	8.82	6	3		It makes its nest by damming streams with bark and mud.	It busily makes its nest with stacks of branches and roots it has cut up with its sharp incisors.
+401	Kricketot	9.2	4	4		When its antennae hit each other, it sounds like the music of a xylophone.	Its legs are short. Whenever it stumbles, its stiff antennae clack with a xylophone-like sound.
+402	Kricketune	7.36	2	5		There is a village that hosts a contest based on the amazingly variable cries of this Pokémon.	It signals its emotions with its melodies. Scientists are studying these melodic patterns.
+403	Shinx	11.76	11	3		All of its fur dazzles if danger is sensed. It flees while the foe is momentarily blinded.	The extension and contraction of its muscles generates electricity.
+404	Luxio	11.92	13	7		Strong electricity courses through the tips of its sharp claws.	Its claws loose electricity with enough amperage to cause fainting.
+405	Luxray	11.32	8	4		Luxray's ability to see through objects comes in handy when it's scouting for danger.	It can see clearly through walls to track down its prey and seek its lost young.
+406	Budew	4.3	1	3		Over the winter, it closes its bud and endures the cold.	Sensitive to changing temperature, the bud is said to bloom when it feels the sun’s warm touch.
+407	Roserade	7.8	3	3		Each of its hands contains different toxins, but both hands can jab with near-fatal power.	After captivating opponents with its sweet scent, it lashes them with its thorny whips.
+408	Cranidos	5.9	1	7		A lifelong jungle dweller from 100 million years ago, it would snap obstructing trees with head butts.	It lived in jungles around 100 million years ago.
+409	Rampardos	5.56	2	1		Its powerful head butt has enough power to shatter even the most durable things upon impact.	If two were to smash their heads together, their foot-thick skulls would keep them from fainting.
+410	Shieldon	5.9	1	5		It is outstandingly armored. As a result, it can eat grass and berries without having to fight.	It was generated from a fossil dug out of a layer of clay that was older than anyone knows.
+411	Bastiodon	7.8	3	3		Any frontal attack is repulsed. It is a docile Pokémon that feeds on grass and berries.	When they lined up side by side, no foe could break through.
+412	Burmy	9.26	5	3		To shelter itself from cold, wintry winds, it covers itself with a cloak made of twigs and leaves.	Even if it is born where there are no cocooning materials, it somehow always ends up with a cloak.
+413	Wormadam	8.1	9	3	names:Burmy	When Burmy evolved, its cloak became a part of this Pokémon's body.	When evolving, its body takes in surrounding materials.
+414	Mothim	5.8	3	3	names:Combee	It loves the honey of flowers and steals honey collected by Combee.	It flutters around at night and steals honey from the Combee hive.
+415	Combee	6.8	3	3		It collects and delivers honey to its colony.	The trio is together from birth. It constantly gathers honey from flowers to please Vespiquen.
+416	Vespiquen	7.36	2	4		It houses its colony in cells in its body and releases various pheromones to make those grubs do its bidding.	Its abdomen is a honeycomb for grubs. It raises its grubs on honey collected by Combee.
+417	Pachirisu	11.7	9	7		A pair may be seen rubbing their cheek pouches together in an effort to share stored electricity.	It makes fur balls that crackle with static electricity.
+418	Buizel	8.4	3	4		It inflates the flotation sac around its neck and pokes its head out of the water to see what is going on.	It swims by rotating its two tails like a screw.
+419	Floatzel	7.36	2	5		It is a common sight around fishing ports. It is known to rescue people and carry off prey.	Its flotation sac developed as a result of pursuing aquatic prey.
+420	Cherubi	8.2	4	5	override	The small ball holds the nutrients needed for evolution. Apparently, it is very sweet and tasty.	It evolves by sucking the energy out of the small ball where it had been storing nutrients.
+421	Cherrim	9.2	4	7		If it senses strong sunlight, it opens its folded petals to absorb the sun's rays with its whole body.	During times of strong sunlight, its bud blooms, its petals open fully, and it becomes very active.
+422	Shellos	7.36	2	7		Beware of pushing strongly on its squishy body, as it makes a mysterious purple fluid ooze out.	Its shape and coloration vary, depending on its habitat.
+423	Gastrodon	5.56	2	1		It has a pliable body without any bones. If any part of its body is torn off, it grows right back.	It apparently had a huge shell for protection in ancient times.
+424	Ambipom	6.8	3	3		To eat, it deftly shucks nuts with its two tails.	Split into two, the tails are so adept at handling and doing things, Ambipom rarely uses its hands.
+425	Drifloon	7.8	3	3		Because of the way it floats aimlessly, an old folktale calls it a "Signpost for Wandering Spirits."	A Pokémon formed by the spirits of people and Pokémon.
+426	Drifblim	6.8	3	3		At dusk, swarms of them are carried aloft on winds.	It can generate and release gas within its body.
+427	Buneary	8.4	3	5		Its ears are always rolled up. They can be forcefully extended to shatter even a large boulder.	When it senses danger, it perks up its ears. On cold nights, it sleeps with its head tucked into its fur.
+428	Lopunny	8.4	3	5		The ears appear to be delicate. If they are touched roughly, it kicks with its graceful legs.	Extremely cautious, it quickly bounds off when it senses danger.
+429	Mismagius	9.2	4	5		Its cry sounds like an incantation. It is said the cry may rarely be imbued with happiness-giving power.	Its cries sound like incantations to torment the foe.
+430	Honchkrow	6.0	4	2	names:Murkrow	It is merciless by nature. It is said that it never forgives the mistakes of its Murkrow followers.	Its goons take care of most of the fighting for it.
+431	Glameow	8.4	3	4		When it's happy, Glameow demonstrates beautiful movements of its tail, like a dancing ribbon.	It claws if displeased and purrs when affectionate.
+432	Purugly	8.6	4	3		To make itself appear intimidatingly beefy, it tightly cinches its waist with its twin tails.	It would claim another Pokémon's nest as its own if it finds a nest sufficiently comfortable.
+433	Chingling	5.9	1	7		There is an orb inside its mouth. When it hops, the orb bounces all over and makes a ringing sound.	It emits cries by agitating an orb at the back of its throat.
+434	Stunky	8.4	3	7		It sprays a foul fluid from its rear. Its stench spreads over a mile radius, driving Pokémon away.	It protects itself by spraying a noxious fluid from its rear.
+435	Skuntank	6.16	2	2		It attacks by spraying a repugnant fluid from its tail, but the stench dulls after a few squirts.	It sprays a vile-smelling fluid from the tip of its tail to attack.
+436	Bronzor	10.42	6	4		Ancient people believed that the pattern on Bronzor's back contained a mysterious power.	Implements shaped like it were discovered in ancient tombs.
+437	Bronzong	9.86	5	4		Ancient people believed that petitioning Bronzong for rain was the way to make crops grow.	In ages past, this Pokémon was revered as a bringer of rain.
+438	Bonsly	4.1	1	1		It looks as if it is always crying. It is actually adjusting its body's fluid levels by eliminating excess.	In order to adjust the level of fluids in its body, it exudes water from its eyes.
+439	Mime Jr.	7.4	3	4		In an attempt to confuse its enemy, it mimics the enemy's movements.	It habitually mimics foes. Once mimicked, the foe cannot take its eyes off this Pokémon.
+440	Happiny	5.9	1	5		It likes to carry around a small rock. It may wander around others' feet and cause them to stumble.	It carries a round, egg-shaped rock in its belly pouch and gives the rock to its friends.
+441	Chatot	10.3	7	3		It can learn and speak human words. If they gather, they all learn the same saying.	Its tongue is just like a human's. As a result, it can cleverly mimic human speech.
+442	Spiritomb	9.86	5	5		Its constant mischief and misdeeds resulted in it being bound to an Odd Keystone by a mysterious spell.	It was bound to a fissure in an Odd Keystone as punishment for misdeeds 500 years ago.
+443	Gible	9.2	4	5		It attacks using its huge mouth. While its attacks are powerful, it hurts itself out of clumsiness, too.	It skulks in caves, and when prey or an enemy passes by, it leaps out and chomps them.
+444	Gabite	9.2	4	7		It loves sparkly things. It seeks treasures in caves and hoards the loot in its nest.	As it digs to expand its nest, it habitually digs up gems that it then hoards in its nest.
+445	Garchomp	8.4	3	5		It is said that when one runs at high speed, its wings create blades of wind that can fell nearby trees.	The protuberances on its head serve as sensors.
+446	Munchlax	6.76	2	3		It hides food under its long body hair. However, it forgets it has hidden the food.	In its desperation to gulp down food, it forgets about the food it has hidden under its fur.
+447	Riolu	9.26	5	3		The aura that emanates from its body intensifies to alert others if it is afraid or sad.	They communicate with one another using their auras.
+448	Lucario	9.86	5	4		By reading the auras of all things, it can tell how others are feeling from over half a mile away.	A well-trained one can sense auras to identify and take in the feelings of creatures over half a mile away.
+449	Hippopotas	7.6	4	3		It enshrouds itself with sand to protect itself from germs.	It shuts its nostrils tight then travels through sand as if walking.
+450	Hippowdon	7.8	3	3		It blasts internally stored sand from ports on its body to create a towering twister for attack.	It is surprisingly quick to anger. It holds its mouth agape as a display of its strength.
+451	Skorupi	7.6	4	3		It grips prey with its tail claws and injects poison.	It burrows under the sand to lie in wait for prey.
+452	Drapion	6.8	3	3		It has the power in its clawed arms to make scrap of a car.	It takes pride in its strength. Even though it can tear foes apart, it finishes them off with powerful poison.
+453	Croagunk	10.9	7	4		Inflating its poison sacs, it fills the area with an odd sound and hits flinching opponents with a poison jab.	Its cheeks hold poison sacs. It tries to catch foes off guard to jab them with toxic fingers.
+454	Toxicroak	8.6	4	3		Its knuckle claws secrete a toxin so vile that even a scratch could prove fatal.	It has a poison sac at its throat. When it croaks, the stored poison is churned for greater potency.
+455	Carnivine	10.42	6	5		It binds itself to trees in marshes. It attracts prey with its sweet-smelling drool and gulps them down.	It attracts prey with its sweet-smelling saliva, then chomps down.
+456	Finneon	6.76	2	3		After long exposure to sunlight, the patterns on its tail fins shine vividly when darkness arrives.	The line running down its side can store sunlight.
+457	Lumineon	6.76	2	3		It lives on the deep-sea floor. It attracts prey by flashing the patterns on its four tail fins.	Deep down at the bottom of the ocean, prey is scarce.
+458	Mantyke	4.1	1	1		A friendly Pokémon that captures the subtle flows of seawater using its two antennae.	It swims along with a school of Remoraid, and they'll all fight together to repel attackers.
+459	Snover	7.8	3	3		In the spring, it grows berries with the texture of frozen treats around its belly.	During cold seasons, it migrates to the mountain's lower reaches.
+460	Abomasnow	8.86	5	4		It lives a quiet life on mountains that are perpetually covered in snow.	They appear when the snow flowers bloom. When the petals fall, they retreat to places unknown again.
+461	Weavile	7.8	3	3		Evolution made it even more devious. It communicates by clawing signs in boulders.	It lives in snowy regions. It carves patterns in trees with its claws as a signal to others.
+462	Magnezone	8.86	5	4		It evolved from exposure to a special magnetic field.	Sometimes the magnetism emitted by Magnezone is too strong, making them attract each other so they cannot move.
+463	Lickilicky	5.9	1	4		It wraps things with its extensible tongue. Getting too close to it will leave you soaked with drool.	Their saliva contains lots of components that can dissolve anything.
+464	Rhyperior	7.4	3	4		It puts rocks in holes in its palms and uses its muscles to shoot them.	It can launch a rock held in its hand like a missile by tightening then expanding muscles instantly.
+465	Tangrowth	8.6	4	3		Its vines grow so profusely that, in the warm season, you can't even see its eyes.	It ensnares prey by extending arms made of vines.
+466	Electivire	8.4	3	4		It pushes the tips of its two tails against the foe, then lets loose with over 20,000 volts of power.	As its electric charge amplifies, blue sparks begin to crackle between its horns.
+467	Magmortar	7.4	3	4		It blasts fireballs of over 3,600 degrees Fahrenheit out of its arms.	It blasts fireballs of over 3,600 degrees F from the ends of its arms.
+468	Togekiss	8.4	3	7		It shares many blessings with people who respect one another's rights and avoid needless strife.	As everyone knows, it visits peaceful regions, bringing them gifts of kindness and sweet blessings.
+469	Yanmega	8.5	7	3	deictic	This six-legged Pokémon is easily capable of transporting an adult in flight.	It prefers to battle by biting apart foes' heads instantly while flying by at high speed.
+470	Leafeon	7.36	2	4		Just like a plant, it uses photosynthesis. As a result, it is always enveloped in clear air.	It basically does not fight. With cells similar to those of plants, it can perform photosynthesis.
+471	Glaceon	8.4	3	5		By controlling its body heat, it can freeze the atmosphere around it to make a diamond-dust flurry.	It lowers its body heat to freeze its fur. The hairs then become like needles it can fire.
+472	Gliscor	10.42	6	4		Its flight is soundless. It uses its lengthy tail to carry off its prey… Then its elongated fangs do the rest.	It observes prey while hanging inverted from branches.
+473	Mamoswine	7.36	2	4		Its impressive tusks are made of ice. The population thinned when it turned warm after the ice age.	A frozen Mamoswine was dug from ice dating back 10,000 years.
+474	Porygon-Z	7.4	3	4		Its programming was modified to enable it to travel through alien dimensions.	Its programming was modified to enable work in alien dimensions.
+475	Gallade	7.36	2	4		A master of courtesy and swordsmanship, it fights using extending swords on its elbows.	When trying to protect someone, it extends its elbows as if they were swords and fights savagely.
+476	Probopass	9.2	4	5		It freely controls three small units called Mini-Noses using magnetic force.	It uses three small units to catch prey and battle enemies.
+477	Dusknoir	9.2	4	7		It is said to take lost spirits into its pliant body and guide them home.	The antenna on its head captures radio waves from the world of spirits that command it to take people there.
+478	Froslass	6.36	2	5		It freezes prey by blowing its -58 degrees F breath.	It freezes prey by blowing its −58 degree Fahrenheit breath.
+479	Rotom	12.65	12	4		Its body is composed of plasma. It is known to infiltrate electronic devices and wreak havoc.	Research continues on this Pokémon, which could be the power source of a unique motor.
+480	Uxie	7.8	3	3		Known as "The Being of Knowledge." It is said that it can wipe out the memory of those who see its eyes.	It is said that its emergence gave humans the intelligence to improve their quality of life.
+481	Mesprit	7.8	3	3		Known as "The Being of Emotion." It taught humans the nobility of sorrow, pain, and joy.	It sleeps at the bottom of a lake. Its spirit is said to leave its body to fly on the lake's surface.
+482	Azelf	7.8	3	3		Known as "The Being of Willpower." It sleeps at the bottom of a lake to keep the world in balance.	When Azelf flew, people gained the determination to do things.
+483	Dialga	7.76	11	3	region	It has the power to control time. It appears in Sinnoh-region myths as an ancient deity.	This Pokémon completely controls the flow of time.
+484	Palkia	5.82	6	3	region	It has the ability to distort space. It is described as a deity in Sinnoh-region mythology.	It is said to live in a gap in the spatial dimension parallel to ours.
+485	Heatran	10.42	6	4		It dwells in volcanic caves. It digs in with its cross-shaped feet to crawl on ceilings and walls.	Boiling blood, like magma, circulates through its body.
+486	Regigigas	10.9	7	4		There is an enduring legend that states this Pokémon towed continents with ropes.	It is said to have made Pokémon that look like itself from a special ice mountain, rocks, and magma.
+487	Giratina	10.9	7	7		It was banished for its violence. It silently gazed upon the old world from the Distortion World.	A Pokémon that is said to live in a world on the reverse side of ours.
+488	Cresselia	9.42	6	4		Those who sleep holding Cresselia's feather are assured of joyful dreams.	Shiny particles are released from its wings like a veil.
+489	Phione	9.2	4	4		When the water warms, they inflate the flotation sac on their heads and drift languidly on the sea in packs.	It drifts in warm seas. It always returns to where it was born, no matter how far it may have drifted.
+490	Manaphy	11.32	8	4		It starts its life with a wondrous power that permits it to bond with any kind of Pokémon.	It is born with a wondrous power that lets it bond with any kind of Pokémon.
+491	Darkrai	9.72	8	3		It can lull people to sleep and make them dream.	It chases people and Pokémon from its territory by causing them to experience deep, nightmarish slumbers.
+492	Shaymin	10.7	9	4		The blooming of Gracidea flowers confers the power of flight upon it.	The flowers all over its body burst into bloom if it is lovingly hugged and senses gratitude.
+493	Arceus	10.3	7	3		It is told in mythology that this Pokémon was born before the universe even existed.	It is said to have emerged from an egg in a place where there was nothing, then shaped the world.
+494	Victini	12.05	10	4		When it shares the infinite energy it creates, that being's entire body will be overflowing with power.	This Pokémon brings victory. It is said that Trainers with Victini always win, regardless of the type of encounter.
+495	Snivy	8.62	6	1		It is very intelligent and calm. Being exposed to lots of sunlight makes its movements swifter.	They photosynthesize by bathing their tails in sunlight.
+496	Servine	7.36	2	4		When it gets dirty, its leaves can't be used in photosynthesis, so it always keeps itself clean.	It moves along the ground as if sliding.
+497	Serperior	5.9	1	4		It only gives its all against strong opponents who are not fazed by the glare from Serperior's noble eyes.	They raise their heads to intimidate opponents but only give it their all when fighting a powerful opponent.
+498	Tepig	9.72	8	3		It can deftly dodge its foe's attacks while shooting fireballs from its nose.	It blows fire through its nose. When it catches a cold, the fire becomes pitch-black smoke instead.
+499	Pignite	8.82	6	3		When its internal fire flares up, its movements grow sharper and faster.	The more it eats, the more fuel it has to make the fire in its stomach stronger.
+500	Emboar	9.3	7	3		It can throw a fire punch by setting its fists on fire with its fiery chin.	It has mastered fast and powerful fighting moves.
+501	Oshawott	10.72	8	3		It fights using the scalchop on its stomach. In response to an attack, it retaliates immediately by slashing.	The scalchop on its stomach is made from the same elements as claws.
+502	Dewott	7.8	3	3		Strict training is how it learns its flowing double-scalchop technique.	As a result of strict training, each Dewott learns different forms for using the scalchops.
+503	Samurott	8.26	5	3		One swing of the sword incorporated in its armor can fell an opponent.	Part of the armor on its anterior legs becomes a giant sword.
+504	Patrat	8.26	5	3		Using food stored in cheek pouches, they can keep watch for days.	Extremely cautious, one of them will always be on the lookout, but it won't notice a foe coming from behind.
+505	Watchog	9.86	5	4		Using luminescent matter, it makes its eyes and body glow and stuns attacking opponents.	Using luminescent matter within its body, it makes its eyes and body glow and stuns attacking opponents.
+506	Lillipup	7.8	3	3		The long hair around its face provides an amazing radar that lets it sense subtle changes in its surroundings.	It faces strong opponents with great courage.
+507	Herdier	6.76	2	3		It has black, cape-like fur that is very hard and decreases the amount of damage it receives.	This very loyal Pokémon helps trainers, and it also takes care of other Pokémon.
+508	Stoutland	7.6	4	3		It rescues people stranded by blizzards in the mountains.	It pays no mind to the cold, thanks to its long warm coat.
+509	Purrloin	7.2	3	2		Their cute act is a ruse. They trick people and steal their valuables just to see the looks on their faces.	They steal from people for fun, but their victims can't help but forgive them.
+510	Liepard	8.86	5	4		Their beautiful form comes from the muscles they have developed.	Don't be fooled by its gorgeous fur and elegant figure.
+511	Pansage	8.26	5	3		It shares the leaf on its head with weary-looking Pokémon.	It's good at finding berries and gathers them from all over.
+512	Simisage	9.72	8	3		Ill tempered, it fights by swinging its barbed tail around wildly.	It attacks enemies with strikes of its thorn-covered tail.
+513	Pansear	8.2	4	4		Very intelligent, it roasts berries before eating them.	When it is angered, the temperature of its head tuft reaches 600° F.
+514	Simisear	8.86	5	4		When it gets excited, embers rise from its head and tail and it gets hot.	A flame burns inside its body. It scatters embers from its head and tail to sear its opponents.
+515	Panpour	9.3	7	3		The water stored inside the tuft on its head is full of nutrients.	The water stored inside the tuft on its head is full of nutrients.
+516	Simipour	7.8	3	3		The high-pressure water expelled from its tail is so powerful, it can destroy a concrete wall.	It prefers places with clean water. When its tuft runs low, it replenishes it by siphoning up water with its tail.
+517	Munna	8.4	4	4	deictic	This Pokémon appears before people and Pokémon who are having nightmares and eats those dreams.	It eats the dreams of people and Pokémon. When it eats a pleasant dream, it expels pink-colored mist.
+518	Musharna	9.26	5	3		The mist emanating from their foreheads is packed with the dreams of people and Pokémon.	The dream mist coming from its forehead changes into many different colors depending on the dream that was eaten.
+519	Pidove	8.06	5	1		Each follows its Trainer's orders as best it can, but they sometimes fail to understand complicated commands.	These Pokémon live in cities. They are accustomed to people. Flocks often gather in parks and plazas.
+520	Tranquill	7.36	2	4		No matter where in the world it goes, it knows where its nest is, so it never gets separated from its Trainer.	It can return to its Trainer's location regardless of the distance separating them.
+521	Unfezant	7.6	4	3		Males swing their head plumage to threaten opponents.	Males swing the plumage on their heads to threaten others, but females are better at flying.
+522	Blitzle	10.7	9	4		Its mane shines when it discharges electricity.	Its mane shines when it discharges electricity.
+523	Zebstrika	10.96	11	3	deictic	They have lightning-like movements. When Zebstrika run at full speed, the sound of thunder reverberates.	When this ill-tempered Pokémon runs wild, it shoots lightning from its mane in all directions.
+524	Roggenrola	8.6	4	3		Its ear is hexagonal in shape. Compressed underground, its body is as hard as steel.	They were discovered a hundred years ago in an earthquake fissure.
+525	Boldore	7.8	3	3		Because its energy was too great to be contained, the energy leaked and formed orange crystals.	When it overflows with power, the orange crystal on its body glows.
+526	Gigalith	7.8	3	3		Compressing the energy from its internal core lets it fire off an attack capable of blowing away a mountain.	The solar rays it absorbs are processed in its energy core and fired as a ball of light.
+527	Woobat	8.4	3	4		The heart-shaped mark left on a body after a Woobat has been attached to it is said to bring good fortune.	Its habitat is dark forests and caves. It emits ultrasonic waves from its nose to learn about its surroundings.
+528	Swoobat	8.4	3	4		It shakes its tail vigorously when it emits ultrasonic waves strong enough to reduce concrete to rubble.	It emits sound waves of various frequencies from its nose, including some powerful enough to destroy rocks.
+529	Drilbur	8.6	4	3		It makes its way swiftly through the soil by putting both claws together and rotating at high speed.	It can dig through the ground at a speed of 30 mph.
+530	Excadrill	7.6	4	3		More than 300 feet below the surface, they build mazelike nests.	It can help in tunnel construction. Its drill has evolved into steel strong enough to bore through iron plates.
+531	Audino	8.4	3	4		Using the feelers on its ears, it can tell how someone is feeling or when an egg might hatch.	It touches others with the feelers on its ears, using the sound of their heartbeats to tell how they are feeling.
+532	Timburr	6.0	3	3	deictic	These Pokémon appear at building sites and help out with construction.	It fights by swinging a piece of lumber around.
+533	Gurdurr	7.8	4	3	deictic	This Pokémon is so muscular and strongly built that even a group of wrestlers could not make it budge an inch.	With strengthened bodies, they skillfully wield steel beams to take down buildings.
+534	Conkeldurr	7.8	3	3		It is thought that Conkeldurr taught humans how to make concrete more than 2,000 years ago.	Rather than rely on force, they master moves that utilize the centrifugal force of spinning concrete.
+535	Tympole	7.6	4	3		By vibrating its cheeks, it emits sound waves imperceptible to humans.	By vibrating its cheeks, it emits sound waves imperceptible to humans and warns others of danger.
+536	Palpitoad	7.36	2	4		It lives in the water and on land. It uses its long, sticky tongue to immobilize its opponents.	It lives in the water and on land. It uses its long, sticky tongue to capture prey.
+537	Seismitoad	6.8	4	3	deictic	They shoot paralyzing liquid from their head bumps.	It increases the power of its punches by vibrating the bumps on its fists.
+538	Throh	7.6	4	3		When it tightens its belt, it becomes stronger.	When it encounters a foe bigger than itself, it wants to throw it.
+539	Sawk	7.36	2	4		Desiring the strongest karate chop, they seclude themselves in mountains and train without sleeping.	The sound of Sawk punching boulders and trees can be heard all the way from the mountains where they train.
+540	Sewaddle	8.4	3	4		Since this Pokémon makes its own clothes out of leaves, it is a popular mascot for fashion designers.	Leavanny dress it in clothes they made for it when it hatched.
+541	Swadloon	6.7	7	3	long	Forests where Swadloon live have superb foliage because the nutrients they make from fallen leaves nourish the plant life.	It protects itself from the cold by wrapping up in leaves.
+542	Leavanny	5.76	2	3		It keeps its eggs warm with heat from fermenting leaves.	Upon finding a small Pokémon, it weaves clothing for it from leaves by using the sticky silk secreted from its mouth.
+543	Venipede	8.6	4	3		Its bite injects a potent poison, enough to paralyze large bird Pokémon that try to prey on it.	It discovers what is going on around it by using the feelers on its head and tail.
+544	Whirlipede	9.26	5	3		Protected by a hard shell, it spins its body like a wheel and crashes furiously into its enemies.	It is usually motionless, but when attacked, it rotates at high speed and then crashes into its opponent.
+545	Scolipede	8.6	4	3		With quick movements, it chases down its foes, attacking relentlessly with its horns until it prevails.	It clasps its prey with the claws on its neck until it stops moving.
+546	Cottonee	7.4	3	4		Perhaps because they feel more at ease in a group, they stick to others they find.	When attacked, it escapes by shooting cotton from its body.
+547	Whimsicott	6.8	3	3		Like the wind, it can slip through any gap, no matter how small.	It scatters cotton all over the place as a prank.
+548	Petilil	7.8	3	3		The leaves on its head are very bitter. Eating one of these leaves is known to refresh a tired body.	Since they prefer moist, nutrient-rich soil, the areas where Petilil live are known to be good for growing plants.
+549	Lilligant	8.26	5	3		Even veteran Trainers face a challenge in getting its beautiful flower to bloom.	The fragrance of the garland on its head has a relaxing effect.
+550	Basculin	6.4	4	1		Red and blue Basculin get along so poorly, they'll start fighting instantly.	Savage, violent Pokémon, red and blue Basculin are always fighting each other over territory.
+551	Sandile	7.6	4	3		It moves along below the sand's surface, except for its nose and eyes.	It submerges itself in sand and moves as if swimming.
+552	Krokorok	9.02	6	3	deictic	They live in groups of a few individuals. Protective membranes shield their eyes from sandstorms.	Protected by thin membranes, their eyes can see even in the dead of night.
+553	Krookodile	7.8	4	3	deictic	They never allow prey to escape. Their jaws are so powerful, they can crush the body of an automobile.	Very violent Pokémon, they try to clamp down on anything that moves in front of their eyes.
+554	Darumaka	8.6	4	3		Darumaka's droppings are hot, so people used to put them in their clothes to keep themselves warm.	When its internal fire is burning, it cannot calm down and it runs around.
+555	Darmanitan	6.6	3	1		Its internal fire burns at 2,500º F, making enough power that it can destroy a dump truck with one punch.	When one is injured in a fierce battle, it hardens into a stone-like form.
+556	Maractus	9.26	5	3		It uses an up-tempo song and dance to drive away the bird Pokémon that prey on its flower seeds.	Arid regions are their habitat. They move rhythmically, making a sound similar to maracas.
+557	Dwebble	7.36	2	4		When it finds a stone of a suitable size, it secretes a liquid from its mouth to open up a hole to crawl into.	The Pokémon can easily melt holes in hard rocks with a liquid secreted from its mouth.
+558	Crustle	6.8	3	3		Competing for territory, Crustle fight viciously.	When its boulder is broken in battles for territory, it feels unsure and begins to weaken.
+559	Scraggy	10.3	7	3		Its skin has a rubbery elasticity, so it can reduce damage by defensively pulling its skin up to its neck.	Its skin has a rubbery elasticity, so it can reduce damage by defensively pulling it skin up to its neck.
+560	Scrafty	8.2	4	4		It pulls up its shed skin to protect itself while it kicks.	Groups of them beat up anything that enters their territory.
+561	Sigilyph	7.8	3	3		The guardians of an ancient city, they use their psychic power to attack enemies that invade their territory.	The guardians of an ancient city, they always fly the same route while keeping watch for invaders.
+562	Yamask	8.26	5	3		Each of them carries a mask that used to be its face when it was human.	These Pokémon arose from the spirits of people interred in graves.
+563	Cofagrigus	8.4	3	4		Grave robbers who mistake them for real coffins and get too close end up trapped inside their bodies.	It has been said that they swallow those who get too close and turn them into mummies.
+564	Tirtouga	7.8	3	3		Restored from a fossil, this Pokémon can dive to depths beyond half a mile.	This Pokémon was restored from a fossil. It swam skillfully and dove to depths beyond half a mile.
+565	Carracosta	6.0	3	3	deictic	They can live both in the ocean and on land.	It could knock out a foe with a slap from one of its developed front appendages and chew it up, shell or bones and all.
+566	Archen	4.4	3	3	long	Said to be an ancestor of bird Pokémon, they were unable to fly and moved about by hopping from one branch to another.	Revived from a fossil, this Pokémon is thought to be the ancestor of all bird Pokémon.
+567	Archeops	6.0	3	3	deictic	They are intelligent and will cooperate to catch prey.	It runs better than it flies. It takes off into the sky by running at a speed of 25 mph.
+568	Trubbish	8.26	5	3		Inhaling the gas they belch will make you sleep for a week.	The combination of garbage bags and industrial waste caused the chemical reaction that created this Pokémon.
+569	Garbodor	9.2	4	4		Consuming garbage makes new kinds of poison gases and liquids inside their bodies.	The toxic liquid it launches from its right arm is so virulent that it can kill a weakened creature instantly.
+570	Zorua	9.82	6	3		To protect themselves from danger, they hide their true identities by transforming into people and Pokémon.	It changes into the forms of others to surprise them.
+571	Zoroark	10.72	8	3		Bonds between these Pokémon are very strong. It protects the safety of its pack by tricking its opponents.	Each has the ability to fool a large group of people simultaneously.
+572	Minccino	8.46	5	3	deictic	These Pokémon prefer a tidy habitat. They are always sweeping and dusting, using their tails as brooms.	The way it brushes away grime with its tail can be helpful when cleaning.
+573	Cinccino	8.4	3	4		Cinccino's body is coated in a special oil that helps it deflect attacks, such as punches.	Their white fur is coated in a special oil that makes it easy for them to deflect attacks.
+574	Gothita	9.3	7	3		Their ribbonlike feelers increase their psychic power.	They intently observe both Trainers and Pokémon.
+575	Gothorita	6.26	5	1	deictic	They use hypnosis to control people and Pokémon.	Starlight is the source of their power. At night, they mark star positions by using psychic power to float stones.
+576	Gothitelle	9.82	6	3		Starry skies thousands of light-years away are visible in the space distorted by their intense psychic power.	They can predict the future from the placement and movement of the stars.
+577	Solosis	7.46	5	3	deictic	They drive away attackers by unleashing psychic power.	It communicates with others telepathically.
+578	Duosion	8.6	4	3		Since they have two divided brains, at times they suddenly try to take two different actions at once.	When their two divided brains think the same thoughts, their psychic power is maximized.
+579	Reuniclus	8.6	4	3		When Reuniclus shake hands, a network forms between their brains, increasing their psychic power.	These remarkably intelligent Pokémon fight by controlling arms that can grip with rock-crushing power.
+580	Ducklett	7.8	3	3		When attacked, it uses its feathers to splash water, escaping under cover of the spray.	These bird Pokémon are excellent divers. They swim around in the water eating their favorite food—peat moss.
+581	Swanna	10.72	8	3		Swanna start to dance at dusk. The one dancing in the middle is the leader of the flock.	Despite their elegant appearance, they can flap their wings strongly and fly for thousands of miles.
+582	Vanillite	5.16	2	2		Theoretically, this Pokémon formed from icicles bathed in energy from the morning sun.	This Pokémon formed from icicles bathed in energy from the morning sun.
+583	Vanillish	9.26	5	3		Snowy mountains are this Pokémon's habitat. During an ancient ice age, they moved to southern areas.	They cool down the surrounding air and create ice particles, which they use to freeze their foes.
+584	Vanilluxe	5.3	1	3		If both heads get angry simultaneously, this Pokémon expels a blizzard, burying everything in snow.	Swallowing large amounts of water, they make snow clouds inside their bodies and, when angry, cause violent blizzards.
+585	Deerling	6.8	3	3		The turning of the seasons changes the color and scent of this Pokémon's fur.	The color and scent of their fur changes to match the mountain grass.
+586	Sawsbuck	8.46	5	3	deictic	They migrate according to the seasons. People can tell the season by looking at Sawsbuck's horns.	Sawsbuck in their Autumn Form are known for having very short tempers.
+587	Emolga	7.0	3	3	deictic	They live on treetops and glide using the inside of a cape-like membrane while discharging electricity.	The energy made in its cheeks' electric pouches is stored inside its membrane and released while it is gliding.
+588	Karrablast	4.56	2	1		Its strange physiology reacts to electrical energy in interesting ways.	For some reason they evolve when they receive electrical energy while they are attacking Shelmet.
+589	Escavalier	7.2	4	4	names:Shelmet	Wearing the shell covering they stole from Shelmet, they defend themselves and attack with two lances.	They fly around at high speed, striking with their pointed spears.
+590	Foongus	7.6	4	3		It lures people in with its Poké Ball pattern, then releases poison spores.	It lures Pokémon with its pattern that looks just like a Poké Ball then releases poison spores.
+591	Amoonguss	8.6	4	3		It lures prey close by dancing and waving its arm caps, which resemble Poké Balls, in a swaying motion.	They show off their Poké Ball caps to lure prey, but very few Pokémon are fooled by this.
+592	Frillish	7.36	2	4		If its veil-like arms stun and wrap a foe, that foe will be dragged miles below the surface, never to return.	With its thin, veil-like arms wrapped around the body of its opponent, it sinks to the ocean floor.
+593	Jellicent	8.4	3	4		Its body is mostly seawater. It's said there's a castle of ships Jellicent have sunk on the seafloor.	The fate of ships and crew that wander into Jellicent's habitats: all sunken, all lost, all vanished.
+594	Alomomola	6.6	3	1		The special membrane enveloping Alomomola has the ability to heal wounds.	Floating in the open sea is how they live. When they find a wounded Pokémon, they embrace it and bring it to shore.
+595	Joltik	6.6	3	1		Joltik that live in cities have learned a technique for sucking electricity from the outlets in houses.	They attach themselves to large-bodied Pokémon and absorb static electricity, which they store in an electric pouch.
+596	Galvantula	9.26	5	3		When attacked, they create an electric barrier by spitting out many electrically charged threads.	They employ an electrically charged web to trap their prey.
+597	Ferroseed	6.4	4	1		It defends itself by launching spikes, but its aim isn't very good at first.	It absorbs the iron it finds in the rock while clinging to the ceiling.
+598	Ferrothorn	7.0	3	3	deictic	They attach themselves to cave ceilings, firing steel spikes at targets passing beneath them.	It fights by swinging around its three spiky feelers.
+599	Klink	8.82	6	3	override	The two minigears that compose this Pokémon are closer than twins. They mesh well only with each other.	Interlocking two bodies and spinning around generates the energy they need to live.
+600	Klang	6.8	3	3		By changing the direction in which it rotates, it communicates its feelings to others.	A minigear and big gear comprise its body. If the minigear it launches at a foe doesn't return, it will die.
+601	Klinklang	6.76	2	3		Its red core functions as an energy tank. It fires the charged energy through its spikes into an area.	The gear with the red core is rotated at high speed for a rapid energy charge.
+602	Tynamo	11.1	9	3		While one alone doesn't have much power, a chain of many Tynamo can be as powerful as lightning.	One alone can emit only a trickle of electricity, so a group of them gathers to unleash a powerful electric shock.
+603	Eelektrik	9.5	7	3	deictic	These Pokémon have a big appetite. When they spot their prey, they attack it and paralyze it with electricity.	It wraps itself around its prey and paralyzes it with electricity from the round spots on its sides.
+604	Eelektross	8.92	8	3	deictic	They crawl out of the ocean using their arms.	With their sucker mouths, they suck in prey. Then they use their fangs to shock the prey with electricity.
+605	Elgyem	9.26	5	3		It uses its strong psychic power to squeeze its opponent's brain, causing unendurable headaches.	Rumors of its origin are linked to a UFO crash site in the desert 50 years ago.
+606	Beheeyem	6.76	2	3		It uses psychic power to control an opponent's brain and tamper with its memories.	Apparently, it communicates by flashing its three fingers, but those patterns haven't been decoded.
+607	Litwick	9.26	5	3		While shining a light and pretending to be a guide, it leeches off the life force of any who follow it.	Litwick shines a light that absorbs the life energy of people and Pokémon, which becomes the fuel that it burns.
+608	Lampent	9.42	6	4		The spirits it absorbs fuel its baleful fire.	It arrives near the moment of death and steals spirit from the body.
+609	Chandelure	8.6	4	3		Being consumed in Chandelure's flame burns up the spirit, leaving the body behind.	The spirits burned up in its ominous flame lose their way and wander this world forever.
+610	Axew	8.92	8	3	deictic	They use their tusks to crush the berries they eat.	They mark their territory by leaving gashes in trees with their tusks.
+611	Fraxure	6.76	2	3		Their tusks can shatter rocks. Territory battles between Fraxure can be intensely violent.	A broken tusk will not grow back, so it diligently sharpens its tusks on river rocks after the end of a battle.
+612	Haxorus	7.46	5	3	deictic	They are kind but can be relentless when defending territory.	Their sturdy tusks will stay sharp even if used to cut steel beams.
+613	Cubchoo	6.6	3	1		When it is not feeling well, its mucus gets watery and the power of its Ice-type moves decreases.	Its nose is always running. It sniffs the snot back up because the mucus provides the raw material for its moves.
+614	Beartic	5.76	2	3		It freezes its breath to create fangs and claws of ice to fight with.	It swims through frigid seas, searching for prey.
+615	Cryogonal	7.8	4	3	deictic	They are born in snow clouds. They use chains made of ice crystals to capture prey.	When its body temperature goes up, it turns into steam and vanishes.
+616	Shelmet	6.4	3	4	names:Karrablast	When it and Karrablast are together, and both receive electrical stimulation, they both evolve.	When attacked, it defends itself by closing the lid of its shell.
+617	Accelgor	7.8	3	3		Having removed its heavy shell, it becomes very light and can fight with ninja-like movements.	When its body dries out, it weakens. So, to prevent dehydration, it wraps itself in many layers of thin membrane.
+618	Stunfisk	8.82	6	3		Its skin is very hard, so it is unhurt even if stepped on by sumo wrestlers.	It conceals itself in the mud of the seashore.
+619	Mienfoo	6.8	3	3		In fights, they dominate with onslaughts of flowing, continuous attacks.	It takes pride in the speed at which it can use moves.
+620	Mienshao	5.9	1	4		Using the long fur on its arms like whips, it launches into combo attacks that, once started, no one can stop.	Delivered at blinding speeds, kicks from this Pokémon can shatter massive boulders into tiny pieces.
+621	Druddigon	7.6	4	3		It races through narrow caves, using its sharp claws to catch prey.	It warms its body by absorbing sunlight with its wings.
+622	Golett	9.26	5	3		The energy that burns inside it enables it to move, but no one has yet been able to identify this energy.	Ancient science fashioned this Pokémon from clay.
+623	Golurk	7.8	3	3		It is said that Golurk were ordered to protect people and Pokémon by the ancient people who made them.	It flies across the sky at Mach speeds. Removing the seal on its chest makes its internal energy go out of control.
+624	Pawniard	9.2	4	4		Ignoring their injuries, groups attack by sinking the blades that cover their bodies into their prey.	Blades comprise this Pokémon's entire body. If battling dulls the blades, it sharpens them on stones by the river.
+625	Bisharp	6.26	5	3	names:Pawniard	Bisharp pursues prey in the company of a large group of Pawniard.	This pitiless Pokémon commands a group of Pawniard to hound prey into immobility.
+626	Bouffalant	8.6	4	3		Their fluffy fur absorbs damage, even if they strike foes with a fierce headbutt.	They charge wildly and headbutt everything. Their headbutts have enough destructive force to derail a train.
+627	Rufflet	7.8	4	3	deictic	They crush berries with their talons. They bravely stand up to any opponent, no matter how strong it is.	They will challenge anything, even strong opponents, without fear.
+628	Braviary	7.46	5	3	deictic	They fight for their friends without any thought about danger to themselves.	For the sake of its friends, this brave warrior of the sky will not stop battling, even if injured.
+629	Vullaby	7.6	4	3		Its wings are too tiny to allow it to fly.	Their wings are too tiny to allow them to fly.
+630	Mandibuzz	6.6	3	1		It makes a nest out of bones it finds. It grabs weakened prey in its talons and hauls it to its nest of bones.	Watching from the sky, they swoop to strike weakened Pokémon on the ground.
+631	Heatmor	7.4	3	4		It draws in air through its tail, transforms it into fire, and uses it like a tongue.	There's a hole in its tail that allows it to draw in the air it needs to keep its fire burning.
+632	Durant	6.4	3	4	names:Heatmor	Individuals each play different roles in driving Heatmor, their natural predator, away from their colony.	They attack in groups, covering themselves in steel armor to protect themselves from Heatmor.
+633	Deino	8.4	3	4		Lacking sight, it's unaware of its surroundings, so it bumps into things and eats anything that moves.	They cannot see, so they tackle and bite to learn about their surroundings.
+634	Zweilous	8.4	3	4		The two heads do not get along. Whichever head eats more than the other gets to be the leader.	After it has eaten up all the food in its territory, it moves to another area.
+635	Hydreigon	8.6	4	3		The heads on their arms do not have brains. They use all three heads to consume and destroy everything.	It responds to movement by attacking. This scary, three-headed Pokémon devours everything in its path!
+636	Larvesta	7.6	4	3		The base of volcanoes is where they make their homes.	This Pokémon was believed to have been born from the sun.
+637	Volcarona	6.77	6	3	long	When volcanic ash darkened the atmosphere, it is said that Volcarona's fire provided a replacement for the sun.	A sea of fire engulfs the surroundings of their battles, since they use their six wings to scatter their ember scales.
+638	Cobalion	8.4	3	4		It has a body and heart of steel. It worked with its allies to punish people when they hurt Pokémon.	It has a body and heart of steel. Its glare is sufficient to make even an unruly Pokémon obey it.
+639	Terrakion	8.82	6	3		Its charge is strong enough to break through a giant castle wall in one blow.	This Pokémon came to the defense of Pokémon that had lost their homes in a war among humans.
+640	Virizion	7.36	2	4		Legends say this Pokémon confounded opponents with its swift movements.	This Pokémon fought humans in order to protect its friends.
+641	Tornadus	9.3	7	3		The lower half of its body is wrapped in a cloud of energy.	Tornadus expels massive energy from its tail, causing severe storms.
+642	Thundurus	8.82	6	3		The spikes on its tail discharge immense bolts of lightning.	As it flies around, it shoots lightning all over the place and causes forest fires.
+643	Reshiram	8.72	8	1	deictic	This Pokémon appears in legends. It sends flames into the air from its tail, burning up everything around it.	When Reshiram's tail flares, the heat energy moves the atmosphere and changes the world's weather.
+644	Zekrom	8.72	8	1	deictic	This Pokémon appears in legends. In its tail, it has a giant generator that creates electricity.	This legendary Pokémon can scorch the world with lightning.
+645	Landorus	10.3	7	3		Lands visited by Landorus grant such bountiful crops that it has been hailed as "The Guardian of the Fields."	From the forces of lightning and wind, it creates energy to give nutrients to the soil and make the land abundant.
+646	Kyurem	8.6	4	3		It generates a powerful, freezing energy inside itself, but its body became frozen when the energy leaked out.	This legendary ice Pokémon waits for a hero to fill in the missing parts of its body with truth or ideals.
+647	Keldeo	8.2	4	4		When it is resolute, its body fills with power and it becomes swifter.	It crosses the world, running over the surfaces of oceans and rivers.
+648	Meloetta	9.82	6	3		Its melodies are sung with a special vocalization method that can control the feelings of those who hear it.	The melodies sung by Meloetta have the power to make Pokémon that hear them happy or sad.
+649	Genesect	10.9	9	4	deictic	This Pokémon existed 300 million years ago. Team Plasma altered it and attached a cannon to its back.	This ancient bug Pokémon was altered by Team Plasma.
+650	Chespin	9.12	8	2	override	The quills on its head are usually soft. When it flexes them, the points become so hard and sharp that they can pierce rock.	Such a thick shell of wood covers its head and back that even a direct hit from a truck wouldn't faze it.
+651	Quilladin	5.16	2	2		It relies on its sturdy shell to deflect predators' attacks.	They strengthen their lower bodies by running into one another.
+652	Chesnaught	6.2	3	2		Its Tackle is forceful enough to flip a 50-ton tank.	When it takes a defensive posture with its fists guarding its face, it could withstand a bomb blast.
+653	Fennekin	9.7	7	2		Eating a twig fills it with energy, and its roomy ears give vent to air hotter than 390 degrees Fahrenheit.	As it walks, it munches on a twig in place of a snack.
+654	Braixen	8.22	6	2		When the twig is plucked from its tail, friction sets the twig alight.	It has a twig stuck in its tail.
+655	Delphox	2.86	2	2	long	It gazes into the flame at the tip of its branch to achieve a focused state, which allows it to see into the future.	Using psychic power, it generates a fiery vortex of 5,400 degrees Fahrenheit, incinerating foes swept into this whirl of flame.
+656	Froakie	9.5	9	2		It protects its skin by covering its body in delicate bubbles.	It secretes flexible bubbles from its chest and back.
+657	Frogadier	9.22	6	2		Its swiftness is unparalleled. It can scale a tower of more than 2,000 feet in a minute's time.	It can throw bubble-covered pebbles with precise control, hitting empty cans up to a hundred feet away.
+658	Greninja	8.22	6	2		It creates throwing stars out of compressed water.	It appears and vanishes with a ninja's grace.
+659	Bunnelby	7.86	5	2	deictic	They use their large ears to dig burrows. They will dig the whole night through.	It excels at digging holes. Using its ears, it can dig a nest 33 feet deep in one night.
+660	Diggersby	6.2	3	2		With their powerful ears, they can heft boulders of a ton or more with ease.	As powerful as an excavator, its ears can reduce dense bedrock to rubble.
+661	Fletchling	7.86	5	2	deictic	These friendly Pokémon send signals to one another with beautiful chirps and tail-feather movements.	Despite the beauty of its lilting voice, it's merciless to intruders that enter its territory.
+662	Fletchinder	6.2	3	2		From its beak, it expels embers that set the tall grass on fire.	The hotter the flame sac on its belly, the faster it can fly, but it takes some time to get the fire going.
+663	Talonflame	6.16	2	2		In the fever of an exciting battle, it showers embers from the gaps between its feathers and takes to the air.	When attacking prey, it can reach speeds of up to 310 mph.
+664	Scatterbug	8.0	4	2		The powder that covers its body regulates its temperature, so it can live in any region or climate.	When under attack from bird Pokémon, it spews a poisonous black powder that causes paralysis on contact.
+665	Spewpa	5.0	3	0		The beaks of birds can't begin to scratch its stalwart body.	Spewpa doesn't live in a fixed location.
+666	Vivillon	7.0	4	2		The patterns on this Pokémon's wings depend on the climate and topography of its habitat.	Vivillon with many different patterns are found all over the world.
+667	Litleo	6.2	4	2	deictic	They set off on their own from their pride and live by themselves to become stronger.	The stronger the opponent it faces, the more heat surges from its mane and the more power flows through its body.
+668	Pyroar	7.2	3	2		The male with the largest mane of fire is the leader of the pride.	With fiery breath of more than 10,000 degrees Fahrenheit, they viciously threaten any challenger.
+669	Flabébé	6.2	3	2		When it finds a flower it likes, it dwells on that flower its whole life long.	It draws out and controls the hidden power of flowers.
+670	Floette	7.2	3	2		When the flowers of a well-tended flower bed bloom, it appears and celebrates with an elegant dance.	It flutters around fields of flowers and cares for flowers that are starting to wilt.
+671	Florges	4.1	1	1		Its life can span several hundred years. It's said to devote its entire life to protecting gardens.	In times long past, governors of castles would invite Florges to create flower gardens to embellish the castle domains.
+672	Skiddo	7.2	3	2		Thought to be one of the first Pokémon to live in harmony with humans, it has a placid disposition.	If it has sunshine and water, it doesn't need to eat, because it can generate energy from the leaves on its back.
+673	Gogoat	7.2	4	2	deictic	They inhabit mountainous regions. The leader of the herd is decided by a battle of clashing horns.	It can tell how its trainer is feeling by subtle shifts in the grip on its horns.
+674	Pancham	7.2	3	2		It does its level best to glare and pull a scary face, but it can't help grinning if anyone pats its head.	It does its best to be taken seriously by its enemies, but its glare is not sufficiently intimidating.
+675	Pangoro	5.16	2	2		Although it possesses a violent temperament, it won't put up with bullying.	From the slight twitches of its bamboo leaf, it deduces its opponent's movements.
+676	Furfrou	9.22	6	2		Trimming its fluffy fur not only makes it more elegant but also increases the swiftness of its movements.	Left alone, its fur will grow longer and longer, but it will only allow someone it trusts to cut it.
+677	Espurr	7.2	3	2		The organ that emits its intense psychic power is sheltered by its ears to keep power from leaking out.	My number one. Exceptionally cute. A little princess.
+678	Meowstic	8.0	4	2		When in danger, it raises its ears and releases enough psychic power to grind a 10-ton truck into dust.	The eyeball patterns on the interior of its ears emit psychic energy.
+679	Honedge	8.22	6	2		Apparently this Pokémon is born when a departed spirit inhabits a sword.	The blue eye on the sword's handguard is the true body of Honedge.
+680	Doublade	6.6	3	1		The two swords employ a strategy of rapidly alternating between offense and defense to bring down their prey.	The complex attack patterns of its two swords are unstoppable, even for an opponent greatly accomplished at swordplay.
+681	Aegislash	6.4	4	1		Its potent spectral powers allow it to manipulate others.	Apparently, it can detect the innate qualities of leadership.
+682	Spritzee	6.2	3	2		It emits a scent that enraptures those who smell it.	In the past, rather than using perfume, royal ladies carried a Spritzee that would waft a fragrance they liked.
+683	Aromatisse	2.21	2	2	long	It devises various scents, pleasant and unpleasant, and emits scents that its enemies dislike in order to gain an edge in battle.	Its scent is so overpowering that, unless a Trainer happens to really enjoy the smell, he or she will have a hard time walking alongside it.
+684	Swirlix	7.2	3	2		To entangle its opponents in battle, it extrudes white threads as sweet and sticky as cotton candy.	It eats its own weight in sugar every day. If it doesn't get enough sugar, it becomes incredibly grumpy.
+685	Slurpuff	8.22	6	2		It can distinguish the faintest of scents.	By taking in a person's scent, it can sniff out their mental and physical condition.
+686	Inkay	7.66	5	2		It flashes the light-emitting spots on its body, which drains its opponent's will to fight.	It spins while making its luminescent spots flash.
+687	Malamar	8.0	4	2		It wields the most compelling hypnotic powers of any Pokémon, and it forces others to do whatever it wants.	It's said that Malamar's hypnotic powers played a role in certain history-changing events.
+688	Binacle	6.16	2	2		Two Binacle live together on one rock. When they fight, one of them will move to a different rock.	After two Binacle find a suitably sized rock, they adhere themselves to it and live together.
+689	Barbaracle	5.16	2	2		Barbaracle's legs and hands have minds of their own, and they will move independently.	Seven Binacle come together to form one Barbaracle.
+690	Skrelp	6.16	2	2		It looks just like rotten kelp. It hides from foes while storing up power for its evolution.	Camouflaged as rotten kelp, they spray liquid poison on prey that approaches unawares and then finish it off.
+691	Dragalge	6.16	2	2		Tales are told of ships that wander into seas where Dragalge live, never to return.	This vicious Pokémon sprays a poisonous liquid on opponents that come near.
+692	Clauncher	5.36	2	2	deictic	They knock down flying prey by firing compressed water from their massive claws like shooting a pistol.	Through controlled expulsions of internal gas, it can expel water like a pistol shot.
+693	Clawitzer	7.2	3	2		By expelling water from the nozzle in the back of its claw, it can move at a speed of 60 knots.	Their enormous claws launch cannonballs of water powerful enough to pierce tanker hulls.
+694	Helioptile	7.2	3	2		The frills on either side of its head have cells that generate electricity when exposed to sunlight.	They make their home in deserts.
+695	Heliolisk	7.9	7	2	deictic	They flare their frills and generate energy.	A now-vanished desert culture treasured these Pokémon.
+696	Tyrunt	3.7	1	2		Its immense jaws have enough destructive force that it can chew up an automobile.	This Pokémon was restored from a fossil.
+697	Tyrantrum	4.7	1	2		Nothing could stop this Pokémon 100 million years ago, so it behaved like a king.	The king of the ancient world, it can easily crunch a car with the devastating strength of its enormous jaws.
+698	Amaura	1.9	1	2	names:Tyrantrum,deictic	This calm Pokémon lived in a cold land where there were no violent predators like Tyrantrum.	It lived in cold areas in ancient times. It’s said that when Amaura whinnies, auroras appear in the night sky.
+699	Aurorus	4.7	1	2		Using its diamond-shaped crystals, it can instantly create a wall of ice to block an opponent's attack.	Aurorus was restored from a fossil. It’s said that when this Pokémon howls, auroras appear in the night sky.
+700	Sylveon	6.16	2	2		It sends a soothing aura from its ribbonlike feelers to calm fights.	There's a Galarian fairy tale that describes a beautiful Sylveon vanquishing a dreadful dragon Pokémon.
+701	Hawlucha	7.0	4	2		With its wings, it controls its position in the air.	It drives its opponents to exhaustion with its agile maneuvers, then ends the fight with a flashy finishing move.
+702	Dedenne	6.4	4	1		Its upper whiskers are sensors that survey its surroundings.	Its whiskers serve as antennas.
+703	Carbink	5.56	2	1		Although this Pokémon is not especially rare, its glittering, jewel-draped body draws attention from people.	It has slept underground for hundreds of millions of years since its birth.
+704	Goomy	6.16	2	2		The weakest Dragon-type Pokémon, it lives in damp, shady places, so its body doesn't dry out.	It's covered in a slimy membrane that makes any punches or kicks slide off it harmlessly.
+705	Sliggoo	6.2	3	2		Its four horns are a high-performance radar system.	It drives away opponents by excreting a sticky liquid that can dissolve anything.
+706	Goodra	4.1	1	1		An amazingly friendly Pokémon, but if left to itself, loneliness overcomes it, and it oozes gooey tears.	This very friendly dragon Pokémon will hug its beloved Trainer, leaving that Trainer covered in sticky slime.
+707	Klefki	6.4	3	2	deictic	These key collectors threaten any attackers by fiercely jingling their keys at them.	In the past, noble families entrusted their vault keys to a Klefki.
+708	Phantump	3.7	3	2	long	According to old tales, these Pokémon are stumps possessed by the spirits of children who died while lost in the forest.	By imitating the voice of a child, it causes people to get hopelessly lost deep in the forest.
+709	Trevenant	7.66	5	2		Using its roots as a nervous system, it controls the trees in the forest.	It can control trees at will. It will trap people who harm the forest, so they can never leave.
+710	Pumpkaboo	6.2	3	2		The pumpkin body is inhabited by a spirit trapped in this world.	It is said to carry wandering spirits to the place where they belong so they can move on.
+711	Gourgeist	6.2	3	2		Singing in eerie voices, they wander town streets on the night of the new moon.	In the darkness of a new-moon night, Gourgeist will come knocking.
+712	Bergmite	5.16	2	2		Using air of -150 degrees Fahrenheit, they freeze opponents solid.	It blocks opponents' attacks with the ice that shields its body.
+713	Avalugg	4.7	1	2		Its ice-covered body is as hard as steel. Its cumbersome frame crushes anything that stands in its way.	Its ice-covered body is as hard as steel. Its enormous frame crushes anything that stands in its way.
+714	Noibat	6.4	3	2	deictic	They live in pitch black caves. Their enormous ears can emit ultrasonic waves of 200,000 hertz.	Even a robust wrestler will become dizzy and unable to stand when exposed to its 200,000-hertz ultrasonic waves.
+715	Noivern	4.36	2	2	deictic	They fly around on moonless nights and attack careless prey.	Aggressive and cruel, this Pokémon will ruthlessly torment enemies that are helpless in the dark.
+716	Xerneas	8.0	4	2		When the horns on its head shine in seven colors, it is said to be sharing everlasting life.	When the horns on its head shine in seven different colors, it is said to be sharing everlasting life.
+717	Yveltal	6.92	8	2	long	When its life comes to an end, it absorbs the life energy of every living thing and turns into a cocoon once more.	Hidden away in its jet-black wings is a red passion.
+718	Zygarde	7.2	3	2		It's hypothesized that it's monitoring those who destroy the ecosystem from deep in the cave where it lives.	It's thought to be monitoring the ecosystem. There are rumors that even greater power lies hidden within it.
+719	Diancie	8.0	4	2		It can instantly create many diamonds by compressing the carbon in the air between its hands.	Open the magic door and a dream-colored party will start again today.
+720	Hoopa	7.4	4	1		It gathers things it likes and passes them through its loop to teleport them to a secret place.	This troublemaker sends anything and everything to faraway places using its loop, which can warp space.
+721	Volcanion	9.12	8	2		It expels its internal steam from the arms on its back.	It lets out billows of steam and disappears into the dense fog.
+722	Rowlet	8.3	7	1	deictic	This wary Pokémon uses photosynthesis to store up energy during the day, while becoming active at night.	At a distance, it launches its sharp feathers while flying about.
+723	Dartrix	5.6	3	1		It throws one knifelike feather after another at its enemies, and each one precisely strikes a weak point.	A bit of a dandy, it spends its free time preening its wings.
+724	Decidueye	6.4	4	1		As if wielding a bow, it launches the arrow quills hidden among the feathers of its wings.	It nocks its arrow quills and shoots them at opponents.
+725	Litten	8.52	8	1		While grooming itself, it builds up fur inside its stomach.	If you try too hard to get close to it, it won't open up to you.
+726	Torracat	5.56	2	1		At its throat, it bears a bell of fire. The bell rings brightly whenever this Pokémon spits fire.	It boasts powerful front legs. With a single punch, it can bend an iron bar right over.
+727	Incineroar	4.1	1	1		When its fighting spirit is set alight, the flames around its waist become especially intense.	This Pokémon has a violent, selfish disposition.
+728	Popplio	6.82	6	1	deictic	This Pokémon snorts body fluids from its nose, blowing balloons to smash into its foes.	The balloons it inflates with its nose grow larger and larger as it practices day by day.
+729	Brionne	3.5	1	0		A skillful dancer, it creates a sequence of water balloons as it dances, and briskly bombards it enemies.	A skillful dancer, it creates a sequence of water balloons as it dances, and briskly bombards its enemies.
+730	Primarina	3.1	1	1		Its singing voice is its chief weapon in battle.	It controls its water balloons with song.
+731	Pikipek	3.5	1	0		Pikipek has strong muscles in its neck, so it won't hurt itself even if it violently shakes its head.	It may look spindly, but its neck muscles are heavy-duty.
+732	Trumbeak	4.1	1	1		By bending its beak, it can produce a variety of calls and brand itself a noisy nuisance for its neighbors.	By bending its beak, it can produce a variety of call and brand itself a noisy nuisance for its neighbors.
+733	Toucannon	4.1	1	1		Known for forming harmonious couples, this Pokémon is brought to wedding ceremonies as a good luck charm.	Within its beak, its internal gas ignites, explosively launching seeds with enough power to pulverize boulders.
+734	Yungoos	4.56	2	1		With its sharp fangs, it will bite anything.	Although it will eat anything, it prefers fresh living things, so it marches down streets in search of prey.
+735	Gumshoos	3.5	1	0		Once it finds signs of prey, it will patiently stake out the location, waiting until the sun goes down.	Patient by nature, this Pokémon loses control of itself and pounces when it spots its favorite meal—Rattata!
+736	Grubbin	5.56	2	1		It uses its big jaws to dig nests into the forest floor, and it loves to feed on sweet tree sap.	They often gather near places frequented by electric Pokémon in order to avoid being attacked by bird Pokémon.
+737	Charjabug	4.1	1	1		From the food it digests, it generates electricity, and it stores this energy in its electric sac.	While its durable shell protects it from attacks, Charjabug strikes at enemies with jolts of electricity discharged from the tips of its jaws.
+738	Vikavolt	4.56	2	1		It produces electricity via an electrical organ in its abdomen.	It has an organ that generates electricity in its abdomen.
+739	Crabrawler	4.56	2	1		It punches so much, its pincers often come off from overuse, but they grow back quickly.	Its hard pincers are well suited to both offense and defense.
+740	Crabominable	4.56	2	1		It aimed for the top but got lost and ended up on a snowy mountain.	It stores coldness in its pincers and pummels its foes.
+741	Oricorio	3.1	1	1	override	This Pokémon is incredibly popular, possibly because its passionate dancing is a great match with the temperament of Paldean people.	This Oricorio has drunk red nectar.
+742	Cutiefly	5.6	3	1		It feeds on the nectar and pollen of flowers.	An opponent's aura can tell Cutiefly what that opponent's next move will be.
+743	Ribombee	5.56	2	1		It rolls up pollen into puffs. It makes many different varieties, some used as food and others used in battle.	Some of Ribombee's pollen puffs are highly nutritious.
+744	Rockruff	6.4	4	1		When it rubs the rocks on its neck against you, that's proof of its love for you.	As they develop, their disposition grows more violent and aggressive.
+745	Lycanroc	5.0	3	0	override	The rocks in its mane are sharper than a knife. Fragments that break off are treasured as good luck charms.	Its quick movements confuse its enemies.
+746	Wishiwashi	4.56	2	1		When it's in trouble, its eyes moisten and begin to shine.	When it senses danger, its eyes tear up. The sparkle of its tears signals other Wishiwashi to gather.
+747	Mareanie	5.6	3	1		It plunges the poison spike on its head into its prey.	The first symptom of its sting is numbness.
+748	Toxapex	3.1	1	1		Toxapex crawls along the ocean floor on its 12 legs.	Those attacked by Toxapex's poison will suffer intense pain for three days and three nights.
+749	Mudbray	5.56	2	1		The mud stuck to Mudbray's hooves enhances its grip and its powerful running gait.	Loads weighing up to 50 times as much as its own body weight pose no issue for this Pokémon.
+750	Mudsdale	4.56	2	1		Mud that hardens around a Mudsdale's legs sets harder than stone.	It spits a mud that provides resistance to both wind and rain, so the walls of old houses were often coated with it.
+751	Dewpider	6.6	3	1		It crawls onto the land in search of food. Its water bubble allows it to breathe and protects its soft head.	When two Dewpider meet, they display their water bubbles to each other.
+752	Araquanid	5.6	3	1		It delivers headbutts with the water bubble on its head.	It usually passes its time in the water.
+753	Fomantis	4.96	2	0		Many Trainers give their Fomantis their own flowerpots so they can sunbathe in peace and quiet.	It loves the sunshine. When it basks in the sunlight regularly, it grows up with vivid coloration.
+754	Lurantis	3.1	1	1		For self-protection, it pretends to be a bug Pokémon.	As it slashes into its enemies, it looks like it's dancing.
+755	Morelull	5.56	2	1		It scatters spores that flicker and glow. Anyone seeing these lights falls into a deep slumber.	As it drowses the day away, it nourishes itself by sucking from tree roots.
+756	Shiinotic	5.6	3	1		It emits flickering spores that cause drowsiness.	Forests where Shiinotic live are treacherous to enter at night.
+757	Salandit	5.6	3	1		It burns its bodily fluids to create a poisonous gas.	The males will do whatever the females tell them.
+758	Salazzle	5.6	3	1		For some reason, only females have been found.	Filled with pheromones, its poisonous gas can be diluted to use in the production of luscious perfumes.
+759	Stufful	3.65	4	1	long	Despite its adorable appearance, when it gets angry and flails about, its arms and legs could knock a pro wrestler sprawling.	It boasts power enough to split large trees in half.
+760	Bewear	6.26	5	1	deictic	This immensely dangerous Pokémon possesses overwhelming physical strength.	The moves it uses to take down its prey would make a martial artist jealous.
+761	Bounsweet	4.1	1	1		Its body gives off a sweet, fruity scent that is extremely appetizing to bird Pokémon.	Its sweat is sweet, like syrup made from boiled-down fruit.
+762	Steenee	3.96	2	0		Steenee spreads a sweet scent that makes others feel invigorated.	The sepals on its head developed to protect its body.
+763	Tsareena	4.56	2	1		Its long, striking legs aren't just for show but to be used to kick with skill.	A master of grand and beautiful kicks, it can knock out even kickboxing champions with a single blow.
+764	Comfey	5.6	3	1		Comfey picks flowers with its vine and decorates itself with them.	It attaches flowers to its highly nutritious vine.
+765	Oranguru	6.4	4	1		Deep in the jungle, high in the lofty canopy, this Pokémon abides.	It knows the forest inside and out.
+766	Passimian	5.6	3	1		Passimian live in groups of about 20, with each member performing an assigned role.	They form groups of roughly 20 individuals. Their mutual bond is remarkable—they will never let down a comrade.
+767	Wimpod	5.6	3	1		It's nature's cleaner—it eats anything and everything, including garbage and rotten things.	Wimpod gather in swarms, constantly on the lookout for danger.
+768	Golisopod	5.56	2	1		With a flashing slash of its giant sharp claws, it cleaves seawater—or even air—right in two.	The shell covering its body is as hard as diamond.
+769	Sandygast	4.1	1	1		Born from a sand mound playfully built by a child, this Pokémon embodies the grudges of the departed.	It takes control of anyone who puts a hand in its mouth.
+770	Palossand	4.1	1	1		Buried beneath the castle are masses of dried-up bones from those whose vitality it has drained.	Possessed people controlled by this Pokémon transformed its sand mound into a castle.
+771	Pyukumuku	5.56	2	1		It's covered in a slime that keeps its skin moist, allowing it to stay on land for days without drying up.	It lives in shallow seas, such as areas near a beach.
+772	Type: Null	5.6	3	1		The heavy control mask it wears suppresses its intrinsic capabilities.	It was modeled after a mighty Pokémon of myth.
+773	Silvally	5.56	2	1		The final factor needed to release this Pokémon's true power was a strong bond with a Trainer it trusts.	This is its form once it has awakened and evolved.
+774	Minior	3.5	1	0		It eats dust in the atmosphere. The composition of the dust determines the color of its core.	This is its form when its shell has fallen off.
+775	Komala	4.1	1	1		It stays asleep from the moment it's born. When it falls into a deep sleep, it stops moving altogether.	It remains asleep from birth to death as a result of the sedative properties of the leaves that form its diet.
+776	Turtonator	5.6	3	1		The shell on its back is chemically unstable and explodes violently if struck.	It gushes fire and poisonous gases from its nostrils.
+777	Togedemaru	5.56	2	1		When it's surprised or agitated, the 14 fur spikes on its back will stand up involuntarily.	The long hairs on its back act as lightning rods.
+778	Mimikyu	6.22	6	0	override	Its actual appearance is unknown. A scholar who saw what was under its rag was overwhelmed by terror and died from the shock.	Although it's a quiet, lonely Pokémon, if you try to look at what's under its rag, it will become agitated and resist violently.
+779	Bruxish	5.6	3	1		It stuns its prey with psychokinesis and then grinds them to mush with its strong teeth.	It grinds its teeth with great force to stimulate its brain.
+780	Drampa	6.4	4	1		Drampa is a kind and friendly Pokémon—up until it's angered.	The mountains it calls home are nearly two miles in height.
+781	Dhelmise	7.4	4	1		After a piece of seaweed merged with debris from a sunken ship, it was reborn as this ghost Pokémon.	It wraps its prey in green seaweed and sucks away their vitality.
+782	Jangmo-o	5.6	3	1		It expresses its feelings by smacking its scales.	It smacks the scales on its head against rocks or against the ground to frighten its opponents.
+783	Hakamo-o	4.56	2	1		It leaps at its prey with a courageous shout.	It sheds and regrows its scales on a continuous basis.
+784	Kommo-o	3.1	1	1		When it spots enemies, it threatens them by jingling the scales on its tail.	Its rigid scales function as offense and defense.
+785	Tapu Koko	4.8	3	1	deictic	This guardian deity of Melemele is brimming with curiosity.	It confuses its enemies by flying too quickly for the eye to follow.
+786	Tapu Lele	4.56	2	1		As it flutters about, it scatters its strangely glowing scales.	This guardian deity of Akala is guilelessly cruel.
+787	Tapu Bulu	4.1	1	1		Although it's called a guardian deity, it's violent enough to crush anyone it sees as an enemy.	It pulls large trees up by the roots and swings them around.
+788	Tapu Fini	3.76	2	1	deictic	This guardian deity of Poni Island manipulates water.	The dense fog it creates brings the downfall and destruction of its confused enemies.
+789	Cosmog	7.4	4	1		Its body is gaseous and frail. It slowly grows as it collects dust from the atmosphere.	Even though its helpless, gaseous body can be blown away by the slightest breeze, it doesn't seem to care.
+790	Cosmoem	4.56	2	1		There's something accumulating around the black core within its hard shell.	Motionless as if dead, its body is faintly warm to the touch.
+791	Solgaleo	4.1	1	1		In writings from the distant past, it's called by the name "the beast that devours the sun."	It is said to live in another world.
+792	Lunala	4.1	1	1		It sometimes summons unknown powers and life-forms here to this world from holes that lead to other worlds.	It is said to be a female evolution of Cosmog.
+793	Nihilego	1.6	0	1		A life-form from another world, it was dubbed a UB and is thought to produce a strong neurotoxin.	It appeared in this world from an Ultra Wormhole.
+794	Buzzwole	4.56	2	1		A mysterious life-form called an Ultra Beast.	Although it's alien to this world and a danger here, it's apparently a common organism in the world where it normally lives.
+795	Pheromosa	3.5	3	1	long	One of the Ultra Beasts. It refuses to touch anything, perhaps because it senses some uncleanness in this world.	One of the dangerous Ultra Beasts, it has been spotted running across the land at terrific speeds.
+796	Xurkitree	3.35	3	1	long	It appeared from the Ultra Wormhole. It raided a power plant, so people think it energizes itself with electricity.	One of the mysterious life-forms known as Ultra Beasts.
+797	Celesteela	6.6	3	1		One kind of Ultra Beast. Witnesses have seen it burn down a forest by expelling gas from its two arms.	It appeared from the Ultra Wormhole. Witnesses observed it flying across the sky at high speed.
+798	Kartana	3.3	1	1	deictic	This Ultra Beast's body, which is as thin as paper, is like a sharpened sword.	One of the Ultra Beast life-forms, it was observed cutting down a gigantic steel tower with one stroke of its blade.
+799	Guzzlord	2.21	2	1	long	A dangerous Ultra Beast, it appears to be eating constantly, but for some reason its droppings have never been found.	An unknown life-form called a UB. It may be constantly hungry—it is certainly always devouring something.
+800	Necrozma	4.56	2	1		It looks somehow pained as it rages around in search of light, which serves as its energy.	Light is apparently the source of its energy.
+801	Magearna	5.56	2	1		Built roughly 500 years ago by a scientist, the part called the Soul-Heart is the actual life-form.	Magearna, with its metallic body, is an artificial Pokémon created 500 years ago by humans.
+802	Marshadow	4.56	2	1		It slips into the shadows of others and mimics their powers and movements.	Able to conceal itself in shadows, it never appears before humans, so its very existence was the stuff of myth.
+803	Poipole	6.6	4	1	deictic	This Ultra Beast is well enough liked to be chosen as a first partner in its own world.	An Ultra Beast that lives in a different world, it cackles wildly as it sprays its opponents with poison from the needles on its head.
+804	Naganadel	3.1	1	1		It stores hundreds of liters of poisonous liquid inside its body.	One kind of Ultra Beast, it fires a glowing, venomous liquid from its needles.
+805	Stakataka	3.6	3	1	override	It appeared from an Ultra Wormhole. Each one appears to be made up of many life-forms stacked one on top of each other.	When stone walls started moving and attacking, the brute’s true identity was this mysterious life-form, which brings to mind an Ultra Beast.
+806	Blacephalon	3.6	3	1	override	It slithers toward people. Then, without warning, it triggers the explosion of its own head.	A UB that appeared from an Ultra Wormhole, it causes explosions, then takes advantage of opponents’ surprise to rob them of their vitality.
+807	Zeraora	6.6	3	1		It approaches its enemies at the speed of lightning, then tears them limb from limb with its sharp claws.	It runs as fast as lightning strikes, shredding its opponents with its high-voltage claws.
+808	Meltan	6.6	3	1		It dissolves and eats metal. Circulating liquid metal within its body is how it generates energy.	It melts particles of iron and other metals found in the subsoil, so it can absorb them into its body of molten steel.
+809	Melmetal	4.56	2	1		At the end of its life-span, Melmetal will rust and fall apart.	Revered long ago for its capacity to create iron from nothing, for some reason it has come back to life after 3,000 years.
+810	Grookey	5.35	9	1	long	When it uses its special stick to strike up a beat, the sound waves produced carry revitalizing energy to the plants and flowers in the area.	It attacks with rapid beats of its stick. As it strikes with amazing speed, it gets more and more pumped.
+811	Thwackey	8.62	6	1		The faster a Thwackey can beat out a rhythm with its two sticks, the more respect it wins from its peers.	When it's drumming out rapid beats in battle, it gets so caught up in the rhythm that it won't even notice that it's already knocked out its opponent.
+812	Rillaboom	8.1	7	1		By drumming, it taps into the power of its special tree stump.	The one with the best drumming techniques becomes the boss of the troop.
+813	Scorbunny	7.06	5	1		A warm-up of running around gets fire energy coursing through this Pokémon's body.	It has special pads on the backs of its feet, and one on its nose.
+814	Raboot	6.6	3	1		It kicks berries right off the branches of trees and then juggles them with its feet, practicing its footwork.	Its thick and fluffy fur protects it from the cold and enables it to use hotter fire moves.
+815	Cinderace	7.06	5	1		It's skilled at both offense and defense, and it gets pumped up when cheered on.	It juggles a pebble with its feet, turning it into a burning soccer ball.
+816	Sobble	5.62	6	1	override	When scared, this Pokémon cries. Its tears pack the chemical punch of 100 onions, and attackers won't be able to resist weeping.	When it gets wet, its skin changes color, and this Pokémon becomes invisible as if it were camouflaged.
+817	Drizzile	6.6	3	1		A clever combatant, this Pokémon battles using water balloons created with moisture secreted from its palms.	Highly intelligent but also very lazy, it keeps enemies out of its territory by laying traps everywhere.
+818	Inteleon	2.7	4	1	long	Its nictitating membranes let it pick out foes' weak points so it can precisely blast them with water that shoots from its fingertips at Mach 3.	It has many hidden capabilities, such as fingertips that can shoot water and a membrane on its back that it can use to glide through the air.
+819	Skwovet	5.0	3	0		No matter how much it stuffs its belly with food, it is always anxious about getting hungry again.	It eats berries nonstop—a habit that has made it more resilient than it looks.
+820	Greedent	6.4	4	1		It stashes berries in its tail—so many berries that they fall out constantly.	This Pokémon makes off with heaps of fallen berries by wrapping them in its tail, which is roughly twice the length of its body.
+821	Rookidee	5.6	3	1		It will bravely challenge any opponent, no matter how powerful.	This Pokémon is brave and reckless. The white markings around a Rookidee's eyes intimidate fainthearted Pokémon.
+822	Corvisquire	4.1	1	1		The lessons of many harsh battles have taught it how to accurately judge an opponent's strength.	Smart enough to use tools in battle, these Pokémon have been seen picking up rocks and flinging them or using ropes to wrap up enemies.
+823	Corviknight	0.8	3	1	region,deictic	This Pokémon reigns supreme in the skies of the Galar region.	With their great intellect and flying skills, these Pokémon very successfully act as the Galar region's airborne taxi service.
+824	Blipbug	7.4	4	1		Often found in gardens, this Pokémon has hairs on its body that it uses to assess its surroundings.	A constant collector of information, this Pokémon is very smart.
+825	Dottler	4.81	5	1	long	As it grows inside its shell, it uses its psychic abilities to monitor the outside world and prepare for evolution.	It barely moves, but it's still alive.
+826	Orbeetle	3.8	4	1	long	It emits psychic energy to observe and study what's around it—and what's around it can include things over six miles away.	It's famous for its high level of intelligence, and the large size of its brain is proof that it also possesses immense psychic power.
+827	Nickit	8.1	7	1		Aided by the soft pads on its feet, it silently raids the food stores of other Pokémon.	Cunning and cautious, this Pokémon survives by stealing food from others.
+828	Thievul	8.52	8	1		It secretly marks potential targets with a scent.	With a lithe body and sharp claws, it goes around stealing food and eggs.
+829	Gossifleur	7.62	6	1		It whirls around in the wind while singing a joyous song.	It anchors itself in the ground with its single leg, then basks in the sun.
+830	Eldegoss	4.62	6	1	region	The cotton on the head of this Pokémon can be spun into a glossy, gorgeous yarn—a Galar regional specialty.	The seeds attached to its cotton fluff are full of nutrients.
+831	Wooloo	6.4	4	1		If its fleece grows too long, Wooloo won't be able to move.	Its curly fleece is such an effective cushion that this Pokémon could fall off a cliff and stand right back up at the bottom, unharmed.
+832	Dubwool	5.6	3	1		Its majestic horns are meant only to impress the opposite gender.	Weave a carpet from its springy wool, and you end up with something closer to a trampoline.
+833	Chewtle	4.1	1	1		Apparently the itch of its teething impels it to snap its jaws at anything in front of it.	It starts off battles by attacking with its rock-hard horn, but as soon as the opponent flinches, this Pokémon bites down and never lets go.
+834	Drednaw	4.06	5	1	long,deictic	This Pokémon rapidly extends its retractable neck to sink its sharp fangs into distant enemies and take them down.	With jaws that can shear through steel rods, this highly aggressive Pokémon chomps down on its unfortunate prey.
+835	Yamper	4.8	3	1	deictic	This gluttonous Pokémon only assists people with their work because it wants treats.	This Pokémon is very popular as a herding dog in the Galar region.
+836	Boltund	5.6	4	1	deictic	This Pokémon generates electricity and channels it into its legs to keep them going strong.	It sends electricity through its legs to boost their strength.
+837	Rolycoly	5.6	3	1		Most of its body has the same composition as coal.	It can race around like a unicycle, even on rough, rocky terrain.
+838	Carkol	3.1	1	1		By rapidly rolling its legs, it can travel at over 18 mph.	It forms coal inside its body.
+839	Coalossal	7.06	5	1		It's usually peaceful, but the vandalism of mines enrages it.	It’s gentle usually but fearsome when angered.
+840	Applin	5.6	3	1		It spends its entire life inside an apple.	As soon as it's born, it burrows into an apple.
+841	Flapple	6.4	4	1		It ate a sour apple, and that induced its evolution.	It flies on wings of apple skin and spits a powerful acid.
+842	Appletun	4.56	2	1		Eating a sweet apple caused its evolution.	Its body is covered in sweet nectar, and the skin on its back is especially yummy.
+843	Silicobra	6.6	3	1		It spews sand from its nostrils. While the enemy is blinded, it burrows into the ground to hide.	As it digs, it swallows sand and stores it in its neck pouch.
+844	Sandaconda	6.6	3	1		Its unique style of coiling allows it to blast sand out of its sand sac more efficiently.	When it contracts its body, over 220 pounds of sand sprays from its nose.
+845	Cramorant	3.96	2	0		It's an incredibly poor learner because it uses the bare minimum amount of energy for its brain.	It's so strong that it can knock out some opponents in a single hit, but it also may forget what it's battling midfight.
+846	Arrokuda	3.2	4	1	long	If it sees any movement around it, this Pokémon charges for it straightaway, leading with its sharply pointed jaw.	After it's eaten its fill, its movements become extremely sluggish.
+847	Barraskewda	4.8	3	1	deictic	This Pokémon has a jaw that's as sharp as a spear and as strong as steel.	It spins its tail fins to propel itself, surging forward at speeds of over 100 knots before ramming prey and spearing into them.
+848	Toxel	5.6	3	1		It manipulates the chemical makeup of its poison to produce electricity.	It stores poison in an internal poison sac and secretes that poison through its skin.
+849	Toxtricity	3.5	1	0		Capable of generating 15,000 volts of electricity, this Pokémon looks down on all that would challenge it.	This short-tempered and aggressive Pokémon chugs stagnant water to absorb any toxins it might contain.
+850	Sizzlipede	7.62	6	1		It stores flammable gas in its body and uses it to generate heat.	It wraps prey up with its heated body, cooking them in its coils.
+851	Centiskorch	7.62	6	1		When it heats up, its body temperature reaches about 1,500 degrees Fahrenheit.	While its burning body is already dangerous on its own, this excessively hostile Pokémon also has large and very sharp fangs.
+852	Clobbopus	6.4	4	1		It's very curious, but its means of investigating things is to try to punch them with its tentacles.	Its tentacles tear off easily, but it isn't alarmed when that happens—it knows they'll grow back.
+853	Grapploct	5.6	3	1		Searching for an opponent to test its skills against, it emerges onto land.	A body made up of nothing but muscle makes the grappling moves this Pokémon performs with its tentacles tremendously powerful.
+854	Sinistea	5.8	3	1	deictic	This Pokémon is said to have been born when a lonely spirit possessed a cold, leftover cup of tea.	The soul of someone who died alone possessed some leftover tea.
+855	Polteageist	3.4	4	1	long,deictic	This species lives in antique teapots. Most pots are forgeries, but on rare occasions, an authentic work is found.	The tea that composes Polteageist's body has a distinct and enjoyable flavor.
+856	Hatenna	6.4	4	1		Via the protrusion on its head, it senses other creatures' emotions.	If this Pokémon senses a strong emotion, it will run away as fast as it can.
+857	Hattrem	6.6	3	1		No matter who you are, if you bring strong emotions near this Pokémon, it will silence you violently.	Using the braids on its head, it pummels foes to get them to quiet down.
+858	Hatterene	6.6	3	1		It emits psychic power strong enough to cause headaches as a deterrent to the approach of others.	If you're too loud around it, you risk being torn apart by the claws on its tentacle.
+859	Impidimp	5.6	3	1		Through its nose, it sucks in the emanations produced by people and Pokémon when they feel annoyed.	It sneaks into people's homes, stealing things and feasting on the negative energy of the frustrated occupants.
+860	Morgrem	3.1	1	1		With sly cunning, it tries to lure people into the woods.	When it gets down on all fours as if to beg for forgiveness, it's trying to lure opponents in so that it can stab them with its spear-like hair.
+861	Grimmsnarl	4.6	3	1	names:Machamp	With the hair wrapped around its body helping to enhance its muscles, this Pokémon can overwhelm even Machamp.	Its hairs work like muscle fibers.
+862	Obstagoon	0.6	0	1		It evolved after experiencing numerous fights.	Its voice is staggering in volume.
+863	Perrserker	1.6	0	1		After many battles, it evolved dangerous claws that come together to form daggers when extended.	What appears to be an iron helmet is actually hardened hair.
+864	Cursola	0.6	0	1		Its shell is overflowing with its heightened otherworldly energy.	Be cautious of the ectoplasmic body surrounding its soul.
+865	Sirfetch’d	0.6	0	1		After deflecting attacks with its hard leaf shield, it strikes back with its sharp leek stalk.	Only Farfetch’d that have survived many battles can attain this evolution.
+866	Mr. Rime	1.6	0	1		It’s highly skilled at tap-dancing. It waves its cane of ice in time with its graceful movements.	Its amusing movements make it very popular. It releases its psychic power from the pattern on its belly.
+867	Runerigus	1.6	0	1		Never touch its shadowlike body, or you’ll be shown the horrific memories behind the picture carved into it.	A powerful curse was woven into an ancient painting.
+868	Milcery	4.8	3	1	deictic	This Pokémon was born from sweet-smelling particles in the air.	They say that any patisserie visited by Milcery is guaranteed success and good fortune.
+869	Alcremie	7.4	4	1		When it trusts a Trainer, it will treat them to berries it's decorated with cream.	When Alcremie is content, the cream it secretes from its hands becomes sweeter and richer.
+870	Falinks	6.4	4	1		The six of them work together as one Pokémon.	Five of them are troopers, and one is the brass.
+871	Pincurchin	7.06	5	1		It feeds on seaweed, using its teeth to scrape it off rocks.	This Pokémon generates electricity when it digests food.
+872	Snom	4.56	2	1		It eats snow that piles up on the ground.	It eats snow that has accumulated on the ground.
+873	Frosmoth	8.1	7	1		It shows no mercy to any who desecrate fields and mountains.	Frosmoth senses air currents with its antennae.
+874	Stonjourner	7.06	5	1		It stands in grasslands, watching the sun's descent from zenith to horizon.	Once a year, on a specific date and at a specific time, they gather out of nowhere and form up in a circle.
+875	Eiscue	4.96	2	0		On hot days, these Pokémon press their ice cube heads together and pass the time cooling each other down.	It drifted in on the flow of ocean waters from a frigid place.
+876	Indeedee	5.2	3	0	deictic	These intelligent Pokémon touch horns with each other to share information between them.	It uses the horns on its head to sense the emotions of others.
+877	Morpeko	6.8	4	0		Hunger hormones affect its temperament. Until its hunger is appeased, it gets up to all manner of evil deeds.	As it eats the seeds stored up in its pocket-like pouches, this Pokémon is not just satisfying its constant hunger.
+878	Cufant	4.56	2	1		If a job requires serious strength, this Pokémon will excel at it.	It digs up the ground with its trunk.
+879	Copperajah	3.76	2	1	deictic	They came over from another region long ago and worked together with humans.	These Pokémon live in herds.
+880	Dracozolt	0.61	2	1	long	In ancient times, it was unbeatable thanks to its powerful lower body, but it went extinct anyway after it depleted all its plant-based food sources.	The powerful muscles in its tail generate its electricity.
+881	Arctozolt	5.6	3	1		The shaking of its freezing upper half is what generates its electricity.	This Pokémon lived on prehistoric seashores and was able to preserve food with the ice on its body.
+882	Dracovish	4.56	2	1		Powerful legs and jaws made it the apex predator of its time.	Its mighty legs are capable of running at speeds exceeding 40 mph, but this Pokémon can’t breathe unless it’s underwater.
+883	Arctovish	1.6	0	1		The skin on its face is impervious to attack, but breathing difficulties made this Pokémon go extinct anyway.	Though it's able to capture prey by freezing its surroundings, it has trouble eating the prey afterward because its mouth is on top of its head.
+884	Duraludon	7.06	5	1		Its body resembles polished metal, and it's both lightweight and strong.	Duraludon's body is comprised of a special metal that's lightweight and scratch resistant.
+885	Dreepy	3.1	1	1		If this weak Pokémon is by itself, a mere child could defeat it.	It has a habit of biting at Clauncher even though it doesn't feed on them.
+886	Drakloak	5.6	3	1		It's capable of flying faster than 120 mph.	This Pokémon stores up energy in its lungs, then shoots it out.
+887	Dragapult	3.6	3	1	names:Dreepy	When it isn't battling, it keeps Dreepy in the holes on its horns.	Apparently the Dreepy inside Dragapult's horns eagerly look forward to being launched out at Mach speeds.
+888	Zacian	3.2	4	0	long	Now armed with a weapon it used in ancient times, this Pokémon needs only a single strike to fell even Gigantamax Pokémon.	Able to cut down anything with a single strike, it became known as the Fairy King's Sword, and it inspired awe in friend and foe alike.
+889	Zamazenta	5.8	4	0		Its ability to deflect any attack led to it being known as the Fighting Master's Shield.	In times past, it worked together with a king of the people to save the Galar region.
+890	Eternatus	0.6	0	1		It was inside a meteorite that fell 20,000 years ago.	The core on its chest absorbs energy emanating from the lands of the Galar region.
+891	Kubfu	0.3	1	1	long	If Kubfu pulls the long white hair on its head, its fighting spirit heightens and power wells up from the depths of its belly.	Kubfu trains hard to perfect its moves. The moves it masters will determine which form it takes when it evolves.
+892	Urshifu	-2.25	0	1	long	Inhabiting the mountains of a distant region, this Pokémon races across sheer cliffs, training its legs and refining its moves.	This form of Urshifu is a strong believer in the one-hit KO.
+893	Zarude	5.6	3	1		Once the vines on Zarude's body tear off, they become nutrients in the soil.	Within dense forests, this Pokémon lives in a pack with others of its kind.
+894	Regieleki	3.1	1	1		Its entire body is made up of a single organ that generates electrical energy.	This Pokémon is a cluster of electrical energy.
+895	Regidrago	3.1	1	1		Its body is composed of crystallized dragon energy.	An academic theory proposes that Regidrago's arms were once the head of an ancient dragon Pokémon.
+896	Glastrier	4.56	2	1		Glastrier emits intense cold from its hooves.	Glastrier has tremendous physical strength, and the mask of ice covering its face is 100 times harder than diamond.
+897	Spectrier	4.56	2	1		It probes its surroundings with all its senses save one—it doesn't use its sense of sight.	As it dashes through the night, Spectrier absorbs the life-force of sleeping creatures.
+898	Calyrex	3.1	1	1		Calyrex is a merciful Pokémon, capable of providing healing and blessings.	Calyrex is known in legend as a king that ruled over Galar in ancient times.
+899	Wyrdeer	5.6	3	1		The black orbs shine with an uncanny light when the Pokémon is erecting invisible barriers.	
+900	Kleavor	5.6	3	1		A violent creature that fells towering trees with its crude axes and shields itself with hard stone.	
+901	Ursaluna	-3.75	1	1	long,region	I believe it was Hisui's swampy terrain that gave Ursaluna its burly physique and newfound capacity to manipulate peat at will.	
+902	Basculegion	0.6	0	1		Clads itself in the souls of comrades that perished before fulfilling their goals of journeying upstream.	
+903	Sneasler	-3.5	0	1	long	Because of Sneasler's virulent poison and daunting physical prowess, no other species could hope to best it on the frozen highlands.	
+904	Overqwil	-2.05	0	1	long	Its lancelike spikes and savage temperament have earned it the nickname “sea fiend.” It slurps up poison to nourish itself.	
+905	Enamorus	1.6	3	1	region	When it flies to this land from across the sea, the bitter winter comes to an end.	
+906	Sprigatito	7.62	6	1		Its fluffy fur is similar in composition to plants.	The sweet scent its body gives off mesmerizes those around it.
+907	Floragato	4.25	4	1	long	Floragato deftly wields the vine hidden beneath its long fur, slamming the hard flower bud against its opponents.	The hardness of Floragato’s fur depends on the Pokémon’s mood.
+908	Meowscarada	0.6	0	1		With skillful misdirection, it rigs foes with pollen-packed flower bombs.	This Pokémon uses the reflective fur lining its cape to camouflage the stem of its flower, creating the illusion that the flower is floating.
+909	Fuecoco	8.62	6	1		It lies on warm rocks and uses the heat absorbed by its square-shaped scales to create fire energy.	Its flame sac is small, so energy is always leaking out.
+910	Crocalor	3.25	4	1	long	The combination of Crocalor's fire energy and overflowing vitality has caused an egg-shaped fireball to appear on the Pokémon's head.	The valve in Crocalor's flame sac is closely connected to its vocal cords.
+911	Skeledirge	3.1	1	1		Skeledirge's gentle singing soothes the souls of all that hear it.	The fiery bird changes shape when Skeledirge sings.
+912	Quaxly	2.82	6	1	region,deictic	This Pokémon migrated to Paldea from distant lands long ago.	Its strong legs let it easily swim around in even fast-flowing rivers.
+913	Quaxwell	1.85	4	1	long,deictic	These Pokémon constantly run through shallow waters to train their legs, then compete with each other to see which of them kicks most gracefully.	The hardworking Quaxwell observes people and Pokémon from various regions and incorporates their movements into its own dance routines.
+914	Quaquaval	4.56	2	1		A single kick from a Quaquaval can send a truck rolling.	Dancing in ways that evoke far-away places, this Pokémon mesmerizes all that see it.
+915	Lechonk	6.9	9	1	override	It searches for food all day. It possesses a keen sense of smell but doesn't use it for anything other than foraging.	This Pokémon spurns all but the finest of foods.
+916	Oinkologne	5.6	3	1		Oinkologne is proud of its fine, glossy skin.	This Pokémon sends a flowerlike scent wafting about.
+917	Tarountula	5.6	3	1		The thread it secretes from its rear is as strong as wire.	The ball of threads wrapped around its body is elastic enough to deflect the scythes of Scyther, this Pokémon's natural enemy.
+918	Spidops	5.6	3	1		It clings to branches and ceilings using its threads and moves without a sound.	The thread it secretes from its rear is as strong as wire.
+919	Nymble	5.62	6	1	override	It has its third set of legs folded up. When it's in a tough spot, this Pokémon jumps over 30 feet using the strength of its legs.	It’s highly skilled at a fighting style in which it uses its jumping capabilities to dodge incoming attacks while also dealing damage to opponents.
+920	Lokix	5.6	3	1		When it decides to fight all out, it stands on its previously folded legs to enter Showdown Mode.	It uses its normally folded third set of legs when in Showdown Mode.
+921	Pawmi	6.4	4	1		The pads of its paws are electricity-discharging organs.	It has underdeveloped electric sacs on its cheeks.
+922	Pawmo	0.96	2	1	override	When its group is attacked, Pawmo is the first to leap into battle, defeating enemies with a fighting technique that utilizes electric shocks.	Pawmo uses a unique fighting technique in which it uses its forepaws to strike foes and zap them with electricity from its paw pads simultaneously.
+923	Pawmot	5.56	2	1		Pawmot's fluffy fur acts as a battery. It can store the same amount of electricity as an electric car.	This Pokémon normally is slow to react, but once it enters battle, it will strike down its enemies with lightning-fast movements.
+924	Tandemaus	4.3	4	1	long	The pair sticks together no matter what. They split any food they find exactly in half and then eat it together.	Exhibiting great teamwork, they use their incisors to cut pieces out of any material that might be useful for a nest, then make off with them.
+925	Maushold	5.6	3	1		The larger pair protects the little ones during battles.	They build huge nests with many rooms that are used for different purposes, such as eating and sleeping.
+926	Fidough	5.6	4	1	deictic	This Pokémon is smooth and moist to the touch.	The yeast in Fidough’s breath is useful for cooking, so this Pokémon has been protected by people since long ago.
+927	Dachsbun	2.75	3	1	long	The pleasant aroma that emanates from this Pokémon's body helps wheat grow, so Dachsbun has been treasured by farming villages.	The surface of this Pokémon’s skin hardens when exposed to intense heat, and its body has an appetizing aroma.
+928	Smoliv	7.06	5	1		It protects itself from enemies by emitting oil from the fruit on its head.	This Pokémon converts nutrients into oil, which it stores in the fruit on its head.
+929	Dolliv	6.4	4	1		Dolliv shares its tasty, fresh-scented oil with others.	It basks in the sun to its heart’s content until the fruits on its head ripen.
+930	Arboliva	5.8	3	1	deictic	This calm Pokémon is very compassionate. It will share its delicious, nutrient-rich oil with weakened Pokémon.	This Pokémon drives back enemies by launching its rich, aromatic oil at them with enough force to smash a boulder.
+931	Squawkabilly	3.1	1	1	override	These Pokémon prefer to live in cities. They form flocks based on the color of their feathers, and they fight over territory.	These Pokémon prefer to live in cities.
+932	Nacli	7.62	6	1		It was born in a layer of rock salt deep under the earth.	The ground scrapes its body as it travels, causing it to leave salt behind.
+933	Naclstack	4.8	3	1	deictic	This Pokémon dry cures its prey by spraying salt over them.	It compresses rock salt inside its body and shoots out hardened salt pellets with enough force to perforate an iron sheet.
+934	Garganacl	6.4	4	1		Garganacl will rub its fingertips together and sprinkle injured Pokémon with salt.	Many Pokémon gather around Garganacl, hoping to lick at its mineral-rich salt.
+935	Charcadet	9.25	10	1		Burnt charcoal came to life and became a Pokémon.	Its firepower increases when it fights, reaching over 1,800 degrees Fahrenheit.
+936	Armarouge	7.06	5	1		Armarouge evolved through the use of a set of armor that belonged to a distinguished warrior.	This Pokémon clads itself in armor that has been fortified by psychic and fire energy, and it shoots blazing fireballs.
+937	Ceruledge	3.25	4	1	long	The fiery blades on its arms burn fiercely with the lingering resentment of a sword wielder who fell before accomplishing their goal.	An old set of armor steeped in grudges caused this Pokémon’s evolution.
+938	Tadbulb	7.62	6	1		Tadbulb shakes its tail to generate electricity.	It floats using the electricity stored in its body.
+939	Bellibolt	3.2	4	1	long	When this Pokémon expands and contracts its wobbly body, the belly-button dynamo in its stomach produces a huge amount of electricity.	What appear to be eyeballs are actually organs for discharging the electricity generated by Bellibolt's belly-button dynamo.
+940	Wattrel	8.1	7	1		When its wings catch the wind, the bones within produce electricity.	These Pokémon make their nests on coastal cliffs.
+941	Kilowattrel	6.4	4	1		Kilowattrel inflates its throat sac to amplify its electricity.	It uses its throat sac to store electricity generated by its wings.
+942	Maschiff	2.7	3	1	long	Its well-developed jaw and fangs are strong enough to crunch through boulders, and its thick fat makes for an excellent defense.	It always scowls in an attempt to make opponents take it seriously, but even crying children will burst into laughter when they see Maschiff's face.
+943	Mabosstiff	5.06	5	1	short	Mabosstiff loves playing with children.	This Pokémon can store energy in its large dewlap.
+944	Shroodle	2.4	4	1	long	Though usually a mellow Pokémon, it will sink its sharp, poison-soaked front teeth into any that anger it, causing paralysis in the object of its ire.	To keep enemies away from its territory, it paints markings around its nest using a poisonous liquid that has an acrid odor.
+945	Grafaiai	5.6	3	1		The color of the poisonous saliva depends on what the Pokémon eats.	Each Grafaiai paints its own individual pattern, and it will paint that same pattern over and over again throughout its life.
+946	Bramblin	3.25	4	1	long	A soul unable to move on to the afterlife was blown around by the wind until it got tangled up with dried grass and became a Pokémon.	Not even Bramblin knows where it is headed as it tumbles across the wilderness, blown by the wind.
+947	Brambleghast	4.56	2	1		It will open the branches of its head to envelop its prey.	Brambleghast wanders around arid regions.
+948	Toedscool	6.1	7	1	names:Tentacool	Though it looks like Tentacool, Toedscool is a completely different species.	Toedscool lives in muggy forests. The flaps that fall from its body are chewy and very delicious.
+949	Toedscruel	5.6	3	1		It coils its 10 tentacles around prey and sucks out their nutrients, causing the prey pain.	These Pokémon gather into groups and form colonies deep within forests.
+950	Klawf	5.6	3	1		Klawf hangs upside-down from cliffs, waiting for prey.	This Pokémon lives on sheer cliffs.
+951	Capsakid	2.7	3	1	long	Traditional Paldean dishes can be extremely spicy because they include the shed front teeth of Capsakid among their ingredients.	The more sunlight this Pokémon bathes in, the more spicy chemicals are produced by its body, and thus the spicier its moves become.
+952	Scovillain	4.56	2	1		The green head has turned vicious due to the spicy chemicals stimulating its brain.	The red head converts spicy chemicals into fire energy and blasts the surrounding area with a super spicy stream of flame.
+953	Rellor	4.8	3	1	deictic	This Pokémon creates a mud ball by mixing sand and dirt with psychic energy.	It rolls its mud ball around while the energy it needs for evolution matures.
+954	Rabsca	5.6	3	1	override	An infant sleeps inside the ball. Rabsca rolls the ball soothingly with its legs to ensure the infant sleeps comfortably.	An infant sleeps inside the ball.
+955	Flittle	4.56	2	1		It spends its time running around wastelands.	Flittle's toes levitate about half an inch above the ground because of the psychic power emitted from the frills on the Pokémon's belly.
+956	Espathra	4.56	2	1		It immobilizes opponents by bathing them in psychic power from its large eyes.	It emits psychic power from the gaps between its multicolored frills and sprints at speeds greater than 120 mph.
+957	Tinkatink	5.47	6	1	long	It swings its handmade hammer around to protect itself, but the hammer is often stolen by Pokémon that eat metal.	This Pokémon pounds iron scraps together to make a hammer.
+958	Tinkatuff	2.3	1	1	deictic	These Pokémon make their homes in piles of scrap metal.	This Pokémon will attack groups of Pawniard and Bisharp, gathering metal from them in order to create a large and sturdy hammer.
+959	Tinkaton	5.6	4	1	deictic	This intelligent Pokémon has a very daring disposition.	The hammer tops 220 pounds, yet it gets swung around easily by Tinkaton as it steals whatever it pleases and carries its plunder back home.
+960	Wiglett	6.72	8	1	names:Veluza,deictic	This Pokémon can pick up the scent of a Veluza just over 65 feet away and will hide itself in the sand.	Though it looks like Diglett, Wiglett is an entirely different species.
+961	Wugtrio	7.06	5	1		It has a vicious temperament, contrary to what its appearance may suggest.	A variety of fish Pokémon, Wugtrio was once considered to be a regional form of Dugtrio.
+962	Bombirdier	5.6	3	1		Bombirdier uses the apron on its chest to bundle up food, which it carries back to its nest.	It gathers things up in an apron made from shed feathers added to the Pokémon's chest feathers, then drops those things from high places for fun.
+963	Finizen	6.4	4	1		It likes playing with others of its kind using the water ring on its tail.	Its water ring is made from seawater mixed with a sticky fluid that Finizen secretes from its blowhole.
+964	Palafin	6.22	6	0	override	This hero of the ocean swims at a speed of 50 knots and saves drowning people and Pokémon.	This hero of the ocean swims at a speed of 50 knots and saves drowning people and Pokémon.
+965	Varoom	5.17	8	1	long	It is said that this Pokémon was born when an unknown poison Pokémon entered and inspirited an engine left at a scrap-processing factory.	The steel section is Varoom's actual body.
+966	Revavroom	7.06	5	1		It creates a gas out of poison and minerals from rocks.	Revavroom viciously threatens others with the sound of its exhaust.
+967	Cyclizar	7.62	6	1		Apparently Cyclizar has been allowing people to ride on its back since ancient times.	It can sprint at over 70 mph while carrying a human.
+968	Orthworm	3.05	3	1	long	When attacked, this Pokémon will wield the tendrils on its body like fists and pelt the opponent with a storm of punches.	This Pokémon lives in arid deserts. It maintains its metal body by consuming iron from the soil.
+969	Glimmet	8.06	5	1		It absorbs nutrients from cave walls. The petals it wears are made of crystallized poison.	Glimmet's toxic mineral crystals look just like flower petals.
+970	Glimmora	4.1	1	1		When this Pokémon detects danger, it will open up its crystalline petals and fire beams from its conical body.	Glimmora's petals are made of crystallized poison energy.
+971	Greavard	5.6	4	1	deictic	This friendly Pokémon doesn't like being alone.	It is said that a dog Pokémon that died in the wild without ever interacting with a human was reborn as this Pokémon.
+972	Houndstone	5.6	3	1		A lovingly mourned Pokémon was reborn as Houndstone.	Houndstone spends most of its time sleeping in graveyards.
+973	Flamigo	1.15	3	0	long,deictic	This Pokémon apparently ties the base of its neck into a knot so that the energy stored in its belly does not escape from its beak.	This Pokémon apparently ties the base of its neck into a knot so that energy stored in its belly does not escape from its beak.
+974	Cetoddle	4.56	2	1		It lives in frigid regions in pods of five or so individuals.	This species left the ocean and began living on land a very long time ago.
+975	Cetitan	3.76	2	1	deictic	This Pokémon wanders around snowy, icy areas.	Ice energy builds up in the horn on its upper jaw, causing the horn to reach cryogenic temperatures that freeze its surroundings.
+976	Veluza	6.4	4	1		When Veluza discards unnecessary flesh, its mind becomes honed and its psychic power increases.	Veluza has excellent regenerative capabilities.
+977	Dondozo	6.26	5	1	deictic	This Pokémon is a glutton, but it's bad at getting food.	It treats Tatsugiri like its boss and follows it loyally.
+978	Tatsugiri	4.25	4	1	long	Tatsugiri is an extremely cunning Pokémon. It feigns weakness to lure in prey, then orders its partner to attack.	This is a small dragon Pokémon. It lives inside the mouth of Dondozo to protect itself from enemies on the outside.
+979	Annihilape	6.4	4	1		It imbues its fists with the power of the rage that it kept hidden in its heart.	When its anger rose beyond a critical point, this Pokémon gained power that is unfettered by the limits of its physical body.
+980	Clodsire	0.6	0	1		When attacked, this Pokémon will retaliate by sticking thick spines out from its body.	It lives at the bottom of ponds and swamps.
+981	Farigiraf	0.25	1	1	long	The hardened head from the tail protects the head of the main body as Farigiraf whips its long neck around to headbutt enemies.	Now that the brain waves from the head and tail are synced up, the psychic power of this Pokémon is 10 times stronger than Girafarig's.
+982	Dudunsparce	4.8	3	1	deictic	This Pokémon uses its hard tail to make its nest by boring holes into bedrock deep underground.	It drives enemies out of its nest by sucking in enough air to fill its long, narrow lungs, then releasing the air in an intense blast.
+983	Kingambit	6.06	5	1	names:Bisharp	Only a Bisharp that stands above all others in its vast army can evolve into Kingambit.	Though it commands a massive army in battle, it’s not skilled at devising complex strategies.
+984	Great Tusk	4.56	2	1		Sightings of this Pokémon have occurred in recent years.	Klawf hangs upside-down from cliffs, waiting for prey.
+985	Scream Tail	5.6	3	1		There has been only one reported sighting of this Pokémon.	It resembles a mysterious Pokémon described in a paranormal magazine as a Jigglypuff from one billion years ago.
+986	Brute Bonnet	6.6	3	1		It is possible that the creature listed as Brute Bonnet in a certain book could actually be this Pokémon.	It bears a slight resemblance to a Pokémon described in a dubious magazine as a cross between a dinosaur and a mushroom.
+987	Flutter Mane	4.76	2	1	deictic	This Pokémon has characteristics similar to those of Flutter Mane, a creature mentioned in a certain book.	It has similar features to a ghostly pterosaur that was covered in a paranormal magazine, but the two have little else in common.
+988	Slither Wing	4.76	2	1	deictic	This mysterious Pokémon has some similarities to a creature that an old book introduced as Slither Wing.	This Pokémon somewhat resembles an ancient form of Volcarona that was introduced in a dubious magazine.
+989	Sandy Shocks	3.1	1	1		No records exist of this Pokémon being caught.	It slightly resembles a Magneton that lived for 10,000 years and was featured in an article in a paranormal magazine.
+990	Iron Treads	3.1	1	1		Sightings of this Pokémon have occurred in recent years.	It creates a gas out of poison and minerals from rocks.
+991	Iron Bundle	6.4	4	1		It resembles a mysterious object mentioned in an old book.	Its shape is similar to a robot featured in a paranormal magazine article.
+992	Iron Hands	3.3	1	1	deictic	This Pokémon shares many similarities with Iron Hands, an object mentioned in a certain expedition journal.	It is very similar to a cyborg covered exclusively by a paranormal magazine.
+993	Iron Jugulis	6.6	3	1		It's possible that Iron Jugulis, an object described in an old book, may actually be this Pokémon.	It resembles a certain Pokémon introduced in a paranormal magazine, described as the offspring of a Hydreigon that fell in love with a robot.
+994	Iron Moth	4.56	2	1		No records exist of this species being caught.	This Pokémon resembles an unknown object described in a paranormal magazine as a UFO sent to observe humanity.
+995	Iron Thorns	2.51	2	1	long	Some of its notable features match those of an object named within a certain expedition journal as Iron Thorns.	It has some similarities to a Pokémon introduced in a dubious magazine as a Tyranitar from one billion years into the future.
+996	Frigibax	7.06	5	1		Frigibax absorbs heat through its dorsal fin and converts the heat into ice energy.	This Pokémon lives in forests and craggy areas.
+997	Arctibax	3.9	4	1	long	Arctibax freezes the air around it, protecting its face with an ice mask and turning its dorsal fin into a blade of ice.	It attacks with the blade of its frozen dorsal fin by doing a front flip in the air.
+998	Baxcalibur	5.6	4	1	deictic	This Pokémon blasts cryogenic air out from its mouth.	It launches itself into battle by flipping upside down and spewing frigid air from its mouth.
+999	Gimmighoul	5.6	4	1	deictic	This Pokémon was born inside a treasure chest about 1,500 years ago.	It lives inside an old treasure chest.
+1000	Gholdengo	3.1	1	1		Its body seems to be made up of 1,000 coins.	It has a sturdy body made up of stacked coins.
+1001	Wo-Chien	1.05	1	1	long	It drains the life-force from vegetation, causing nearby forests to instantly wither and fields to turn barren.	The grudge of a person punished for writing the king’s evil deeds upon wooden tablets has clad itself in dead leaves to become a Pokémon.
+1002	Chien-Pao	4.1	1	1		The hatred of those who perished by the sword long ago has clad itself in snow and become a Pokémon.	This Pokémon can control 100 tons of fallen snow.
+1003	Ting-Lu	4.1	1	1		The fear poured into an ancient ritual vessel has clad itself in rocks and dirt to become a Pokémon.	It slowly brings its exceedingly heavy head down upon the ground, splitting the earth open with huge fissures that run over 160 feet deep.
+1004	Chi-Yu	4.56	2	1		It controls flames burning at over 5,400 degrees Fahrenheit.	The envy accumulated within curved beads that sparked multiple conflicts has clad itself in fire and become a Pokémon.
+1005	Roaring Moon	0.55	1	1	long	It is possible that this is the creature listed as Roaring Moon in an expedition journal that still holds many mysteries.	According to an article in a dubious magazine, this Pokémon has some connection to a phenomenon that occurs in a certain region.
+1006	Iron Valiant	5.56	2	1		It's possible that this is the object listed as Iron Valiant in a certain expedition journal.	It has some similarities to a mad scientist’s invention covered in a paranormal magazine.
+1007	Koraidon	6.26	5	1	deictic	This seems to be the Winged King mentioned in an old expedition journal.	This Pokémon resembles Cyclizar, but it is far burlier and more ferocious.
+1008	Miraidon	4.8	3	1	deictic	This seems to be the Iron Serpent mentioned in an old book.	Much remains unknown about this creature. It resembles Cyclizar, but it is far more ruthless and powerful.
+1009	Walking Wake	2.3	1	1	deictic	This ferocious creature is shrouded in mystery.	It resembles an illustration published in a paranormal magazine, said to be a depiction of a super-ancient Suicune.
+1010	Iron Leaves	0.75	1	1	long	According to the few eyewitness accounts that exist, it used its shining blades to julienne large trees and boulders.	Many of its physical characteristics match those of a Virizion from the future that was covered in a paranormal magazine.
+1011	Dipplin	5.6	3	1		The head sticking out belongs to the fore-wyrm, while the tail belongs to the core-wyrm.	Dipplin is two creatures in one Pokémon. Its evolution was triggered by a special apple grown only in one place.
+1012	Poltchageist	-2.45	0	1	long	Supposedly, the regrets of a tea ceremony master who died before perfecting his craft lingered in some matcha and became a Pokémon.	Poltchageist looks like a regional form of Sinistea, but it was recently discovered that the two Pokémon are entirely unrelated.
+1013	Sinistcha	4.56	2	1		It prefers cool, dark places, such as the back of a shelf or the space beneath a home's floorboards.	It pretends to be tea, trying to fool people into drinking it so it can drain their life-force.
+1014	Okidogi	4.1	1	1		Okidogi is a ruffian with a short temper. It can pulverize anything by swinging around the chain on its neck.	After all its muscles were stimulated by the toxic chain around its neck, Okidogi transformed and gained a powerful physique.
+1015	Munkidori	2.31	2	1	long	Munkidori keeps itself somewhere safe while it toys with its foes, using psychokinesis to induce intense dizziness.	The chain is made from toxins that enhance capabilities.
+1016	Fezandipiti	4.1	1	1		Fezandipiti beats its glossy wings to scatter pheromones that captivate people and Pokémon.	Fezandipiti owes its beautiful looks and lovely voice to the toxic stimulants emanating from the chain wrapped around its body.
+1017	Ogerpon	3.76	2	1	deictic	This mischief-loving Pokémon is full of curiosity.	This Pokémon's type changes based on which mask it's wearing.
+1018	Archaludon	3.1	1	1		It gathers static electricity from its surroundings.	It digs holes on mountains, searching for food.
+1019	Hydrapple	0.6	0	1		Seven syrpents live inside an apple made of syrup.	These capricious syrpents have banded together.
+1020	Gouging Fire	0.6	0	1		There are scant few reports of this creature being sighted.	It resembles an eerie Pokémon once shown in a paranormal magazine.
+1021	Raging Bolt	0.6	0	1		It's said to incinerate everything around it with lightning launched from its fur.	It bears resemblance to a Pokémon that became a hot topic for a short while after a paranormal magazine touted it as Raikou's ancestor.
+1022	Iron Boulder	0.6	0	1		It was named after a mysterious object recorded in an old book.	It resembles a Pokémon described in a dubious magazine as a Terrakion that had been modified by an evil organization.
+1023	Iron Crown	0.6	0	1		There was supposedly an incident in which it launched shining blades to cut everything around it to pieces.	It resembles a mysterious object introduced in a paranormal magazine as a cutting-edge weapon shaped like a Cobalion.
+1024	Terapagos	2.5	1	0		The shell is made of crystallized Terastal energy.	Terapagos protects itself using its power to transform energy into hard crystals.
+1025	Pecharunt	4.56	2	1		Its peach-shaped shell serves as storage for a potent poison.	It feeds others toxic mochi that draw out desires and capabilities.
