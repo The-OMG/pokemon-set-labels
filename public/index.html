@@ -377,7 +377,8 @@
       row.setAttribute('aria-selected', String(sel.has(s.i)));
       const cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = sel.has(s.i); cb.id = 'cb-' + s.i; cb.setAttribute('aria-label', 'Print ' + s.name);
       cb.onclick = (e) => { e.stopPropagation(); toggle(s.i, cb.checked); };
-      const img = document.createElement('img'); img.alt = ''; img.src = s.symbol_img || ''; img.hidden = !s.symbol_img;
+      const img = s.symbol_img ? document.createElement('img') : document.createElement('span');   // span keeps the grid column when a set has no symbol
+      if (s.symbol_img) { img.alt = ''; img.src = s.symbol_img; }
       const nm = document.createElement('div'); nm.innerHTML = '<div class="nm"></div><div class="sub"></div>';
       nm.querySelector('.nm').textContent = s.name; nm.querySelector('.sub').textContent = s.release + (s.expno ? ' · No. ' + s.expno : '') + (s.printed2023 ? ' · printed 2023' : '');
       const ab = document.createElement('span'); ab.className = 'abbr'; ab.textContent = s.abbr || '';
@@ -411,12 +412,12 @@
 
   function rows(s) {
     const out = [];
-    if (state.numbering === 'seq') out.push(['Expansion No.', s.expno != null ? String(s.expno) : '—']);
-    else if (state.numbering === 'code') out.push(['Expansion No.', s.setno || '—']);
+    if (state.numbering === 'seq') out.push(['Exp No.', s.expno != null ? String(s.expno) : '—']);
+    else if (state.numbering === 'code') out.push(['Exp No.', s.setno || '—']);
     out.push(['Release', s.release || '—']);
     let gen = s.series === 'Base' ? 'Original' : s.series;   // the 2023 cards called the first era "Original"
     if (s.type === 'Special Expansion') gen = { word: 'SPECIAL', suffix: gen + '\n(Special)', star: '★ ' + gen }[state.special] ?? gen;
-    out.push(['Generation', gen]);
+    out.push(['Gen', gen]);
     const total = (s.cards || 0) + (s.secret || 0);
     let cards = s.cards != null ? String(s.cards) : '—';
     if (s.secret > 0) {
@@ -452,7 +453,7 @@
     else { const t = document.createElement('div'); t.className = 'txtlogo'; t.textContent = s.name; logo.appendChild(t); }
     const table = document.createElement('table'); const tb = document.createElement('tbody');
     rows(s).forEach(([k, v]) => {
-      const tr = document.createElement('tr'); if (k === 'Generation') tr.className = 'gen';
+      const tr = document.createElement('tr'); if (k === 'Gen') tr.className = 'gen';
       const th = document.createElement('th'); th.textContent = state.tstyle === 'caps' ? k : k + ':'; th.style.verticalAlign = 'top';
       const td = document.createElement('td');
       v.split('\n').forEach((line, n) => { if (n) td.appendChild(document.createElement('br')); td.appendChild(document.createTextNode(line)); });
