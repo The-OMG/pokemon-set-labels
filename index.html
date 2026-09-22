@@ -83,18 +83,25 @@
   .hint { color: var(--muted); font-size: 12.5px; line-height: 1.4; }
 
   /* ---------- THE LABEL ---------- */
-  .label { --W: 40mm; --H: 60mm; --pad: 2mm; --fs: 1; width: var(--W); height: var(--H); padding: var(--pad);
+  .label { --W: 40mm; --H: 60mm; --pad: 2mm; --sym: 8mm; --min: 40mm; width: var(--W); height: var(--H); padding: var(--pad);
     background: var(--label-paper); color: var(--label-ink); display: flex; flex-direction: column; overflow: hidden;
-    font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif; position: relative; }
-  .label .top { display: flex; align-items: center; gap: calc(var(--W) * 0.05); height: calc(var(--H) * 0.16); flex: none; }
-  .label .abbr { font-weight: 400; letter-spacing: 0.22em; font-size: calc(var(--H) * 0.105 * var(--fs)); line-height: 1; white-space: nowrap; }
-  .label .sym { height: 100%; max-width: calc(var(--W) * 0.22); object-fit: contain; }
-  .label .logo { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; padding: calc(var(--H) * 0.02) 0; }
-  .label .logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
-  .label .logo .txtlogo { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 700; text-transform: uppercase; text-align: center; font-size: calc(var(--H) * 0.09 * var(--fs)); line-height: 1.05; }
-  .label table { border-collapse: collapse; flex: none; font-size: calc(var(--H) * 0.062 * var(--fs)); line-height: 1.28; margin-top: auto; }
+    font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif; position: relative; gap: calc(var(--min) * 0.02); }
+  .label .col { display: flex; flex-direction: column; flex: 1 1 0; min-width: 0; min-height: 0; gap: calc(var(--min) * 0.02); }
+  .label .top { display: flex; align-items: center; gap: calc(var(--min) * 0.06); height: var(--sym); flex: none; }
+  .label .abbr { font-weight: 400; letter-spacing: 0.22em; font-size: calc(var(--sym) * 0.72); line-height: 1; white-space: nowrap; }
+  .label .symbox { width: var(--sym); height: var(--sym); flex: none; display: flex; align-items: center; justify-content: center; }
+  .label .symbox img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+  .label.abbr-small .top { justify-content: space-between; align-items: flex-start; }
+  .label.abbr-small .abbr { font-size: calc(var(--sym) * 0.42); letter-spacing: 0.14em; font-weight: 500; opacity: .75; }
+  .label.abbr-small .symbox { margin-left: auto; }
+  .label .logo { flex: 1 1 0; min-height: 0; display: flex; align-items: center; justify-content: center; }
+  .label .logo img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+  .label .logo .txtlogo { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 700; text-transform: uppercase; text-align: center; font-size: calc(var(--min) * 0.11); line-height: 1.05; }
+  .label table { border-collapse: collapse; flex: none; font-size: calc(var(--min) * 0.07); line-height: 1.25; margin-top: auto; align-self: center; }
   .label th { font-weight: 400; text-align: right; padding: 0 0.35em 0 0; white-space: nowrap; }
   .label td { text-align: left; padding: 0; font-weight: 500; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .label.side { flex-direction: row; gap: calc(var(--min) * 0.05); }
+  .label.side table { margin: auto 0; align-self: auto; }
   .label.mono img { filter: grayscale(1) contrast(1.25); }
   .label.mono .sym { filter: grayscale(1) contrast(2); }
 
@@ -173,16 +180,20 @@
       <label class="field two"><span>Custom (W × H mm)</span><input type="number" id="cw" min="15" max="120" step="0.5" value="40"><span>×</span><input type="number" id="ch" min="15" max="200" step="0.5" value="60"></label>
       <label class="field"><span>Orientation</span>
         <select id="orient"><option value="portrait">Portrait</option><option value="landscape">Landscape</option></select></label>
+      <label class="field"><span>Layout</span>
+        <select id="layout"><option value="auto">Auto (stack / side by side)</option><option value="stack">Stacked</option><option value="side">Side by side</option></select></label>
       <label class="field"><span>Edge margin (mm)</span><input type="number" id="pad" min="0" max="8" step="0.5" value="2"></label>
-      <label class="field"><span>Text size</span><input type="number" id="fs" min="60" max="160" step="5" value="100"></label>
+      <label class="field"><span>Icon size (% of short side)</span><input type="number" id="sym" min="8" max="40" step="1" value="20"></label>
+      <label class="field"><span>Table text size (%)</span><input type="number" id="fs" min="50" max="160" step="5" value="100"></label>
       <label class="field"><span>Monochrome (thermal)</span><input type="checkbox" id="mono"></label>
     </fieldset>
 
     <fieldset>
       <legend>Label content</legend>
       <label class="field"><span>Abbreviation</span>
-        <select id="abbrmode"><option value="always">Always</option><option value="before">Only sets before…</option><option value="never">Never</option></select></label>
+        <select id="abbrmode"><option value="auto">Small corner tag for sets before…</option><option value="large">Large on every set</option><option value="small">Small corner tag on every set</option><option value="never">Never</option></select></label>
       <label class="field"><span>…this date</span><input type="text" id="abbrdate" value="2020-02-07" placeholder="yyyy-mm-dd"></label>
+      <p class="hint">Set codes started printing on the cards with Sword &amp; Shield (2020-02-07), so earlier abbreviations are only a filing aid.</p>
       <label class="field"><span>Expansion No.</span>
         <select id="numbering"><option value="seq">Sequential (main / special)</option><option value="code">Bulbapedia code (SM9)</option><option value="none">Hide row</option></select></label>
       <label class="field"><span>Special sets</span>
@@ -220,8 +231,8 @@
   const PAPERS = { letter: 'letter', a4: 'A4', index: '5in 3in' };
 
   const defaults = {
-    preset: '40x60', cw: 40, ch: 60, orient: 'portrait', pad: 2, fs: 100, mono: false,
-    abbrmode: 'always', abbrdate: '2020-02-07', numbering: 'seq', special: 'suffix', cards: 'total',
+    preset: '40x60', cw: 40, ch: 60, orient: 'portrait', layout: 'auto', pad: 2, sym: 20, fs: 100, mono: false,
+    abbrmode: 'auto', abbrdate: '2020-02-07', numbering: 'seq', special: 'suffix', cards: 'total',
     paper: 'letter', gap: 4, guides: true, zoom: 3,
     types: { 'Main Series Expansion': true, 'Special Expansion': true, 'Other': false }, series: null, selected: [], current: null
   };
@@ -229,7 +240,10 @@
   let q = '';
 
   function load() {
-    try { const raw = localStorage.getItem('setLabelPress.v1'); if (raw) return { ...defaults, ...JSON.parse(raw) }; } catch (e) { /* storage unavailable */ }
+    try {
+      const raw = localStorage.getItem('setLabelPress.v1');
+      if (raw) { const st = { ...defaults, ...JSON.parse(raw) }; if (st.abbrmode === 'always') st.abbrmode = 'large'; if (st.abbrmode === 'before') st.abbrmode = 'auto'; return st; }
+    } catch (e) { /* storage unavailable */ }
     return { ...defaults };
   }
   function save() { try { localStorage.setItem('setLabelPress.v1', JSON.stringify(state)); } catch (e) { /* ignore */ } }
@@ -297,10 +311,12 @@
     return [w, h];
   }
 
-  function showAbbr(s) {
-    if (state.abbrmode === 'never') return false;
-    if (state.abbrmode === 'before') return s.release < (state.abbrdate || '9999');
-    return true;
+  // 'large' | 'small' | null
+  function abbrStyle(s) {
+    if (state.abbrmode === 'never' || !s.abbr) return null;
+    if (state.abbrmode === 'large') return 'large';
+    if (state.abbrmode === 'small') return 'small';
+    return s.release < (state.abbrdate || '9999') ? 'small' : 'large';
   }
 
   function rows(s) {
@@ -324,30 +340,41 @@
 
   function labelEl(s) {
     const [w, h] = dims();
-    const el = document.createElement('div'); el.className = 'label' + (state.mono ? ' mono' : '');
-    el.style.setProperty('--W', w + 'mm'); el.style.setProperty('--H', h + 'mm');
-    el.style.setProperty('--pad', (Number(state.pad) || 0) + 'mm'); el.style.setProperty('--fs', (Number(state.fs) || 100) / 100);
+    const side = state.layout === 'side' || (state.layout === 'auto' && w > h * 1.15);
+    const ab = abbrStyle(s);
+    const el = document.createElement('div'); el.className = 'label' + (state.mono ? ' mono' : '') + (side ? ' side' : '') + (ab === 'small' ? ' abbr-small' : '');
+    const min = Math.min(w, h);
+    el.style.setProperty('--W', w + 'mm'); el.style.setProperty('--H', h + 'mm'); el.style.setProperty('--min', min + 'mm');
+    el.style.setProperty('--pad', (Number(state.pad) || 0) + 'mm'); el.style.setProperty('--sym', (min * (Number(state.sym) || 20) / 100) + 'mm');
     const top = document.createElement('div'); top.className = 'top';
-    if (showAbbr(s) && s.abbr) { const a = document.createElement('span'); a.className = 'abbr'; a.textContent = s.abbr; top.appendChild(a); }
-    if (s.symbol_img) { const im = document.createElement('img'); im.className = 'sym'; im.alt = ''; im.src = s.symbol_img; top.appendChild(im); }
+    if (ab) { const a = document.createElement('span'); a.className = 'abbr'; a.textContent = s.abbr; top.appendChild(a); }
+    if (s.symbol_img) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = s.symbol_img; box.appendChild(im); top.appendChild(box); }
     const logo = document.createElement('div'); logo.className = 'logo';
     if (s.logo_img) { const im = document.createElement('img'); im.alt = s.name; im.src = s.logo_img; logo.appendChild(im); }
     else { const t = document.createElement('div'); t.className = 'txtlogo'; t.textContent = s.name; logo.appendChild(t); }
     const table = document.createElement('table'); const tb = document.createElement('tbody');
     rows(s).forEach(([k, v]) => { const tr = document.createElement('tr'); const th = document.createElement('th'); th.textContent = k + ':'; const td = document.createElement('td'); td.textContent = v; tr.append(th, td); tb.appendChild(tr); });
     table.appendChild(tb);
-    el.append(top, logo, table);
-    fit(el, table);
+    if (side) { const col = document.createElement('div'); col.className = 'col'; col.append(top, logo); el.append(col, table); }
+    else el.append(top, logo, table);
+    fit(el, table, side);
     return el;
   }
 
-  // Shrink the table type until the widest row fits inside the label's padding box.
-  function fit(el, table) {
+  // Scale the table type so the widest row fills the space it has, capped by the height it may take
+  // (about 42% of a stacked label, 90% of a side-by-side one); the user's Table text size multiplies on top.
+  function fit(el, table, side) {
     const m = $('measure'); m.appendChild(el);
     const cs = getComputedStyle(el);
-    const avail = el.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
-    const need = table.scrollWidth;
-    if (need > avail && avail > 0) table.style.fontSize = (parseFloat(getComputedStyle(table).fontSize) * avail / need * 0.985) + 'px';
+    const innerW = el.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    const innerH = el.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+    const availW = side ? innerW * 0.58 : innerW;
+    const availH = side ? innerH * 0.9 : innerH * 0.42;
+    const needW = table.scrollWidth, needH = table.offsetHeight;
+    if (needW > 0 && needH > 0) {
+      const k = Math.min(availW / needW, availH / needH) * 0.985 * ((Number(state.fs) || 100) / 100);
+      table.style.fontSize = (parseFloat(getComputedStyle(table).fontSize) * k) + 'px';
+    }
     m.removeChild(el);
   }
 
@@ -381,13 +408,13 @@
   $('btn-sheet').onclick = () => print('sheet');
 
   // ---------- wiring ----------
-  const fields = ['preset', 'cw', 'ch', 'orient', 'pad', 'fs', 'mono', 'abbrmode', 'abbrdate', 'numbering', 'special', 'cards', 'paper', 'gap', 'guides', 'zoom'];
+  const fields = ['preset', 'cw', 'ch', 'orient', 'layout', 'pad', 'sym', 'fs', 'mono', 'abbrmode', 'abbrdate', 'numbering', 'special', 'cards', 'paper', 'gap', 'guides', 'zoom'];
   fields.forEach(id => {
     const el = $(id); if (!el) return;
     if (el.type === 'checkbox') el.checked = !!state[id]; else el.value = state[id];
     el.addEventListener('input', () => { state[id] = el.type === 'checkbox' ? el.checked : el.value; save(); syncCustom(); renderPreview(); });
   });
-  function syncCustom() { const custom = state.preset === 'custom'; $('cw').disabled = $('ch').disabled = !custom; $('abbrdate').disabled = state.abbrmode !== 'before'; }
+  function syncCustom() { const custom = state.preset === 'custom'; $('cw').disabled = $('ch').disabled = !custom; $('abbrdate').disabled = state.abbrmode !== 'auto'; }
   $('q').addEventListener('input', () => { q = $('q').value; renderList(); });
   document.querySelectorAll('#type-chips .chip[data-type]').forEach(c => c.onclick = () => { state.types[c.dataset.type] = !state.types[c.dataset.type]; save(); renderAll(); });
   $('chip-new').onclick = () => { state.onlyNew = !state.onlyNew; save(); renderAll(); };
