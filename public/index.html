@@ -147,8 +147,14 @@
   .label.rule.side table { border-top: 0; border-left: 0.25mm solid currentColor; padding-top: 0; padding-left: calc(var(--min) * 0.04); }
   .label.side { flex-direction: row; gap: calc(var(--min) * 0.05); }
   .label.side table { margin: auto 0; align-self: auto; }
-  .label.mono img { filter: grayscale(1) contrast(1.25); }
-  .label.mono .symbox img { filter: grayscale(1) contrast(2); }
+  .label.mono img { filter: grayscale(1) contrast(1.8) brightness(1.04); }
+  .label.mono .symbox img { filter: grayscale(1) contrast(3); }
+  .label.mono .abbr { font-weight: 600; }
+  .label.mono th { font-weight: 600; }
+  .label.mono td { font-weight: 700; }
+  .label.mono .badge { border-width: 0.3mm; font-weight: 700; }
+  .label.mono.rule table { border-top-width: 0.35mm; }
+  .label.mono.rule.side table { border-left-width: 0.35mm; }
   #measure { position: absolute; left: -100000px; top: 0; visibility: hidden; pointer-events: none; }
 
   /* ---------- PRINT ---------- */
@@ -281,7 +287,7 @@
       <label class="field"><span class="lbl">Icon size <small>Percent of the label's short side.</small></span><input type="number" id="sym" min="8" max="40" step="1" value="20"></label>
       <label class="field"><span class="lbl">Table text size <small>100 = fill the width.</small></span><input type="number" id="fs" min="50" max="160" step="5" value="100"></label>
       <label class="field"><span class="lbl">Space from the edge <small>millimetres</small></span><input type="number" id="pad" min="0" max="8" step="0.5" value="2"></label>
-      <label class="field"><span class="lbl">Black &amp; white <small>For thermal label printers.</small></span><input type="checkbox" id="mono"></label>
+      <label class="field"><span class="lbl">Thermal printer mode <small>Pure black &amp; white, heavier text, stronger logo contrast. Turn on for the Phomemo.</small></span><input type="checkbox" id="mono"></label>
     </fieldset>
 
     <fieldset>
@@ -426,6 +432,10 @@
     else if (state.orient === 'portrait') [w, h] = [Math.min(w, h), Math.max(w, h)];
     return [w, h];   // 'auto': exactly as the roll is listed, width across the print head
   }
+  // Roll presets: the @page is the driver's media size; the label itself is 0.3 mm smaller on each axis so
+  // rounding in the driver (its 30 mm is really 29.97) can never spill a label onto an extra blank page.
+  const isRoll = () => !['index', 'custom'].includes(state.preset);
+  function labelDims() { const [w, h] = dims(); return isRoll() ? [+(w - 0.3).toFixed(2), +(h - 0.3).toFixed(2)] : [w, h]; }
 
   // Should this set's abbreviation be printed? (Its size is a separate, global setting.)
   function showAbbr(s) {
@@ -454,7 +464,7 @@
   }
 
   function labelEl(s) {
-    const [w, h] = dims();
+    const [w, h] = labelDims();
     const side = state.layout === 'side' || (state.layout === 'auto' && w > h * 1.15);
     const ab = showAbbr(s);
     const el = document.createElement('div');
@@ -599,15 +609,16 @@
     const [w, h] = dims();
     if (mode === 'labels') {
       // Optional driver page: the label sits top-left on a page of the size the printer driver actually offers.
-      const pw = Number(state.pw) || 0, ph = Number(state.ph) || 0;
-      const usePage = pw >= w && ph >= h;
-      pageStyle.textContent = '@page { size: ' + (usePage ? pw + 'mm ' + ph + 'mm' : w + 'mm ' + h + 'mm') + '; margin: 0; }';
+      const [lw, lh] = labelDims();
+      let pw = Number(state.pw) || 0, ph = Number(state.ph) || 0;
+      if (!(pw >= lw && ph >= lh)) { pw = w; ph = h; }            // no driver page given: the media is the roll size
+      pageStyle.textContent = '@page { size: ' + pw + 'mm ' + ph + 'mm; margin: 0; }';
       makeLabels(state.selected.map(i => SETS[i]).filter(Boolean)).forEach(el => {
-        if (!usePage) { root.appendChild(el); return; }
-        const pg = document.createElement('div'); pg.className = 'sheetpage'; pg.style.width = pw + 'mm'; pg.style.height = ph + 'mm';
-        pg.style.gridTemplateColumns = w + 'mm'; pg.style.gridAutoRows = h + 'mm'; pg.appendChild(el); root.appendChild(pg);
+        const pg = document.createElement('div'); pg.className = 'sheetpage';
+        pg.style.width = (pw - 0.2) + 'mm'; pg.style.height = (ph - 0.2) + 'mm';   // never taller than the page
+        pg.style.gridTemplateColumns = lw + 'mm'; pg.style.gridAutoRows = lh + 'mm'; pg.appendChild(el); root.appendChild(pg);
       });
-      if (usePage) root.className = 'sheet';   // page-per-label break rules
+      root.className = 'sheet';   // one page per label, page break after each
     } else {
       const b = buildPages();
       pageStyle.textContent = '@page { size: ' + b.paper.css + '; margin: 0; }';
@@ -624,7 +635,7 @@
     const btn = $('btn-png');
     if (!window.html2canvas || !window.JSZip) { $('note').textContent = 'The image libraries have not loaded yet; try again in a moment.'; return; }
     const sets = state.selected.map(i => SETS[i]).filter(Boolean); if (!sets.length) return;
-    const [w, h] = dims(); const dpi = 203; const scale = dpi / 96;
+    const [w, h] = labelDims(); const dpi = 203; const scale = dpi / 96;
     btn.disabled = true; const label = btn.textContent;
     try {
       const host = document.createElement('div'); host.style.cssText = 'position:absolute;left:0;top:0;z-index:-1;opacity:1;pointer-events:none;background:#fff;';
