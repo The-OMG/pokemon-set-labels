@@ -98,11 +98,13 @@
   .label.mono img { filter: grayscale(1) contrast(1.25); }
   .label.mono .sym { filter: grayscale(1) contrast(2); }
 
+  #measure { position: absolute; left: -100000px; top: 0; visibility: hidden; pointer-events: none; }
+
   /* ---------- PRINT ---------- */
   #print-root { display: none; }
   @media print {
     body { background: #fff; }
-    .app { display: none !important; }
+    .app, #measure { display: none !important; }
     #print-root { display: block; }
     #print-root.labels .label { page-break-after: always; break-after: page; }
     #print-root.sheet { display: flex; flex-wrap: wrap; gap: var(--gap); align-content: flex-start; }
@@ -206,6 +208,7 @@
 </div>
 
 <div id="print-root"></div>
+<div id="measure" aria-hidden="true"></div>
 
 <script src="sets.js"></script>
 <script>
@@ -334,7 +337,18 @@
     rows(s).forEach(([k, v]) => { const tr = document.createElement('tr'); const th = document.createElement('th'); th.textContent = k + ':'; const td = document.createElement('td'); td.textContent = v; tr.append(th, td); tb.appendChild(tr); });
     table.appendChild(tb);
     el.append(top, logo, table);
+    fit(el, table);
     return el;
+  }
+
+  // Shrink the table type until the widest row fits inside the label's padding box.
+  function fit(el, table) {
+    const m = $('measure'); m.appendChild(el);
+    const cs = getComputedStyle(el);
+    const avail = el.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    const need = table.scrollWidth;
+    if (need > avail && avail > 0) table.style.fontSize = (parseFloat(getComputedStyle(table).fontSize) * avail / need * 0.985) + 'px';
+    m.removeChild(el);
   }
 
   function renderPreview() {
@@ -386,5 +400,6 @@
   $('datainfo').textContent = SETS.length + ' English sets (' + main + ' main, ' + spec + ' special). Names, numbering, dates, card counts and artwork from Bulbapedia’s expansion list; Base Set artwork from pokemontcg.io. Snapshot ' + (window.POKEMON_SETS_DATE || '') + '.';
   if (state.current == null) state.current = SETS.findIndex(s => s.abbr === 'TEU');
   syncCustom(); renderAll();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(renderPreview);
 })();
 </script>
