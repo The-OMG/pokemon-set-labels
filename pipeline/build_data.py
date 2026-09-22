@@ -38,7 +38,8 @@ for rec in out:
         nm = rec['name'].lower().replace(' set','').replace('play! pokémon ','').replace('pokémon trading card game classic','classic')
         cand = [t for t in tcg.values() if t['name'].lower()==nm or (rec['name']=='Base Set' and t['id']=='base1')]
         if cand:
-            rec['symbol_url'] = rec['symbol_url'] or cand[0]['images']['symbol']; rec['logo_url'] = rec['logo_url'] or cand[0]['images']['logo']
+            rec['logo_url'] = rec['logo_url'] or cand[0]['images']['logo']
+            if rec['name'] != 'Base Set': rec['symbol_url'] = rec['symbol_url'] or cand[0]['images']['symbol']   # Base Set has no set symbol
         else: print('NO IMAGES:', rec['name'])
 json.dump(out, open('sets_data.json','w',encoding='utf-8'), indent=1, ensure_ascii=False)
 print(len(out), 'sets; main', main_n, 'special', spec_n)
