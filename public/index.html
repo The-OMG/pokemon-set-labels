@@ -638,14 +638,19 @@
     const needW = Math.max(...rowsEl.filter(tr => !tr.classList.contains('gen')).map(width));
     const line = rowsEl[0].offsetHeight;
     const genRow = rowsEl.find(tr => tr.classList.contains('gen'));
-    const needH = table.offsetHeight + (genRow && width(genRow) > needW ? line : 0);
+    const wraps = !!(genRow && width(genRow) > needW);
+    const needH = table.offsetHeight;
     el._base = parseFloat(getComputedStyle(table).fontSize); el._availW = availW;
+    // shared scale: what this label needs with every row on one line (drives the whole batch)
     el._k = (needW > 0 && needH > 0) ? Math.min(availW / needW, availH / needH) * 0.985 : 1;
+    // own limit: a label whose generation wraps may need a touch less, but only it shrinks, not the batch
+    el._kself = wraps ? Math.min(availW / needW, (availH * 1.12) / (needH + line)) * 0.985 : el._k;
     m.removeChild(el);
     applyScale(el, el._k);
   }
   function applyScale(el, k) {
     const table = el.querySelector('table');
+    k = Math.min(k, el._kself ?? k);
     table.style.fontSize = (el._base * k * ((Number(state.fs) || 100) / 100)) + 'px';
     const genRow = table.querySelector('tr.gen'); if (!genRow) return;
     const m = $('measure'); m.appendChild(el);
