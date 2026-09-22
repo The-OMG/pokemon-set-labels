@@ -583,7 +583,7 @@
   // Black Star Promo sets: era logo + promo star; the star is also their symbol (next to the code box from S&V on)
   const PROMO_LOGO = { WP: 'base-set', NP: 'ex-ruby-sapphire', DPP: 'diamond-pearl', HSP: 'heartgold-soulsilver', BWP: 'black-white', XYP: 'xy', SMP: 'sun-moon', SWSD: 'sword-shield', SVP: 'scarlet-violet', MEP: 'mega-evolution' };
   // plain five-point black star (the Black Star Promo mark), as an SVG data URI so it tints and prints like the icons
-  const STAR_SVG = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="#000" d="M50 3 61.8 38.2 98.9 38.2 68.9 60 80.4 95.1 50 73.5 19.6 95.1 31.1 60 1.1 38.2 38.2 38.2z"/></svg>');
+  const STAR_SVG = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50.0 6.0 60.9 35.0 91.8 36.4 67.6 55.7 75.9 85.6 50.0 68.5 24.1 85.6 32.4 55.7 8.2 36.4 39.1 35.0z" fill="#000" stroke="#fff" stroke-width="4.0" stroke-linejoin="round" paint-order="stroke"/></svg>');   // the promo star, same proportions, no lettering
   const PROMO_STAR = STAR_SVG;
   function labelEl(s) {
     const [w, h] = labelDims();
@@ -606,6 +606,7 @@
       top.appendChild(blk);
     }
     const codeEra = !!(state.icondate && s.release >= state.icondate && s.abbr && !/Prize Pack|Trick or Trade/i.test(s.name));
+    if (codeEra && promo) { const sb = document.createElement('div'); sb.className = 'symbox star'; const st = document.createElement('img'); st.alt = ''; st.src = STAR_SVG; sb.appendChild(st); top.appendChild(sb); }
     if (codeEra) {   // draw the code box ourselves so every text-code icon is the same size and weight
       const box = document.createElement('div'); box.className = 'symbox code'; const cb = document.createElement('div'); cb.className = 'codebox' + (s.abbr.length > 3 ? ' long' : '');
       const inner = document.createElement('div'); inner.className = 'inner'; const txt = document.createElement('span'); txt.className = 'txt'; txt.textContent = s.abbr;
