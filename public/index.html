@@ -28,7 +28,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Chakra+Petch:wght@400;500;600;700&family=Exo+2:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Chakra+Petch:wght@400;500;600;700&family=Exo+2:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=Oswald:wght@700&family=Source+Sans+3:wght@400;500;600;700&display=swap">
 <style>
   :root {
     --ground: #f3f1ea; --panel: #ffffff; --panel-2: #ebe8df; --ink: #1b1a19; --muted: #6b675e; --line: #d9d5cb;
@@ -114,6 +114,9 @@
   .field input[type=checkbox] { accent-color: var(--accent); width: 16px; height: 16px; }
   .field .lbl small { display: block; color: var(--muted); font-size: 12px; line-height: 1.3; }
   .hint { color: var(--muted); font-size: 12.5px; line-height: 1.4; margin: 0; }
+  .field { position: relative; }
+  .field .rst { position: absolute; right: -2px; top: -9px; border: 0; background: var(--panel); color: var(--accent); font-size: 13px; line-height: 1; padding: 1px 4px; border-radius: 4px; cursor: pointer; }
+  .field .rst:hover { background: var(--panel-2); }
   details.adv { border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; }
   details.adv summary { cursor: pointer; font-size: 13px; color: var(--muted); }
   details.adv .field { margin-top: 8px; }
@@ -139,10 +142,17 @@
   .label.abbr-large .abbrblock { --abbr-h: calc(var(--sym) * 0.62); }
   .label .symbox { width: var(--sym); height: var(--sym); flex: none; margin-left: auto; display: flex; align-items: center; justify-content: center; }
   .label .symbox img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
-  /* Generated code box for the era where the set symbol is the code itself: identical size for every set. */
-  .label .codebox { width: 100%; height: 56%; background: var(--c-icon, #111); color: #fff; border-radius: 0.16em; display: flex; align-items: center; justify-content: center;
-    font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 700; font-style: italic; letter-spacing: 0.03em; font-size: calc(var(--sym) * 0.42); line-height: 1; padding-top: 0.04em; box-sizing: border-box; }
-  .label .codebox.long { font-size: calc(var(--sym) * 0.33); }
+  /* Generated set-code symbol for the Scarlet & Violet era, built to the measured geometry of the printed one
+     (480 x 276 original): black rounded box, 5.1% outer margin, 4% white inner stroke, 14% corner radius,
+     letters 58% of the box height. Same size on every set. */
+  .label .symbox.code { width: calc(var(--sym) * 1.32); }
+  .label .codebox { --cbw: calc(var(--sym) * 1.32); --cbh: calc(var(--cbw) / 1.739); width: var(--cbw); height: var(--cbh); flex: none;
+    background: var(--c-icon, #000); border-radius: calc(var(--cbh) * 0.141); padding: calc(var(--cbh) * 0.0507); box-sizing: border-box; }
+  .label .codebox .inner { width: 100%; height: 100%; box-sizing: border-box; border: calc(var(--cbh) * 0.04) solid #fff; border-radius: calc(var(--cbh) * 0.091);
+    display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .label .codebox .txt { font-family: "Oswald", "Arial Narrow", Impact, sans-serif; font-weight: 700; color: #fff; font-size: calc(var(--cbh) * 0.635); line-height: 1;
+    letter-spacing: 0.015em; text-indent: 0.015em; transform: translateY(0.02em); white-space: nowrap; }
+  .label .codebox.long .txt { font-size: calc(var(--cbh) * 0.52); }
   .label.mono .codebox { background: #000; }
   .label .badge { font-size: calc(var(--sym) * 0.2); letter-spacing: 0.12em; text-indent: 0.12em; text-transform: uppercase; font-weight: 600; line-height: 1;
     border: 0.2mm solid currentColor; border-radius: 0.3em; padding: 0.22em 0 0.16em; width: calc(var(--sym) * 1.15); text-align: center; white-space: nowrap; box-sizing: border-box; }
@@ -277,6 +287,7 @@
           </optgroup>
         </select></label>
       <label class="field two" id="customrow"><span class="lbl">Custom width × height <small>millimetres</small></span><input type="number" id="cw" min="15" max="120" step="0.5" value="40" aria-label="Custom width in mm"><span>×</span><input type="number" id="ch" min="15" max="200" step="0.5" value="60" aria-label="Custom height in mm"></label>
+      <label class="field"><span class="lbl">Copies of each label</span><input type="number" id="copies" min="1" max="50" step="1" value="1"></label>
       <label class="field"><span class="lbl">Label orientation</span>
         <select id="orient"><option value="auto">As listed</option><option value="portrait">Tall</option><option value="landscape">Wide</option></select></label>
       <div id="sheetopts" class="group">
@@ -373,7 +384,7 @@
   const STORE = 'setLabelPress.v1';   // key kept for continuity; the stored object carries its own version (v)
 
   const defaults = {
-    target: 'roll', preset: '40x60', cw: 40, ch: 60, orient: 'auto', pw: '', ph: '', layout: 'auto', pad: 2, sym: 20, fs: 100, mono: true,
+    target: 'roll', copies: 1, preset: '40x60', cw: 40, ch: 60, orient: 'auto', pw: '', ph: '', layout: 'auto', pad: 2, sym: 20, fs: 100, mono: true,
     font: 'Jost', tstyle: 'caps', rule: true, tintIcon: false, cIcon: '#111111', cAbbr: '#111111', cTh: '#111111', cTd: '#111111',
     abbrmode: 'auto', abbrsize: 'small', icondate: '2023-03-31', numbering: 'seq', special: 'badge', cards: 'total',
     paper: 'letter', porient: 'auto', place: 'center', margin: 0, gap: 0, guides: true, zoom: 3, preview: 'label', v: 3,
@@ -532,8 +543,9 @@
     }
     const codeEra = !!(state.icondate && s.release >= state.icondate && s.abbr && s.type !== 'Other');
     if (codeEra) {   // draw the code box ourselves so every text-code icon is the same size and weight
-      const box = document.createElement('div'); box.className = 'symbox'; const cb = document.createElement('div'); cb.className = 'codebox' + (s.abbr.length > 3 ? ' long' : '');
-      cb.textContent = s.abbr; if (state.tintIcon && !state.mono) box.style.setProperty('--c-icon', state.cIcon); box.appendChild(cb); top.appendChild(box);
+      const box = document.createElement('div'); box.className = 'symbox code'; const cb = document.createElement('div'); cb.className = 'codebox' + (s.abbr.length > 3 ? ' long' : '');
+      const inner = document.createElement('div'); inner.className = 'inner'; const txt = document.createElement('span'); txt.className = 'txt'; txt.textContent = s.abbr;
+      inner.appendChild(txt); cb.appendChild(inner); if (state.tintIcon && !state.mono) cb.style.setProperty('--c-icon', state.cIcon); box.appendChild(cb); top.appendChild(box);
     } else if (s.symbol_img) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = (state.tintIcon && !state.mono) ? tinted(s, state.cIcon) : s.symbol_img; box.appendChild(im); top.appendChild(box); }
     const logo = document.createElement('div'); logo.className = 'logo';
     if (s.logo_img) { const im = document.createElement('img'); im.alt = s.name; im.src = s.logo_img; logo.appendChild(im); }
@@ -586,6 +598,7 @@
   }
 
   // A batch of labels shares ONE table scale (the tightest fit), so every label in a print run has identical type.
+  function withCopies(sets) { const n = Math.max(1, Math.min(50, Math.round(Number(state.copies) || 1))); return n === 1 ? sets : sets.flatMap(s => Array(n).fill(s)); }
   function makeLabels(sets) {
     const els = sets.map(s => labelEl(s));
     if (els.length > 1) { const k = Math.min(...els.map(e => e._k)); els.forEach(e => applyScale(e, k)); }
@@ -616,7 +629,7 @@
     const cols = Math.max(1, Math.floor((iw + gap + 0.01) / (lw + gap)));
     const rows = Math.max(1, Math.floor((ih + gap + 0.01) / (lh + gap)));
     const per = cols * rows;
-    const sets = state.selected.map(i => SETS[i]).filter(Boolean);
+    const sets = withCopies(state.selected.map(i => SETS[i]).filter(Boolean));
     const labels = makeLabels(sets);
     const pages = [];
     for (let i = 0; i < labels.length; i += per) {
@@ -650,7 +663,7 @@
       return;
     }
     if (state.preview === 'roll') {
-      const sets = state.selected.map(i => SETS[i]).filter(Boolean);
+      const sets = withCopies(state.selected.map(i => SETS[i]).filter(Boolean));
       if (!sets.length) { $('note').textContent = 'Nothing selected yet. Tick sets on the left to add them to the roll.'; return; }
       const k = Math.min(z, availPx / (w * MM));
       makeLabels(sets).forEach(el => stage.appendChild(scaled(el, w, h, k)));
@@ -676,7 +689,7 @@
       let pw = Number(state.pw) || 0, ph = Number(state.ph) || 0;
       if (!(pw >= lw && ph >= lh)) { pw = w; ph = h; }            // no driver page given: the media is the roll size
       pageStyle.textContent = '@page { size: ' + pw + 'mm ' + ph + 'mm; margin: 0; }';
-      makeLabels(state.selected.map(i => SETS[i]).filter(Boolean)).forEach(el => {
+      makeLabels(withCopies(state.selected.map(i => SETS[i]).filter(Boolean))).forEach(el => {
         const pg = document.createElement('div'); pg.className = 'sheetpage';
         pg.style.width = (pw - 0.2) + 'mm'; pg.style.height = (ph - 0.2) + 'mm';   // never taller than the page
         pg.style.gridTemplateColumns = lw + 'mm'; pg.style.gridAutoRows = lh + 'mm'; pg.appendChild(el); root.appendChild(pg);
@@ -724,21 +737,30 @@
   $('btn-png').onclick = exportPngs;
 
   // ---------- wiring ----------
-  const fields = ['target', 'preset', 'cw', 'ch', 'orient', 'pw', 'ph', 'layout', 'pad', 'sym', 'fs', 'mono', 'font', 'tstyle', 'rule',
+  const fields = ['target', 'copies', 'preset', 'cw', 'ch', 'orient', 'pw', 'ph', 'layout', 'pad', 'sym', 'fs', 'mono', 'font', 'tstyle', 'rule',
     'abbrmode', 'abbrsize', 'icondate', 'numbering', 'special', 'cards', 'paper', 'porient', 'place', 'margin', 'gap', 'guides', 'zoom', 'preview', 'cIcon', 'cAbbr', 'cTh', 'cTd', 'tintIcon'];
+  const noReset = new Set(['target', 'zoom', 'preview']);
   function bind() {
     fields.forEach(id => {
       const el = $(id); if (!el) return;
       if (el.type === 'checkbox') el.checked = !!state[id]; else el.value = state[id] ?? '';
+      const rst = el.closest('.field')?.querySelector('.rst[data-for="' + id + '"]');
+      if (rst) rst.hidden = String(state[id] ?? '') === String(defaults[id] ?? '');
     });
     $('printadv').open = !!(Number(state.pw) && Number(state.ph));
   }
   fields.forEach(id => {
     const el = $(id); if (!el) return;
+    const field = el.closest('.field');
+    if (field && !noReset.has(id) && !field.querySelector('.rst[data-for="' + id + '"]')) {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'rst'; b.dataset.for = id; b.textContent = '\u21BA'; b.title = 'Reset to default';
+      b.onclick = (e) => { e.preventDefault(); state[id] = defaults[id]; save(); bind(); syncUI(); renderPreview(); };
+      field.appendChild(b);
+    }
     el.addEventListener('input', () => {
       state[id] = el.type === 'checkbox' ? el.checked : el.value;
       if (id === 'target') targetChanged();
-      save(); syncUI(); renderPreview();
+      save(); bind(); syncUI(); renderPreview();
     });
   });
   // Switching printer: sensible defaults follow (thermal on for rolls, matching preview, a roll size on a roll).
