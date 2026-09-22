@@ -125,13 +125,16 @@
     font-family: var(--lfont), "Segoe UI", system-ui, sans-serif; position: relative; gap: calc(var(--min) * 0.02); }
   .label .col { display: flex; flex-direction: column; flex: 1 1 0; min-width: 0; min-height: 0; gap: calc(var(--min) * 0.02); }
   .label .top { display: flex; align-items: flex-start; justify-content: space-between; gap: calc(var(--min) * 0.04); height: var(--sym); flex: none; }
-  .label .abbr { font-weight: 500; letter-spacing: 0.2em; font-size: calc(var(--sym) * 0.7); line-height: var(--sym); white-space: nowrap; }
+  /* abbreviation block: the code on top, an optional SPECIAL strip underneath matched to the code's width */
+  .label .abbrblock { display: flex; flex-direction: column; justify-content: center; align-self: stretch; width: max-content; min-width: 0; gap: calc(var(--sym) * 0.07); }
+  .label .abbr { font-weight: 500; letter-spacing: 0.2em; margin-right: -0.2em; font-size: calc(var(--sym) * 0.62); line-height: 1; white-space: nowrap; }
   .label .symbox { width: var(--sym); height: var(--sym); flex: none; margin-left: auto; display: flex; align-items: center; justify-content: center; }
   .label .symbox img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
-  .label.abbr-small .abbr { font-size: calc(var(--sym) * 0.4); letter-spacing: 0.16em; font-weight: 500; line-height: 1.1; }
-  .label .badge { font-size: calc(var(--sym) * 0.32); letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; line-height: 1;
-    border: 0.25mm solid currentColor; border-radius: 0.35em; padding: 0.22em 0.45em 0.18em; align-self: center; white-space: nowrap; }
-  .label.abbr-small .badge { align-self: flex-start; margin-top: 0.05em; }
+  .label.abbr-small .abbrblock { justify-content: flex-start; }
+  .label.abbr-small .abbr { font-size: calc(var(--sym) * 0.4); letter-spacing: 0.16em; margin-right: -0.16em; font-weight: 500; }
+  .label .badge { font-size: calc(var(--sym) * 0.2); letter-spacing: 0.12em; text-indent: 0.12em; text-transform: uppercase; font-weight: 600; line-height: 1;
+    border: 0.2mm solid currentColor; border-radius: 0.3em; padding: 0.22em 0.3em 0.16em; width: 100%; text-align: center; white-space: nowrap; }
+  .label .abbrblock.solo .badge { width: auto; }
   .label .logo { flex: 1 1 0; min-height: 0; display: flex; align-items: center; justify-content: center; }
   .label .logo img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
   .label .logo .txtlogo { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 700; text-transform: uppercase; text-align: center; font-size: calc(var(--min) * 0.11); line-height: 1.05; }
@@ -436,8 +439,13 @@
     el.style.setProperty('--W', w + 'mm'); el.style.setProperty('--H', h + 'mm'); el.style.setProperty('--min', min + 'mm');
     el.style.setProperty('--pad', (Number(state.pad) || 0) + 'mm'); el.style.setProperty('--sym', (min * (Number(state.sym) || 20) / 100) + 'mm');
     const top = document.createElement('div'); top.className = 'top';
-    if (ab) { const a = document.createElement('span'); a.className = 'abbr'; a.textContent = s.abbr; top.appendChild(a); }
-    if (s.type === 'Special Expansion' && state.special === 'badge') { const b = document.createElement('span'); b.className = 'badge'; b.textContent = 'Special'; top.appendChild(b); }
+    const badge = s.type === 'Special Expansion' && state.special === 'badge';
+    if (ab || badge) {
+      const blk = document.createElement('div'); blk.className = 'abbrblock' + (ab ? '' : ' solo');
+      if (ab) { const a = document.createElement('span'); a.className = 'abbr'; a.textContent = s.abbr; blk.appendChild(a); }
+      if (badge) { const b = document.createElement('span'); b.className = 'badge'; b.textContent = 'Special'; blk.appendChild(b); }
+      top.appendChild(blk);
+    }
     if (s.symbol_img) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = s.symbol_img; box.appendChild(im); top.appendChild(box); }
     const logo = document.createElement('div'); logo.className = 'logo';
     if (s.logo_img) { const im = document.createElement('img'); im.alt = s.name; im.src = s.logo_img; logo.appendChild(im); }
