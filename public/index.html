@@ -209,11 +209,51 @@
     .label, .sheetpage { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   }
 
-  @media (max-width: 1080px) {
+  .tabbar { display: none; }
+  @media (max-width: 1080px) and (min-width: 761px) {
     .app { grid-template-columns: 1fr; grid-template-rows: auto auto auto auto; height: auto; }
     aside { border-right: 0; border-bottom: 1px solid var(--line); }
     aside.right { border-left: 0; }
     .list { max-height: 45vh; }
+  }
+  /* ---------- phone: one panel at a time, tab bar at the bottom ---------- */
+  @media (max-width: 760px) {
+    html, body { height: auto; }
+    body { font-size: 16px; }
+    .app { display: block; height: auto; padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }
+    header.bar { padding: 8px 12px; gap: 8px; }
+    header h1 { font-size: 20px; }
+    header .tag { display: none; }
+    header .count { font-size: 13px; width: 100%; order: 3; }
+    header .btn { padding: 8px 12px; font-size: 14px; }
+    aside, main { display: none; border: 0; }
+    .app[data-tab="sets"] aside.left { display: flex; }
+    .app[data-tab="preview"] main { display: flex; }
+    .app[data-tab="settings"] aside.right { display: block; }
+    aside.left { height: auto; }
+    .list { max-height: none; overflow: visible; }
+    .series-h { top: 0; }
+    .row { padding: 10px 12px; gap: 10px; }
+    .row input[type=checkbox] { width: 22px; height: 22px; }
+    .row .cp { width: 52px; padding: 6px 4px; font-size: 15px; }
+    .chip { padding: 5px 12px; font-size: 14px; }
+    .side-actions button { padding: 6px 8px; font-size: 15px; }
+    main { padding: 14px 12px 24px; }
+    .previewbar { font-size: 14px; }
+    .previewbar select { max-width: 100%; }
+    .zoomrow input[type=range] { width: 120px; }
+    .about { font-size: 15px; }
+    aside.right { padding: 12px 14px 24px; }
+    .field { grid-template-columns: minmax(0, 1fr) auto; }
+    .field select, .field input[type=number], .field input[type=text] { font-size: 16px; padding: 8px 10px; width: 170px; }
+    .field input[type=number] { width: 84px; }
+    .field input[type=checkbox] { width: 22px; height: 22px; }
+    .field .rst { font-size: 16px; padding: 4px 8px; }
+    details.adv summary { padding: 6px 0; font-size: 15px; }
+    .tabbar { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--panel); border-top: 1px solid var(--line);
+      padding: 6px 8px calc(6px + env(safe-area-inset-bottom, 0px)); gap: 6px; }
+    .tabbar button { flex: 1; border: 0; background: transparent; padding: 8px 4px; border-radius: 8px; font-weight: 600; font-size: 14px; color: var(--muted); }
+    .tabbar button[aria-selected="true"] { background: var(--ink); color: var(--ground); }
   }
   @media (prefers-reduced-motion: no-preference) { .row, .btn, .chip { transition: background .12s; } }
 </style>
@@ -388,6 +428,11 @@
   </aside>
 </div>
 
+<nav class="tabbar" aria-label="Sections">
+  <button type="button" data-tab="sets" aria-selected="true">Sets</button>
+  <button type="button" data-tab="preview" aria-selected="false">Preview</button>
+  <button type="button" data-tab="settings" aria-selected="false">Settings</button>
+</nav>
 <div id="print-root"></div>
 <div id="measure" aria-hidden="true"></div>
 
@@ -906,6 +951,16 @@
   $('reset').onclick = () => { const keep = { selected: state.selected, current: state.current }; state = { ...defaults, ...keep }; save(); bind(); syncUI(); renderAll(); };
 
   function renderAll() { renderSeriesChips(); renderExtraChips(); renderList(); renderPreview(); }
+  // phone tabs
+  const appEl = document.querySelector('.app');
+  function setTab(t) {
+    appEl.dataset.tab = t; try { localStorage.setItem('setLabelPress.tab', t); } catch (e) { /* ignore */ }
+    document.querySelectorAll('.tabbar button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.tab === t)));
+    if (t === 'preview') setTimeout(renderPreview, 0);
+  }
+  document.querySelectorAll('.tabbar button').forEach(b => b.onclick = () => setTab(b.dataset.tab));
+  let savedTab = 'sets'; try { savedTab = localStorage.getItem('setLabelPress.tab') || 'sets'; } catch (e) { /* ignore */ }
+  setTab(savedTab);
   $('snap').textContent = window.POKEMON_SETS_DATE || 'unknown';
   if (state.current == null) state.current = SETS.findIndex(s => s.abbr === 'TEU');
   bind(); syncUI(); renderAll();
