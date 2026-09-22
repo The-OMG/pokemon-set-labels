@@ -168,7 +168,12 @@
   .label.mono .codebox { background: #000; }
   .label .badge { font-size: calc(var(--sym) * 0.2); letter-spacing: 0.12em; text-indent: 0.12em; text-transform: uppercase; font-weight: 600; line-height: 1;
     border: 0.2mm solid currentColor; border-radius: 0.3em; padding: 0.22em 0 0.16em; width: calc(var(--sym) * 1.15); text-align: center; white-space: nowrap; box-sizing: border-box; }
-  .label .logo { flex: 1 1 0; min-height: 0; display: flex; align-items: center; justify-content: center; }
+  .label .logo { flex: 1 1 0; min-height: 0; display: flex; align-items: center; justify-content: center; position: relative; }
+  /* promo sets: the era's base-set logo over a black promo star */
+  .label .logo.promo .star { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); height: 100%; width: auto; max-width: 100%; object-fit: contain; }
+  .label .logo.promo img.logoimg { position: relative; z-index: 1; max-height: 72%; max-width: 86%; }
+  .label .symbox.star { margin-left: auto; margin-right: calc(var(--sym) * 0.12); }
+  .label .symbox.star + .symbox { margin-left: 0; }
   .label .logo img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
   .label .logo .txtlogo { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 700; text-transform: uppercase; text-align: center; font-size: calc(var(--min) * 0.11); line-height: 1.05; }
   .label table { border-collapse: collapse; flex: none; font-size: calc(var(--min) * 0.07); line-height: 1.25; margin-top: auto; align-self: center; }
@@ -530,8 +535,8 @@
 
   function rows(s) {
     const out = [];
-    if (state.numbering === 'seq') out.push(['Exp No.', s.expno != null ? String(s.expno) : '—']);
-    else if (state.numbering === 'code') out.push(['Exp No.', s.setno || '—']);
+    if (state.numbering === 'seq' && s.expno != null) out.push(['Exp No.', String(s.expno)]);
+    else if (state.numbering === 'code' && s.setno) out.push(['Exp No.', s.setno]);
     out.push(['Release', s.release || '—']);
     let gen = s.series === 'Base' ? 'Original' : s.series;   // the 2023 cards called the first era "Original"
     if (s.type === 'Special Expansion') gen = { word: 'SPECIAL', suffix: gen + '\n(Special)', star: '★ ' + gen }[state.special] ?? gen;
@@ -575,6 +580,9 @@
     if (need > avail && avail > 0) grp.style.transform = (grp.style.transform ? grp.style.transform + ' ' : '') + 'scale(' + (avail / need).toFixed(3) + ')';
     m.removeChild(cb);
   }
+  // Black Star Promo sets: era logo + promo star; the star is also their symbol (next to the code box from S&V on)
+  const PROMO_LOGO = { WP: 'base-set', NP: 'ex-ruby-sapphire', DPP: 'diamond-pearl', HSP: 'heartgold-soulsilver', BWP: 'black-white', XYP: 'xy', SMP: 'sun-moon', SWSD: 'sword-shield', SVP: 'scarlet-violet', MEP: 'mega-evolution' };
+  const PROMO_STAR = (SETS.find(x => x.abbr === 'WP') || {}).symbol_img || null;
   function labelEl(s) {
     const [w, h] = labelDims();
     const side = state.layout === 'side' || (state.layout === 'auto' && w > h * 1.15);
@@ -587,7 +595,8 @@
     el.style.setProperty('--pad', (Number(state.pad) || 0) + 'mm'); el.style.setProperty('--sym', (min * (Number(state.sym) || 20) / 100) + 'mm');
     if (!state.mono) { el.style.setProperty('--c-abbr', state.cAbbr); el.style.setProperty('--c-th', state.cTh); el.style.setProperty('--c-td', state.cTd); }
     const top = document.createElement('div'); top.className = 'top';
-    const badge = s.type === 'Special Expansion' && state.special === 'badge';
+    const promo = s.type === 'Promo';
+    const badge = (s.type === 'Special Expansion' || promo) && state.special === 'badge';
     if (ab || badge) {
       const blk = document.createElement('div'); blk.className = 'abbrblock';
       if (ab) { const a = document.createElement('span'); a.className = 'abbr'; a.textContent = s.abbr; blk.appendChild(a); }   // no abbreviation: the badge rises to the top, level with the icon
@@ -595,6 +604,7 @@
       top.appendChild(blk);
     }
     const codeEra = !!(state.icondate && s.release >= state.icondate && s.abbr && !/Prize Pack|Trick or Trade/i.test(s.name));
+    if (codeEra && promo && PROMO_STAR) { const sb = document.createElement('div'); sb.className = 'symbox star'; const st = document.createElement('img'); st.alt = ''; st.src = (state.tintIcon && !state.mono) ? tinted({ slug: 'promo-star', symbol_img: PROMO_STAR }, state.cIcon) : PROMO_STAR; sb.appendChild(st); top.appendChild(sb); }
     if (codeEra) {   // draw the code box ourselves so every text-code icon is the same size and weight
       const box = document.createElement('div'); box.className = 'symbox code'; const cb = document.createElement('div'); cb.className = 'codebox' + (s.abbr.length > 3 ? ' long' : '');
       const inner = document.createElement('div'); inner.className = 'inner'; const txt = document.createElement('span'); txt.className = 'txt'; txt.textContent = s.abbr;
@@ -606,7 +616,12 @@
       fitCode(cb); if (state.tintIcon && !state.mono) cb.style.setProperty('--c-icon', state.cIcon); box.appendChild(cb); top.appendChild(box);
     } else if (s.symbol_img) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = (state.tintIcon && !state.mono) ? tinted(s, state.cIcon) : s.symbol_img; box.appendChild(im); top.appendChild(box); }
     const logo = document.createElement('div'); logo.className = 'logo';
-    if (s.logo_img) { const im = document.createElement('img'); im.alt = s.name; im.src = s.logo_img; logo.appendChild(im); }
+    const promoLogo = promo && PROMO_LOGO[s.abbr] ? 'img/logos/' + PROMO_LOGO[s.abbr] + '.png' : null;
+    if (promoLogo) {
+      logo.classList.add('promo');
+      if (PROMO_STAR) { const st = document.createElement('img'); st.className = 'star'; st.alt = ''; st.src = PROMO_STAR; logo.appendChild(st); }
+      const im = document.createElement('img'); im.className = 'logoimg'; im.alt = s.name; im.src = promoLogo; logo.appendChild(im);
+    } else if (s.logo_img) { const im = document.createElement('img'); im.alt = s.name; im.src = s.logo_img; logo.appendChild(im); }
     else { const t = document.createElement('div'); t.className = 'txtlogo'; t.textContent = s.name; logo.appendChild(t); }
     const table = document.createElement('table'); const tb = document.createElement('tbody');
     rows(s).forEach(([k, v]) => {
