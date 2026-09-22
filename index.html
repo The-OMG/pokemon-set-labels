@@ -1,0 +1,387 @@
+<title>Set Label Press</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ground: #f3f1ea;
+    --panel: #ffffff;
+    --panel-2: #ebe8df;
+    --ink: #1b1a19;
+    --muted: #6b675e;
+    --line: #d9d5cb;
+    --accent: #c8102e;
+    --accent-ink: #ffffff;
+    --sel: #fff1f0;
+    --label-paper: #ffffff;
+    --label-ink: #111111;
+    --ui: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+    --display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #17171a; --panel: #202024; --panel-2: #2a2a30; --ink: #ecebe6; --muted: #9a978f;
+      --line: #35353c; --accent: #ff5a4f; --accent-ink: #1b1a19; --sel: #3a2624;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #17171a; --panel: #202024; --panel-2: #2a2a30; --ink: #ecebe6; --muted: #9a978f;
+    --line: #35353c; --accent: #ff5a4f; --accent-ink: #1b1a19; --sel: #3a2624;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body { margin: 0; background: var(--ground); color: var(--ink); font-family: var(--ui); font-size: 15px; line-height: 1.35; }
+  button, input, select { font: inherit; color: inherit; }
+  button { cursor: pointer; }
+  .app { display: grid; grid-template-columns: 300px minmax(0, 1fr) 300px; grid-template-rows: auto minmax(0, 1fr); height: 100%; gap: 0; }
+  header.bar { grid-column: 1 / -1; display: flex; align-items: center; gap: 14px; padding: 10px 16px; background: var(--panel); border-bottom: 1px solid var(--line); position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; flex-wrap: wrap; }
+  header h1 { font-family: var(--display); font-weight: 700; font-size: 26px; margin: 0; letter-spacing: 0.01em; text-transform: uppercase; }
+  header h1 span { color: var(--accent); }
+  .spacer { flex: 1; }
+  .count { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .btn { border: 1px solid var(--line); background: var(--panel); padding: 7px 14px; border-radius: 6px; font-weight: 600; }
+  .btn:hover { background: var(--panel-2); }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .btn.primary:hover { filter: brightness(1.08); }
+  .btn:disabled { opacity: .45; cursor: not-allowed; }
+  .btn:focus-visible, input:focus-visible, select:focus-visible, .row:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  aside { background: var(--panel); border-right: 1px solid var(--line); display: flex; flex-direction: column; min-height: 0; }
+  aside.right { border-right: 0; border-left: 1px solid var(--line); overflow-y: auto; padding: 14px 16px 24px; }
+  .side-head { padding: 12px 14px 8px; display: flex; flex-direction: column; gap: 8px; border-bottom: 1px solid var(--line); }
+  .search { width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--ground); }
+  .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+  .chip { border: 1px solid var(--line); background: var(--ground); border-radius: 999px; padding: 2px 10px; font-size: 12.5px; }
+  .chip[aria-pressed="true"] { background: var(--ink); color: var(--ground); border-color: var(--ink); }
+  .side-actions { display: flex; gap: 6px; font-size: 13px; }
+  .side-actions button { background: none; border: 0; padding: 2px 4px; color: var(--accent); font-weight: 600; }
+  .list { overflow-y: auto; flex: 1; min-height: 0; }
+  .series-h { font-family: var(--display); text-transform: uppercase; letter-spacing: .06em; font-size: 13px; color: var(--muted); padding: 10px 14px 4px; position: sticky; top: 0; background: var(--panel); }
+  .row { display: grid; grid-template-columns: 22px 30px minmax(0, 1fr) auto; align-items: center; gap: 8px; padding: 5px 14px; cursor: pointer; border-left: 3px solid transparent; }
+  .row:hover { background: var(--panel-2); }
+  .row.current { border-left-color: var(--accent); background: var(--sel); }
+  .row img { width: 26px; height: 26px; object-fit: contain; }
+  .row .nm { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .row .sub { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .row .abbr { font-family: var(--display); font-weight: 600; color: var(--muted); font-size: 13px; letter-spacing: .05em; }
+  .row input { margin: 0; accent-color: var(--accent); }
+
+  main { min-width: 0; min-height: 0; overflow: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px 16px; gap: 14px; }
+  .stage { display: inline-block; box-shadow: 0 10px 40px rgba(0,0,0,.25); background: var(--label-paper); }
+  .stage-note { color: var(--muted); font-size: 13px; text-align: center; max-width: 60ch; }
+  .zoomrow { display: flex; gap: 10px; align-items: center; color: var(--muted); font-size: 13px; }
+  .zoomrow input[type=range] { width: 180px; accent-color: var(--accent); }
+
+  fieldset { border: 0; padding: 0; margin: 0 0 18px; display: flex; flex-direction: column; gap: 8px; }
+  legend { font-family: var(--display); text-transform: uppercase; letter-spacing: .06em; font-size: 13px; color: var(--muted); padding: 0; margin-bottom: 6px; }
+  .field { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 8px; font-size: 14px; }
+  .field select, .field input[type=number], .field input[type=text] { padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--ground); width: 120px; }
+  .field input[type=number] { width: 64px; text-align: right; font-variant-numeric: tabular-nums; }
+  .field.two { grid-template-columns: minmax(0, 1fr) auto auto auto; }
+  .field input[type=checkbox] { accent-color: var(--accent); width: 16px; height: 16px; }
+  .hint { color: var(--muted); font-size: 12.5px; line-height: 1.4; }
+
+  /* ---------- THE LABEL ---------- */
+  .label { --W: 40mm; --H: 60mm; --pad: 2mm; --fs: 1; width: var(--W); height: var(--H); padding: var(--pad);
+    background: var(--label-paper); color: var(--label-ink); display: flex; flex-direction: column; overflow: hidden;
+    font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif; position: relative; }
+  .label .top { display: flex; align-items: center; gap: calc(var(--W) * 0.05); height: calc(var(--H) * 0.16); flex: none; }
+  .label .abbr { font-weight: 400; letter-spacing: 0.22em; font-size: calc(var(--H) * 0.105 * var(--fs)); line-height: 1; white-space: nowrap; }
+  .label .sym { height: 100%; max-width: calc(var(--W) * 0.22); object-fit: contain; }
+  .label .logo { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; padding: calc(var(--H) * 0.02) 0; }
+  .label .logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .label .logo .txtlogo { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 700; text-transform: uppercase; text-align: center; font-size: calc(var(--H) * 0.09 * var(--fs)); line-height: 1.05; }
+  .label table { border-collapse: collapse; flex: none; font-size: calc(var(--H) * 0.062 * var(--fs)); line-height: 1.28; margin-top: auto; }
+  .label th { font-weight: 400; text-align: right; padding: 0 0.35em 0 0; white-space: nowrap; }
+  .label td { text-align: left; padding: 0; font-weight: 500; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .label.mono img { filter: grayscale(1) contrast(1.25); }
+  .label.mono .sym { filter: grayscale(1) contrast(2); }
+
+  /* ---------- PRINT ---------- */
+  #print-root { display: none; }
+  @media print {
+    body { background: #fff; }
+    .app { display: none !important; }
+    #print-root { display: block; }
+    #print-root.labels .label { page-break-after: always; break-after: page; }
+    #print-root.sheet { display: flex; flex-wrap: wrap; gap: var(--gap); align-content: flex-start; }
+    #print-root.sheet .label { break-inside: avoid; }
+    #print-root.sheet.guides .label { outline: 0.2mm dashed #999; outline-offset: 0; }
+    .label { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+
+  @media (max-width: 980px) {
+    .app { grid-template-columns: 1fr; grid-template-rows: auto auto auto auto; height: auto; }
+    aside { border-right: 0; border-bottom: 1px solid var(--line); }
+    aside.right { border-left: 0; }
+    .list { max-height: 45vh; }
+    main { padding: 20px 16px; }
+  }
+  @media (prefers-reduced-motion: no-preference) { .row, .btn, .chip { transition: background .12s; } }
+</style>
+
+<div class="app">
+  <header class="bar">
+    <h1>Set Label <span>Press</span></h1>
+    <span class="count" id="count">0 selected</span>
+    <span class="spacer"></span>
+    <button class="btn" id="btn-sheet" type="button">Print sheet</button>
+    <button class="btn primary" id="btn-labels" type="button">Print labels</button>
+  </header>
+
+  <aside class="left">
+    <div class="side-head">
+      <input class="search" id="q" type="search" placeholder="Search set, abbreviation, year…" autocomplete="off">
+      <div class="chips" id="type-chips">
+        <button class="chip" type="button" data-type="Main Series Expansion" aria-pressed="true">Main</button>
+        <button class="chip" type="button" data-type="Special Expansion" aria-pressed="true">Special</button>
+        <button class="chip" type="button" data-type="Other" aria-pressed="false">Other</button>
+        <button class="chip" type="button" id="chip-new" aria-pressed="false" title="Hide the sets that were in the 2023 index-card batch">Not yet printed</button>
+      </div>
+      <div class="chips" id="series-chips"></div>
+      <div class="side-actions">
+        <button type="button" id="sel-all">Select all shown</button>
+        <button type="button" id="sel-none">Clear</button>
+        <button type="button" id="sel-invert">Invert</button>
+      </div>
+    </div>
+    <div class="list" id="list" role="listbox" aria-label="Sets"></div>
+  </aside>
+
+  <main>
+    <div class="stage" id="stage"></div>
+    <div class="zoomrow"><span>Preview zoom</span><input type="range" id="zoom" min="1" max="6" step="0.25" value="3"><span id="zoom-v">3×</span></div>
+    <div class="stage-note" id="note"></div>
+  </main>
+
+  <aside class="right">
+    <fieldset>
+      <legend>Label roll</legend>
+      <label class="field"><span>Size preset</span>
+        <select id="preset">
+          <option value="40x30">40 × 30 mm</option>
+          <option value="50x30">50 × 30 mm</option>
+          <option value="40x60" selected>40 × 60 mm</option>
+          <option value="50x80">50 × 80 mm</option>
+          <option value="50x50">50 × 50 mm</option>
+          <option value="index">Index card half (2.5 × 3 in)</option>
+          <option value="custom">Custom…</option>
+        </select></label>
+      <label class="field two"><span>Custom (W × H mm)</span><input type="number" id="cw" min="15" max="120" step="0.5" value="40"><span>×</span><input type="number" id="ch" min="15" max="200" step="0.5" value="60"></label>
+      <label class="field"><span>Orientation</span>
+        <select id="orient"><option value="portrait">Portrait</option><option value="landscape">Landscape</option></select></label>
+      <label class="field"><span>Edge margin (mm)</span><input type="number" id="pad" min="0" max="8" step="0.5" value="2"></label>
+      <label class="field"><span>Text size</span><input type="number" id="fs" min="60" max="160" step="5" value="100"></label>
+      <label class="field"><span>Monochrome (thermal)</span><input type="checkbox" id="mono"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Label content</legend>
+      <label class="field"><span>Abbreviation</span>
+        <select id="abbrmode"><option value="always">Always</option><option value="before">Only sets before…</option><option value="never">Never</option></select></label>
+      <label class="field"><span>…this date</span><input type="text" id="abbrdate" value="2020-02-07" placeholder="yyyy-mm-dd"></label>
+      <label class="field"><span>Expansion No.</span>
+        <select id="numbering"><option value="seq">Sequential (main / special)</option><option value="code">Bulbapedia code (SM9)</option><option value="none">Hide row</option></select></label>
+      <label class="field"><span>Special sets</span>
+        <select id="special"><option value="suffix">Generation (Special)</option><option value="word">SPECIAL</option><option value="plain">Generation only</option></select></label>
+      <label class="field"><span>Cards</span>
+        <select id="cards"><option value="total">Total incl. secret rares</option><option value="printed-total">Printed (Total)</option><option value="printed-secret">Printed (+Secret)</option><option value="printed">Printed only</option></select></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Sheet printing</legend>
+      <label class="field"><span>Paper</span>
+        <select id="paper"><option value="letter">Letter</option><option value="a4">A4</option><option value="index">3 × 5 in index card (2 per card)</option></select></label>
+      <label class="field"><span>Gap between labels (mm)</span><input type="number" id="gap" min="0" max="15" step="0.5" value="4"></label>
+      <label class="field"><span>Cut guides</span><input type="checkbox" id="guides" checked></label>
+      <p class="hint">Print sheet lays the selected labels at true size on a color printer. Print labels sends one label per page at the roll size; pick the Phomemo M110 in the print dialog and set scale to 100%.</p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Data</legend>
+      <p class="hint" id="datainfo"></p>
+    </fieldset>
+  </aside>
+</div>
+
+<div id="print-root"></div>
+
+<script src="sets.js"></script>
+<script>
+(function () {
+  'use strict';
+  const SETS = (window.POKEMON_SETS || []).map((s, i) => ({ ...s, i }));
+  const $ = (id) => document.getElementById(id);
+  const PRESETS = { '40x30': [40, 30], '50x30': [50, 30], '40x60': [40, 60], '50x80': [50, 80], '50x50': [50, 50], 'index': [63.5, 76.2] };
+  const PAPERS = { letter: 'letter', a4: 'A4', index: '5in 3in' };
+
+  const defaults = {
+    preset: '40x60', cw: 40, ch: 60, orient: 'portrait', pad: 2, fs: 100, mono: false,
+    abbrmode: 'always', abbrdate: '2020-02-07', numbering: 'seq', special: 'suffix', cards: 'total',
+    paper: 'letter', gap: 4, guides: true, zoom: 3,
+    types: { 'Main Series Expansion': true, 'Special Expansion': true, 'Other': false }, series: null, selected: [], current: null
+  };
+  let state = load();
+  let q = '';
+
+  function load() {
+    try { const raw = localStorage.getItem('setLabelPress.v1'); if (raw) return { ...defaults, ...JSON.parse(raw) }; } catch (e) { /* storage unavailable */ }
+    return { ...defaults };
+  }
+  function save() { try { localStorage.setItem('setLabelPress.v1', JSON.stringify(state)); } catch (e) { /* ignore */ } }
+
+  // ---------- filters & list ----------
+  const seriesOrder = [];
+  SETS.forEach(s => { if (!seriesOrder.includes(s.series)) seriesOrder.push(s.series); });
+  const typeOf = (s) => (s.type === 'Main Series Expansion' || s.type === 'Special Expansion') ? s.type : 'Other';
+
+  function visible() {
+    const needle = q.trim().toLowerCase();
+    return SETS.filter(s => state.types[typeOf(s)])
+      .filter(s => !state.onlyNew || !s.printed2023)
+      .filter(s => !state.series || s.series === state.series)
+      .filter(s => !needle || (s.name + ' ' + s.abbr + ' ' + s.release + ' ' + s.series + ' ' + (s.setno || '')).toLowerCase().includes(needle));
+  }
+
+  function renderSeriesChips() {
+    const box = $('series-chips'); box.innerHTML = '';
+    const all = document.createElement('button'); all.type = 'button'; all.className = 'chip'; all.textContent = 'All series';
+    all.setAttribute('aria-pressed', String(!state.series)); all.onclick = () => { state.series = null; save(); renderAll(); };
+    box.appendChild(all);
+    seriesOrder.forEach(name => {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'chip'; b.textContent = name;
+      b.setAttribute('aria-pressed', String(state.series === name));
+      b.onclick = () => { state.series = state.series === name ? null : name; save(); renderAll(); };
+      box.appendChild(b);
+    });
+    document.querySelectorAll('#type-chips .chip[data-type]').forEach(c => c.setAttribute('aria-pressed', String(!!state.types[c.dataset.type])));
+    $('chip-new').setAttribute('aria-pressed', String(!!state.onlyNew));
+  }
+
+  function renderList() {
+    const list = $('list'); list.innerHTML = '';
+    const sel = new Set(state.selected);
+    let lastSeries = null;
+    visible().forEach(s => {
+      if (s.series !== lastSeries) { const h = document.createElement('div'); h.className = 'series-h'; h.textContent = s.series; list.appendChild(h); lastSeries = s.series; }
+      const row = document.createElement('div'); row.className = 'row' + (state.current === s.i ? ' current' : ''); row.tabIndex = 0; row.setAttribute('role', 'option');
+      row.setAttribute('aria-selected', String(sel.has(s.i)));
+      const cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = sel.has(s.i); cb.id = 'cb-' + s.i;
+      cb.onclick = (e) => { e.stopPropagation(); toggle(s.i, cb.checked); };
+      const img = document.createElement('img'); img.alt = ''; img.src = s.symbol_img || ''; img.hidden = !s.symbol_img;
+      const nm = document.createElement('div'); nm.innerHTML = '<div class="nm"></div><div class="sub"></div>';
+      nm.querySelector('.nm').textContent = s.name; nm.querySelector('.sub').textContent = s.release + (s.expno ? ' · No. ' + s.expno : '') + (s.printed2023 ? ' · printed 2023' : '');
+      const ab = document.createElement('span'); ab.className = 'abbr'; ab.textContent = s.abbr || '';
+      row.append(cb, img, nm, ab);
+      row.onclick = () => { state.current = s.i; save(); renderList(); renderPreview(); };
+      row.onkeydown = (e) => { if (e.key === ' ') { e.preventDefault(); toggle(s.i, !sel.has(s.i)); } if (e.key === 'Enter') row.onclick(); };
+      list.appendChild(row);
+    });
+    $('count').textContent = state.selected.length + ' selected · ' + visible().length + ' shown';
+    $('btn-labels').disabled = $('btn-sheet').disabled = state.selected.length === 0;
+  }
+
+  function toggle(i, on) {
+    const sel = new Set(state.selected); on ? sel.add(i) : sel.delete(i);
+    state.selected = [...sel].sort((a, b) => a - b); state.current = i; save(); renderList(); renderPreview();
+  }
+
+  // ---------- label rendering ----------
+  function dims() {
+    let [w, h] = state.preset === 'custom' ? [Number(state.cw) || 40, Number(state.ch) || 60] : PRESETS[state.preset];
+    if (state.orient === 'landscape') [w, h] = [Math.max(w, h), Math.min(w, h)]; else [w, h] = [Math.min(w, h), Math.max(w, h)];
+    return [w, h];
+  }
+
+  function showAbbr(s) {
+    if (state.abbrmode === 'never') return false;
+    if (state.abbrmode === 'before') return s.release < (state.abbrdate || '9999');
+    return true;
+  }
+
+  function rows(s) {
+    const out = [];
+    if (state.numbering === 'seq') out.push(['Expansion No.', s.expno != null ? String(s.expno) : '—']);
+    else if (state.numbering === 'code') out.push(['Expansion No.', s.setno || '—']);
+    out.push(['Release', s.release || '—']);
+    let gen = s.series;
+    if (s.type === 'Special Expansion') gen = state.special === 'word' ? 'SPECIAL' : state.special === 'suffix' ? gen + ' (Special)' : gen;
+    out.push(['Generation', gen]);
+    const total = (s.cards || 0) + (s.secret || 0);
+    let cards = s.cards != null ? String(s.cards) : '—';
+    if (s.secret > 0) {
+      if (state.cards === 'printed-total') cards = s.cards + ' (' + total + ')';
+      else if (state.cards === 'printed-secret') cards = s.cards + ' (+' + s.secret + ')';
+      else if (state.cards === 'total') cards = String(total);
+    }
+    out.push(['Cards', cards]);
+    return out;
+  }
+
+  function labelEl(s) {
+    const [w, h] = dims();
+    const el = document.createElement('div'); el.className = 'label' + (state.mono ? ' mono' : '');
+    el.style.setProperty('--W', w + 'mm'); el.style.setProperty('--H', h + 'mm');
+    el.style.setProperty('--pad', (Number(state.pad) || 0) + 'mm'); el.style.setProperty('--fs', (Number(state.fs) || 100) / 100);
+    const top = document.createElement('div'); top.className = 'top';
+    if (showAbbr(s) && s.abbr) { const a = document.createElement('span'); a.className = 'abbr'; a.textContent = s.abbr; top.appendChild(a); }
+    if (s.symbol_img) { const im = document.createElement('img'); im.className = 'sym'; im.alt = ''; im.src = s.symbol_img; top.appendChild(im); }
+    const logo = document.createElement('div'); logo.className = 'logo';
+    if (s.logo_img) { const im = document.createElement('img'); im.alt = s.name; im.src = s.logo_img; logo.appendChild(im); }
+    else { const t = document.createElement('div'); t.className = 'txtlogo'; t.textContent = s.name; logo.appendChild(t); }
+    const table = document.createElement('table'); const tb = document.createElement('tbody');
+    rows(s).forEach(([k, v]) => { const tr = document.createElement('tr'); const th = document.createElement('th'); th.textContent = k + ':'; const td = document.createElement('td'); td.textContent = v; tr.append(th, td); tb.appendChild(tr); });
+    table.appendChild(tb);
+    el.append(top, logo, table);
+    return el;
+  }
+
+  function renderPreview() {
+    const stage = $('stage'); stage.innerHTML = '';
+    const s = SETS[state.current] ?? SETS.find(x => state.selected.includes(x.i)) ?? SETS[0];
+    if (!s) { $('note').textContent = 'No set data loaded.'; return; }
+    const el = labelEl(s);
+    const z = Number(state.zoom) || 3;
+    const [w, h] = dims();
+    stage.style.width = (w * z) + 'mm'; stage.style.height = (h * z) + 'mm';
+    el.style.transform = 'scale(' + z + ')'; el.style.transformOrigin = 'top left';
+    stage.appendChild(el);
+    $('zoom-v').textContent = z + '×';
+    $('note').textContent = s.name + ' · ' + w + ' × ' + h + ' mm at ' + z + '× · ' + (state.selected.includes(s.i) ? 'in the print batch' : 'preview only, tick the box to add it');
+  }
+
+  // ---------- printing ----------
+  let pageStyle = document.createElement('style'); document.head.appendChild(pageStyle);
+  function print(mode) {
+    const root = $('print-root'); root.innerHTML = ''; root.className = mode + (mode === 'sheet' && state.guides ? ' guides' : '');
+    const [w, h] = dims();
+    if (mode === 'labels') pageStyle.textContent = '@page { size: ' + w + 'mm ' + h + 'mm; margin: 0; }';
+    else pageStyle.textContent = '@page { size: ' + (PAPERS[state.paper] || 'letter') + '; margin: ' + (state.paper === 'index' ? '0' : '8mm') + '; }';
+    root.style.setProperty('--gap', (Number(state.gap) || 0) + 'mm');
+    state.selected.map(i => SETS[i]).filter(Boolean).forEach(s => root.appendChild(labelEl(s)));
+    const imgs = [...root.querySelectorAll('img')].filter(im => !im.complete);
+    Promise.all(imgs.map(im => new Promise(r => { im.onload = im.onerror = r; }))).then(() => window.print());
+  }
+  $('btn-labels').onclick = () => print('labels');
+  $('btn-sheet').onclick = () => print('sheet');
+
+  // ---------- wiring ----------
+  const fields = ['preset', 'cw', 'ch', 'orient', 'pad', 'fs', 'mono', 'abbrmode', 'abbrdate', 'numbering', 'special', 'cards', 'paper', 'gap', 'guides', 'zoom'];
+  fields.forEach(id => {
+    const el = $(id); if (!el) return;
+    if (el.type === 'checkbox') el.checked = !!state[id]; else el.value = state[id];
+    el.addEventListener('input', () => { state[id] = el.type === 'checkbox' ? el.checked : el.value; save(); syncCustom(); renderPreview(); });
+  });
+  function syncCustom() { const custom = state.preset === 'custom'; $('cw').disabled = $('ch').disabled = !custom; $('abbrdate').disabled = state.abbrmode !== 'before'; }
+  $('q').addEventListener('input', () => { q = $('q').value; renderList(); });
+  document.querySelectorAll('#type-chips .chip[data-type]').forEach(c => c.onclick = () => { state.types[c.dataset.type] = !state.types[c.dataset.type]; save(); renderAll(); });
+  $('chip-new').onclick = () => { state.onlyNew = !state.onlyNew; save(); renderAll(); };
+  $('sel-all').onclick = () => { const sel = new Set(state.selected); visible().forEach(s => sel.add(s.i)); state.selected = [...sel].sort((a, b) => a - b); save(); renderList(); renderPreview(); };
+  $('sel-none').onclick = () => { state.selected = []; save(); renderList(); renderPreview(); };
+  $('sel-invert').onclick = () => { const sel = new Set(state.selected); visible().forEach(s => sel.has(s.i) ? sel.delete(s.i) : sel.add(s.i)); state.selected = [...sel].sort((a, b) => a - b); save(); renderList(); renderPreview(); };
+
+  function renderAll() { renderSeriesChips(); renderList(); renderPreview(); }
+  const main = SETS.filter(s => s.type === 'Main Series Expansion').length, spec = SETS.filter(s => s.type === 'Special Expansion').length;
+  $('datainfo').textContent = SETS.length + ' English sets (' + main + ' main, ' + spec + ' special). Names, numbering, dates, card counts and artwork from Bulbapedia’s expansion list; Base Set artwork from pokemontcg.io. Snapshot ' + (window.POKEMON_SETS_DATE || '') + '.';
+  if (state.current == null) state.current = SETS.findIndex(s => s.abbr === 'TEU');
+  syncCustom(); renderAll();
+})();
+</script>
