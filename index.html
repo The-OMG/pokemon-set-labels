@@ -197,9 +197,10 @@
     <fieldset>
       <legend>Label content</legend>
       <label class="field"><span>Abbreviation</span>
-        <select id="abbrmode"><option value="auto">Small corner tag for sets before…</option><option value="large">Large on every set</option><option value="small">Small corner tag on every set</option><option value="never">Never</option></select></label>
-      <label class="field"><span>…this date</span><input type="text" id="abbrdate" value="2020-02-07" placeholder="yyyy-mm-dd"></label>
-      <p class="hint">Set codes started printing on the cards with Sword &amp; Shield (2020-02-07), so earlier abbreviations are only a filing aid.</p>
+        <select id="abbrmode"><option value="auto">Auto by era (corner tag / large / icon only)</option><option value="large">Large on every set</option><option value="small">Small corner tag on every set</option><option value="never">Never</option></select></label>
+      <label class="field"><span>Corner tag before</span><input type="text" id="abbrdate" value="2020-02-07" placeholder="yyyy-mm-dd"></label>
+      <label class="field"><span>Icon is the code from</span><input type="text" id="icondate" value="2023-03-31" placeholder="yyyy-mm-dd"></label>
+      <p class="hint">Set codes started printing on cards with Sword &amp; Shield (2020-02-07), and from Scarlet &amp; Violet (2023-03-31) the set symbol is the code itself, so those labels show the icon alone.</p>
       <label class="field"><span>Expansion No.</span>
         <select id="numbering"><option value="seq">Sequential (main / special)</option><option value="code">Bulbapedia code (SM9)</option><option value="none">Hide row</option></select></label>
       <label class="field"><span>Special sets</span>
@@ -240,7 +241,7 @@
 
   const defaults = {
     preset: '40x60', cw: 40, ch: 60, orient: 'portrait', layout: 'auto', pad: 2, sym: 20, fs: 100, mono: false,
-    abbrmode: 'auto', abbrdate: '2020-02-07', numbering: 'seq', special: 'suffix', cards: 'total',
+    abbrmode: 'auto', abbrdate: '2020-02-07', icondate: '2023-03-31', numbering: 'seq', special: 'suffix', cards: 'total',
     paper: 'letter', margin: 8, gap: 4, guides: true, zoom: 3, preview: 'label',
     types: { 'Main Series Expansion': true, 'Special Expansion': true, 'Other': false }, series: null, selected: [], current: null
   };
@@ -324,7 +325,9 @@
     if (state.abbrmode === 'never' || !s.abbr) return null;
     if (state.abbrmode === 'large') return 'large';
     if (state.abbrmode === 'small') return 'small';
-    return s.release < (state.abbrdate || '9999') ? 'small' : 'large';
+    if (s.release < (state.abbrdate || '9999')) return 'small';
+    if (state.icondate && s.release >= state.icondate && s.symbol_img) return null;   // the symbol already reads as the code
+    return 'large';
   }
 
   function rows(s) {
@@ -484,13 +487,13 @@
   $('btn-sheet').onclick = () => print('sheet');
 
   // ---------- wiring ----------
-  const fields = ['preset', 'cw', 'ch', 'orient', 'layout', 'pad', 'sym', 'fs', 'mono', 'abbrmode', 'abbrdate', 'numbering', 'special', 'cards', 'paper', 'margin', 'gap', 'guides', 'zoom', 'preview'];
+  const fields = ['preset', 'cw', 'ch', 'orient', 'layout', 'pad', 'sym', 'fs', 'mono', 'abbrmode', 'abbrdate', 'icondate', 'numbering', 'special', 'cards', 'paper', 'margin', 'gap', 'guides', 'zoom', 'preview'];
   fields.forEach(id => {
     const el = $(id); if (!el) return;
     if (el.type === 'checkbox') el.checked = !!state[id]; else el.value = state[id];
     el.addEventListener('input', () => { state[id] = el.type === 'checkbox' ? el.checked : el.value; save(); syncCustom(); renderPreview(); });
   });
-  function syncCustom() { const custom = state.preset === 'custom'; $('cw').disabled = $('ch').disabled = !custom; $('abbrdate').disabled = state.abbrmode !== 'auto'; }
+  function syncCustom() { const custom = state.preset === 'custom'; $('cw').disabled = $('ch').disabled = !custom; $('abbrdate').disabled = $('icondate').disabled = state.abbrmode !== 'auto'; }
   $('q').addEventListener('input', () => { q = $('q').value; renderList(); });
   document.querySelectorAll('#type-chips .chip[data-type]').forEach(c => c.onclick = () => { state.types[c.dataset.type] = !state.types[c.dataset.type]; save(); renderAll(); });
   $('chip-new').onclick = () => { state.onlyNew = !state.onlyNew; save(); renderAll(); };
