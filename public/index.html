@@ -256,6 +256,7 @@
             <option value="70x40">70 × 40 mm (M220)</option>
           </optgroup>
           <optgroup label="Paper">
+            <option value="card">Pokémon card (63 × 88 mm, fits a sleeve)</option>
             <option value="index">Half of a 3 × 5 index card</option>
             <option value="custom">Custom size…</option>
           </optgroup>
@@ -334,7 +335,7 @@
   const $ = (id) => document.getElementById(id);
   // Roll presets use the dimensions the Phomemo Windows driver reports (40 mm rolls are 39.9 mm, the M110 print head
   // is 48 mm so every "50 mm" roll is 48 mm), so the browser's print dialog auto-selects the matching paper size.
-  const PRESETS = { 'index': [63.5, 76.2] };
+  const PRESETS = { 'index': [63.5, 76.2], 'card': [63, 88] };
   ['25x15', '30x15', '30x20', '40x20', '40x25', '40x30', '40x40', '40x60', '45x30', '50x30', '50x40', '50x50', '50x70', '50x80', '60x40', '70x40']
     .forEach(k => { let [w, h] = k.split('x').map(Number); if (w === 40) w = 39.9; if (w === 50) w = 48; if (k === '50x70') h = 69.8; PRESETS[k] = [w, h]; });
   const PAPERS = { letter: { w: 215.9, h: 279.4, css: 'letter' }, a4: { w: 210, h: 297, css: 'A4' }, index: { w: 127, h: 76.2, css: '5in 3in' } };
@@ -434,7 +435,7 @@
   }
   // Roll presets: the @page is the driver's media size; the label itself is 0.3 mm smaller on each axis so
   // rounding in the driver (its 30 mm is really 29.97) can never spill a label onto an extra blank page.
-  const isRoll = () => !['index', 'custom'].includes(state.preset);
+  const isRoll = () => !['index', 'card', 'custom'].includes(state.preset);
   function labelDims() { const [w, h] = dims(); return isRoll() ? [+(w - 0.3).toFixed(2), +(h - 0.3).toFixed(2)] : [w, h]; }
 
   // Should this set's abbreviation be printed? (Its size is a separate, global setting.)
