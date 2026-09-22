@@ -67,8 +67,13 @@
   .row .abbr { font-family: var(--display); font-weight: 600; color: var(--muted); font-size: 13px; letter-spacing: .05em; }
   .row input { margin: 0; accent-color: var(--accent); }
 
-  main { min-width: 0; min-height: 0; overflow: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px 16px; gap: 14px; }
-  .stage { display: inline-block; box-shadow: 0 10px 40px rgba(0,0,0,.25); background: var(--label-paper); }
+  main { min-width: 0; min-height: 0; overflow: auto; display: flex; flex-direction: column; align-items: center; justify-content: safe center; padding: 24px 16px; gap: 14px; }
+  .stage { display: flex; flex-direction: column; align-items: center; gap: 18px; }
+  .paperwrap { box-shadow: 0 10px 40px rgba(0,0,0,.25); background: var(--label-paper); overflow: hidden; position: relative; flex: none; }
+  .sheetpage { background: #fff; color: #111; display: grid; align-content: start; justify-content: start; overflow: hidden; }
+  .sheetpage.guides .label { outline: 0.2mm dashed #9a9a9a; outline-offset: -0.1mm; }
+  .previewbar { display: flex; gap: 8px; align-items: center; color: var(--muted); font-size: 13px; }
+  .previewbar select { padding: 4px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); }
   .stage-note { color: var(--muted); font-size: 13px; text-align: center; max-width: 60ch; }
   .zoomrow { display: flex; gap: 10px; align-items: center; color: var(--muted); font-size: 13px; }
   .zoomrow input[type=range] { width: 180px; accent-color: var(--accent); }
@@ -113,11 +118,9 @@
     body { background: #fff; }
     .app, #measure { display: none !important; }
     #print-root { display: block; }
-    #print-root.labels .label { page-break-after: always; break-after: page; }
-    #print-root.sheet { display: flex; flex-wrap: wrap; gap: var(--gap); align-content: flex-start; }
-    #print-root.sheet .label { break-inside: avoid; }
-    #print-root.sheet.guides .label { outline: 0.2mm dashed #999; outline-offset: 0; }
-    .label { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    #print-root.labels .label:not(:last-child) { page-break-after: always; break-after: page; }
+    #print-root.sheet .sheetpage:not(:last-child) { page-break-after: always; break-after: page; }
+    .label, .sheetpage { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   }
 
   @media (max-width: 980px) {
@@ -159,8 +162,11 @@
   </aside>
 
   <main>
+    <div class="previewbar"><label for="preview">Preview</label>
+      <select id="preview"><option value="label">Current label</option><option value="roll">Roll: every selected label</option><option value="sheet">Sheet: pages as they will print</option></select>
+      <span id="zoomwrap" class="zoomrow"><span>Zoom</span><input type="range" id="zoom" min="1" max="6" step="0.25" value="3"><span id="zoom-v">3×</span></span>
+    </div>
     <div class="stage" id="stage"></div>
-    <div class="zoomrow"><span>Preview zoom</span><input type="range" id="zoom" min="1" max="6" step="0.25" value="3"><span id="zoom-v">3×</span></div>
     <div class="stage-note" id="note"></div>
   </main>
 
@@ -197,7 +203,7 @@
       <label class="field"><span>Expansion No.</span>
         <select id="numbering"><option value="seq">Sequential (main / special)</option><option value="code">Bulbapedia code (SM9)</option><option value="none">Hide row</option></select></label>
       <label class="field"><span>Special sets</span>
-        <select id="special"><option value="suffix">Generation (Special)</option><option value="word">SPECIAL</option><option value="plain">Generation only</option></select></label>
+        <select id="special"><option value="suffix">Generation + "(Special)" line</option><option value="word">SPECIAL</option><option value="plain">Generation only</option></select></label>
       <label class="field"><span>Cards</span>
         <select id="cards"><option value="total">Total incl. secret rares</option><option value="printed-total">Printed (Total)</option><option value="printed-secret">Printed (+Secret)</option><option value="printed">Printed only</option></select></label>
     </fieldset>
@@ -206,9 +212,10 @@
       <legend>Sheet printing</legend>
       <label class="field"><span>Paper</span>
         <select id="paper"><option value="letter">Letter</option><option value="a4">A4</option><option value="index">3 × 5 in index card (2 per card)</option></select></label>
+      <label class="field"><span>Page margin (mm)</span><input type="number" id="margin" min="0" max="25" step="0.5" value="8"></label>
       <label class="field"><span>Gap between labels (mm)</span><input type="number" id="gap" min="0" max="15" step="0.5" value="4"></label>
       <label class="field"><span>Cut guides</span><input type="checkbox" id="guides" checked></label>
-      <p class="hint">Print sheet lays the selected labels at true size on a color printer. Print labels sends one label per page at the roll size; pick the Phomemo M110 in the print dialog and set scale to 100%.</p>
+      <p class="hint">Print sheet lays the selected labels at true size on a color printer; the Sheet preview shows the exact pages. Print labels sends one label per page at the roll size; pick the Phomemo M110 in the print dialog and set scale to 100%. For two labels per 3 × 5 card use the "Index card half" size with margin 0 and gap 0.</p>
     </fieldset>
 
     <fieldset>
@@ -228,12 +235,13 @@
   const SETS = (window.POKEMON_SETS || []).map((s, i) => ({ ...s, i }));
   const $ = (id) => document.getElementById(id);
   const PRESETS = { '40x30': [40, 30], '50x30': [50, 30], '40x60': [40, 60], '50x80': [50, 80], '50x50': [50, 50], 'index': [63.5, 76.2] };
-  const PAPERS = { letter: 'letter', a4: 'A4', index: '5in 3in' };
+  const PAPERS = { letter: { w: 215.9, h: 279.4, css: 'letter' }, a4: { w: 210, h: 297, css: 'A4' }, index: { w: 127, h: 76.2, css: '5in 3in' } };
+  const MM = 96 / 25.4;
 
   const defaults = {
     preset: '40x60', cw: 40, ch: 60, orient: 'portrait', layout: 'auto', pad: 2, sym: 20, fs: 100, mono: false,
     abbrmode: 'auto', abbrdate: '2020-02-07', numbering: 'seq', special: 'suffix', cards: 'total',
-    paper: 'letter', gap: 4, guides: true, zoom: 3,
+    paper: 'letter', margin: 8, gap: 4, guides: true, zoom: 3, preview: 'label',
     types: { 'Main Series Expansion': true, 'Special Expansion': true, 'Other': false }, series: null, selected: [], current: null
   };
   let state = load();
@@ -325,7 +333,7 @@
     else if (state.numbering === 'code') out.push(['Expansion No.', s.setno || '—']);
     out.push(['Release', s.release || '—']);
     let gen = s.series;
-    if (s.type === 'Special Expansion') gen = state.special === 'word' ? 'SPECIAL' : state.special === 'suffix' ? gen + ' (Special)' : gen;
+    if (s.type === 'Special Expansion') gen = state.special === 'word' ? 'SPECIAL' : state.special === 'suffix' ? gen + '\n(Special)' : gen;
     out.push(['Generation', gen]);
     const total = (s.cards || 0) + (s.secret || 0);
     let cards = s.cards != null ? String(s.cards) : '—';
@@ -353,7 +361,12 @@
     if (s.logo_img) { const im = document.createElement('img'); im.alt = s.name; im.src = s.logo_img; logo.appendChild(im); }
     else { const t = document.createElement('div'); t.className = 'txtlogo'; t.textContent = s.name; logo.appendChild(t); }
     const table = document.createElement('table'); const tb = document.createElement('tbody');
-    rows(s).forEach(([k, v]) => { const tr = document.createElement('tr'); const th = document.createElement('th'); th.textContent = k + ':'; const td = document.createElement('td'); td.textContent = v; tr.append(th, td); tb.appendChild(tr); });
+    rows(s).forEach(([k, v]) => {
+      const tr = document.createElement('tr'); const th = document.createElement('th'); th.textContent = k + ':'; th.style.verticalAlign = 'top';
+      const td = document.createElement('td');
+      v.split('\n').forEach((line, n) => { if (n) td.appendChild(document.createElement('br')); td.appendChild(document.createTextNode(line)); });
+      tr.append(th, td); tb.appendChild(tr);
+    });
     table.appendChild(tb);
     if (side) { const col = document.createElement('div'); col.className = 'col'; col.append(top, logo); el.append(col, table); }
     else el.append(top, logo, table);
@@ -361,8 +374,8 @@
     return el;
   }
 
-  // Scale the table type so the widest row fills the space it has, capped by the height it may take
-  // (about 42% of a stacked label, 90% of a side-by-side one); the user's Table text size multiplies on top.
+  // Measure how far the table type can scale so the widest row fills its width, capped by the height it may take
+  // (about 42% of a stacked label, 90% of a side-by-side one). Stores the factor; applyScale() sets it.
   function fit(el, table, side) {
     const m = $('measure'); m.appendChild(el);
     const cs = getComputedStyle(el);
@@ -371,36 +384,99 @@
     const availW = side ? innerW * 0.58 : innerW;
     const availH = side ? innerH * 0.9 : innerH * 0.42;
     const needW = table.scrollWidth, needH = table.offsetHeight;
-    if (needW > 0 && needH > 0) {
-      const k = Math.min(availW / needW, availH / needH) * 0.985 * ((Number(state.fs) || 100) / 100);
-      table.style.fontSize = (parseFloat(getComputedStyle(table).fontSize) * k) + 'px';
-    }
+    el._base = parseFloat(getComputedStyle(table).fontSize);
+    el._k = (needW > 0 && needH > 0) ? Math.min(availW / needW, availH / needH) * 0.985 : 1;
     m.removeChild(el);
+    applyScale(el, el._k);
+  }
+  function applyScale(el, k) { el.querySelector('table').style.fontSize = (el._base * k * ((Number(state.fs) || 100) / 100)) + 'px'; }
+
+  // Build a batch of labels that share ONE table scale (the tightest fit in the batch), so every label in a
+  // print run has identical type sizes instead of each shrinking to its own longest row.
+  function makeLabels(sets) {
+    const els = sets.map(s => labelEl(s));
+    if (els.length > 1) { const k = Math.min(...els.map(e => e._k)); els.forEach(e => applyScale(e, k)); }
+    return els;
+  }
+
+  // Wrap a label or page in a box that is scaled to k while occupying its scaled footprint in the layout.
+  function scaled(el, wmm, hmm, k) {
+    const wrap = document.createElement('div'); wrap.className = 'paperwrap';
+    wrap.style.width = (wmm * k) + 'mm'; wrap.style.height = (hmm * k) + 'mm';
+    el.style.transform = 'scale(' + k + ')'; el.style.transformOrigin = 'top left';
+    wrap.appendChild(el); return wrap;
+  }
+
+  // Sheet pagination: a fixed grid of cols × rows per page, so preview and print place labels identically.
+  function buildPages() {
+    const p = PAPERS[state.paper] || PAPERS.letter;
+    const [lw, lh] = dims();
+    const gap = Math.max(0, Number(state.gap) || 0), m = Math.max(0, Number(state.margin) || 0);
+    const iw = p.w - 2 * m, ih = p.h - 2 * m;
+    const cols = Math.max(1, Math.floor((iw + gap + 0.01) / (lw + gap)));
+    const rows = Math.max(1, Math.floor((ih + gap + 0.01) / (lh + gap)));
+    const per = cols * rows;
+    const sets = state.selected.map(i => SETS[i]).filter(Boolean);
+    const labels = makeLabels(sets);
+    const pages = [];
+    for (let i = 0; i < labels.length; i += per) {
+      const pg = document.createElement('div'); pg.className = 'sheetpage' + (state.guides ? ' guides' : '');
+      pg.style.width = p.w + 'mm'; pg.style.height = p.h + 'mm'; pg.style.padding = m + 'mm'; pg.style.gap = gap + 'mm';
+      pg.style.gridTemplateColumns = 'repeat(' + cols + ', ' + lw + 'mm)'; pg.style.gridAutoRows = lh + 'mm';
+      labels.slice(i, i + per).forEach(el => pg.appendChild(el));
+      pages.push(pg);
+    }
+    return { pages, per, cols, rows, paper: p, fits: lw <= iw && lh <= ih, count: sets.length };
   }
 
   function renderPreview() {
     const stage = $('stage'); stage.innerHTML = '';
+    const [w, h] = dims();
+    const z = Number(state.zoom) || 3;
+    $('zoom-v').textContent = z + '×';
+    $('zoomwrap').hidden = state.preview === 'sheet';
+    const main = stage.parentElement;
+    const availPx = Math.max(200, main.clientWidth - 40);
+
+    if (state.preview === 'sheet') {
+      const b = buildPages();
+      const k = Math.min(1.2, availPx / (b.paper.w * MM));
+      if (!b.pages.length) { $('note').textContent = 'Nothing selected yet. Tick sets on the left to lay them out on ' + $('paper').selectedOptions[0].text + '.'; return; }
+      b.pages.forEach(pg => stage.appendChild(scaled(pg, b.paper.w, b.paper.h, k)));
+      $('note').textContent = b.count + ' label' + (b.count === 1 ? '' : 's') + ' on ' + b.pages.length + ' page' + (b.pages.length === 1 ? '' : 's') + ' · ' + b.cols + ' × ' + b.rows + ' per page · ' + w + ' × ' + h + ' mm labels'
+        + (b.fits ? '' : ' · WARNING: a label is larger than the printable area');
+      return;
+    }
+    if (state.preview === 'roll') {
+      const sets = state.selected.map(i => SETS[i]).filter(Boolean);
+      if (!sets.length) { $('note').textContent = 'Nothing selected yet. Tick sets on the left to add them to the roll.'; return; }
+      const k = Math.min(z, availPx / (w * MM));
+      makeLabels(sets).forEach(el => stage.appendChild(scaled(el, w, h, k)));
+      $('note').textContent = sets.length + ' label' + (sets.length === 1 ? '' : 's') + ' on the roll · ' + w + ' × ' + h + ' mm each';
+      return;
+    }
     const s = SETS[state.current] ?? SETS.find(x => state.selected.includes(x.i)) ?? SETS[0];
     if (!s) { $('note').textContent = 'No set data loaded.'; return; }
-    const el = labelEl(s);
-    const z = Number(state.zoom) || 3;
-    const [w, h] = dims();
-    stage.style.width = (w * z) + 'mm'; stage.style.height = (h * z) + 'mm';
-    el.style.transform = 'scale(' + z + ')'; el.style.transformOrigin = 'top left';
-    stage.appendChild(el);
-    $('zoom-v').textContent = z + '×';
-    $('note').textContent = s.name + ' · ' + w + ' × ' + h + ' mm at ' + z + '× · ' + (state.selected.includes(s.i) ? 'in the print batch' : 'preview only, tick the box to add it');
+    const k = Math.min(z, availPx / (w * MM));
+    // Scale this one label the way it will print alongside the rest of the batch.
+    const batch = state.selected.map(i => SETS[i]).filter(Boolean); if (!batch.includes(s)) batch.push(s);
+    stage.appendChild(scaled(makeLabels(batch)[batch.indexOf(s)], w, h, k));
+    $('note').textContent = s.name + ' · ' + w + ' × ' + h + ' mm · ' + (state.selected.includes(s.i) ? 'in the print batch' : 'preview only, tick the box to add it');
   }
 
   // ---------- printing ----------
   let pageStyle = document.createElement('style'); document.head.appendChild(pageStyle);
   function print(mode) {
-    const root = $('print-root'); root.innerHTML = ''; root.className = mode + (mode === 'sheet' && state.guides ? ' guides' : '');
+    const root = $('print-root'); root.innerHTML = ''; root.className = mode;
     const [w, h] = dims();
-    if (mode === 'labels') pageStyle.textContent = '@page { size: ' + w + 'mm ' + h + 'mm; margin: 0; }';
-    else pageStyle.textContent = '@page { size: ' + (PAPERS[state.paper] || 'letter') + '; margin: ' + (state.paper === 'index' ? '0' : '8mm') + '; }';
-    root.style.setProperty('--gap', (Number(state.gap) || 0) + 'mm');
-    state.selected.map(i => SETS[i]).filter(Boolean).forEach(s => root.appendChild(labelEl(s)));
+    if (mode === 'labels') {
+      pageStyle.textContent = '@page { size: ' + w + 'mm ' + h + 'mm; margin: 0; }';
+      makeLabels(state.selected.map(i => SETS[i]).filter(Boolean)).forEach(el => root.appendChild(el));
+    } else {
+      const b = buildPages();
+      pageStyle.textContent = '@page { size: ' + b.paper.css + '; margin: 0; }';
+      b.pages.forEach(pg => root.appendChild(pg));
+    }
     const imgs = [...root.querySelectorAll('img')].filter(im => !im.complete);
     Promise.all(imgs.map(im => new Promise(r => { im.onload = im.onerror = r; }))).then(() => window.print());
   }
@@ -408,7 +484,7 @@
   $('btn-sheet').onclick = () => print('sheet');
 
   // ---------- wiring ----------
-  const fields = ['preset', 'cw', 'ch', 'orient', 'layout', 'pad', 'sym', 'fs', 'mono', 'abbrmode', 'abbrdate', 'numbering', 'special', 'cards', 'paper', 'gap', 'guides', 'zoom'];
+  const fields = ['preset', 'cw', 'ch', 'orient', 'layout', 'pad', 'sym', 'fs', 'mono', 'abbrmode', 'abbrdate', 'numbering', 'special', 'cards', 'paper', 'margin', 'gap', 'guides', 'zoom', 'preview'];
   fields.forEach(id => {
     const el = $(id); if (!el) return;
     if (el.type === 'checkbox') el.checked = !!state[id]; else el.value = state[id];
@@ -428,5 +504,6 @@
   if (state.current == null) state.current = SETS.findIndex(s => s.abbr === 'TEU');
   syncCustom(); renderAll();
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(renderPreview);
+  let rs; window.addEventListener('resize', () => { clearTimeout(rs); rs = setTimeout(renderPreview, 120); });
 })();
 </script>
