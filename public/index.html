@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Set Label Press</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Chakra+Petch:wght@400;500;600;700&family=Exo+2:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap">
 <style>
   :root {
     --ground: #f3f1ea;
@@ -88,23 +88,30 @@
   .hint { color: var(--muted); font-size: 12.5px; line-height: 1.4; }
 
   /* ---------- THE LABEL ---------- */
-  .label { --W: 40mm; --H: 60mm; --pad: 2mm; --sym: 8mm; --min: 40mm; width: var(--W); height: var(--H); padding: var(--pad);
+  .label { --W: 40mm; --H: 60mm; --pad: 2mm; --sym: 8mm; --min: 40mm; --lfont: "Jost"; width: var(--W); height: var(--H); padding: var(--pad);
     background: var(--label-paper); color: var(--label-ink); display: flex; flex-direction: column; overflow: hidden;
-    font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif; position: relative; gap: calc(var(--min) * 0.02); }
+    font-family: var(--lfont), "Segoe UI", system-ui, sans-serif; position: relative; gap: calc(var(--min) * 0.02); }
   .label .col { display: flex; flex-direction: column; flex: 1 1 0; min-width: 0; min-height: 0; gap: calc(var(--min) * 0.02); }
-  .label .top { display: flex; align-items: center; gap: calc(var(--min) * 0.06); height: var(--sym); flex: none; }
-  .label .abbr { font-weight: 400; letter-spacing: 0.22em; font-size: calc(var(--sym) * 0.72); line-height: 1; white-space: nowrap; }
-  .label .symbox { width: var(--sym); height: var(--sym); flex: none; display: flex; align-items: center; justify-content: center; }
+  /* top band: abbreviation at the left edge, set icon pinned to the top-right corner */
+  .label .top { display: flex; align-items: flex-start; justify-content: space-between; gap: calc(var(--min) * 0.04); height: var(--sym); flex: none; }
+  .label .abbr { font-weight: 500; letter-spacing: 0.2em; font-size: calc(var(--sym) * 0.7); line-height: var(--sym); white-space: nowrap; }
+  .label .symbox { width: var(--sym); height: var(--sym); flex: none; margin-left: auto; display: flex; align-items: center; justify-content: center; }
   .label .symbox img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
-  .label.abbr-small .top { justify-content: space-between; align-items: flex-start; }
-  .label.abbr-small .abbr { font-size: calc(var(--sym) * 0.42); letter-spacing: 0.14em; font-weight: 500; opacity: .75; }
-  .label.abbr-small .symbox { margin-left: auto; }
+  .label.abbr-small .abbr { font-size: calc(var(--sym) * 0.4); letter-spacing: 0.16em; font-weight: 500; line-height: 1.1; }
+  .label .badge { font-size: calc(var(--sym) * 0.32); letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; line-height: 1;
+    border: 0.25mm solid currentColor; border-radius: 0.35em; padding: 0.22em 0.45em 0.18em; align-self: center; white-space: nowrap; }
+  .label.abbr-small .badge { align-self: flex-start; margin-top: 0.05em; }
   .label .logo { flex: 1 1 0; min-height: 0; display: flex; align-items: center; justify-content: center; }
   .label .logo img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
   .label .logo .txtlogo { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 700; text-transform: uppercase; text-align: center; font-size: calc(var(--min) * 0.11); line-height: 1.05; }
   .label table { border-collapse: collapse; flex: none; font-size: calc(var(--min) * 0.07); line-height: 1.25; margin-top: auto; align-self: center; }
-  .label th { font-weight: 400; text-align: right; padding: 0 0.35em 0 0; white-space: nowrap; }
-  .label td { text-align: left; padding: 0; font-weight: 500; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .label th { font-weight: 400; text-align: right; padding: 0 0.4em 0 0; white-space: nowrap; }
+  .label td { text-align: left; padding: 0; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .label td.wrap { white-space: normal; line-height: 1.1; padding-bottom: 0.1em; }
+  /* "caps" table style: small tracked uppercase keys, bold values */
+  .label.caps th { font-size: 0.72em; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; padding-top: 0.12em; vertical-align: top; }
+  .label.rule table { border-top: 0.25mm solid currentColor; padding-top: calc(var(--min) * 0.02); margin-top: auto; }
+  .label.rule.side table { border-top: 0; border-left: 0.25mm solid currentColor; padding-top: 0; padding-left: calc(var(--min) * 0.04); }
   .label.side { flex-direction: row; gap: calc(var(--min) * 0.05); }
   .label.side table { margin: auto 0; align-self: auto; }
   .label.mono img { filter: grayscale(1) contrast(1.25); }
@@ -191,6 +198,17 @@
       <label class="field"><span>Edge margin (mm)</span><input type="number" id="pad" min="0" max="8" step="0.5" value="2"></label>
       <label class="field"><span>Icon size (% of short side)</span><input type="number" id="sym" min="8" max="40" step="1" value="20"></label>
       <label class="field"><span>Table text size (%)</span><input type="number" id="fs" min="50" max="160" step="5" value="100"></label>
+      <label class="field"><span>Font</span>
+        <select id="font">
+          <option value="Jost">Jost (geometric)</option>
+          <option value="Exo 2">Exo 2 (techy)</option>
+          <option value="Chakra Petch">Chakra Petch (squared)</option>
+          <option value="Barlow Semi Condensed">Barlow Semi Condensed (narrow)</option>
+          <option value="Source Sans 3">Source Sans 3 (2023 cards)</option>
+        </select></label>
+      <label class="field"><span>Table style</span>
+        <select id="tstyle"><option value="caps">Small caps keys</option><option value="classic">Classic "Key: value"</option></select></label>
+      <label class="field"><span>Divider line above table</span><input type="checkbox" id="rule" checked></label>
       <label class="field"><span>Monochrome (thermal)</span><input type="checkbox" id="mono"></label>
     </fieldset>
 
@@ -204,7 +222,7 @@
       <label class="field"><span>Expansion No.</span>
         <select id="numbering"><option value="seq">Sequential (main / special)</option><option value="code">Bulbapedia code (SM9)</option><option value="none">Hide row</option></select></label>
       <label class="field"><span>Special sets</span>
-        <select id="special"><option value="suffix">Generation + "(Special)" line</option><option value="word">SPECIAL</option><option value="plain">Generation only</option></select></label>
+        <select id="special"><option value="badge">SPECIAL badge in the top band</option><option value="star">★ before the generation</option><option value="suffix">Generation + "(Special)" line</option><option value="word">SPECIAL instead of generation</option><option value="plain">No marker</option></select></label>
       <label class="field"><span>Cards</span>
         <select id="cards"><option value="total">Total incl. secret rares</option><option value="printed-total">Printed (Total)</option><option value="printed-secret">Printed (+Secret)</option><option value="printed">Printed only</option></select></label>
     </fieldset>
@@ -241,7 +259,8 @@
 
   const defaults = {
     preset: '40x60', cw: 40, ch: 60, orient: 'portrait', layout: 'auto', pad: 2, sym: 20, fs: 100, mono: false,
-    abbrmode: 'auto', abbrdate: '2020-02-07', icondate: '2023-03-31', numbering: 'seq', special: 'suffix', cards: 'total',
+    font: 'Jost', tstyle: 'caps', rule: true,
+    abbrmode: 'auto', abbrdate: '2020-02-07', icondate: '2023-03-31', numbering: 'seq', special: 'badge', cards: 'total',
     paper: 'letter', margin: 8, gap: 4, guides: true, zoom: 3, preview: 'label',
     types: { 'Main Series Expansion': true, 'Special Expansion': true, 'Other': false }, series: null, selected: [], current: null
   };
@@ -335,8 +354,8 @@
     if (state.numbering === 'seq') out.push(['Expansion No.', s.expno != null ? String(s.expno) : '—']);
     else if (state.numbering === 'code') out.push(['Expansion No.', s.setno || '—']);
     out.push(['Release', s.release || '—']);
-    let gen = s.series;
-    if (s.type === 'Special Expansion') gen = state.special === 'word' ? 'SPECIAL' : state.special === 'suffix' ? gen + '\n(Special)' : gen;
+    let gen = s.series === 'Base' ? 'Original' : s.series;   // the 2023 cards called the first era "Original"
+    if (s.type === 'Special Expansion') gen = { word: 'SPECIAL', suffix: gen + '\n(Special)', star: '★ ' + gen }[state.special] ?? gen;
     out.push(['Generation', gen]);
     const total = (s.cards || 0) + (s.secret || 0);
     let cards = s.cards != null ? String(s.cards) : '—';
@@ -353,19 +372,23 @@
     const [w, h] = dims();
     const side = state.layout === 'side' || (state.layout === 'auto' && w > h * 1.15);
     const ab = abbrStyle(s);
-    const el = document.createElement('div'); el.className = 'label' + (state.mono ? ' mono' : '') + (side ? ' side' : '') + (ab === 'small' ? ' abbr-small' : '');
+    const el = document.createElement('div');
+    el.className = 'label' + (state.mono ? ' mono' : '') + (side ? ' side' : '') + (ab === 'small' ? ' abbr-small' : '') + (state.tstyle === 'caps' ? ' caps' : '') + (state.rule ? ' rule' : '');
     const min = Math.min(w, h);
+    el.style.setProperty('--lfont', JSON.stringify(state.font || 'Jost'));
     el.style.setProperty('--W', w + 'mm'); el.style.setProperty('--H', h + 'mm'); el.style.setProperty('--min', min + 'mm');
     el.style.setProperty('--pad', (Number(state.pad) || 0) + 'mm'); el.style.setProperty('--sym', (min * (Number(state.sym) || 20) / 100) + 'mm');
     const top = document.createElement('div'); top.className = 'top';
     if (ab) { const a = document.createElement('span'); a.className = 'abbr'; a.textContent = s.abbr; top.appendChild(a); }
+    if (s.type === 'Special Expansion' && state.special === 'badge') { const b = document.createElement('span'); b.className = 'badge'; b.textContent = 'Special'; top.appendChild(b); }
     if (s.symbol_img) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = s.symbol_img; box.appendChild(im); top.appendChild(box); }
     const logo = document.createElement('div'); logo.className = 'logo';
     if (s.logo_img) { const im = document.createElement('img'); im.alt = s.name; im.src = s.logo_img; logo.appendChild(im); }
     else { const t = document.createElement('div'); t.className = 'txtlogo'; t.textContent = s.name; logo.appendChild(t); }
     const table = document.createElement('table'); const tb = document.createElement('tbody');
     rows(s).forEach(([k, v]) => {
-      const tr = document.createElement('tr'); const th = document.createElement('th'); th.textContent = k + ':'; th.style.verticalAlign = 'top';
+      const tr = document.createElement('tr'); if (k === 'Generation') tr.className = 'gen';
+      const th = document.createElement('th'); th.textContent = state.tstyle === 'caps' ? k : k + ':'; th.style.verticalAlign = 'top';
       const td = document.createElement('td');
       v.split('\n').forEach((line, n) => { if (n) td.appendChild(document.createElement('br')); td.appendChild(document.createTextNode(line)); });
       tr.append(th, td); tb.appendChild(tr);
@@ -379,6 +402,8 @@
 
   // Measure how far the table type can scale so the widest row fills its width, capped by the height it may take
   // (about 42% of a stacked label, 90% of a side-by-side one). Stores the factor; applyScale() sets it.
+  // The Generation row may wrap to two lines, so it is left out of the width measurement: a long generation
+  // name (HeartGold & SoulSilver) then wraps on its own label instead of shrinking every label in the batch.
   function fit(el, table, side) {
     const m = $('measure'); m.appendChild(el);
     const cs = getComputedStyle(el);
@@ -386,13 +411,27 @@
     const innerH = el.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
     const availW = side ? innerW * 0.58 : innerW;
     const availH = side ? innerH * 0.9 : innerH * 0.42;
-    const needW = table.scrollWidth, needH = table.offsetHeight;
-    el._base = parseFloat(getComputedStyle(table).fontSize);
+    const rowsEl = [...table.querySelectorAll('tr')];
+    const width = tr => tr.firstElementChild.offsetWidth + tr.lastElementChild.scrollWidth;
+    const needW = Math.max(...rowsEl.filter(tr => !tr.classList.contains('gen')).map(width));
+    const line = rowsEl[0].offsetHeight;
+    const genRow = rowsEl.find(tr => tr.classList.contains('gen'));
+    const needH = table.offsetHeight + (genRow && width(genRow) > needW ? line : 0);   // room for a wrapped generation
+    el._base = parseFloat(getComputedStyle(table).fontSize); el._availW = availW;
     el._k = (needW > 0 && needH > 0) ? Math.min(availW / needW, availH / needH) * 0.985 : 1;
     m.removeChild(el);
     applyScale(el, el._k);
   }
-  function applyScale(el, k) { el.querySelector('table').style.fontSize = (el._base * k * ((Number(state.fs) || 100) / 100)) + 'px'; }
+  function applyScale(el, k) {
+    const table = el.querySelector('table');
+    table.style.fontSize = (el._base * k * ((Number(state.fs) || 100) / 100)) + 'px';
+    const genRow = table.querySelector('tr.gen'); if (!genRow) return;
+    const m = $('measure'); m.appendChild(el);
+    const td = genRow.lastElementChild; td.classList.remove('wrap');
+    if (genRow.firstElementChild.offsetWidth + td.scrollWidth > el._availW) { td.classList.add('wrap'); td.style.maxWidth = (el._availW - genRow.firstElementChild.offsetWidth) + 'px'; }
+    else td.style.maxWidth = '';
+    m.removeChild(el);
+  }
 
   // Build a batch of labels that share ONE table scale (the tightest fit in the batch), so every label in a
   // print run has identical type sizes instead of each shrinking to its own longest row.
@@ -487,7 +526,7 @@
   $('btn-sheet').onclick = () => print('sheet');
 
   // ---------- wiring ----------
-  const fields = ['preset', 'cw', 'ch', 'orient', 'layout', 'pad', 'sym', 'fs', 'mono', 'abbrmode', 'abbrdate', 'icondate', 'numbering', 'special', 'cards', 'paper', 'margin', 'gap', 'guides', 'zoom', 'preview'];
+  const fields = ['preset', 'cw', 'ch', 'orient', 'layout', 'pad', 'sym', 'fs', 'mono', 'font', 'tstyle', 'rule', 'abbrmode', 'abbrdate', 'icondate', 'numbering', 'special', 'cards', 'paper', 'margin', 'gap', 'guides', 'zoom', 'preview'];
   fields.forEach(id => {
     const el = $(id); if (!el) return;
     if (el.type === 'checkbox') el.checked = !!state[id]; else el.value = state[id];
