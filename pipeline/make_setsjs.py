@@ -10,7 +10,11 @@ for s in sets:
     sym = s.get('symbol_img'); rec['symbol_img'] = None
     if sym and os.path.exists(sym):
         im = Image.open(sym).convert('RGBA')
-        if im.width > 240 or im.height > 240: im.thumbnail((240, 240), Image.LANCZOS)
+        bb = im.getchannel('A').getbbox()                      # trim transparent margins
+        if bb: im = im.crop(bb)
+        side = max(im.size); sq = Image.new('RGBA', (side, side), (0, 0, 0, 0))   # centre on a square canvas
+        sq.paste(im, ((side - im.width) // 2, (side - im.height) // 2)); im = sq
+        if im.width > 240: im = im.resize((240, 240), Image.LANCZOS)
         b = io.BytesIO(); im.save(b, 'PNG', optimize=True); rec['symbol_img'] = 'data:image/png;base64,' + base64.b64encode(b.getvalue()).decode()
     logo = s.get('logo_img'); rec['logo_img'] = None
     if logo and os.path.exists(logo):

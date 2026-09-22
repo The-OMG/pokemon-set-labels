@@ -129,6 +129,10 @@
   /* Abbreviation on top, SPECIAL strip underneath at a fixed width (about a three-letter code). With no abbreviation
      the strip sits at the top of the band, level with the icon. */
   .label .abbrblock { --abbr-h: calc(var(--sym) * 0.42); display: flex; flex-direction: column; justify-content: flex-start; align-self: stretch; width: max-content; min-width: 0; gap: calc(var(--sym) * 0.08); }
+  .label .abbr, .label .badge { color: var(--c-abbr, inherit); }
+  .label th { color: var(--c-th, inherit); }
+  .label td { color: var(--c-td, inherit); }
+  .label.rule table { border-color: var(--c-th, currentColor); }
   .label .abbr { font-weight: 500; letter-spacing: 0.16em; margin-right: -0.16em; font-size: calc(var(--abbr-h) * 0.95); height: var(--abbr-h); line-height: var(--abbr-h); white-space: nowrap; display: block; }
   .label.abbr-large .abbrblock { --abbr-h: calc(var(--sym) * 0.62); }
   .label .symbox { width: var(--sym); height: var(--sym); flex: none; margin-left: auto; display: flex; align-items: center; justify-content: center; }
@@ -288,6 +292,14 @@
       <label class="field"><span class="lbl">Icon size <small>Percent of the label's short side.</small></span><input type="number" id="sym" min="8" max="40" step="1" value="20"></label>
       <label class="field"><span class="lbl">Table text size <small>100 = fill the width.</small></span><input type="number" id="fs" min="50" max="160" step="5" value="100"></label>
       <label class="field"><span class="lbl">Space from the edge <small>millimetres</small></span><input type="number" id="pad" min="0" max="8" step="0.5" value="2"></label>
+      <details class="adv" id="colors"><summary>Colors (for color printing)</summary>
+        <label class="field"><span class="lbl">Recolor set icons <small>Off keeps the original artwork.</small></span><input type="checkbox" id="tintIcon"></label>
+        <label class="field"><span class="lbl">Icon color</span><input type="color" id="cIcon" value="#111111"></label>
+        <label class="field"><span class="lbl">Abbreviation &amp; SPECIAL</span><input type="color" id="cAbbr" value="#111111"></label>
+        <label class="field"><span class="lbl">Table headings &amp; line</span><input type="color" id="cTh" value="#111111"></label>
+        <label class="field"><span class="lbl">Table values</span><input type="color" id="cTd" value="#111111"></label>
+        <p class="hint">Ignored in Thermal printer mode.</p>
+      </details>
       <label class="field"><span class="lbl">Thermal printer mode <small>Pure black &amp; white, heavier text, stronger logo contrast. Turn on for the Phomemo.</small></span><input type="checkbox" id="mono"></label>
     </fieldset>
 
@@ -316,6 +328,8 @@
         <select id="porient"><option value="auto">As listed (Letter/A4 tall, index card wide)</option><option value="portrait">Portrait (tall)</option><option value="landscape">Landscape (wide)</option></select></label>
       <label class="field"><span class="lbl">Page margin <small>millimetres. 0 packs the most labels on a page; raise it only if your printer clips the edge.</small></span><input type="number" id="margin" min="0" max="25" step="0.5" value="0"></label>
       <label class="field"><span class="lbl">Gap between labels <small>millimetres. 0 = labels share a cut line.</small></span><input type="number" id="gap" min="0" max="15" step="0.5" value="0"></label>
+      <label class="field"><span class="lbl">Placement on the page</span>
+        <select id="place"><option value="center">Centered</option><option value="top">Top, centered</option><option value="topleft">Top-left</option></select></label>
       <label class="field"><span class="lbl">Dashed cut guides</span><input type="checkbox" id="guides" checked></label>
       <p class="hint">"Half of a 3 × 5 index card" on "3 × 5 index card" paper gives two labels per card.</p>
     </fieldset>
@@ -346,9 +360,9 @@
 
   const defaults = {
     preset: '40x60', cw: 40, ch: 60, orient: 'auto', pw: '', ph: '', layout: 'auto', pad: 2, sym: 20, fs: 100, mono: false,
-    font: 'Jost', tstyle: 'caps', rule: true,
+    font: 'Jost', tstyle: 'caps', rule: true, tintIcon: false, cIcon: '#111111', cAbbr: '#111111', cTh: '#111111', cTd: '#111111',
     abbrmode: 'auto', abbrsize: 'small', icondate: '2023-03-31', numbering: 'seq', special: 'badge', cards: 'total',
-    paper: 'letter', porient: 'auto', margin: 0, gap: 0, guides: true, zoom: 3, preview: 'label', v: 3,
+    paper: 'letter', porient: 'auto', place: 'center', margin: 0, gap: 0, guides: true, zoom: 3, preview: 'label', v: 3,
     types: { 'Main Series Expansion': true, 'Special Expansion': true, 'Other': false }, onlyNew: false, series: null, selected: [], current: null
   };
   let state = load();
@@ -466,6 +480,18 @@
     return out;
   }
 
+  // Recolour a symbol: paint the chosen colour through the icon's alpha. Symbols are data URIs, so the canvas stays clean.
+  const tintCache = new Map(); const tintImgs = new Map();
+  function tinted(s, color) {
+    const key = s.slug + '|' + color;
+    if (tintCache.has(key)) return tintCache.get(key);
+    let im = tintImgs.get(s.slug);
+    if (!im) { im = new Image(); im.src = s.symbol_img; tintImgs.set(s.slug, im); im.onload = () => { tintCache.clear(); renderPreview(); }; }
+    if (!im.complete || !im.naturalWidth) return s.symbol_img;      // first pass: original until decoded, then re-render
+    const c = document.createElement('canvas'); c.width = im.naturalWidth; c.height = im.naturalHeight; const g = c.getContext('2d');
+    g.drawImage(im, 0, 0); g.globalCompositeOperation = 'source-in'; g.fillStyle = color; g.fillRect(0, 0, c.width, c.height);
+    const url = c.toDataURL('image/png'); tintCache.set(key, url); return url;
+  }
   function labelEl(s) {
     const [w, h] = labelDims();
     const side = state.layout === 'side' || (state.layout === 'auto' && w > h * 1.15);
@@ -476,6 +502,7 @@
     el.style.setProperty('--lfont', JSON.stringify(state.font || 'Jost'));
     el.style.setProperty('--W', w + 'mm'); el.style.setProperty('--H', h + 'mm'); el.style.setProperty('--min', min + 'mm');
     el.style.setProperty('--pad', (Number(state.pad) || 0) + 'mm'); el.style.setProperty('--sym', (min * (Number(state.sym) || 20) / 100) + 'mm');
+    if (!state.mono) { el.style.setProperty('--c-abbr', state.cAbbr); el.style.setProperty('--c-th', state.cTh); el.style.setProperty('--c-td', state.cTd); }
     const top = document.createElement('div'); top.className = 'top';
     const badge = s.type === 'Special Expansion' && state.special === 'badge';
     if (ab || badge) {
@@ -484,7 +511,7 @@
       if (badge) { const b = document.createElement('span'); b.className = 'badge'; b.textContent = 'Special'; blk.appendChild(b); }
       top.appendChild(blk);
     }
-    if (s.symbol_img) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = s.symbol_img; box.appendChild(im); top.appendChild(box); }
+    if (s.symbol_img) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = (state.tintIcon && !state.mono) ? tinted(s, state.cIcon) : s.symbol_img; box.appendChild(im); top.appendChild(box); }
     const logo = document.createElement('div'); logo.className = 'logo';
     if (s.logo_img) { const im = document.createElement('img'); im.alt = s.name; im.src = s.logo_img; logo.appendChild(im); }
     else { const t = document.createElement('div'); t.className = 'txtlogo'; t.textContent = s.name; logo.appendChild(t); }
@@ -573,6 +600,8 @@
       const pg = document.createElement('div'); pg.className = 'sheetpage' + (state.guides ? ' guides' : '');
       pg.style.width = p.w + 'mm'; pg.style.height = p.h + 'mm'; pg.style.padding = m + 'mm'; pg.style.gap = gap + 'mm';
       pg.style.gridTemplateColumns = 'repeat(' + cols + ', ' + lw + 'mm)'; pg.style.gridAutoRows = lh + 'mm';
+      pg.style.justifyContent = state.place === 'topleft' ? 'start' : 'center';
+      pg.style.alignContent = state.place === 'center' ? 'center' : 'start';
       labels.slice(i, i + per).forEach(el => pg.appendChild(el));
       pages.push(pg);
     }
@@ -673,7 +702,7 @@
 
   // ---------- wiring ----------
   const fields = ['preset', 'cw', 'ch', 'orient', 'pw', 'ph', 'layout', 'pad', 'sym', 'fs', 'mono', 'font', 'tstyle', 'rule',
-    'abbrmode', 'abbrsize', 'icondate', 'numbering', 'special', 'cards', 'paper', 'porient', 'margin', 'gap', 'guides', 'zoom', 'preview'];
+    'abbrmode', 'abbrsize', 'icondate', 'numbering', 'special', 'cards', 'paper', 'porient', 'place', 'margin', 'gap', 'guides', 'zoom', 'preview', 'cIcon', 'cAbbr', 'cTh', 'cTd', 'tintIcon'];
   function bind() {
     fields.forEach(id => {
       const el = $(id); if (!el) return;
