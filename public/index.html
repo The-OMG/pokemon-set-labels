@@ -196,6 +196,45 @@
   .label.mono .badge { border-width: 0.3mm; font-weight: 700; }
   .label.mono.rule table { border-top-width: 0.35mm; }
   .label.mono.rule.side table { border-left-width: 0.35mm; }
+  /* ---------- POKÉMON (character) LABEL ---------- */
+  /* Card-inspired: dex number + types, the name, HD artwork, the card-bottom Pokédex strip (category, height,
+     weight), one line of flavor text and a generation / debut-year footer. Every text block is sized off the
+     label's short side and shrunk to fit by fitMon(). */
+  .label.mon { gap: calc(var(--min) * 0.018); }
+  .label.mon .col { overflow: hidden; }
+  .label.mon .mtop { display: flex; align-items: center; justify-content: space-between; gap: 0.4em; flex: none; min-width: 0; font-size: calc(var(--min) * 0.075); white-space: nowrap; overflow: hidden; }
+  .label.mon .no { font-weight: 700; letter-spacing: 0.04em; font-variant-numeric: tabular-nums; color: var(--c-th, inherit); line-height: 1; }
+  .label.mon .types { display: flex; gap: 0.2em; margin-left: auto; }
+  .label.mon .type { font-size: 0.7em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; line-height: 1; padding: 0.3em 0.55em 0.22em; border: 0.2mm solid currentColor; border-radius: 999px; }
+  .label.mon.tcolor .type { background: var(--tc); border-color: var(--tc); color: var(--tink, #fff); }
+  .label.mono.mon .type { border-width: 0.3mm; font-weight: 700; background: none; color: inherit; border-color: currentColor; }
+  .label.mon .mname { font-weight: 700; font-size: calc(var(--min) * 0.14); line-height: 1.05; white-space: nowrap; text-align: center; flex: none; overflow: hidden; }
+  .label.mon .art { flex: 1 1 0; min-height: 0; min-width: 0; display: flex; align-items: center; justify-content: center; }
+  .label.mon .art img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+  .label.mono.mon .art img.dith { filter: none; image-rendering: pixelated; }
+  .label.mon .dex { font-size: calc(var(--min) * 0.058); line-height: 1.15; text-align: center; white-space: nowrap; flex: none; overflow: hidden; font-weight: 500; }
+  .label.mon .dex b { font-weight: 700; }
+  .label.mon .dex .sep { opacity: 0.55; }
+  .label.mon .dex.wrap { white-space: normal; }
+  .label.mon .dex b, .label.mon .dex .seg { white-space: nowrap; }
+  .label.mono.mon .dex { font-weight: 600; }
+  .label.mon .flav { font-size: calc(var(--min) * 0.062); line-height: 1.2; font-style: italic; text-align: center; flex: none; color: var(--c-td, inherit); }
+  .label.mono.mon .flav { font-weight: 500; }
+  .label.mon .mfoot { display: flex; justify-content: space-between; align-items: baseline; flex: none; font-size: calc(var(--min) * 0.052); line-height: 1.1; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;
+    border-top: 0.25mm solid var(--c-th, currentColor); padding-top: calc(var(--min) * 0.015); color: var(--c-th, inherit); white-space: nowrap; }
+  .label.mono.mon .mfoot { border-top-width: 0.35mm; font-weight: 700; }
+  .label.mon.noart:not(.side) .flav { flex: 1 1 0; min-height: 0; display: flex; align-items: center; justify-content: center; }
+  .label.mon.side { flex-direction: row; gap: calc(var(--min) * 0.05); }
+  .label.mon.side .art { flex: 0 0 42%; }
+  .label.mon.side .col { justify-content: space-between; }
+  .label.mon.side .mname, .label.mon.side .dex, .label.mon.side .flav { text-align: left; }
+  .row .art-th { width: 30px; height: 30px; object-fit: contain; }
+
+  .modes { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .modes button { border: 0; background: var(--panel); padding: 6px 14px; font-weight: 600; color: var(--muted); }
+  .modes button + button { border-left: 1px solid var(--line); }
+  .modes button[aria-selected="true"] { background: var(--ink); color: var(--ground); }
+
   #measure { position: absolute; left: -100000px; top: 0; visibility: hidden; pointer-events: none; }
 
   /* ---------- PRINT ---------- */
@@ -262,7 +301,11 @@
 <div class="app">
   <header class="bar">
     <h1>Set Label <span>Press</span></h1>
-    <span class="tag">Pokémon TCG set labels, every English expansion</span>
+    <div class="modes" role="tablist" aria-label="What to label">
+      <button type="button" role="tab" data-mode="sets" aria-selected="true">Sets</button>
+      <button type="button" role="tab" data-mode="mons" aria-selected="false">Pokémon</button>
+    </div>
+    <span class="tag" id="tagline">Pokémon TCG set labels, every English expansion</span>
     <span class="count" id="count">0 selected</span>
     <span class="spacer"></span>
     <button class="btn" id="btn-png" type="button" title="Download every selected label as a PNG at 203 dpi (thermal label printer resolution), zipped. Print them from the Phomemo app.">Download PNGs</button>
@@ -280,6 +323,7 @@
         <button class="chip" type="button" id="chip-new" aria-pressed="false" title="Hide the sets that were in the 2023 index-card batch">New since 2023</button>
       </div>
       <div class="chips" id="series-chips"></div>
+      <div class="chips" id="gen-chips" hidden></div>
       <div class="side-actions">
         <button type="button" id="sel-all">Select all shown</button>
         <button type="button" id="sel-none">Clear</button>
@@ -291,7 +335,7 @@
 
   <main>
     <div class="previewbar"><label for="preview">Preview</label>
-      <select id="preview"><option value="label">One label (the highlighted set)</option><option value="roll">Roll: every selected label</option><option value="sheet">Sheet: pages exactly as they print</option></select>
+      <select id="preview"><option value="label">One label (the highlighted row)</option><option value="roll">Roll: every selected label</option><option value="sheet">Sheet: pages exactly as they print</option></select>
       <span id="zoomwrap" class="zoomrow"><span>Zoom</span><input type="range" id="zoom" min="1" max="6" step="0.25" value="3" aria-label="Preview zoom"><span id="zoom-v">3×</span></span>
     </div>
     <div class="stage" id="stage"></div>
@@ -300,13 +344,15 @@
     <section class="about" id="about">
       <h2>What this is</h2>
       <p>A free label press for Pokémon Trading Card Game collectors. Tick the expansions you own, choose a label size, and print binder or storage-box labels that carry the set symbol, the HD set logo, the expansion number, release date, generation and card count, including secret rares. It covers every English expansion from Base Set (1999) through the current Mega Evolution series, plus special sets, McDonald's promos, POP packs and Trick or Trade.</p>
+      <h2>Pokémon labels</h2>
+      <p>Switch to <em>Pokémon</em> at the top to label by character instead of by set, for binders or bulk boxes sorted by species. Each label has the National Pokédex number, types, name, official artwork, the card-style category / height / weight strip, a one-sentence Pokédex entry and the generation with the year the Pokémon debuted. All 1,025 species, filterable by generation or legendary status.</p>
       <h2>How to print</h2>
       <ol>
         <li><strong>Label printer roll</strong> (Phomemo M110 and similar): install Phomemo's Windows or Mac driver so the printer shows up as a normal printer, pick your roll under Label size, press <em>Print labels</em>. In the print dialog choose the Phomemo as the destination and check under "More settings" that <em>Paper size</em> shows your roll (the page is sized to the driver's exact numbers so it should be picked automatically), <em>Margins</em> None, <em>Scale</em> 100%, <em>Background graphics</em> on. Each label is its own page. The driver's "50 mm" sizes are really 48 mm, the width of the print head. No driver, or printing from a phone? <em>Download PNGs</em> gives you each label as a 203 dpi image for the Phomemo app.</li>
         <li><strong>Color printer sheet</strong>: press <em>Print sheet</em>. Labels are laid out at true size on Letter, A4 or 3 × 5 index cards with optional cut guides. The Sheet preview shows the exact pages first.</li>
       </ol>
       <h2>Where the data comes from</h2>
-      <p>Set names, expansion numbering, release dates, card counts, symbols and logos come from Bulbapedia's list of Pokémon TCG expansions; Base Set artwork from pokemontcg.io. The sequential expansion numbers count main-series sets and special sets separately. Data snapshot: <span id="snap"></span>. Missing a new set? Open an issue on GitHub.</p>
+      <p>Set names, expansion numbering, release dates, card counts, symbols and logos come from Bulbapedia's list of Pokémon TCG expansions; Base Set artwork from pokemontcg.io. Pokémon species data, Pokédex entries and official artwork come from <a href="https://pokeapi.co/">PokeAPI</a>. The sequential expansion numbers count main-series sets and special sets separately. Data snapshot: <span id="snap"></span>. Missing a new set? Open an issue on GitHub.</p>
       <h2>Open source</h2>
       <p>Source code, data pipeline and issue tracker: <a href="https://github.com/The-OMG/pokemon-set-labels">github.com/The-OMG/pokemon-set-labels</a>. Runs entirely in your browser; nothing you select is sent anywhere. Settings are remembered on this device only.</p>
       <p>Pokémon and all set names, symbols and logos are trademarks of Nintendo, Creatures Inc. and GAME FREAK inc. This is an unofficial fan-made tool for personal, non-commercial use and is not affiliated with or endorsed by The Pokémon Company.</p>
@@ -403,7 +449,23 @@
       </details>
     </fieldset>
 
-    <fieldset>
+    <fieldset id="mon-contents" hidden>
+      <legend>Contents</legend>
+      <label class="field"><span class="lbl">Artwork</span><input type="checkbox" id="monArt"></label>
+      <label class="field" id="monArtModeRow"><span class="lbl">Artwork on a thermal printer <small>Dithered keeps the shading as a dot pattern; grayscale lets the printer decide.</small></span>
+        <select id="monArtMode"><option value="dither">Dithered (sharpest)</option><option value="gray">Grayscale</option></select></label>
+      <label class="field"><span class="lbl">Pokédex number</span><input type="checkbox" id="monNo"></label>
+      <label class="field"><span class="lbl">Types</span><input type="checkbox" id="monTypes"></label>
+      <label class="field" id="monTColorRow"><span class="lbl">Color the type badges</span><input type="checkbox" id="monTColor"></label>
+      <label class="field"><span class="lbl">Category, height &amp; weight <small>The strip under the art on a card, e.g. Mouse Pokémon · HT 1'04" · WT 13.2 lbs.</small></span><input type="checkbox" id="monDex"></label>
+      <label class="field"><span class="lbl">Pokédex entry</span>
+        <select id="monText"><option value="short">One sentence, like a card</option><option value="full">Full entry</option><option value="none">None</option></select></label>
+      <label class="field"><span class="lbl">Generation &amp; debut year</span><input type="checkbox" id="monFoot"></label>
+      <label class="field"><span class="lbl">Units</span>
+        <select id="monUnits"><option value="imperial">ft / lbs (English cards)</option><option value="metric">m / kg</option></select></label>
+    </fieldset>
+
+    <fieldset id="set-contents">
       <legend>Contents</legend>
       <label class="field"><span class="lbl">Special-set marker</span>
         <select id="special"><option value="badge">SPECIAL badge at the top</option><option value="star">Star before the generation</option><option value="suffix">"(Special)" on a second line</option><option value="word">Replace the generation</option><option value="plain">None</option></select></label>
@@ -429,7 +491,7 @@
 </div>
 
 <nav class="tabbar" aria-label="Sections">
-  <button type="button" data-tab="sets" aria-selected="true">Sets</button>
+  <button type="button" data-tab="sets" id="tab-pick" aria-selected="true">Sets</button>
   <button type="button" data-tab="preview" aria-selected="false">Preview</button>
   <button type="button" data-tab="settings" aria-selected="false">Settings</button>
 </nav>
@@ -437,12 +499,14 @@
 <div id="measure" aria-hidden="true"></div>
 
 <script src="sets.js"></script>
+<script src="pokemon.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" defer></script>
 <script>
 (function () {
   'use strict';
   const SETS = (window.POKEMON_SETS || []).map((s, i) => ({ ...s, i }));
+  const MONS = (window.POKEMON_SPECIES || []).map((p, i) => ({ ...p, i, kind: 'mon' }));
   const $ = (id) => document.getElementById(id);
   // Roll presets use the dimensions the Phomemo Windows driver reports (40 mm rolls are 39.9 mm, the M110 print head
   // is 48 mm so every "50 mm" roll is 48 mm), so the browser's print dialog auto-selects the matching paper size.
@@ -458,10 +522,21 @@
     font: 'Jost', tstyle: 'caps', rule: true, monoLogos: false, monoCut: 175, tintIcon: false, cIcon: '#111111', cAbbr: '#111111', cTh: '#111111', cTd: '#111111',
     abbrmode: 'never', abbrsize: 'small', icondate: '2023-03-31', numbering: 'seq', special: 'badge', cards: 'total', extras: {}, codelang: 'EN',
     paper: 'letter', porient: 'auto', place: 'center', margin: 0, gap: 0, guides: true, zoom: 3, preview: 'label', v: 3,
-    types: { 'Main Series Expansion': true, 'Special Expansion': true, 'Other': false }, onlyNew: false, series: null, selected: [], current: null
+    types: { 'Main Series Expansion': true, 'Special Expansion': true, 'Other': false }, onlyNew: false, series: null, selected: [], current: null,
+    mode: 'sets', monSel: [], monCur: null, monCopies: {}, monGen: null, monLegend: false,
+    monArt: true, monArtMode: 'dither', monNo: true, monTypes: true, monTColor: true, monDex: true, monText: 'short', monFoot: true, monUnits: 'imperial'
   };
   let state = load();
   let q = '';
+
+  // Two label kinds share the printing machinery; these pick the active collection and its selection keys.
+  const isMons = () => state.mode === 'mons';
+  const pool = () => isMons() ? MONS : SETS;
+  const selKey = () => isMons() ? 'monSel' : 'selected';
+  const curKey = () => isMons() ? 'monCur' : 'current';
+  const cpKey = () => isMons() ? 'monCopies' : 'copiesBy';
+  const selectedItems = () => state[selKey()].map(i => pool()[i]).filter(Boolean);
+  const pad4 = (n) => String(n).padStart(4, '0');
 
   function load() {
     try {
@@ -506,6 +581,9 @@
 
   function visible() {
     const needle = q.trim().toLowerCase();
+    if (isMons()) return MONS.filter(p => !state.monGen || p.gen === state.monGen)
+      .filter(p => !state.monLegend || p.legendary || p.mythical)
+      .filter(p => !needle || (p.name + ' ' + p.n + ' ' + pad4(p.n) + ' ' + p.types.join(' ') + ' ' + p.genus).toLowerCase().includes(needle));
     return SETS.filter(s => state.types[typeOf(s)])
       .filter(s => !state.onlyNew || !s.printed2023)
       .filter(s => !state.series || s.series === state.series)
@@ -527,41 +605,58 @@
     $('chip-new').setAttribute('aria-pressed', String(!!state.onlyNew));
   }
 
+  function renderGenChips() {
+    const box = $('gen-chips'); box.innerHTML = '';
+    const chip = (text, pressed, onclick) => { const b = document.createElement('button'); b.type = 'button'; b.className = 'chip'; b.textContent = text; b.setAttribute('aria-pressed', String(pressed)); b.onclick = onclick; box.appendChild(b); };
+    chip('All gens', !state.monGen, () => { state.monGen = null; save(); renderAll(); });
+    [...new Set(MONS.map(p => p.gen))].forEach(g => {
+      const p = MONS.find(x => x.gen === g);
+      chip('Gen ' + p.genr, state.monGen === g, () => { state.monGen = state.monGen === g ? null : g; save(); renderAll(); });
+    });
+    chip('Legendary & Mythical', !!state.monLegend, () => { state.monLegend = !state.monLegend; save(); renderAll(); });
+  }
+
   function renderList() {
     const list = $('list'); list.innerHTML = '';
-    const sel = new Set(state.selected);
-    let lastSeries = null;
+    const mons = isMons(), sk = selKey(), ck = curKey();
+    const sel = new Set(state[sk]);
+    let lastGroup = null;
     visible().forEach(s => {
-      if (s.series !== lastSeries) { const h = document.createElement('div'); h.className = 'series-h'; h.textContent = s.series; list.appendChild(h); lastSeries = s.series; }
-      const row = document.createElement('div'); row.className = 'row' + (state.current === s.i ? ' current' : ''); row.tabIndex = 0; row.setAttribute('role', 'option');
+      const group = mons ? 'Generation ' + s.genr + ' · ' + s.year : s.series;
+      if (group !== lastGroup) { const h = document.createElement('div'); h.className = 'series-h'; h.textContent = group; list.appendChild(h); lastGroup = group; }
+      const row = document.createElement('div'); row.className = 'row' + (state[ck] === s.i ? ' current' : ''); row.tabIndex = 0; row.setAttribute('role', 'option');
       row.setAttribute('aria-selected', String(sel.has(s.i)));
       const cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = sel.has(s.i); cb.id = 'cb-' + s.i; cb.setAttribute('aria-label', 'Print ' + s.name);
       cb.onclick = (e) => { e.stopPropagation(); toggle(s.i, cb.checked); };
-      const img = s.symbol_img ? document.createElement('img') : document.createElement('span');   // span keeps the grid column when a set has no symbol
-      if (s.symbol_img) { img.alt = ''; img.src = s.symbol_img; }
+      let img;
+      if (mons) { img = document.createElement('img'); img.className = 'art-th'; img.alt = ''; img.loading = 'lazy'; img.decoding = 'async'; if (s.art) img.src = s.art; }
+      else { img = s.symbol_img ? document.createElement('img') : document.createElement('span'); if (s.symbol_img) { img.alt = ''; img.src = s.symbol_img; } }   // span keeps the grid column when a set has no symbol
       const nm = document.createElement('div'); nm.innerHTML = '<div class="nm"></div><div class="sub"></div>';
-      nm.querySelector('.nm').textContent = s.name; nm.querySelector('.sub').textContent = s.release + (s.expno ? ' · No. ' + s.expno : '') + (s.printed2023 ? ' · printed 2023' : '');
-      const ab = document.createElement('span'); ab.className = 'abbr'; ab.textContent = s.abbr || '';
+      nm.querySelector('.nm').textContent = s.name;
+      nm.querySelector('.sub').textContent = mons ? s.types.join(' / ') + ' · ' + s.genus
+        : s.release + (s.expno ? ' · No. ' + s.expno : '') + (s.printed2023 ? ' · printed 2023' : '');
+      const ab = document.createElement('span'); ab.className = 'abbr'; ab.textContent = mons ? pad4(s.n) : (s.abbr || '');
       const cp = document.createElement('input'); cp.type = 'number'; cp.min = 1; cp.max = 50; cp.step = 1; cp.className = 'cp'; cp.title = 'Copies of this label';
       cp.value = copiesOf(s); cp.hidden = !sel.has(s.i); cp.setAttribute('aria-label', 'Copies of ' + s.name);
       cp.onclick = (e) => e.stopPropagation();
-      cp.oninput = (e) => { e.stopPropagation(); state.copiesBy = { ...(state.copiesBy || {}), [s.i]: Math.max(1, Math.min(50, Math.round(Number(cp.value) || 1))) }; save(); renderPreview(); updateCount(); };
+      cp.oninput = (e) => { e.stopPropagation(); const k = cpKey(); state[k] = { ...(state[k] || {}), [s.i]: Math.max(1, Math.min(50, Math.round(Number(cp.value) || 1))) }; save(); renderPreview(); updateCount(); };
       row.append(cb, img, nm, cp, ab);
-      row.onclick = () => { state.current = s.i; save(); renderList(); renderPreview(); };
+      row.onclick = () => { state[ck] = s.i; save(); renderList(); renderPreview(); };
       row.onkeydown = (e) => { if (e.key === ' ') { e.preventDefault(); toggle(s.i, !sel.has(s.i)); } if (e.key === 'Enter') row.onclick(); };
       list.appendChild(row);
     });
     updateCount();
-    $('btn-labels').disabled = $('btn-sheet').disabled = $('btn-png').disabled = state.selected.length === 0;
+    $('btn-labels').disabled = $('btn-sheet').disabled = $('btn-png').disabled = state[sk].length === 0;
   }
 
   function updateCount() {
-    const total = state.selected.reduce((n, i) => n + copiesOf(SETS[i] || { i }), 0);
-    $('count').textContent = state.selected.length + ' selected' + (total !== state.selected.length ? ' · ' + total + ' labels' : '') + ' · ' + visible().length + ' shown';
+    const items = selectedItems();
+    const total = items.reduce((n, s) => n + copiesOf(s), 0);
+    $('count').textContent = items.length + ' selected' + (total !== items.length ? ' · ' + total + ' labels' : '') + ' · ' + visible().length + ' shown';
   }
   function toggle(i, on) {
-    const sel = new Set(state.selected); on ? sel.add(i) : sel.delete(i);
-    state.selected = [...sel].sort((a, b) => a - b); state.current = i; save(); renderList(); renderPreview();
+    const sk = selKey(); const sel = new Set(state[sk]); on ? sel.add(i) : sel.delete(i);
+    state[sk] = [...sel].sort((a, b) => a - b); state[curKey()] = i; save(); renderList(); renderPreview();
   }
 
   // ---------- label rendering ----------
@@ -719,6 +814,161 @@
     return el;
   }
 
+  // ---------- Pokémon (character) labels ----------
+  // Type colours as used on the games' type badges; light ones get dark text.
+  const TYPE_COLORS = { Normal: '#A8A77A', Fire: '#EE8130', Water: '#6390F0', Electric: '#F7D02C', Grass: '#7AC74C', Ice: '#96D9D6',
+    Fighting: '#C22E28', Poison: '#A33EA1', Ground: '#E2BF65', Flying: '#A98FF3', Psychic: '#F95587', Bug: '#A6B91A', Rock: '#B6A136',
+    Ghost: '#735797', Dragon: '#6F35FC', Dark: '#705746', Steel: '#B7B7CE', Fairy: '#D685AD' };
+  const LIGHT_TYPES = new Set(['Electric', 'Ice', 'Ground', 'Steel', 'Normal', 'Bug', 'Rock', 'Grass']);
+  const ART_FALLBACK = (n) => 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/' + n + '.png';
+  // PokeAPI heights are decimetres and weights hectograms; English cards print feet'inches" and lbs.
+  function heightStr(dm) {
+    if (dm == null) return '?';
+    if (state.monUnits === 'metric') return (dm / 10).toFixed(1) + ' m';
+    const inches = Math.round(dm * 3.93701);
+    return Math.floor(inches / 12) + "'" + String(inches % 12).padStart(2, '0') + '"';
+  }
+  function weightStr(hg) {
+    if (hg == null) return '?';
+    return state.monUnits === 'metric' ? (hg / 10).toFixed(1) + ' kg' : (hg * 0.220462).toFixed(1) + ' lbs.';
+  }
+
+  // Thermal art: Floyd-Steinberg dither at the printer's own dot pitch (203 dpi), so shading survives as a clean
+  // dot pattern instead of the driver's muddy halftone. Black dots opaque, everything else transparent.
+  const DOTS_PER_MM = 203 / 25.4;
+  const artImgs = new Map(); const ditherCache = new Map();
+  let artRerender;
+  function artImage(src) {
+    let im = artImgs.get(src);
+    if (!im) {
+      im = new Image(); im.decoding = 'async'; im.src = src; artImgs.set(src, im);
+      im.addEventListener('load', () => { clearTimeout(artRerender); artRerender = setTimeout(renderPreview, 40); });
+    }
+    return im;
+  }
+  function ditheredArt(src, dotsW) {
+    const key = src + '|' + dotsW;
+    if (ditherCache.has(key)) return ditherCache.get(key);
+    const im = artImage(src);
+    if (!im.complete || !im.naturalWidth) return null;
+    try {
+      const w = Math.max(8, dotsW), h = Math.max(8, Math.round(im.naturalHeight * w / im.naturalWidth));
+      const c = document.createElement('canvas'); c.width = w; c.height = h; const g = c.getContext('2d');
+      g.fillStyle = '#fff'; g.fillRect(0, 0, w, h); g.imageSmoothingQuality = 'high'; g.drawImage(im, 0, 0, w, h);
+      const id = g.getImageData(0, 0, w, h), d = id.data, lum = new Float32Array(w * h);
+      // gamma 1.2 deepens the mid-tones a little: bright art colours (yellows, oranges) otherwise dither to a faint haze
+      for (let i = 0, p = 0; i < d.length; i += 4, p++) lum[p] = 255 * Math.pow((0.299 * d[i] + 0.587 * d[i + 1] + 0.114 * d[i + 2]) / 255, 1.2);
+      for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+        const p = y * w + x, old = lum[p], v = old < 128 ? 0 : 255, err = old - v; lum[p] = v;
+        if (x + 1 < w) lum[p + 1] += err * 7 / 16;
+        if (y + 1 < h) { if (x > 0) lum[p + w - 1] += err * 3 / 16; lum[p + w] += err * 5 / 16; if (x + 1 < w) lum[p + w + 1] += err / 16; }
+      }
+      for (let i = 0, p = 0; i < d.length; i += 4, p++) { d[i] = d[i + 1] = d[i + 2] = 0; d[i + 3] = lum[p] ? 0 : 255; }
+      g.putImageData(id, 0, 0);
+      const url = c.toDataURL('image/png'); ditherCache.set(key, url); return url;
+    } catch (e) { ditherCache.set(key, null); return null; }   // tainted canvas (file://): grayscale filter instead
+  }
+  // Print / PNG export build labels synchronously, so load every artwork first when it has to be dithered.
+  function preloadArt(items) {
+    if (!(state.mono && state.monArt && state.monArtMode === 'dither')) return Promise.resolve();
+    return Promise.all(items.filter(p => p.kind === 'mon' && p.art).map(p => new Promise(r => {
+      const im = artImage(p.art);
+      if (im.complete) r(); else { im.addEventListener('load', r, { once: true }); im.addEventListener('error', r, { once: true }); }
+    })));
+  }
+
+  function monEl(p) {
+    const [w, h] = labelDims();
+    const side = state.layout === 'side' || (state.layout === 'auto' && w > h * 1.15);
+    const art = state.monArt && p.art;
+    const el = document.createElement('div');
+    el.className = 'label mon' + (state.mono ? ' mono' : '') + (side ? ' side' : '') + (art ? '' : ' noart') + (state.monTColor && !state.mono ? ' tcolor' : '');
+    const min = Math.min(w, h);
+    el.style.setProperty('--lfont', JSON.stringify(state.font || 'Jost'));
+    el.style.setProperty('--W', w + 'mm'); el.style.setProperty('--H', h + 'mm'); el.style.setProperty('--min', min + 'mm');
+    el.style.setProperty('--pad', (Number(state.pad) || 0) + 'mm');
+    if (!state.mono) { el.style.setProperty('--c-th', state.cTh); el.style.setProperty('--c-td', state.cTd); }
+    const mk = (cls, text) => { const n = document.createElement('div'); n.className = cls; if (text != null) n.textContent = text; return n; };
+
+    const parts = [];
+    if (state.monNo || state.monTypes) {
+      const top = mk('mtop');
+      if (state.monNo) top.appendChild(mk('no', 'No. ' + pad4(p.n)));
+      if (state.monTypes && p.types.length) {
+        const ts = mk('types');
+        p.types.forEach(t => { const b = document.createElement('span'); b.className = 'type'; b.textContent = t; b.style.setProperty('--tc', TYPE_COLORS[t] || '#777'); if (LIGHT_TYPES.has(t)) b.style.setProperty('--tink', '#1b1a19'); ts.appendChild(b); });
+        top.appendChild(ts);
+      }
+      parts.push(top);
+    }
+    parts.push(mk('mname', p.name));
+    let artBox = null;
+    if (art) {
+      artBox = mk('art'); const im = document.createElement('img'); im.alt = p.name; im.src = p.art;
+      im.onerror = () => { if (!im.dataset.fb) { im.dataset.fb = '1'; im.crossOrigin = 'anonymous'; im.src = ART_FALLBACK(p.n); } };
+      artBox.appendChild(im);
+    }
+    if (state.monDex) {
+      const dx = mk('dex'); const g = document.createElement('b'); g.textContent = p.genus; dx.appendChild(g);
+      const sep = () => { const s = document.createElement('span'); s.className = 'sep'; s.textContent = '·'; return s; };
+      const seg = (t) => { const s = document.createElement('span'); s.className = 'seg'; s.textContent = t; return s; };   // wraps only between pieces
+      dx.append(' ', sep(), ' ', seg('HT ' + heightStr(p.ht)), ' ', sep(), ' ', seg('WT ' + weightStr(p.wt)));   // spaces = the only break points
+      parts.push(dx);
+    }
+    const text = state.monText === 'full' ? p.flavor : state.monText === 'short' ? p.short : '';
+    if (text) { const fl = mk('flav'); fl.appendChild(mk('t', text)); parts.push(fl); }
+    if (state.monFoot) { const ft = mk('mfoot'); ft.append(mk('', 'Gen ' + p.genr), mk('', 'Debut ' + p.year)); parts.push(ft); }
+
+    if (side) {
+      const col = mk('col'); col.append(...parts);
+      if (artBox) el.append(artBox, col); else el.append(col);
+    } else {
+      if (artBox) parts.splice(parts.findIndex(n => n.classList.contains('mname')) + 1, 0, artBox);
+      el.append(...parts);
+    }
+    fitMon(el, side, p);
+    return el;
+  }
+
+  // Shrink the one-line pieces to their width, then shrink (or drop) the Pokédex entry until the
+  // artwork keeps at least ~40% of a stacked label, or the text column of a wide label stops overflowing.
+  function fitMon(el, side, p) {
+    const m = $('measure'); m.appendChild(el);
+    const cs = getComputedStyle(el);
+    const innerH = el.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+    const fsz = (n) => parseFloat(getComputedStyle(n).fontSize);
+    el.querySelectorAll('.mtop, .mname, .mfoot, .dex').forEach(n => {
+      const over = n.scrollWidth / Math.max(1, n.clientWidth);
+      if (over <= 1.001) return;
+      let k = 0.985 / over;
+      if (n.classList.contains('dex') && k < 0.62) { k = 0.8; n.classList.add('wrap'); }   // a long category wraps instead of going microscopic
+      n.style.fontSize = (fsz(n) * k) + 'px';
+    });
+    const art = el.querySelector('.art'), col = el.querySelector('.col'), fl = el.querySelector('.flav');
+    const overflow = () => {
+      if (side) { const box = col || el; return box.scrollHeight - box.clientHeight; }
+      if (art) return innerH * 0.4 - art.clientHeight;
+      return fl ? fl.scrollHeight - fl.clientHeight : 0;
+    };
+    // Never below ~1.6 mm type (about the smallest a 203 dpi head prints legibly) and never a cut-off sentence:
+    // an entry that cannot fit whole is left off that label.
+    if (fl) {
+      const f0 = fsz(fl), floor = Math.max(f0 * 0.6, 1.6 * MM); let f = f0;
+      for (let i = 0; i < 16 && overflow() > 0.5 && f * 0.94 >= floor; i++) { f *= 0.94; fl.style.fontSize = f + 'px'; }
+      if (overflow() > 0.5) fl.remove();
+    }
+    // Thermal + dither: re-render the art at exactly the printed size in printer dots.
+    if (art && state.mono && state.monArtMode === 'dither') {
+      const img = art.querySelector('img'), im = artImage(p.art);
+      if (im.complete && im.naturalWidth) {
+        const shown = Math.min(art.clientWidth, art.clientHeight * im.naturalWidth / im.naturalHeight);
+        const url = ditheredArt(p.art, Math.round(shown / MM * DOTS_PER_MM));
+        if (url) { img.src = url; img.classList.add('dith'); }
+      }
+    }
+    m.removeChild(el);
+  }
+
   // Measure how far the table type can scale so the widest row fills its width, capped by the height it may take
   // (about 42% of a stacked label, 90% of a side-by-side one). The Generation row may wrap to two lines, so it is
   // left out of the width measurement: a long generation name wraps on its own label instead of shrinking the batch.
@@ -757,11 +1007,12 @@
   }
 
   // A batch of labels shares ONE table scale (the tightest fit), so every label in a print run has identical type.
-  const copiesOf = (s) => Math.max(1, Math.min(50, Math.round(Number((state.copiesBy || {})[s.i]) || 1)));
+  const copiesOf = (s) => Math.max(1, Math.min(50, Math.round(Number(((s.kind === 'mon' ? state.monCopies : state.copiesBy) || {})[s.i]) || 1)));
   function withCopies(sets) { return sets.flatMap(s => Array(copiesOf(s)).fill(s)); }
   function makeLabels(sets) {
-    const els = sets.map(s => labelEl(s));
-    if (els.length > 1) { const k = Math.min(...els.map(e => e._k)); els.forEach(e => applyScale(e, k)); }
+    const els = sets.map(s => s.kind === 'mon' ? monEl(s) : labelEl(s));
+    const tables = els.filter(e => e._k != null);   // set labels share one table scale; Pokémon labels fit individually
+    if (tables.length > 1) { const k = Math.min(...tables.map(e => e._k)); tables.forEach(e => applyScale(e, k)); }
     return els;
   }
 
@@ -789,7 +1040,7 @@
     const cols = Math.max(1, Math.floor((iw + gap + 0.01) / (lw + gap)));
     const rows = Math.max(1, Math.floor((ih + gap + 0.01) / (lh + gap)));
     const per = cols * rows;
-    const sets = withCopies(state.selected.map(i => SETS[i]).filter(Boolean));
+    const sets = withCopies(selectedItems());
     const labels = makeLabels(sets);
     const pages = [];
     for (let i = 0; i < labels.length; i += per) {
@@ -816,31 +1067,35 @@
     if (state.preview === 'sheet') {
       const b = buildPages();
       const k = Math.min(1.2, availPx / (b.paper.w * MM));
-      if (!b.pages.length) { $('note').textContent = 'Nothing selected yet. Tick sets on the left to lay them out on ' + $('paper').selectedOptions[0].text + '.'; return; }
+      if (!b.pages.length) { $('note').textContent = 'Nothing selected yet. Tick ' + noun() + ' on the left to lay them out on ' + $('paper').selectedOptions[0].text + '.'; return; }
       b.pages.forEach(pg => stage.appendChild(scaled(pg, b.paper.w, b.paper.h, k)));
       $('note').textContent = b.count + ' label' + (b.count === 1 ? '' : 's') + ' on ' + b.pages.length + ' page' + (b.pages.length === 1 ? '' : 's') + ' · ' + b.cols + ' × ' + b.rows + ' per page · ' + w + ' × ' + h + ' mm labels'
         + (b.fits ? '' : ' · WARNING: a label is larger than the printable area');
       return;
     }
     if (state.preview === 'roll') {
-      const sets = withCopies(state.selected.map(i => SETS[i]).filter(Boolean));
-      if (!sets.length) { $('note').textContent = 'Nothing selected yet. Tick sets on the left to add them to the roll.'; return; }
+      const sets = withCopies(selectedItems());
+      if (!sets.length) { $('note').textContent = 'Nothing selected yet. Tick ' + noun() + ' on the left to add them to the roll.'; return; }
       const k = Math.min(z, availPx / (w * MM));
       makeLabels(sets).forEach(el => stage.appendChild(scaled(el, w, h, k)));
       $('note').textContent = sets.length + ' label' + (sets.length === 1 ? '' : 's') + ' on the roll · ' + w + ' × ' + h + ' mm each';
       return;
     }
-    const s = SETS[state.current] ?? SETS.find(x => state.selected.includes(x.i)) ?? SETS[0];
-    if (!s) { $('note').textContent = 'No set data loaded.'; return; }
+    const P = pool(), sel = state[selKey()];
+    const s = P[state[curKey()]] ?? P.find(x => sel.includes(x.i)) ?? P[0];
+    if (!s) { $('note').textContent = 'No data loaded.'; return; }
     const k = Math.min(z, availPx / (w * MM));
-    const batch = state.selected.map(i => SETS[i]).filter(Boolean); if (!batch.includes(s)) batch.push(s);
+    // set labels share a table scale with the batch; a Pokémon label stands alone
+    const batch = s.kind === 'mon' ? [s] : selectedItems(); if (!batch.includes(s)) batch.push(s);
     stage.appendChild(scaled(makeLabels(batch)[batch.indexOf(s)], w, h, k));
-    $('note').textContent = s.name + ' · ' + w + ' × ' + h + ' mm · ' + (state.selected.includes(s.i) ? 'in the print batch' : 'preview only, tick the box to add it');
+    $('note').textContent = s.name + ' · ' + w + ' × ' + h + ' mm · ' + (sel.includes(s.i) ? 'in the print batch' : 'preview only, tick the box to add it');
   }
+  const noun = () => isMons() ? 'Pokémon' : 'sets';
 
   // ---------- printing ----------
   const pageStyle = document.createElement('style'); document.head.appendChild(pageStyle);
-  function print(mode) {
+  async function print(mode) {
+    await preloadArt(selectedItems());
     const root = $('print-root'); root.innerHTML = ''; root.className = mode;
     const [w, h] = dims();
     if (mode === 'labels') {
@@ -849,7 +1104,7 @@
       let pw = Number(state.pw) || 0, ph = Number(state.ph) || 0;
       if (!(pw >= lw && ph >= lh)) { pw = w; ph = h; }            // no driver page given: the media is the roll size
       pageStyle.textContent = '@page { size: ' + pw + 'mm ' + ph + 'mm; margin: 0; }';
-      makeLabels(withCopies(state.selected.map(i => SETS[i]).filter(Boolean))).forEach(el => {
+      makeLabels(withCopies(selectedItems())).forEach(el => {
         const pg = document.createElement('div'); pg.className = 'sheetpage';
         pg.style.width = (pw - 0.2) + 'mm'; pg.style.height = (ph - 0.2) + 'mm';   // never taller than the page
         pg.style.gridTemplateColumns = lw + 'mm'; pg.style.gridAutoRows = lh + 'mm'; pg.appendChild(el); root.appendChild(pg);
@@ -870,10 +1125,11 @@
   async function exportPngs() {
     const btn = $('btn-png');
     if (!window.html2canvas || !window.JSZip) { $('note').textContent = 'The image libraries have not loaded yet; try again in a moment.'; return; }
-    const sets = state.selected.map(i => SETS[i]).filter(Boolean); if (!sets.length) return;
+    const sets = selectedItems(); if (!sets.length) return;
     const [w, h] = labelDims(); const dpi = 203; const scale = dpi / 96;
     btn.disabled = true; const label = btn.textContent;
     try {
+      btn.textContent = 'Loading art…'; await preloadArt(sets);
       const host = document.createElement('div'); host.style.cssText = 'position:absolute;left:0;top:0;z-index:-1;opacity:1;pointer-events:none;background:#fff;';
       document.body.appendChild(host);
       const zip = new JSZip(); const els = makeLabels(sets);
@@ -883,22 +1139,24 @@
         const canvas = await html2canvas(els[i], { scale, backgroundColor: '#ffffff', useCORS: true, logging: false,
           width: Math.round(w * MM), height: Math.round(h * MM) });
         const blob = await new Promise(r => canvas.toBlob(r, 'image/png'));
-        const s = sets[i]; const nn = s.expno != null ? String(s.expno).padStart(3, '0') : 'x';
-        zip.file(nn + '-' + (s.abbr || s.slug) + '.png', blob);
+        const s = sets[i];
+        const fname = s.kind === 'mon' ? pad4(s.n) + '-' + s.slug : (s.expno != null ? String(s.expno).padStart(3, '0') : 'x') + '-' + (s.abbr || s.slug);
+        zip.file(fname + '.png', blob);
       }
       host.remove();
       const out = await zip.generateAsync({ type: 'blob' });
-      const a = document.createElement('a'); a.href = URL.createObjectURL(out); a.download = 'pokemon-set-labels-' + w + 'x' + h + 'mm.zip'; a.click();
+      const a = document.createElement('a'); a.href = URL.createObjectURL(out); a.download = (isMons() ? 'pokemon-labels-' : 'pokemon-set-labels-') + w + 'x' + h + 'mm.zip'; a.click();
       setTimeout(() => URL.revokeObjectURL(a.href), 60000);
       $('note').textContent = els.length + ' PNGs at ' + dpi + ' dpi (' + Math.round(w * dpi / 25.4) + ' × ' + Math.round(h * dpi / 25.4) + ' px) zipped. Print them from the Phomemo app at 100%.';
     } catch (e) { $('note').textContent = 'Export failed: ' + (e && e.message ? e.message : e); }
-    finally { btn.disabled = state.selected.length === 0; btn.textContent = label; }
+    finally { btn.disabled = state[selKey()].length === 0; btn.textContent = label; }
   }
   $('btn-png').onclick = exportPngs;
 
   // ---------- wiring ----------
   const fields = ['target', 'preset', 'cw', 'ch', 'orient', 'pw', 'ph', 'layout', 'pad', 'sym', 'fs', 'mono', 'font', 'tstyle', 'rule',
-    'abbrmode', 'abbrsize', 'icondate', 'codelang', 'numbering', 'special', 'cards', 'paper', 'porient', 'place', 'margin', 'gap', 'guides', 'zoom', 'preview', 'cIcon', 'cAbbr', 'cTh', 'cTd', 'tintIcon', 'monoLogos', 'monoCut'];
+    'abbrmode', 'abbrsize', 'icondate', 'codelang', 'numbering', 'special', 'cards', 'paper', 'porient', 'place', 'margin', 'gap', 'guides', 'zoom', 'preview', 'cIcon', 'cAbbr', 'cTh', 'cTd', 'tintIcon', 'monoLogos', 'monoCut',
+    'monArt', 'monArtMode', 'monNo', 'monTypes', 'monTColor', 'monDex', 'monText', 'monFoot', 'monUnits'];
   const noReset = new Set(['target', 'zoom', 'preview']);
   function bind() {
     fields.forEach(id => {
@@ -938,6 +1196,16 @@
     $('sheetopts').hidden = roll; $('sheetadv').hidden = roll; $('rolladv').hidden = !roll;
     $('og-paper').hidden = roll; $('og-roll').hidden = !roll;   // size list shows only what the chosen printer can take
     $('colors').hidden = !!state.mono;
+    const mons = isMons();
+    document.querySelectorAll('.modes button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.mode === state.mode)));
+    $('set-contents').hidden = mons; $('mon-contents').hidden = !mons;
+    $('type-chips').hidden = $('series-chips').hidden = mons; $('gen-chips').hidden = !mons;
+    $('monArtModeRow').hidden = !state.mono || !state.monArt; $('monTColorRow').hidden = !!state.mono || !state.monTypes;
+    $('q').placeholder = mons ? 'Search name, number, type…' : 'Search set, abbreviation, year…';
+    $('q').setAttribute('aria-label', mons ? 'Search Pokémon' : 'Search sets');
+    $('list').setAttribute('aria-label', mons ? 'Pokémon' : 'Sets');
+    $('tagline').textContent = mons ? 'Pokémon labels, all 1,025 species' : 'Pokémon TCG set labels, every English expansion';
+    $('tab-pick').textContent = mons ? 'Pokémon' : 'Sets';
     $('btn-sheet').hidden = roll; $('btn-labels').hidden = !roll;
     [...$('preview').options].forEach(o => { o.hidden = (o.value === 'sheet' && roll) || (o.value === 'roll' && !roll); });
     if ((state.preview === 'sheet' && roll) || (state.preview === 'roll' && !roll)) { state.preview = roll ? 'roll' : 'sheet'; $('preview').value = state.preview; }
@@ -945,12 +1213,19 @@
   $('q').addEventListener('input', () => { q = $('q').value; renderList(); });
   document.querySelectorAll('#type-chips .chip[data-type]').forEach(c => c.onclick = () => { state.types[c.dataset.type] = !state.types[c.dataset.type]; save(); renderAll(); });
   $('chip-new').onclick = () => { state.onlyNew = !state.onlyNew; save(); renderAll(); };
-  $('sel-all').onclick = () => { const sel = new Set(state.selected); visible().forEach(s => sel.add(s.i)); state.selected = [...sel].sort((a, b) => a - b); save(); renderList(); renderPreview(); };
-  $('sel-none').onclick = () => { state.selected = []; save(); renderList(); renderPreview(); };
-  $('sel-invert').onclick = () => { const sel = new Set(state.selected); visible().forEach(s => sel.has(s.i) ? sel.delete(s.i) : sel.add(s.i)); state.selected = [...sel].sort((a, b) => a - b); save(); renderList(); renderPreview(); };
-  $('reset').onclick = () => { const keep = { selected: state.selected, current: state.current }; state = { ...defaults, ...keep }; save(); bind(); syncUI(); renderAll(); };
+  $('sel-all').onclick = () => { const sk = selKey(); const sel = new Set(state[sk]); visible().forEach(s => sel.add(s.i)); state[sk] = [...sel].sort((a, b) => a - b); save(); renderList(); renderPreview(); };
+  $('sel-none').onclick = () => { state[selKey()] = []; save(); renderList(); renderPreview(); };
+  $('sel-invert').onclick = () => { const sk = selKey(); const sel = new Set(state[sk]); visible().forEach(s => sel.has(s.i) ? sel.delete(s.i) : sel.add(s.i)); state[sk] = [...sel].sort((a, b) => a - b); save(); renderList(); renderPreview(); };
+  $('reset').onclick = () => {
+    const keep = { selected: state.selected, current: state.current, monSel: state.monSel, monCur: state.monCur, mode: state.mode };
+    state = { ...defaults, ...keep }; save(); bind(); syncUI(); renderAll();
+  };
+  document.querySelectorAll('.modes button').forEach(b => b.onclick = () => {
+    if (state.mode === b.dataset.mode) return;
+    state.mode = b.dataset.mode; q = ''; $('q').value = ''; save(); syncUI(); renderAll();
+  });
 
-  function renderAll() { renderSeriesChips(); renderExtraChips(); renderList(); renderPreview(); }
+  function renderAll() { renderSeriesChips(); renderGenChips(); renderExtraChips(); renderList(); renderPreview(); }
   // phone tabs
   const appEl = document.querySelector('.app');
   function setTab(t) {
@@ -963,6 +1238,7 @@
   setTab(savedTab);
   $('snap').textContent = window.POKEMON_SETS_DATE || 'unknown';
   if (state.current == null) state.current = SETS.findIndex(s => s.abbr === 'TEU');
+  if (state.monCur == null) state.monCur = Math.max(0, MONS.findIndex(p => p.n === 25));
   bind(); syncUI(); renderAll();
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(renderPreview);
   let rs; window.addEventListener('resize', () => { clearTimeout(rs); rs = setTimeout(renderPreview, 120); });

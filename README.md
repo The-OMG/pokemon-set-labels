@@ -29,6 +29,9 @@ public/            the site, deployed as-is to Cloudflare Workers (static assets
                    expansion number, release date, printed + secret card counts, set symbol (data URI),
                    logo path, "printed in the 2023 batch" flag
   img/logos/       set logos (1000 px wide, 256 colours)
+  pokemon.js       species data for the Pokémon labels: dex number, name, category, types, height,
+                   weight, generation, debut year, Pokédex entry (full + one sentence)
+  img/art/         official artwork per species (PokeAPI, trimmed, webp)
 pipeline/          regeneration scripts (Python 3, Pillow)
 wrangler.toml      Cloudflare Workers config (custom domain labels.omg.irish)
 ```
@@ -43,6 +46,7 @@ python parse_bulba.py      # tables -> bulba_raw.json
 python build_data.py       # normalise, number, fix rowspan-shifted rows -> sets_data.json
 python fetch_images.py     # download + resize symbols and logos (skips files already present)
 python make_setsjs.py      # writes ../public/sets.js and ../public/img/logos/
+python build_pokemon.py    # PokeAPI CSVs + artwork -> ../public/pokemon.js and ../public/img/art/ (new species)
 ```
 
 Numbering: main-series expansions and special expansions are counted on separate sequential counters,
