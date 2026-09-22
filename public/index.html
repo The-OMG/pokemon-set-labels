@@ -170,7 +170,7 @@
     border: 0.2mm solid currentColor; border-radius: 0.3em; padding: 0.22em 0 0.16em; width: calc(var(--sym) * 1.15); text-align: center; white-space: nowrap; box-sizing: border-box; }
   .label .logo { flex: 1 1 0; min-height: 0; display: flex; align-items: center; justify-content: center; position: relative; }
   /* promo sets: the era's base-set logo over a black promo star */
-  .label .logo.promo .star { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); height: 100%; width: auto; max-width: 100%; object-fit: contain; }
+  .label .logo.promo .star { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); height: 50%; width: auto; max-width: 50%; object-fit: contain; }
   .label .logo.promo img.logoimg { position: relative; z-index: 1; max-height: 64%; max-width: 84%; }
   .label .symbox.star { margin-left: auto; margin-right: calc(var(--sym) * 0.12); }
   .label .symbox.star + .symbox { margin-left: 0; }
@@ -584,7 +584,8 @@
   const PROMO_LOGO = { WP: 'base-set', NP: 'ex-ruby-sapphire', DPP: 'diamond-pearl', HSP: 'heartgold-soulsilver', BWP: 'black-white', XYP: 'xy', SMP: 'sun-moon', SWSD: 'sword-shield', SVP: 'scarlet-violet', MEP: 'mega-evolution' };
   // plain five-point black star (the Black Star Promo mark), as an SVG data URI so it tints and prints like the icons
   const STAR_SVG = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50.0 4.0 60.3 35.8 93.7 35.8 66.7 55.4 77.0 87.2 50.0 67.6 23.0 87.2 33.3 55.4 6.3 35.8 39.7 35.8z" fill="#000" stroke="#000" stroke-width="4" stroke-linejoin="round"/></svg>');   // the Black Star Promo mark: regular pentagram, rounded tips
-  const PROMO_STAR = STAR_SVG;
+  const PROMO_STAR = STAR_SVG;                                                   // plain star: background only
+  const PROMO_ICON = (SETS.find(x => x.abbr === 'WP') || {}).symbol_img || STAR_SVG;   // the "PROMO" star symbol: the icon
   function labelEl(s) {
     const [w, h] = labelDims();
     const side = state.layout === 'side' || (state.layout === 'auto' && w > h * 1.15);
@@ -606,7 +607,7 @@
       top.appendChild(blk);
     }
     const codeEra = !!(state.icondate && s.release >= state.icondate && s.abbr && !/Prize Pack|Trick or Trade/i.test(s.name));
-    if (codeEra && promo) { const sb = document.createElement('div'); sb.className = 'symbox star'; const st = document.createElement('img'); st.alt = ''; st.src = STAR_SVG; sb.appendChild(st); top.appendChild(sb); }
+    if (codeEra && promo) { const sb = document.createElement('div'); sb.className = 'symbox star'; const st = document.createElement('img'); st.alt = ''; st.src = (state.tintIcon && !state.mono) ? tinted({ slug: 'promo-icon', symbol_img: PROMO_ICON }, state.cIcon) : PROMO_ICON; sb.appendChild(st); top.appendChild(sb); }
     if (codeEra) {   // draw the code box ourselves so every text-code icon is the same size and weight
       const box = document.createElement('div'); box.className = 'symbox code'; const cb = document.createElement('div'); cb.className = 'codebox' + (s.abbr.length > 3 ? ' long' : '');
       const inner = document.createElement('div'); inner.className = 'inner'; const txt = document.createElement('span'); txt.className = 'txt'; txt.textContent = s.abbr;
@@ -616,7 +617,7 @@
       } else inner.appendChild(txt);
       cb.appendChild(inner);
       fitCode(cb); if (state.tintIcon && !state.mono) cb.style.setProperty('--c-icon', state.cIcon); box.appendChild(cb); top.appendChild(box);
-    } else if (promo) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = STAR_SVG; if (state.tintIcon && !state.mono) im.style.filter = 'none'; box.appendChild(im); top.appendChild(box); }
+    } else if (promo) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = (state.tintIcon && !state.mono) ? tinted({ slug: 'promo-icon', symbol_img: PROMO_ICON }, state.cIcon) : PROMO_ICON; box.appendChild(im); top.appendChild(box); }
     else if (s.symbol_img) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = (state.tintIcon && !state.mono) ? tinted(s, state.cIcon) : s.symbol_img; box.appendChild(im); top.appendChild(box); }
     const logo = document.createElement('div'); logo.className = 'logo';
     const promoLogo = promo && PROMO_LOGO[s.abbr] ? 'img/logos/' + PROMO_LOGO[s.abbr] + '.png' : null;
