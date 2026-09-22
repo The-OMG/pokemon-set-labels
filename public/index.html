@@ -126,15 +126,15 @@
   .label .col { display: flex; flex-direction: column; flex: 1 1 0; min-width: 0; min-height: 0; gap: calc(var(--min) * 0.02); }
   .label .top { display: flex; align-items: flex-start; justify-content: space-between; gap: calc(var(--min) * 0.04); height: var(--sym); flex: none; }
   /* abbreviation block: the code on top, an optional SPECIAL strip underneath matched to the code's width */
-  .label .abbrblock { display: flex; flex-direction: column; justify-content: center; align-self: stretch; width: max-content; min-width: 0; gap: calc(var(--sym) * 0.07); }
-  .label .abbr { font-weight: 500; letter-spacing: 0.2em; margin-right: -0.2em; font-size: calc(var(--sym) * 0.62); line-height: 1; white-space: nowrap; }
+  /* The abbreviation line always takes the same height (even when empty) so every SPECIAL strip lands on the same
+     baseline across labels; the strip itself is a fixed width, roughly that of a three-letter code. */
+  .label .abbrblock { --abbr-h: calc(var(--sym) * 0.42); display: flex; flex-direction: column; justify-content: flex-start; align-self: stretch; width: max-content; min-width: 0; gap: calc(var(--sym) * 0.08); }
+  .label .abbr { font-weight: 500; letter-spacing: 0.16em; margin-right: -0.16em; font-size: calc(var(--abbr-h) * 0.95); height: var(--abbr-h); line-height: var(--abbr-h); white-space: nowrap; display: block; }
+  .label.abbr-large .abbrblock { --abbr-h: calc(var(--sym) * 0.62); }
   .label .symbox { width: var(--sym); height: var(--sym); flex: none; margin-left: auto; display: flex; align-items: center; justify-content: center; }
   .label .symbox img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
-  .label.abbr-small .abbrblock { justify-content: flex-start; }
-  .label.abbr-small .abbr { font-size: calc(var(--sym) * 0.4); letter-spacing: 0.16em; margin-right: -0.16em; font-weight: 500; }
   .label .badge { font-size: calc(var(--sym) * 0.2); letter-spacing: 0.12em; text-indent: 0.12em; text-transform: uppercase; font-weight: 600; line-height: 1;
-    border: 0.2mm solid currentColor; border-radius: 0.3em; padding: 0.22em 0.3em 0.16em; width: 100%; text-align: center; white-space: nowrap; }
-  .label .abbrblock.solo .badge { width: auto; }
+    border: 0.2mm solid currentColor; border-radius: 0.3em; padding: 0.22em 0 0.16em; width: calc(var(--sym) * 1.15); text-align: center; white-space: nowrap; box-sizing: border-box; }
   .label .logo { flex: 1 1 0; min-height: 0; display: flex; align-items: center; justify-content: center; }
   .label .logo img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
   .label .logo .txtlogo { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 700; text-transform: uppercase; text-align: center; font-size: calc(var(--min) * 0.11); line-height: 1.05; }
@@ -270,10 +270,11 @@
 
     <fieldset>
       <legend>What goes on the label</legend>
-      <label class="field"><span class="lbl">Set abbreviation <small>Automatic: small tag on old sets, large for Sword &amp; Shield, hidden once the icon is the code (Scarlet &amp; Violet on).</small></span>
-        <select id="abbrmode"><option value="auto">Automatic by era</option><option value="large">Always large</option><option value="small">Always small tag</option><option value="never">Hide</option></select></label>
-      <details class="adv" id="eradates"><summary>Era cut-off dates</summary>
-        <label class="field"><span class="lbl">Small tag before</span><input type="text" id="abbrdate" value="2020-02-07" placeholder="yyyy-mm-dd"></label>
+      <label class="field"><span class="lbl">Set abbreviation <small>Automatic hides it once the set icon is the code itself (Scarlet &amp; Violet on).</small></span>
+        <select id="abbrmode"><option value="auto">Automatic</option><option value="show">Always show</option><option value="never">Hide</option></select></label>
+      <label class="field"><span class="lbl">Abbreviation size</span>
+        <select id="abbrsize"><option value="small">Small tag</option><option value="large">Large</option></select></label>
+      <details class="adv" id="eradates"><summary>Era cut-off date</summary>
         <label class="field"><span class="lbl">Icon is the code from</span><input type="text" id="icondate" value="2023-03-31" placeholder="yyyy-mm-dd"></label>
       </details>
       <label class="field"><span class="lbl">Expansion number <small>Sequential counts main and special sets separately, like the 2023 cards.</small></span>
@@ -315,7 +316,7 @@
   const defaults = {
     preset: '40x60', cw: 40, ch: 60, orient: 'portrait', layout: 'auto', pad: 2, sym: 20, fs: 100, mono: false,
     font: 'Jost', tstyle: 'caps', rule: true,
-    abbrmode: 'auto', abbrdate: '2020-02-07', icondate: '2023-03-31', numbering: 'seq', special: 'badge', cards: 'total',
+    abbrmode: 'auto', abbrsize: 'small', icondate: '2023-03-31', numbering: 'seq', special: 'badge', cards: 'total',
     paper: 'letter', margin: 0, gap: 0, guides: true, zoom: 3, preview: 'label', v: 3,
     types: { 'Main Series Expansion': true, 'Special Expansion': true, 'Other': false }, onlyNew: false, series: null, selected: [], current: null
   };
@@ -327,7 +328,9 @@
       const raw = localStorage.getItem(STORE);
       if (raw) {
         const parsed = JSON.parse(raw); const st = { ...defaults, ...parsed };
-        if (st.abbrmode === 'always') st.abbrmode = 'large'; if (st.abbrmode === 'before') st.abbrmode = 'auto';
+        if (st.abbrmode === 'always' || st.abbrmode === 'large') { st.abbrmode = 'show'; st.abbrsize = 'large'; }
+        if (st.abbrmode === 'small') { st.abbrmode = 'show'; st.abbrsize = 'small'; }
+        if (st.abbrmode === 'before') st.abbrmode = 'auto';
         if (parsed.v !== 3) { st.margin = 0; st.gap = 0; st.v = 3; }   // v3: sheets no longer waste paper on margins by default
         return st;
       }
@@ -399,14 +402,11 @@
     return [w, h];
   }
 
-  // 'large' | 'small' | null
-  function abbrStyle(s) {
-    if (state.abbrmode === 'never' || !s.abbr) return null;
-    if (state.abbrmode === 'large') return 'large';
-    if (state.abbrmode === 'small') return 'small';
-    if (s.release < (state.abbrdate || '9999')) return 'small';
-    if (state.icondate && s.release >= state.icondate && s.symbol_img) return null;   // the symbol already reads as the code
-    return 'large';
+  // Should this set's abbreviation be printed? (Its size is a separate, global setting.)
+  function showAbbr(s) {
+    if (state.abbrmode === 'never' || !s.abbr) return false;
+    if (state.abbrmode === 'show') return true;
+    return !(state.icondate && s.release >= state.icondate && s.symbol_img);   // auto: hidden once the symbol is the code
   }
 
   function rows(s) {
@@ -431,9 +431,9 @@
   function labelEl(s) {
     const [w, h] = dims();
     const side = state.layout === 'side' || (state.layout === 'auto' && w > h * 1.15);
-    const ab = abbrStyle(s);
+    const ab = showAbbr(s);
     const el = document.createElement('div');
-    el.className = 'label' + (state.mono ? ' mono' : '') + (side ? ' side' : '') + (ab === 'small' ? ' abbr-small' : '') + (state.tstyle === 'caps' ? ' caps' : '') + (state.rule ? ' rule' : '');
+    el.className = 'label' + (state.mono ? ' mono' : '') + (side ? ' side' : '') + (state.abbrsize === 'large' ? ' abbr-large' : '') + (state.tstyle === 'caps' ? ' caps' : '') + (state.rule ? ' rule' : '');
     const min = Math.min(w, h);
     el.style.setProperty('--lfont', JSON.stringify(state.font || 'Jost'));
     el.style.setProperty('--W', w + 'mm'); el.style.setProperty('--H', h + 'mm'); el.style.setProperty('--min', min + 'mm');
@@ -441,8 +441,8 @@
     const top = document.createElement('div'); top.className = 'top';
     const badge = s.type === 'Special Expansion' && state.special === 'badge';
     if (ab || badge) {
-      const blk = document.createElement('div'); blk.className = 'abbrblock' + (ab ? '' : ' solo');
-      if (ab) { const a = document.createElement('span'); a.className = 'abbr'; a.textContent = s.abbr; blk.appendChild(a); }
+      const blk = document.createElement('div'); blk.className = 'abbrblock';
+      const a = document.createElement('span'); a.className = 'abbr'; a.textContent = ab ? s.abbr : ''; blk.appendChild(a);   // empty line keeps the badge on the same baseline
       if (badge) { const b = document.createElement('span'); b.className = 'badge'; b.textContent = 'Special'; blk.appendChild(b); }
       top.appendChild(blk);
     }
@@ -588,7 +588,7 @@
 
   // ---------- wiring ----------
   const fields = ['preset', 'cw', 'ch', 'orient', 'layout', 'pad', 'sym', 'fs', 'mono', 'font', 'tstyle', 'rule',
-    'abbrmode', 'abbrdate', 'icondate', 'numbering', 'special', 'cards', 'paper', 'margin', 'gap', 'guides', 'zoom', 'preview'];
+    'abbrmode', 'abbrsize', 'icondate', 'numbering', 'special', 'cards', 'paper', 'margin', 'gap', 'guides', 'zoom', 'preview'];
   function bind() {
     fields.forEach(id => {
       const el = $(id); if (!el) return;
