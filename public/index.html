@@ -350,6 +350,8 @@
         <label class="field"><span class="lbl">Line above the table</span><input type="checkbox" id="rule" checked></label>
         <label class="field"><span class="lbl">Icon size <small>% of the label's short side</small></span><input type="number" id="sym" min="8" max="40" step="1" value="20"></label>
         <label class="field"><span class="lbl">Table text size <small>100 = fill the width</small></span><input type="number" id="fs" min="50" max="160" step="5" value="100"></label>
+        <label class="field"><span class="lbl">Solid black logos <small>Thermal mode only: also binarise the logos (icons are always solid black).</small></span><input type="checkbox" id="monoLogos"></label>
+        <label class="field"><span class="lbl">Black threshold <small>0 to 255; lower keeps less of the logo.</small></span><input type="number" id="monoCut" min="40" max="240" step="5" value="175"></label>
         <div id="colors">
           <p class="hint" style="margin-top:8px">Colors (color printing only)</p>
           <label class="field"><span class="lbl">Recolor set icons</span><input type="checkbox" id="tintIcon"></label>
@@ -408,7 +410,7 @@
 
   const defaults = {
     target: 'roll', copiesBy: {}, preset: '40x60', cw: 40, ch: 60, orient: 'auto', pw: '', ph: '', layout: 'auto', pad: 2, sym: 20, fs: 100, mono: true,
-    font: 'Jost', tstyle: 'caps', rule: true, tintIcon: false, cIcon: '#111111', cAbbr: '#111111', cTh: '#111111', cTd: '#111111',
+    font: 'Jost', tstyle: 'caps', rule: true, monoLogos: false, monoCut: 175, tintIcon: false, cIcon: '#111111', cAbbr: '#111111', cTh: '#111111', cTd: '#111111',
     abbrmode: 'never', abbrsize: 'small', icondate: '2023-03-31', numbering: 'seq', special: 'badge', cards: 'total', extras: {}, codelang: 'EN',
     paper: 'letter', porient: 'auto', place: 'center', margin: 0, gap: 0, guides: true, zoom: 3, preview: 'label', v: 3,
     types: { 'Main Series Expansion': true, 'Special Expansion': true, 'Other': false }, onlyNew: false, series: null, selected: [], current: null
@@ -590,6 +592,27 @@
   const STAR_OUTLINE_SVG = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="4.7 2.5 90.6 86.2"><path d="M50.0 4.0 60.3 35.8 93.7 35.8 66.7 55.4 77.0 87.2 50.0 67.6 23.0 87.2 33.3 55.4 6.3 35.8 39.7 35.8z" fill="none" stroke="#000" stroke-width="2.6" stroke-linejoin="round"/></svg>');   // border-only star for the background
   const PROMO_STAR = STAR_OUTLINE_SVG;                                           // background: outline star, tips to the edges
   const PROMO_ICON = (SETS.find(x => x.abbr === 'WP') || {}).symbol_img || STAR_SVG;   // the "PROMO" star symbol: the icon
+  // Thermal mode: binarise a logo (dark -> solid black, light -> transparent) so the printer never dithers grey.
+  const monoCache = new Map(); const monoImgs = new Map();
+  function solidBlack(src, key, cutOverride) {
+    const cut = cutOverride != null ? cutOverride : Math.max(0, Math.min(255, Number(state.monoCut) || 175));
+    const ck = key + '|' + cut;
+    if (monoCache.has(ck)) return monoCache.get(ck);
+    let im = monoImgs.get(key);
+    if (!im) { im = new Image(); im.src = src; monoImgs.set(key, im); im.onload = () => { renderPreview(); }; }
+    if (!im.complete || !im.naturalWidth) return src;
+    try {
+      const c = document.createElement('canvas'); c.width = im.naturalWidth; c.height = im.naturalHeight; const g = c.getContext('2d');
+      g.drawImage(im, 0, 0); const id = g.getImageData(0, 0, c.width, c.height), d = id.data;
+      for (let i = 0; i < d.length; i += 4) {
+        const lum = 0.299 * d[i] + 0.587 * d[i + 1] + 0.114 * d[i + 2];
+        const on = d[i + 3] > 100 && lum < cut;
+        d[i] = d[i + 1] = d[i + 2] = 0; d[i + 3] = on ? 255 : 0;
+      }
+      g.putImageData(id, 0, 0); const url = c.toDataURL('image/png'); monoCache.set(ck, url); return url;
+    } catch (e) { return src; }   // tainted canvas (file://): fall back to the grayscale filter
+  }
+  const useSolid = () => !!(state.mono && state.monoLogos);
   function labelEl(s) {
     const [w, h] = labelDims();
     const side = state.layout === 'side' || (state.layout === 'auto' && w > h * 1.15);
@@ -611,7 +634,7 @@
       top.appendChild(blk);
     }
     const codeEra = !!(state.icondate && s.release >= state.icondate && s.abbr && !/Prize Pack|Trick or Trade/i.test(s.name));
-    if (codeEra && promo) { const sb = document.createElement('div'); sb.className = 'symbox star'; const st = document.createElement('img'); st.alt = ''; st.src = (state.tintIcon && !state.mono) ? tinted({ slug: 'promo-icon', symbol_img: PROMO_ICON }, state.cIcon) : PROMO_ICON; sb.appendChild(st); top.appendChild(sb); }
+    if (codeEra && promo) { const sb = document.createElement('div'); sb.className = 'symbox star'; const st = document.createElement('img'); st.alt = ''; st.src = (state.tintIcon && !state.mono) ? tinted({ slug: 'promo-icon', symbol_img: PROMO_ICON }, state.cIcon) : solidBlack(PROMO_ICON, 'sym:promo', 200); sb.appendChild(st); top.appendChild(sb); }
     if (codeEra) {   // draw the code box ourselves so every text-code icon is the same size and weight
       const box = document.createElement('div'); box.className = 'symbox code'; const cb = document.createElement('div'); cb.className = 'codebox' + (s.abbr.length > 3 ? ' long' : '');
       const inner = document.createElement('div'); inner.className = 'inner'; const txt = document.createElement('span'); txt.className = 'txt'; txt.textContent = s.abbr;
@@ -621,15 +644,15 @@
       } else inner.appendChild(txt);
       cb.appendChild(inner);
       fitCode(cb); if (state.tintIcon && !state.mono) cb.style.setProperty('--c-icon', state.cIcon); box.appendChild(cb); top.appendChild(box);
-    } else if (promo) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = (state.tintIcon && !state.mono) ? tinted({ slug: 'promo-icon', symbol_img: PROMO_ICON }, state.cIcon) : PROMO_ICON; box.appendChild(im); top.appendChild(box); }
-    else if (s.symbol_img) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = (state.tintIcon && !state.mono) ? tinted(s, state.cIcon) : s.symbol_img; box.appendChild(im); top.appendChild(box); }
+    } else if (promo) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = (state.tintIcon && !state.mono) ? tinted({ slug: 'promo-icon', symbol_img: PROMO_ICON }, state.cIcon) : solidBlack(PROMO_ICON, 'sym:promo', 200); box.appendChild(im); top.appendChild(box); }
+    else if (s.symbol_img) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = (state.tintIcon && !state.mono) ? tinted(s, state.cIcon) : solidBlack(s.symbol_img, 'sym:' + s.slug, 200); box.appendChild(im); top.appendChild(box); }
     const logo = document.createElement('div'); logo.className = 'logo';
     const promoLogo = promo && PROMO_LOGO[s.abbr] ? 'img/logos/' + PROMO_LOGO[s.abbr] + '.png' : null;
     if (promoLogo) {
       logo.classList.add('promo');
       if (PROMO_STAR) { const st = document.createElement('img'); st.className = 'star'; st.alt = ''; st.src = PROMO_STAR; logo.appendChild(st); }
-      const im = document.createElement('img'); im.className = 'logoimg'; im.alt = s.name; im.src = promoLogo; logo.appendChild(im);
-    } else if (s.logo_img) { const im = document.createElement('img'); im.alt = s.name; im.src = s.logo_img; logo.appendChild(im); }
+      const im = document.createElement('img'); im.className = 'logoimg'; im.alt = s.name; im.src = useSolid() ? solidBlack(promoLogo, 'logo:' + promoLogo) : promoLogo; logo.appendChild(im);
+    } else if (s.logo_img) { const im = document.createElement('img'); im.alt = s.name; im.src = useSolid() ? solidBlack(s.logo_img, 'logo:' + s.slug) : s.logo_img; logo.appendChild(im); }
     else { const t = document.createElement('div'); t.className = 'txtlogo'; t.textContent = s.name; logo.appendChild(t); }
     const table = document.createElement('table'); const tb = document.createElement('tbody');
     rows(s).forEach(([k, v]) => {
@@ -825,7 +848,7 @@
 
   // ---------- wiring ----------
   const fields = ['target', 'preset', 'cw', 'ch', 'orient', 'pw', 'ph', 'layout', 'pad', 'sym', 'fs', 'mono', 'font', 'tstyle', 'rule',
-    'abbrmode', 'abbrsize', 'icondate', 'codelang', 'numbering', 'special', 'cards', 'paper', 'porient', 'place', 'margin', 'gap', 'guides', 'zoom', 'preview', 'cIcon', 'cAbbr', 'cTh', 'cTd', 'tintIcon'];
+    'abbrmode', 'abbrsize', 'icondate', 'codelang', 'numbering', 'special', 'cards', 'paper', 'porient', 'place', 'margin', 'gap', 'guides', 'zoom', 'preview', 'cIcon', 'cAbbr', 'cTh', 'cTd', 'tintIcon', 'monoLogos', 'monoCut'];
   const noReset = new Set(['target', 'zoom', 'preview']);
   function bind() {
     fields.forEach(id => {
