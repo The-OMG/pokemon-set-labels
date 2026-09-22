@@ -863,7 +863,7 @@
     $('customrow').hidden = state.preset !== 'custom';
     $('eradates').hidden = state.abbrmode !== 'auto';
     $('sheetopts').hidden = roll; $('sheetadv').hidden = roll; $('rolladv').hidden = !roll;
-    $('og-paper').hidden = roll;
+    $('og-paper').hidden = roll; $('og-roll').hidden = !roll;   // size list shows only what the chosen printer can take
     $('colors').hidden = !!state.mono;
     $('btn-sheet').hidden = roll; $('btn-labels').hidden = !roll;
     [...$('preview').options].forEach(o => { o.hidden = (o.value === 'sheet' && roll) || (o.value === 'roll' && !roll); });
