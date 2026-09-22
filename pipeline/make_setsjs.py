@@ -5,7 +5,7 @@ printed = [a for a in json.load(open('docx_abbrs.json')) if not a.isdigit()]
 os.makedirs('public/img/logos', exist_ok=True)
 out = []
 for s in sets:
-    rec = {k: s.get(k) for k in ('name','series','type','setno','abbr','cards','secret','release','expno','slug')}
+    rec = {k: s.get(k) for k in ('name','series','type','setno','abbr','cards','secret','extras','release','expno','slug')}
     rec['printed2023'] = s['abbr'] in printed
     sym = s.get('symbol_img'); rec['symbol_img'] = None
     if sym and os.path.exists(sym):

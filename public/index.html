@@ -30,6 +30,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Chakra+Petch:wght@400;500;600;700&family=Exo+2:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=Oswald:wght@700&family=Source+Sans+3:wght@400;500;600;700&display=swap">
 <style>
+  /* SetCode: letters traced from the Scarlet & Violet era set-code symbols; missing letters/digits drawn to match. */
+  @font-face { font-family: "SetCode"; src: url("fonts/SetCode.woff2?v=9") format("woff2"), url("fonts/SetCode.otf?v=9") format("opentype"); font-weight: 700; font-display: block; }
   :root {
     --ground: #f3f1ea; --panel: #ffffff; --panel-2: #ebe8df; --ink: #1b1a19; --muted: #6b675e; --line: #d9d5cb;
     --accent: #c8102e; --accent-ink: #ffffff; --sel: #fff1f0; --label-paper: #ffffff; --label-ink: #111111;
@@ -79,7 +81,9 @@
   .side-actions button { background: none; border: 0; padding: 2px 4px; color: var(--accent); font-weight: 600; }
   .list { overflow-y: auto; flex: 1; min-height: 0; }
   .series-h { font-family: var(--display); text-transform: uppercase; letter-spacing: .06em; font-size: 13px; color: var(--muted); padding: 10px 14px 4px; position: sticky; top: 0; background: var(--panel); }
-  .row { display: grid; grid-template-columns: 22px 30px minmax(0, 1fr) auto; align-items: center; gap: 8px; padding: 5px 14px; cursor: pointer; border-left: 3px solid transparent; }
+  .row { display: grid; grid-template-columns: 22px 30px minmax(0, 1fr) auto auto; align-items: center; gap: 8px; padding: 5px 14px; cursor: pointer; border-left: 3px solid transparent; }
+  .row .cp { width: 44px; padding: 2px 4px; border: 1px solid var(--line); border-radius: 5px; background: var(--ground); font-size: 12px; text-align: center; font-variant-numeric: tabular-nums; }
+  .row .cp[hidden] { display: none; }
   .row:hover { background: var(--panel-2); }
   .row.current { border-left-color: var(--accent); background: var(--sel); }
   .row img { width: 26px; height: 26px; object-fit: contain; }
@@ -150,11 +154,17 @@
     background: var(--c-icon, #000); border-radius: calc(var(--cbh) * 0.141); padding: calc(var(--cbh) * 0.0507); box-sizing: border-box; }
   .label .codebox .inner { width: 100%; height: 100%; box-sizing: border-box; border: calc(var(--cbh) * 0.04) solid #fff; border-radius: calc(var(--cbh) * 0.091);
     display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .label .codebox .grp { display: flex; align-items: baseline; gap: calc(var(--cbh) * 0.06); transform: translateY(var(--code-ty, 0.02em)); }
+  .label .codebox .lang { font-family: "SetCode", "Oswald", "Arial Narrow", Impact, sans-serif; font-weight: 700; color: #fff; font-size: calc(var(--cbh) * 0.823 * 0.52); line-height: 1; letter-spacing: 0.02em; white-space: nowrap; }
+  .label .codebox.en .txt { transform: none; font-size: calc(var(--cbh) * 0.78); letter-spacing: -0.03em; }
+  .label .codebox.en .lang { font-size: calc(var(--cbh) * 0.78 * 0.56); letter-spacing: 0; }
+  .label .codebox .grp { transform-origin: 50% 50%; }
   /* Oswald is sized so the letters match the originals' WIDTH, then stretched vertically to their HEIGHT
      (the card font is taller for its width than any free face). */
-  .label .codebox .txt { font-family: "Oswald", "Arial Narrow", Impact, sans-serif; font-weight: 700; color: #fff; font-size: calc(var(--cbh) * 0.56); line-height: 1;
-    letter-spacing: 0.02em; text-indent: 0.02em; transform: scaleY(1.25) translateY(-0.057em); transform-origin: 50% 50%; white-space: nowrap; }
-  .label .codebox.long .txt { font-size: calc(var(--cbh) * 0.46); }
+  /* cap height is 0.70 em, the originals' letters are 0.576 of the box height -> font-size 0.823 of the box height */
+  .label .codebox .txt { font-family: "SetCode", "Oswald", "Arial Narrow", Impact, sans-serif; font-weight: 700; color: #fff; font-size: calc(var(--cbh) * 0.823); line-height: 1;
+    letter-spacing: 0; transform: translateY(var(--code-ty, 0.02em)); white-space: nowrap; }
+  .label .codebox.long .txt { font-size: calc(var(--cbh) * 0.66); }
   .label.mono .codebox { background: #000; }
   .label .badge { font-size: calc(var(--sym) * 0.2); letter-spacing: 0.12em; text-indent: 0.12em; text-transform: uppercase; font-weight: 600; line-height: 1;
     border: 0.2mm solid currentColor; border-radius: 0.3em; padding: 0.22em 0 0.16em; width: calc(var(--sym) * 1.15); text-align: center; white-space: nowrap; box-sizing: border-box; }
@@ -289,7 +299,6 @@
           </optgroup>
         </select></label>
       <label class="field two" id="customrow"><span class="lbl">Custom width × height <small>millimetres</small></span><input type="number" id="cw" min="15" max="120" step="0.5" value="40" aria-label="Custom width in mm"><span>×</span><input type="number" id="ch" min="15" max="200" step="0.5" value="60" aria-label="Custom height in mm"></label>
-      <label class="field"><span class="lbl">Copies of each label</span><input type="number" id="copies" min="1" max="50" step="1" value="1"></label>
       <label class="field"><span class="lbl">Label orientation</span>
         <select id="orient"><option value="auto">As listed</option><option value="portrait">Tall</option><option value="landscape">Wide</option></select></label>
       <div id="sheetopts" class="group">
@@ -346,13 +355,17 @@
 
     <fieldset>
       <legend>Contents</legend>
-      <label class="field"><span class="lbl">Set abbreviation <small>Automatic hides it once the icon is the code itself (Scarlet &amp; Violet on).</small></span>
-        <select id="abbrmode"><option value="auto">Automatic</option><option value="show">Always show</option><option value="never">Hide</option></select></label>
       <label class="field"><span class="lbl">Special-set marker</span>
         <select id="special"><option value="badge">SPECIAL badge at the top</option><option value="star">Star before the generation</option><option value="suffix">"(Special)" on a second line</option><option value="word">Replace the generation</option><option value="plain">None</option></select></label>
-      <label class="field"><span class="lbl">Card count <small>Team Up: 181 printed, 196 with secret rares.</small></span>
+      <label class="field"><span class="lbl">Card count <small>Team Up: 181 printed, 196 with secret rares. Galleries and vaults are numbered separately; add them as rows below.</small></span>
         <select id="cards"><option value="total">Total, e.g. 196</option><option value="printed-total">Both, e.g. 181 (196)</option><option value="printed-secret">Printed + secrets, e.g. 181 (+15)</option><option value="printed">Printed only, e.g. 181</option></select></label>
+      <div class="field" style="grid-template-columns:1fr"><span class="lbl">Extra card rows <small>Adds a row for each type the set has, e.g. Shiny Vault 94.</small></span>
+        <div class="chips" id="extra-kinds"></div></div>
       <details class="adv" id="contentadv"><summary>Advanced</summary>
+        <label class="field"><span class="lbl">Code box language tag <small>English cards print a small EN beside the code. Blank hides it.</small></span>
+          <select id="codelang"><option value="EN">EN (English cards)</option><option value="none">None (code only)</option><option value="FR">FR</option><option value="DE">DE</option><option value="ES">ES</option><option value="IT">IT</option><option value="PT">PT</option></select></label>
+        <label class="field"><span class="lbl">Set abbreviation <small>Off by default: icon sets never printed one, and code-box sets show it in the icon.</small></span>
+          <select id="abbrmode"><option value="never">Hide</option><option value="auto">Icon sets only</option><option value="show">Always show</option></select></label>
         <label class="field"><span class="lbl">Abbreviation size</span>
           <select id="abbrsize"><option value="small">Small tag</option><option value="large">Large</option></select></label>
         <label class="field" id="eradates"><span class="lbl">Icon is the code from</span><input type="text" id="icondate" value="2023-03-31" placeholder="yyyy-mm-dd"></label>
@@ -386,9 +399,9 @@
   const STORE = 'setLabelPress.v1';   // key kept for continuity; the stored object carries its own version (v)
 
   const defaults = {
-    target: 'roll', copies: 1, preset: '40x60', cw: 40, ch: 60, orient: 'auto', pw: '', ph: '', layout: 'auto', pad: 2, sym: 20, fs: 100, mono: true,
+    target: 'roll', copiesBy: {}, preset: '40x60', cw: 40, ch: 60, orient: 'auto', pw: '', ph: '', layout: 'auto', pad: 2, sym: 20, fs: 100, mono: true,
     font: 'Jost', tstyle: 'caps', rule: true, tintIcon: false, cIcon: '#111111', cAbbr: '#111111', cTh: '#111111', cTd: '#111111',
-    abbrmode: 'auto', abbrsize: 'small', icondate: '2023-03-31', numbering: 'seq', special: 'badge', cards: 'total',
+    abbrmode: 'never', abbrsize: 'small', icondate: '2023-03-31', numbering: 'seq', special: 'badge', cards: 'total', extras: {}, codelang: 'EN',
     paper: 'letter', porient: 'auto', place: 'center', margin: 0, gap: 0, guides: true, zoom: 3, preview: 'label', v: 3,
     types: { 'Main Series Expansion': true, 'Special Expansion': true, 'Other': false }, onlyNew: false, series: null, selected: [], current: null
   };
@@ -405,6 +418,7 @@
         if (st.abbrmode === 'before') st.abbrmode = 'auto';
         if (parsed.v !== 3) { st.margin = 0; st.gap = 0; st.v = 3; }   // v3: sheets no longer waste paper on margins by default
         if (parsed.v2 !== 4) { st.orient = 'auto'; st.v2 = 4; }        // v4: orientation follows the roll as listed
+        if (parsed.v3 !== 5) { if (st.abbrmode === 'auto') st.abbrmode = 'never'; st.v3 = 5; }   // v5: no abbreviation on icon sets
         if (!parsed.target) st.target = ['index', 'card'].includes(st.preset) ? 'sheet' : 'roll';   // v5: printer choice
         return st;
       }
@@ -412,6 +426,23 @@
     return { ...defaults };
   }
   function save() { try { localStorage.setItem(STORE, JSON.stringify(state)); } catch (e) { /* ignore */ } }
+
+  // Extra card categories Bulbapedia lists beside the main count (order = display order on the label)
+  const EXTRA_KINDS = ['Secret', 'Shiny Vault', 'Trainer Gallery', 'Galarian Gallery', 'Radiant Collection', 'Classic Collection',
+    'Shiny Pok\u00e9mon', 'Alph Lithograph', 'Holofoil', 'Unown', 'Rotom', 'Arceus', 'Shiny Legendary'];
+  const EXTRA_LABELS = { 'Secret': 'Secret', 'Shiny Vault': 'Shiny Vault', 'Trainer Gallery': 'Trainer Gal.', 'Galarian Gallery': 'Galarian Gal.',
+    'Radiant Collection': 'Radiant', 'Classic Collection': 'Classic', 'Shiny Pok\u00e9mon': 'Shiny', 'Alph Lithograph': 'Alph', 'Holofoil': 'Holo',
+    'Unown': 'Unown', 'Rotom': 'Rotom', 'Arceus': 'Arceus', 'Shiny Legendary': 'Shiny Leg.' };
+  function renderExtraChips() {
+    const box = $('extra-kinds'); box.innerHTML = '';
+    const present = new Set(SETS.flatMap(s => (s.extras || []).map(e => e.kind)));
+    EXTRA_KINDS.filter(k => present.has(k)).forEach(k => {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'chip'; b.textContent = k;
+      b.setAttribute('aria-pressed', String(!!(state.extras && state.extras[k])));
+      b.onclick = () => { state.extras = { ...(state.extras || {}), [k]: !(state.extras && state.extras[k]) }; save(); renderExtraChips(); renderPreview(); };
+      box.appendChild(b);
+    });
+  }
 
   // ---------- filters & list ----------
   const seriesOrder = [];
@@ -456,15 +487,23 @@
       const nm = document.createElement('div'); nm.innerHTML = '<div class="nm"></div><div class="sub"></div>';
       nm.querySelector('.nm').textContent = s.name; nm.querySelector('.sub').textContent = s.release + (s.expno ? ' · No. ' + s.expno : '') + (s.printed2023 ? ' · printed 2023' : '');
       const ab = document.createElement('span'); ab.className = 'abbr'; ab.textContent = s.abbr || '';
-      row.append(cb, img, nm, ab);
+      const cp = document.createElement('input'); cp.type = 'number'; cp.min = 1; cp.max = 50; cp.step = 1; cp.className = 'cp'; cp.title = 'Copies of this label';
+      cp.value = copiesOf(s); cp.hidden = !sel.has(s.i); cp.setAttribute('aria-label', 'Copies of ' + s.name);
+      cp.onclick = (e) => e.stopPropagation();
+      cp.oninput = (e) => { e.stopPropagation(); state.copiesBy = { ...(state.copiesBy || {}), [s.i]: Math.max(1, Math.min(50, Math.round(Number(cp.value) || 1))) }; save(); renderPreview(); updateCount(); };
+      row.append(cb, img, nm, cp, ab);
       row.onclick = () => { state.current = s.i; save(); renderList(); renderPreview(); };
       row.onkeydown = (e) => { if (e.key === ' ') { e.preventDefault(); toggle(s.i, !sel.has(s.i)); } if (e.key === 'Enter') row.onclick(); };
       list.appendChild(row);
     });
-    $('count').textContent = state.selected.length + ' selected · ' + visible().length + ' shown';
+    updateCount();
     $('btn-labels').disabled = $('btn-sheet').disabled = $('btn-png').disabled = state.selected.length === 0;
   }
 
+  function updateCount() {
+    const total = state.selected.reduce((n, i) => n + copiesOf(SETS[i] || { i }), 0);
+    $('count').textContent = state.selected.length + ' selected' + (total !== state.selected.length ? ' · ' + total + ' labels' : '') + ' · ' + visible().length + ' shown';
+  }
   function toggle(i, on) {
     const sel = new Set(state.selected); on ? sel.add(i) : sel.delete(i);
     state.selected = [...sel].sort((a, b) => a - b); state.current = i; save(); renderList(); renderPreview();
@@ -505,6 +544,9 @@
       else if (state.cards === 'total') cards = String(total);
     }
     out.push(['Cards', cards]);
+    for (const e of (s.extras || [])) {
+      if (state.extras && state.extras[e.kind]) out.push([EXTRA_LABELS[e.kind] || e.kind, String(e.n)]);
+    }
     return out;
   }
 
@@ -523,6 +565,15 @@
     for (let i = 0; i < d.length; i += 4) { const lum = (0.299 * d[i] + 0.587 * d[i + 1] + 0.114 * d[i + 2]) / 255; d[i + 3] = Math.round(d[i + 3] * (1 - lum)); d[i] = r; d[i + 1] = gg; d[i + 2] = b; }
     g.putImageData(id, 0, 0);
     const url = c.toDataURL('image/png'); tintCache.set(key, url); return url;
+  }
+  // Scale a code box's text group down if it would run into the inner stroke (real boxes are fixed-size).
+  function fitCode(cb) {
+    const m = $('measure'); m.appendChild(cb);
+    const inner = cb.querySelector('.inner'), grp = cb.querySelector('.grp') || cb.querySelector('.txt');
+    const avail = inner.clientWidth - 2 * parseFloat(getComputedStyle(inner).borderLeftWidth) - inner.clientHeight * 0.16;
+    const need = grp.scrollWidth;
+    if (need > avail && avail > 0) grp.style.transform = (grp.style.transform ? grp.style.transform + ' ' : '') + 'scale(' + (avail / need).toFixed(3) + ')';
+    m.removeChild(cb);
   }
   function labelEl(s) {
     const [w, h] = labelDims();
@@ -543,11 +594,16 @@
       if (badge) { const b = document.createElement('span'); b.className = 'badge'; b.textContent = 'Special'; blk.appendChild(b); }
       top.appendChild(blk);
     }
-    const codeEra = !!(state.icondate && s.release >= state.icondate && s.abbr && s.type !== 'Other');
+    const codeEra = !!(state.icondate && s.release >= state.icondate && s.abbr && !/Prize Pack|Trick or Trade/i.test(s.name));
     if (codeEra) {   // draw the code box ourselves so every text-code icon is the same size and weight
       const box = document.createElement('div'); box.className = 'symbox code'; const cb = document.createElement('div'); cb.className = 'codebox' + (s.abbr.length > 3 ? ' long' : '');
       const inner = document.createElement('div'); inner.className = 'inner'; const txt = document.createElement('span'); txt.className = 'txt'; txt.textContent = s.abbr;
-      inner.appendChild(txt); cb.appendChild(inner); if (state.tintIcon && !state.mono) cb.style.setProperty('--c-icon', state.cIcon); box.appendChild(cb); top.appendChild(box);
+      if (state.codelang !== 'none') {
+        cb.classList.add('en'); const grp = document.createElement('div'); grp.className = 'grp'; const lang = document.createElement('span'); lang.className = 'lang'; lang.textContent = state.codelang || 'EN';
+        grp.append(txt, lang); inner.appendChild(grp);
+      } else inner.appendChild(txt);
+      cb.appendChild(inner);
+      fitCode(cb); if (state.tintIcon && !state.mono) cb.style.setProperty('--c-icon', state.cIcon); box.appendChild(cb); top.appendChild(box);
     } else if (s.symbol_img) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = (state.tintIcon && !state.mono) ? tinted(s, state.cIcon) : s.symbol_img; box.appendChild(im); top.appendChild(box); }
     const logo = document.createElement('div'); logo.className = 'logo';
     if (s.logo_img) { const im = document.createElement('img'); im.alt = s.name; im.src = s.logo_img; logo.appendChild(im); }
@@ -600,7 +656,8 @@
   }
 
   // A batch of labels shares ONE table scale (the tightest fit), so every label in a print run has identical type.
-  function withCopies(sets) { const n = Math.max(1, Math.min(50, Math.round(Number(state.copies) || 1))); return n === 1 ? sets : sets.flatMap(s => Array(n).fill(s)); }
+  const copiesOf = (s) => Math.max(1, Math.min(50, Math.round(Number((state.copiesBy || {})[s.i]) || 1)));
+  function withCopies(sets) { return sets.flatMap(s => Array(copiesOf(s)).fill(s)); }
   function makeLabels(sets) {
     const els = sets.map(s => labelEl(s));
     if (els.length > 1) { const k = Math.min(...els.map(e => e._k)); els.forEach(e => applyScale(e, k)); }
@@ -739,8 +796,8 @@
   $('btn-png').onclick = exportPngs;
 
   // ---------- wiring ----------
-  const fields = ['target', 'copies', 'preset', 'cw', 'ch', 'orient', 'pw', 'ph', 'layout', 'pad', 'sym', 'fs', 'mono', 'font', 'tstyle', 'rule',
-    'abbrmode', 'abbrsize', 'icondate', 'numbering', 'special', 'cards', 'paper', 'porient', 'place', 'margin', 'gap', 'guides', 'zoom', 'preview', 'cIcon', 'cAbbr', 'cTh', 'cTd', 'tintIcon'];
+  const fields = ['target', 'preset', 'cw', 'ch', 'orient', 'pw', 'ph', 'layout', 'pad', 'sym', 'fs', 'mono', 'font', 'tstyle', 'rule',
+    'abbrmode', 'abbrsize', 'icondate', 'codelang', 'numbering', 'special', 'cards', 'paper', 'porient', 'place', 'margin', 'gap', 'guides', 'zoom', 'preview', 'cIcon', 'cAbbr', 'cTh', 'cTd', 'tintIcon'];
   const noReset = new Set(['target', 'zoom', 'preview']);
   function bind() {
     fields.forEach(id => {
@@ -792,7 +849,7 @@
   $('sel-invert').onclick = () => { const sel = new Set(state.selected); visible().forEach(s => sel.has(s.i) ? sel.delete(s.i) : sel.add(s.i)); state.selected = [...sel].sort((a, b) => a - b); save(); renderList(); renderPreview(); };
   $('reset').onclick = () => { const keep = { selected: state.selected, current: state.current }; state = { ...defaults, ...keep }; save(); bind(); syncUI(); renderAll(); };
 
-  function renderAll() { renderSeriesChips(); renderList(); renderPreview(); }
+  function renderAll() { renderSeriesChips(); renderExtraChips(); renderList(); renderPreview(); }
   $('snap').textContent = window.POKEMON_SETS_DATE || 'unknown';
   if (state.current == null) state.current = SETS.findIndex(s => s.abbr === 'TEU');
   bind(); syncUI(); renderAll();

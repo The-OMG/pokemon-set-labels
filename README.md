@@ -68,3 +68,12 @@ The Pokémon Company.
 ## License
 
 Code: MIT. Artwork remains the property of its owners as noted above.
+
+## SetCode font
+
+`public/fonts/SetCode.woff2` renders the Scarlet & Violet era set-code symbols. Twenty letters are traced from
+the sharpest Bulbapedia symbol images (`pipeline/font/build_setcode_font.py`: potracer + fontTools); N Q U X Y Z
+and the digits are constructed to the same stem width and cap height (3 is the traced B without its stem, 0 is O).
+The box geometry in `index.html` is measured from the 480 px Scarlet & Violet original: outer margin 5.1% of the
+box height, white inner stroke 4%, corner radius 14%, letters 58% of the height; the English "EN" tag follows the
+Delta Reign original (baseline-aligned, about half the main cap height).
