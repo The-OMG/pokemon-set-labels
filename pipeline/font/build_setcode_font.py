@@ -14,7 +14,7 @@ OUT = os.path.join(HERE, 'font')
 os.makedirs(OUT, exist_ok=True)
 UPM = 1000
 CAP = 700            # cap height in font units
-SB = 80              # side bearing, ~0.115 cap height, measured from the SVI original (36 px gap / 159 px cap)
+SB = 38              # side bearing: letters sit ~0.11 cap apart, as on the Delta Reign / Stellar Crown originals
 
 sets = json.load(open(os.path.join(HERE, 'sets_data.json'), encoding='utf-8'))
 era = [s for s in sets if s['release'] >= '2023-03-31' and s['type'] != 'Other' and s.get('symbol_img')]
@@ -66,19 +66,27 @@ def extract(path, code):
     comps = []
     for i in range(1, n + 1):
         ys, xs = np.where(lab == i)
-        if len(ys) < 0.001 * H * W: continue
+        if len(ys) < 0.004 * H * W: continue                       # ignore noise specks
         comps.append((xs.min(), xs.max(), ys.min(), ys.max(), i))
     comps.sort()
     if len(comps) != len(code):
         print(f'  ! {code} ({H}px): {len(comps)} components for {len(code)} letters, unusable'); _extracted[path] = None; return None
-    flats = [c for c, ch in zip(comps, code) if ch in FLAT] or comps
+    tag = code.endswith('EN') and len(code) > 2       # e.g. DLREN: the last two are the small language tag
+    main = list(zip(comps, code))[:-2] if tag else list(zip(comps, code))
+    tags = list(zip(comps, code))[-2:] if tag else []
+    flats = [c for c, ch in main if ch in FLAT] or [c for c, ch in main]
     top = min(c[2] for c in flats); bottom = max(c[3] for c in flats)
     scale = CAP / (bottom - top + 1)
     out = {}
-    for c, ch in zip(comps, code):
+    for c, ch in main:
         x0, x1, y0, y1, i = c
-        if (y1 - y0 + 1) < 0.85 * (bottom - top + 1) and ch not in 'O0CGSQ': continue   # small language tag etc.
+        if (y1 - y0 + 1) < 0.85 * (bottom - top + 1) and ch not in 'O0CGSQ': continue
         out[ch] = (lab[:, x0:x1 + 1] == i, scale, bottom, H)
+    if tags:                                          # tag letters get their own cap height and baseline
+        ttop = min(c[2] for c, _ in tags); tbottom = max(c[3] for c, _ in tags); tscale = CAP / (tbottom - ttop + 1)
+        for c, ch in tags:
+            x0, x1, y0, y1, i = c
+            out[ch] = (lab[:, x0:x1 + 1] == i, tscale, tbottom, H)
     _extracted[path] = out; return out
 
 glyph_bitmaps = {}
@@ -97,12 +105,15 @@ def trace(bm, scale, baseline):
     """potrace a boolean bitmap -> list of contours, each a list of ('line', (x,y)) / ('curve', c1, c2, p)."""
     # upsample small sources so potrace has something to smooth
     up = 1
-    if bm.shape[0] < 300: up = int(math.ceil(300 / bm.shape[0]))
-    if up > 1:   # smooth upscale + re-threshold so the tracer sees curves, not pixel staircases
-        big = Image.fromarray((bm * 255).astype(np.uint8)).resize((bm.shape[1] * up, bm.shape[0] * up), Image.BICUBIC)
+    up = 1   # trace at native resolution: potrace fits smooth curves to the pixel edge itself; any upscale
+             # multiplies the outline segments (27 -> 160 for the M) and shows as a ragged edge
+    if up > 1:   # upscale, blur away the pixel staircase, re-threshold: the tracer then sees real curves
+        from PIL import ImageFilter
+        big = Image.fromarray((bm * 255).astype(np.uint8)).resize((bm.shape[1] * up, bm.shape[0] * up), Image.BILINEAR)   # no ringing
+        big = big.filter(ImageFilter.GaussianBlur(radius=max(0.8, up * 0.5)))
         bm = np.array(big) > 127
     bmp = potrace.Bitmap(~bm)                   # potracer: values <= blacklevel are foreground, so invert
-    path = bmp.trace(turdsize=4, turnpolicy=potrace.POTRACE_TURNPOLICY_MINORITY, alphamax=1.0, opticurve=True, opttolerance=0.3)
+    path = bmp.trace(turdsize=2, turnpolicy=potrace.POTRACE_TURNPOLICY_MINORITY, alphamax=1.0, opticurve=True, opttolerance=0.3)
     contours = []
     def P(pt): return ((pt.x / up) * scale, (baseline + 1 - pt.y / up) * scale)   # rows count down; flip to y-up
     for curve in path:

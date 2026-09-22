@@ -31,7 +31,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Chakra+Petch:wght@400;500;600;700&family=Exo+2:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=Oswald:wght@700&family=Source+Sans+3:wght@400;500;600;700&display=swap">
 <style>
   /* SetCode: letters traced from the Scarlet & Violet era set-code symbols; missing letters/digits drawn to match. */
-  @font-face { font-family: "SetCode"; src: url("fonts/SetCode.woff2?v=14") format("woff2"), url("fonts/SetCode.otf?v=14") format("opentype"); font-weight: 700; font-display: block; }
+  @font-face { font-family: "SetCode"; src: url("fonts/SetCode.woff2?v=18") format("woff2"), url("fonts/SetCode.otf?v=18") format("opentype"); font-weight: 700; font-display: block; }
   :root {
     --ground: #f3f1ea; --panel: #ffffff; --panel-2: #ebe8df; --ink: #1b1a19; --muted: #6b675e; --line: #d9d5cb;
     --accent: #c8102e; --accent-ink: #ffffff; --sel: #fff1f0; --label-paper: #ffffff; --label-ink: #111111;
@@ -156,7 +156,7 @@
     display: flex; align-items: center; justify-content: center; overflow: hidden; }
   .label .codebox .grp { display: flex; align-items: baseline; gap: calc(var(--cbh) * 0.06); transform: translateY(var(--code-ty, 0.02em)); }
   .label .codebox .lang { font-family: "SetCode", "Oswald", "Arial Narrow", Impact, sans-serif; font-weight: 700; color: #fff; font-size: calc(var(--cbh) * 0.823 * 0.52); line-height: 1; letter-spacing: 0.02em; white-space: nowrap; }
-  .label .codebox.en .txt { transform: none; font-size: calc(var(--cbh) * 0.78); letter-spacing: -0.03em; }
+  .label .codebox.en .txt { transform: none; font-size: calc(var(--cbh) * 0.78); letter-spacing: 0; }
   .label .codebox.en .lang { font-size: calc(var(--cbh) * 0.78 * 0.56); letter-spacing: 0; }
   .label .codebox .grp { transform-origin: 50% 50%; }
   /* Oswald is sized so the letters match the originals' WIDTH, then stretched vertically to their HEIGHT
