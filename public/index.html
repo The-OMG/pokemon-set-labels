@@ -139,6 +139,11 @@
   .label.abbr-large .abbrblock { --abbr-h: calc(var(--sym) * 0.62); }
   .label .symbox { width: var(--sym); height: var(--sym); flex: none; margin-left: auto; display: flex; align-items: center; justify-content: center; }
   .label .symbox img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+  /* Generated code box for the era where the set symbol is the code itself: identical size for every set. */
+  .label .codebox { width: 100%; height: 56%; background: var(--c-icon, #111); color: #fff; border-radius: 0.16em; display: flex; align-items: center; justify-content: center;
+    font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 700; font-style: italic; letter-spacing: 0.03em; font-size: calc(var(--sym) * 0.42); line-height: 1; padding-top: 0.04em; box-sizing: border-box; }
+  .label .codebox.long { font-size: calc(var(--sym) * 0.33); }
+  .label.mono .codebox { background: #000; }
   .label .badge { font-size: calc(var(--sym) * 0.2); letter-spacing: 0.12em; text-indent: 0.12em; text-transform: uppercase; font-weight: 600; line-height: 1;
     border: 0.2mm solid currentColor; border-radius: 0.3em; padding: 0.22em 0 0.16em; width: calc(var(--sym) * 1.15); text-align: center; white-space: nowrap; box-sizing: border-box; }
   .label .logo { flex: 1 1 0; min-height: 0; display: flex; align-items: center; justify-content: center; }
@@ -525,7 +530,11 @@
       if (badge) { const b = document.createElement('span'); b.className = 'badge'; b.textContent = 'Special'; blk.appendChild(b); }
       top.appendChild(blk);
     }
-    if (s.symbol_img) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = (state.tintIcon && !state.mono) ? tinted(s, state.cIcon) : s.symbol_img; box.appendChild(im); top.appendChild(box); }
+    const codeEra = !!(state.icondate && s.release >= state.icondate && s.abbr && s.type !== 'Other');
+    if (codeEra) {   // draw the code box ourselves so every text-code icon is the same size and weight
+      const box = document.createElement('div'); box.className = 'symbox'; const cb = document.createElement('div'); cb.className = 'codebox' + (s.abbr.length > 3 ? ' long' : '');
+      cb.textContent = s.abbr; if (state.tintIcon && !state.mono) box.style.setProperty('--c-icon', state.cIcon); box.appendChild(cb); top.appendChild(box);
+    } else if (s.symbol_img) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = (state.tintIcon && !state.mono) ? tinted(s, state.cIcon) : s.symbol_img; box.appendChild(im); top.appendChild(box); }
     const logo = document.createElement('div'); logo.className = 'logo';
     if (s.logo_img) { const im = document.createElement('img'); im.alt = s.name; im.src = s.logo_img; logo.appendChild(im); }
     else { const t = document.createElement('div'); t.className = 'txtlogo'; t.textContent = s.name; logo.appendChild(t); }
