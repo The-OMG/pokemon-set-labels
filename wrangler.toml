@@ -2,13 +2,14 @@ name = "pokemon-set-labels"
 account_id = "bcf8d3e3179bda906326d9bf9ec0e992"
 compatibility_date = "2026-09-01"
 
+# Custom domain on the omg.irish zone (same account). Cloudflare creates the DNS record + certificate on deploy.
+# NOTE: top-level keys must come BEFORE the [assets] table or TOML files them under it.
+routes = [
+  { pattern = "labels.omg.irish", custom_domain = true }
+]
+
 # Static-assets-only Worker: no script, Cloudflare serves ./public directly.
 [assets]
 directory = "./public"
 not_found_handling = "404-page"
 html_handling = "auto-trailing-slash"
-
-# Custom domain on the omg.irish zone (same account). Cloudflare creates the DNS record + certificate on deploy.
-routes = [
-  { pattern = "labels.omg.irish", custom_domain = true }
-]
