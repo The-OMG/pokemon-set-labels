@@ -4,8 +4,11 @@
 
 Printable labels for every English Pokémon TCG expansion, for binders, storage boxes and dividers.
 Each label carries the set symbol, the HD set logo, the expansion number, release date, generation and card
-count (secret rares included). Print one label per page on a Phomemo M110 label roll, or lay them out at
-true size on Letter / A4 / 3×5 index cards for a color printer and cut them out.
+count (secret rares included). Print one label per page on a Phomemo M110 label roll, lay them out at
+true size on Letter / A4 / 3×5 index cards for a color printer and cut them out, or print straight onto
+Avery label sheets: address, shipping, square, round, business-card and file-folder labels, and the
+cardstock binder spine inserts (89103 to 89109) that slide into a view binder's clear spine pocket.
+Spine strips are turned on their side to read top-to-bottom like a book on a shelf.
 
 Runs entirely in the browser. No accounts, no tracking, no server-side anything: it is a static site.
 
@@ -14,7 +17,10 @@ Runs entirely in the browser. No accounts, no tracking, no server-side anything:
 ## Using it
 
 1. Tick the sets you want (search, filter by series, or "New since 2023").
-2. Pick a label size (M110 rolls, half an index card, or a custom size).
+2. Pick a label size (M110 rolls, half an index card, an Avery sheet number, or a custom size). Avery
+   labels are placed exactly where Avery's own templates put them on a US Letter sheet (spine inserts and
+   the square/round sheets were measured from Avery's blank-template PDFs, the classic address/shipping
+   layouts come from the glabels template database); print at 100% with margins set to None.
 3. Check the preview: one label, the whole roll, or the exact pages of a sheet.
 4. **Print labels** (label printer, one label per page) or **Print sheet** (color printer, cut guides).
 

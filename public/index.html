@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pokémon TCG Set Labels for Every Expansion · Set Label Press</title>
-<meta name="description" content="Free printable Pokémon TCG set labels for every English expansion since Base Set: set symbol, logo, expansion number, release date, generation and card count. Print on a Phomemo M110 label roll or as cut-out sheets for binders and storage boxes.">
+<meta name="description" content="Free printable Pokémon TCG set labels for every English expansion since Base Set: set symbol, logo, expansion number, release date, generation and card count. Print on a Phomemo M110 label roll, on Avery label sheets (address, shipping, square, round, binder spine inserts) or as cut-out sheets for binders and storage boxes.">
 <link rel="canonical" href="https://labels.omg.irish/">
 <meta name="theme-color" content="#c8102e">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -97,6 +97,20 @@
   .paperwrap { box-shadow: 0 10px 40px rgba(0,0,0,.25); background: var(--label-paper); overflow: hidden; position: relative; flex: none; }
   .sheetpage { background: #fff; color: #111; display: grid; align-content: start; justify-content: start; overflow: hidden; }
   .sheetpage.guides .label { outline: 0.2mm dashed #9a9a9a; outline-offset: -0.1mm; }
+  /* Avery sheets: every label sits at the template's own coordinates instead of flowing in a grid */
+  .sheetpage.avery { display: block; position: relative; }
+  .sheetpage.avery > .label { position: absolute; }
+  .label.round { border-radius: 50%; }
+  /* Spine strip: a wide label turned 90° clockwise inside a tall one, so it reads top-to-bottom on a standing binder */
+  .label.spinewrap { padding: 0; display: block; position: relative; }
+  .label.spinewrap > .label { position: absolute; left: 0; top: 0; transform-origin: 0 0; transform: rotate(90deg) translateY(-100%); }
+  .sheetpage.guides .spinewrap > .label { outline: none; }
+  .sheetpage.avery > .label.spinewrap { position: absolute; }   /* the sheet's coordinates win over the wrapper's own positioning */
+  /* inside the strip (before rotation: a long, low label): icon at the head, logo right after it, table at the foot */
+  .label.spinein:not(.mon) .col { flex-direction: row; align-items: center; gap: calc(var(--min) * 0.08); }
+  .label.spinein:not(.mon) .top { height: auto; width: auto; flex: none; align-items: center; gap: calc(var(--min) * 0.06); }
+  .label.spinein:not(.mon) .symbox { margin-left: 0; }
+  .label.spinein:not(.mon) .logo { justify-content: flex-start; align-self: stretch; }
   .previewbar { display: flex; gap: 10px; align-items: center; color: var(--muted); font-size: 13px; flex-wrap: wrap; justify-content: center; }
   .previewbar select { padding: 4px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); }
   .stage-note { color: var(--muted); font-size: 13px; text-align: center; max-width: 60ch; }
@@ -309,7 +323,7 @@
     <span class="count" id="count">0 selected</span>
     <span class="spacer"></span>
     <button class="btn" id="btn-png" type="button" title="Download every selected label as a PNG at 203 dpi (thermal label printer resolution), zipped. Print them from the Phomemo app.">Download PNGs</button>
-    <button class="btn" id="btn-sheet" type="button" title="Lay the selected labels out on paper (Letter, A4 or 3×5 cards) for a color printer">Print sheet</button>
+    <button class="btn" id="btn-sheet" type="button" title="Lay the selected labels out on paper (Letter, A4, 3×5 cards or Avery label sheets) for a color printer">Print sheet</button>
     <button class="btn primary" id="btn-labels" type="button" title="One label per page at the roll size, for a label printer such as the Phomemo M110">Print labels</button>
   </header>
 
@@ -350,6 +364,7 @@
       <ol>
         <li><strong>Label printer roll</strong> (Phomemo M110 and similar): install Phomemo's Windows or Mac driver so the printer shows up as a normal printer, pick your roll under Label size, press <em>Print labels</em>. In the print dialog choose the Phomemo as the destination and check under "More settings" that <em>Paper size</em> shows your roll (the page is sized to the driver's exact numbers so it should be picked automatically), <em>Margins</em> None, <em>Scale</em> 100%, <em>Background graphics</em> on. Each label is its own page. The driver's "50 mm" sizes are really 48 mm, the width of the print head. No driver, or printing from a phone? <em>Download PNGs</em> gives you each label as a 203 dpi image for the Phomemo app.</li>
         <li><strong>Color printer sheet</strong>: press <em>Print sheet</em>. Labels are laid out at true size on Letter, A4 or 3 × 5 index cards with optional cut guides. The Sheet preview shows the exact pages first.</li>
+        <li><strong>Avery label sheets</strong>: choose the Avery number under Size (address, shipping, square, round, business card, file folder, and the cardstock <em>binder spine inserts</em> 89103 to 89109 that slide into a view binder's clear spine pocket). Each label is placed exactly where Avery's own template puts it on a US Letter sheet, so print at 100% with margins None. Spine inserts turn the label on its side to read top-to-bottom, like a book on a shelf.</li>
       </ol>
       <h2>Where the data comes from</h2>
       <p>Set names, expansion numbering, release dates, card counts, symbols and logos come from Bulbapedia's list of Pokémon TCG expansions; Base Set artwork from pokemontcg.io. Pokémon species data, Pokédex entries and official artwork come from <a href="https://pokeapi.co/">PokeAPI</a>. The sequential expansion numbers count main-series sets and special sets separately. Data snapshot: <span id="snap"></span>. Missing a new set? Open an issue on GitHub.</p>
@@ -388,19 +403,40 @@
             <option value="card">Pokémon card (63 × 88 mm, fits a sleeve)</option>
             <option value="index">Half of a 3 × 5 index card</option>
           </optgroup>
+          <optgroup label="Avery sheets (US Letter)" id="og-avery">
+            <option value="av:5163">Avery 5163 / 8163 · 4 × 2″ shipping (10)</option>
+            <option value="av:5164">Avery 5164 / 8164 · 4 × 3⅓″ shipping (6)</option>
+            <option value="av:5162">Avery 5162 / 8162 · 4 × 1⅓″ address (14)</option>
+            <option value="av:5161">Avery 5161 / 8161 · 4 × 1″ address (20)</option>
+            <option value="av:5160">Avery 5160 / 8160 · 2⅝ × 1″ address (30)</option>
+            <option value="av:5167">Avery 5167 / 8167 · 1¾ × ½″ return address (80)</option>
+            <option value="av:5266">Avery 5266 / 5366 · 3 7⁄16 × ⅔″ file folder (30)</option>
+            <option value="av:5371">Avery 5371 / 8371 · 3½ × 2″ business card (10)</option>
+            <option value="av:5395">Avery 5395 / 8395 · 3⅜ × 2⅓″ name badge (8)</option>
+            <option value="av:5388">Avery 5388 · 5 × 3″ index card (3)</option>
+            <option value="av:22805">Avery 22805 · 1½″ square (24)</option>
+            <option value="av:22806">Avery 22806 · 2″ square (12)</option>
+            <option value="av:22807">Avery 22807 · 2″ round (12)</option>
+            <option value="av:5294">Avery 5294 · 2½″ round (12)</option>
+            <option value="av:89103">Avery 89103 · binder spine insert, 1″ binder (8)</option>
+            <option value="av:89105">Avery 89105 · binder spine insert, 1½″ binder (5)</option>
+            <option value="av:89107">Avery 89107 · binder spine insert, 2″ binder (4)</option>
+            <option value="av:89109">Avery 89109 · binder spine insert, 3″ binder (3)</option>
+          </optgroup>
           <optgroup label="Other">
             <option value="custom">Custom size…</option>
           </optgroup>
         </select></label>
-      <label class="field two" id="customrow"><span class="lbl">Custom width × height <small>millimetres</small></span><input type="number" id="cw" min="15" max="120" step="0.5" value="40" aria-label="Custom width in mm"><span>×</span><input type="number" id="ch" min="15" max="200" step="0.5" value="60" aria-label="Custom height in mm"></label>
-      <label class="field"><span class="lbl">Label orientation</span>
+      <label class="field two" id="customrow"><span class="lbl">Custom width × height <small>millimetres</small></span><input type="number" id="cw" min="15" max="220" step="0.5" value="40" aria-label="Custom width in mm"><span>×</span><input type="number" id="ch" min="15" max="280" step="0.5" value="60" aria-label="Custom height in mm"></label>
+      <p class="hint" id="averyhint" hidden></p>
+      <label class="field" id="orientrow"><span class="lbl">Label orientation</span>
         <select id="orient"><option value="auto">As listed</option><option value="portrait">Tall</option><option value="landscape">Wide</option></select></label>
       <div id="sheetopts" class="group">
-        <label class="field"><span class="lbl">Paper</span>
+        <label class="field" data-paper><span class="lbl">Paper</span>
           <select id="paper"><option value="letter">Letter</option><option value="a4">A4</option><option value="index">3 × 5 index card</option></select></label>
-        <label class="field"><span class="lbl">Paper orientation</span>
+        <label class="field" data-paper><span class="lbl">Paper orientation</span>
           <select id="porient"><option value="auto">As listed</option><option value="portrait">Portrait</option><option value="landscape">Landscape</option></select></label>
-        <label class="field"><span class="lbl">Placement on the page</span>
+        <label class="field" data-paper><span class="lbl">Placement on the page</span>
           <select id="place"><option value="center">Centered</option><option value="top">Top, centered</option><option value="topleft">Top-left</option></select></label>
         <label class="field"><span class="lbl">Dashed cut guides</span><input type="checkbox" id="guides" checked></label>
       </div>
@@ -427,8 +463,8 @@
           <option value="Barlow Semi Condensed">Barlow Semi Condensed (narrow)</option>
           <option value="Source Sans 3">Source Sans (the 2023 cards)</option>
         </select></label>
-      <label class="field"><span class="lbl">Arrangement <small>Auto stacks tall labels and puts the table beside the logo on wide ones.</small></span>
-        <select id="layout"><option value="auto">Auto</option><option value="stack">Stacked</option><option value="side">Table beside logo</option></select></label>
+      <label class="field"><span class="lbl">Arrangement <small>Auto stacks tall labels, puts the table beside the logo on wide ones, and turns spine strips on their side.</small></span>
+        <select id="layout"><option value="auto">Auto</option><option value="stack">Stacked</option><option value="side">Table beside logo</option><option value="spine">Spine: turned to read down the edge</option></select></label>
       <label class="field"><span class="lbl">Thermal printer mode <small>Pure black &amp; white, heavier text. On by default for rolls.</small></span><input type="checkbox" id="mono"></label>
       <details class="adv" id="lookadv"><summary>Advanced</summary>
         <label class="field"><span class="lbl">Details table</span>
@@ -514,6 +550,31 @@
   ['25x15', '30x15', '30x20', '40x20', '40x25', '40x30', '40x40', '40x60', '45x30', '50x30', '50x40', '50x50', '50x70', '50x80', '60x40', '70x40']
     .forEach(k => { let [w, h] = k.split('x').map(Number); if (w === 40) w = 39.9; if (w === 50) w = 48; if (k === '50x70') h = 69.8; PRESETS[k] = [w, h]; });
   const PAPERS = { letter: { w: 215.9, h: 279.4, css: 'letter' }, a4: { w: 210, h: 297, css: 'A4' }, index: { w: 127, h: 76.2, css: '5in 3in' } };
+  // Avery US-Letter sheets, inches. x0/y0 = top-left corner of the first label, dx/dy = pitch. Spine inserts and the
+  // square/round sheets were measured from Avery's own blank-template PDFs; the classic address/shipping/card layouts
+  // come from the glabels template database. 8xxx numbers are the inkjet twins of the 5xxx laser sheets.
+  const AVERY = {
+    '5160':  { n: '5160 / 8160',  w: 2.625,  h: 1,      nx: 3, ny: 10, x0: 0.1875,  y0: 0.5,    dx: 2.75,   dy: 1 },
+    '5161':  { n: '5161 / 8161',  w: 4,      h: 1,      nx: 2, ny: 10, x0: 0.15625, y0: 0.5,    dx: 4.1875, dy: 1 },
+    '5162':  { n: '5162 / 8162',  w: 4,      h: 1.3333, nx: 2, ny: 7,  x0: 0.15625, y0: 0.8333, dx: 4.1875, dy: 1.3333 },
+    '5163':  { n: '5163 / 8163',  w: 4,      h: 2,      nx: 2, ny: 5,  x0: 0.1625,  y0: 0.5,    dx: 4.1875, dy: 2 },
+    '5164':  { n: '5164 / 8164',  w: 4,      h: 3.3333, nx: 2, ny: 3,  x0: 0.15625, y0: 0.5,    dx: 4.1875, dy: 3.3333 },
+    '5167':  { n: '5167 / 8167',  w: 1.75,   h: 0.5,    nx: 4, ny: 20, x0: 0.28125, y0: 0.5,    dx: 2.0625, dy: 0.5 },
+    '5266':  { n: '5266 / 5366',  w: 3.4375, h: 0.6667, nx: 2, ny: 15, x0: 0.53125, y0: 0.5,    dx: 4,      dy: 0.6667 },
+    '5371':  { n: '5371 / 8371',  w: 3.5,    h: 2,      nx: 2, ny: 5,  x0: 0.75,    y0: 0.5,    dx: 3.5,    dy: 2 },
+    '5395':  { n: '5395 / 8395',  w: 3.375,  h: 2.3333, nx: 2, ny: 4,  x0: 0.6875,  y0: 0.5833, dx: 3.75,   dy: 2.5 },
+    '5388':  { n: '5388',         w: 5,      h: 3,      nx: 1, ny: 3,  x0: 1.75,    y0: 1,      dx: 5,      dy: 3 },
+    '22805': { n: '22805',        w: 1.5,    h: 1.5,    nx: 4, ny: 6,  x0: 0.7799,  y0: 0.5,    dx: 1.8132, dy: 1.7 },
+    '22806': { n: '22806',        w: 2,      h: 2,      nx: 3, ny: 4,  x0: 0.625,   y0: 0.625,  dx: 2.625,  dy: 2.5833 },
+    '22807': { n: '22807',        w: 2,      h: 2,      nx: 3, ny: 4,  x0: 0.625,   y0: 0.625,  dx: 2.625,  dy: 2.5833, round: true },
+    '5294':  { n: '5294',         w: 2.5,    h: 2.5,    nx: 3, ny: 4,  x0: 0.21,    y0: 0.425,  dx: 2.75,   dy: 2.515,  round: true },
+    '89103': { n: '89103',        w: 1,      h: 11,     nx: 8, ny: 1,  x0: 0.25,    y0: 0,      dx: 1,      dy: 11,     spine: true },
+    '89105': { n: '89105',        w: 1.5,    h: 11,     nx: 5, ny: 1,  x0: 0.5,     y0: 0,      dx: 1.5,    dy: 11,     spine: true },
+    '89107': { n: '89107',        w: 2,      h: 11,     nx: 4, ny: 1,  x0: 0.25,    y0: 0,      dx: 2,      dy: 11,     spine: true },
+    '89109': { n: '89109',        w: 2.5,    h: 11,     nx: 3, ny: 1,  x0: 0.5,     y0: 0,      dx: 2.5,    dy: 11,     spine: true },
+  };
+  const IN = 25.4;
+  const averyTpl = () => (typeof state.preset === 'string' && state.preset.startsWith('av:')) ? AVERY[state.preset.slice(3)] || null : null;
   const MM = 96 / 25.4;
   const STORE = 'setLabelPress.v1';   // key kept for continuity; the stored object carries its own version (v)
 
@@ -661,6 +722,8 @@
 
   // ---------- label rendering ----------
   function dims() {
+    const av = averyTpl();
+    if (av) return [+(av.w * IN).toFixed(2), +(av.h * IN).toFixed(2)];   // a die-cut sheet has one orientation
     let [w, h] = state.preset === 'custom' ? [Number(state.cw) || 40, Number(state.ch) || 60] : (PRESETS[state.preset] || PRESETS['40x60']);
     if (state.orient === 'landscape') [w, h] = [Math.max(w, h), Math.min(w, h)];
     else if (state.orient === 'portrait') [w, h] = [Math.min(w, h), Math.max(w, h)];
@@ -668,8 +731,10 @@
   }
   // Roll presets: the @page is the driver's media size; the label itself is 0.3 mm smaller on each axis so
   // rounding in the driver (its 30 mm is really 29.97) can never spill a label onto an extra blank page.
-  const isRoll = () => !['index', 'card', 'custom'].includes(state.preset);
+  const isRoll = () => !['index', 'card', 'custom'].includes(state.preset) && !averyTpl();
   function labelDims() { const [w, h] = dims(); return isRoll() ? [+(w - 0.3).toFixed(2), +(h - 0.3).toFixed(2)] : [w, h]; }
+  // Round labels keep the content inside the inscribed square, whatever the edge spacing says.
+  function padMm(w, h) { const p = Number(state.pad) || 0; const av = averyTpl(); return av && av.round ? Math.max(p, +(0.1465 * Math.min(w, h)).toFixed(2)) : p; }
 
   // Should this set's abbreviation be printed? (Its size is a separate, global setting.)
   function showAbbr(s) {
@@ -758,16 +823,17 @@
     } catch (e) { return src; }   // tainted canvas (file://): fall back to the grayscale filter
   }
   const useSolid = () => !!(state.mono && state.monoLogos);
-  function labelEl(s) {
-    const [w, h] = labelDims();
-    const side = state.layout === 'side' || (state.layout === 'auto' && w > h * 1.15);
+  // `over` = [w, h] to build at a size other than the current label (a spine strip builds its wide inner label this way).
+  function labelEl(s, over) {
+    const [w, h] = over || labelDims();
+    const side = over ? w > h * 1.15 : (state.layout === 'side' || (state.layout === 'auto' && w > h * 1.15));
     const ab = showAbbr(s);
     const el = document.createElement('div');
-    el.className = 'label' + (state.mono ? ' mono' : '') + (side ? ' side' : '') + (state.abbrsize === 'large' ? ' abbr-large' : '') + (state.tstyle === 'caps' ? ' caps' : '') + (state.rule ? ' rule' : '');
+    el.className = 'label' + (state.mono ? ' mono' : '') + (side ? ' side' : '') + (state.abbrsize === 'large' ? ' abbr-large' : '') + (state.tstyle === 'caps' ? ' caps' : '') + (state.rule ? ' rule' : '') + (!over && averyTpl()?.round ? ' round' : '');
     const min = Math.min(w, h);
     el.style.setProperty('--lfont', JSON.stringify(state.font || 'Jost'));
     el.style.setProperty('--W', w + 'mm'); el.style.setProperty('--H', h + 'mm'); el.style.setProperty('--min', min + 'mm');
-    el.style.setProperty('--pad', (Number(state.pad) || 0) + 'mm'); el.style.setProperty('--sym', (min * (Number(state.sym) || 20) / 100) + 'mm');
+    el.style.setProperty('--pad', (over ? (Number(state.pad) || 0) : padMm(w, h)) + 'mm'); el.style.setProperty('--sym', (min * (Number(state.sym) || 20) / 100) + 'mm');
     if (!state.mono) { el.style.setProperty('--c-abbr', state.cAbbr); el.style.setProperty('--c-th', state.cTh); el.style.setProperty('--c-td', state.cTd); }
     const top = document.createElement('div'); top.className = 'top';
     const promo = s.type === 'Promo';
@@ -877,16 +943,16 @@
     })));
   }
 
-  function monEl(p) {
-    const [w, h] = labelDims();
-    const side = state.layout === 'side' || (state.layout === 'auto' && w > h * 1.15);
+  function monEl(p, over) {
+    const [w, h] = over || labelDims();
+    const side = over ? w > h * 1.15 : (state.layout === 'side' || (state.layout === 'auto' && w > h * 1.15));
     const art = state.monArt && p.art;
     const el = document.createElement('div');
-    el.className = 'label mon' + (state.mono ? ' mono' : '') + (side ? ' side' : '') + (art ? '' : ' noart') + (state.monTColor && !state.mono ? ' tcolor' : '');
+    el.className = 'label mon' + (state.mono ? ' mono' : '') + (side ? ' side' : '') + (art ? '' : ' noart') + (state.monTColor && !state.mono ? ' tcolor' : '') + (!over && averyTpl()?.round ? ' round' : '');
     const min = Math.min(w, h);
     el.style.setProperty('--lfont', JSON.stringify(state.font || 'Jost'));
     el.style.setProperty('--W', w + 'mm'); el.style.setProperty('--H', h + 'mm'); el.style.setProperty('--min', min + 'mm');
-    el.style.setProperty('--pad', (Number(state.pad) || 0) + 'mm');
+    el.style.setProperty('--pad', (over ? (Number(state.pad) || 0) : padMm(w, h)) + 'mm');
     if (!state.mono) { el.style.setProperty('--c-th', state.cTh); el.style.setProperty('--c-td', state.cTd); }
     const mk = (cls, text) => { const n = document.createElement('div'); n.className = cls; if (text != null) n.textContent = text; return n; };
 
@@ -1009,10 +1075,28 @@
   // A batch of labels shares ONE table scale (the tightest fit), so every label in a print run has identical type.
   const copiesOf = (s) => Math.max(1, Math.min(50, Math.round(Number(((s.kind === 'mon' ? state.monCopies : state.copiesBy) || {})[s.i]) || 1)));
   function withCopies(sets) { return sets.flatMap(s => Array(copiesOf(s)).fill(s)); }
+  // Spine strips (binder spine inserts, or any strip at least 2.5× taller than wide on Auto) carry a wide label turned
+  // 90° clockwise, so it reads top-to-bottom on a standing binder. The wrapper is the label the page positions; the
+  // inner element is what gets measured and scaled.
+  const isSpine = (w, h) => state.layout === 'spine' || (state.layout === 'auto' && h >= w * 2.5);
+  function itemEl(s) {
+    const [w, h] = labelDims();
+    const build = (d) => s.kind === 'mon' ? monEl(s, d) : labelEl(s, d);
+    if (!isSpine(w, h)) return build();
+    const inner = build([h, w]); inner.classList.add('spinein');
+    const wrap = document.createElement('div'); wrap.className = 'label spinewrap';
+    wrap.style.setProperty('--W', w + 'mm'); wrap.style.setProperty('--H', h + 'mm');
+    wrap.appendChild(inner); wrap._inner = inner; if (inner._k != null) wrap._k = inner._k;
+    return wrap;
+  }
   function makeLabels(sets) {
-    const els = sets.map(s => s.kind === 'mon' ? monEl(s) : labelEl(s));
+    const els = sets.map(itemEl);
     const tables = els.filter(e => e._k != null);   // set labels share one table scale; Pokémon labels fit individually
-    if (tables.length > 1) { const k = Math.min(...tables.map(e => e._k)); tables.forEach(e => applyScale(e, k)); }
+    if (tables.length > 1) {
+      const k = Math.min(...tables.map(e => e._k));
+      // applyScale measures by parking the element in #measure, which lifts a spine's inner label out of its wrapper: put it back
+      tables.forEach(e => { applyScale(e._inner || e, k); if (e._inner) e.appendChild(e._inner); });
+    }
     return els;
   }
 
@@ -1025,6 +1109,7 @@
 
   // Sheet pagination: a fixed grid of cols × rows per page, so preview and print place labels identically.
   function paperSpec() {
+    if (averyTpl()) return { ...PAPERS.letter, css: 'letter portrait' };   // Avery sheets are US Letter, upright
     const base = PAPERS[state.paper] || PAPERS.letter;
     if (state.porient !== 'portrait' && state.porient !== 'landscape') return base;   // as listed
     const land = state.porient === 'landscape';
@@ -1034,6 +1119,24 @@
   }
   function buildPages() {
     const p = paperSpec();
+    const av = averyTpl();
+    if (av) {   // die-cut sheet: each label at the template's own coordinates
+      const per = av.nx * av.ny;
+      const sets = withCopies(selectedItems());
+      const labels = makeLabels(sets);
+      const pages = [];
+      for (let i = 0; i < labels.length; i += per) {
+        const pg = document.createElement('div'); pg.className = 'sheetpage avery' + (state.guides ? ' guides' : '');
+        pg.style.width = p.w + 'mm'; pg.style.height = p.h + 'mm';
+        labels.slice(i, i + per).forEach((el, j) => {
+          const c = j % av.nx, r = Math.floor(j / av.nx);
+          el.style.left = ((av.x0 + c * av.dx) * IN).toFixed(3) + 'mm'; el.style.top = ((av.y0 + r * av.dy) * IN).toFixed(3) + 'mm';
+          pg.appendChild(el);
+        });
+        pages.push(pg);
+      }
+      return { pages, per, cols: av.nx, rows: av.ny, paper: p, fits: true, count: sets.length, avery: av };
+    }
     const [lw, lh] = dims();
     const gap = Math.max(0, Number(state.gap) || 0), m = Math.max(0, Number(state.margin) || 0);
     const iw = p.w - 2 * m, ih = p.h - 2 * m;
@@ -1069,7 +1172,7 @@
       const k = Math.min(1.2, availPx / (b.paper.w * MM));
       if (!b.pages.length) { $('note').textContent = 'Nothing selected yet. Tick ' + noun() + ' on the left to lay them out on ' + $('paper').selectedOptions[0].text + '.'; return; }
       b.pages.forEach(pg => stage.appendChild(scaled(pg, b.paper.w, b.paper.h, k)));
-      $('note').textContent = b.count + ' label' + (b.count === 1 ? '' : 's') + ' on ' + b.pages.length + ' page' + (b.pages.length === 1 ? '' : 's') + ' · ' + b.cols + ' × ' + b.rows + ' per page · ' + w + ' × ' + h + ' mm labels'
+      $('note').textContent = b.count + ' label' + (b.count === 1 ? '' : 's') + ' on ' + b.pages.length + ' page' + (b.pages.length === 1 ? '' : 's') + ' · ' + (b.avery ? 'Avery ' + b.avery.n + ' · ' : '') + b.cols + ' × ' + b.rows + ' per page · ' + w + ' × ' + h + ' mm labels'
         + (b.fits ? '' : ' · WARNING: a label is larger than the printable area');
       return;
     }
@@ -1193,8 +1296,15 @@
     const roll = state.target === 'roll';
     $('customrow').hidden = state.preset !== 'custom';
     $('eradates').hidden = state.abbrmode !== 'auto';
-    $('sheetopts').hidden = roll; $('sheetadv').hidden = roll; $('rolladv').hidden = !roll;
-    $('og-paper').hidden = roll; $('og-roll').hidden = !roll;   // size list shows only what the chosen printer can take
+    const av = averyTpl();
+    $('sheetopts').hidden = roll; $('sheetadv').hidden = roll || !!av; $('rolladv').hidden = !roll;
+    $('og-paper').hidden = roll; $('og-avery').hidden = roll; $('og-roll').hidden = !roll;   // size list shows only what the chosen printer can take
+    document.querySelectorAll('#sheetopts [data-paper]').forEach(e => { e.hidden = !!av; });   // an Avery sheet fixes paper, orientation and placement
+    $('orientrow').hidden = !!av;
+    $('averyhint').hidden = !av;
+    if (av) $('averyhint').textContent = 'Avery ' + av.n + ': ' + (av.nx * av.ny) + ' per US Letter sheet, ' + av.nx + ' across × ' + av.ny + ' down, each placed where Avery’s own template puts it. Print at 100% scale with margins set to None.'
+      + (av.spine ? ' Cardstock inserts slide into the clear spine pocket of a view binder; the label is turned to read top-to-bottom like a book on a shelf (Arrangement).' : '')
+      + (av.round ? ' Content is kept inside the circle.' : '');
     $('colors').hidden = !!state.mono;
     const mons = isMons();
     document.querySelectorAll('.modes button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.mode === state.mode)));
