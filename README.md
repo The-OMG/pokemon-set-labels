@@ -2,7 +2,8 @@
 
 **Live: https://labels.omg.irish/**
 
-Printable labels for every English Pokémon TCG expansion, for binders, storage boxes and dividers.
+Printable labels for every English Pokémon TCG expansion, for binders, storage boxes and dividers, plus every
+Japanese (1996 on), Korean (2011 on), Traditional Chinese (2019 on) and Simplified Chinese (2020 on) expansion.
 Each label carries the set symbol, the HD set logo, the expansion number, release date, generation and card
 count (secret rares included). Print one label per page on a Phomemo M110 label roll, lay them out at
 true size on Letter / A4 / 3×5 index cards for a color printer and cut them out, or print straight onto
@@ -74,6 +75,36 @@ Set data and artwork come from [Bulbapedia's list of Pokémon TCG expansions](ht
 Pokémon and all set names, symbols and logos are trademarks of Nintendo, Creatures Inc. and GAME FREAK inc.
 This is an unofficial fan-made tool for personal, non-commercial use and is not affiliated with or endorsed by
 The Pokémon Company.
+
+## Japanese, Korean and Chinese sets
+
+Pick the card language under **Cards** at the top of the set list. Each language loads its own data file
+(`public/sets_ja.js`, `sets_ko.js`, `sets_zhtw.js`, `sets_zhcn.js`) and a Noto Sans font on demand, and keeps its
+own selection. Labels can use English or native table headings, and can add the English set name under the logo.
+
+| Language | Source | Notes |
+|---|---|---|
+| Japanese | Bulbapedia's Japanese expansion list (names, counts, dates, symbols, logos) + TCGdex set codes | DP, DPt and BW sets have no code (none was printed) |
+| Korean | pokemoncard.co.kr product pages (names, official release dates) | Matched by hand to the Japanese twin for code, counts and symbol (`KO_TO_JP` in `build.py`); three Korea-only sets have no counts |
+| Traditional Chinese | asia.pokemon-card.com/tw expansion index (codes, names, dates) | Counts and symbols from the Japanese twin by code; Taiwan-only sets read their printed count off the first card |
+| Simplified Chinese | TCGdex `zh-cn` (mainland C-suffixed sets) | No artwork |
+
+TCGdex's Korean release dates are copies of the Japanese dates, so the official Korean site is the date source.
+
+Regenerate:
+
+```
+cd pipeline/cjk
+python fetch_tcgdex.py     # TCGdex set lists + details for ja / ko / zh-tw / zh-cn -> tcgdex_raw.json
+curl -s -A "Set Label Press" "https://bulbapedia.bulbagarden.net/w/api.php?action=parse&format=json&prop=wikitext&page=List_of_Japanese_Pok%C3%A9mon_Trading_Card_Game_expansions" | python -c "import json,sys;print(json.load(sys.stdin)['parse']['wikitext']['*'])" > jp_list.wiki
+python parse_ja.py         # jp_list.wiki + TCGdex codes -> ja_records.json
+python fetch_img.py        # Japanese symbols + logos from Bulbapedia -> img/ (cache, gitignored)
+python fetch_kr.py         # new Korean products since the last run -> kr_official.json (--full rescans)
+python fetch_tw.py         # Taiwan expansion index + counts for Taiwan-only sets
+python build.py            # -> ../../public/sets_{ja,ko,zhtw,zhcn}.js and ../../public/img/logos/ja/
+```
+
+A new Korean set needs one line in `KO_TO_JP` (Korean name -> Japanese code); `build.py` prints any it can't match.
 
 ## License
 

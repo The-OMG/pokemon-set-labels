@@ -1,0 +1,818 @@
+[
+ {
+  "id": "MF",
+  "series": "超級進化",
+  "title": "頂級牌組組合 「太陽伊布・月亮伊布」",
+  "release": "2026-09-16"
+ },
+ {
+  "id": "M6a",
+  "series": "超級進化",
+  "title": "擴充包「30th CELEBRATION」",
+  "release": "2026-09-16"
+ },
+ {
+  "id": "M6",
+  "series": "超級進化",
+  "title": "擴充包「綠寶石風暴」",
+  "release": "2026-08-07"
+ },
+ {
+  "id": "MTL",
+  "series": "超級進化",
+  "title": "戰術牌組「超級噴火龍Xex」",
+  "release": "2026-07-17"
+ },
+ {
+  "id": "MTS",
+  "series": "超級進化",
+  "title": "戰術牌組「超級沙奈朵ex」",
+  "release": "2026-07-17"
+ },
+ {
+  "id": "MTH",
+  "series": "超級進化",
+  "title": "戰術牌組「超級巨牙鯊ex」",
+  "release": "2026-07-17"
+ },
+ {
+  "id": "MTK",
+  "series": "超級進化",
+  "title": "戰術牌組「超級快龍ex」",
+  "release": "2026-07-17"
+ },
+ {
+  "id": "M5",
+  "series": "超級進化",
+  "title": "擴充包「深淵之瞳」",
+  "release": "2026-06-05"
+ },
+ {
+  "id": "M4",
+  "series": "超級進化",
+  "title": "擴充包「忍者飛旋」",
+  "release": "2026-03-27"
+ },
+ {
+  "id": "MJ",
+  "series": "超級進化",
+  "title": "New Trainer Journey",
+  "release": "2026-02-26"
+ },
+ {
+  "id": "M3",
+  "series": "超級進化",
+  "title": "擴充包「虛無歸零」",
+  "release": "2026-02-06"
+ },
+ {
+  "id": "MC",
+  "series": "超級進化",
+  "title": "初階牌組 100對戰收藏",
+  "release": "2026-01-16"
+ },
+ {
+  "id": "M2a",
+  "series": "超級進化",
+  "title": "高級擴充包「超級進化夢想ex」",
+  "release": "2025-12-05"
+ },
+ {
+  "id": "M2",
+  "series": "超級進化",
+  "title": "擴充包「烈獄狂火X」",
+  "release": "2025-10-09"
+ },
+ {
+  "id": "MBG",
+  "series": "超級進化",
+  "title": "挑戰牌組「超級耿鬼ex」",
+  "release": "2025-09-19"
+ },
+ {
+  "id": "MBD",
+  "series": "超級進化",
+  "title": "挑戰牌組 「超級蒂安希ex」",
+  "release": "2025-09-19"
+ },
+ {
+  "id": "M1L",
+  "series": "超級進化",
+  "title": "擴充包「超級勇氣」",
+  "release": "2025-08-15"
+ },
+ {
+  "id": "M1S",
+  "series": "超級進化",
+  "title": "擴充包「超級交響樂」",
+  "release": "2025-08-15"
+ },
+ {
+  "id": "M-P",
+  "series": "超級進化",
+  "title": "特典卡 超級進化",
+  "release": "2025-08-07"
+ },
+ {
+  "id": "SVQP",
+  "series": "朱＆紫",
+  "title": "ex初階牌組 皮卡丘",
+  "release": "2025-07-18"
+ },
+ {
+  "id": "SVQL",
+  "series": "朱＆紫",
+  "title": "ex初階牌組 噴火龍",
+  "release": "2025-07-18"
+ },
+ {
+  "id": "SV11W",
+  "series": "朱＆紫",
+  "title": "擴充包 「純白閃焰」",
+  "release": "2025-06-20"
+ },
+ {
+  "id": "SV11B",
+  "series": "朱＆紫",
+  "title": "擴充包「漆黑伏特」",
+  "release": "2025-06-20"
+ },
+ {
+  "id": "SV10",
+  "series": "朱＆紫",
+  "title": "擴充包「火箭隊的榮耀」",
+  "release": "2025-05-02"
+ },
+ {
+  "id": "SV9a",
+  "series": "朱＆紫",
+  "title": "強化擴充包「熱風競技場」",
+  "release": "2025-03-28"
+ },
+ {
+  "id": "SVOM",
+  "series": "朱＆紫",
+  "title": "挑戰牌組 瑪俐的莫魯貝可&長毛巨魔ex",
+  "release": "2025-03-07"
+ },
+ {
+  "id": "SVOD",
+  "series": "朱＆紫",
+  "title": "挑戰牌組 大吾的鐵啞鈴&巨金怪ex",
+  "release": "2025-03-07"
+ },
+ {
+  "id": "SV9",
+  "series": "朱＆紫",
+  "title": "擴充包「對戰搭檔」",
+  "release": "2025-02-07"
+ },
+ {
+  "id": "SV8a",
+  "series": "朱＆紫",
+  "title": "高級擴充包「太晶慶典ex」",
+  "release": "2024-12-20"
+ },
+ {
+  "id": "SVM",
+  "series": "朱＆紫",
+  "title": "雙ex初階牌組 Generations",
+  "release": "2024-12-20"
+ },
+ {
+  "id": "SV8",
+  "series": "朱＆紫",
+  "title": "擴充包「超電突圍」",
+  "release": "2024-10-25"
+ },
+ {
+  "id": "SV7a",
+  "series": "朱＆紫",
+  "title": "強化擴充包「樂園騰龍」",
+  "release": "2024-09-27"
+ },
+ {
+  "id": "SVPN",
+  "series": "朱＆紫",
+  "title": "ex特別組合 太晶屬性：星晶 仙子伊布ex",
+  "release": "2024-09-27"
+ },
+ {
+  "id": "SVPS",
+  "series": "朱＆紫",
+  "title": "ex特別組合 太晶屬性：星晶 蒼炎刃鬼ex",
+  "release": "2024-09-27"
+ },
+ {
+  "id": "SVK",
+  "series": "朱＆紫",
+  "title": "牌組構築BOX 樂園騰龍",
+  "release": "2024-09-27"
+ },
+ {
+  "id": "SVI",
+  "series": "朱＆紫",
+  "title": "Trianers Camp",
+  "release": "2024-08-22"
+ },
+ {
+  "id": "SV7",
+  "series": "朱＆紫",
+  "title": "擴充包「星晶奇跡」",
+  "release": "2024-08-02"
+ },
+ {
+  "id": "SVTM",
+  "series": "朱＆紫",
+  "title": "戰術牌組「魔幻假面喵ex」",
+  "release": "2024-07-19"
+ },
+ {
+  "id": "SVTL",
+  "series": "朱＆紫",
+  "title": "戰術牌組「太晶噴火龍ex」",
+  "release": "2024-07-19"
+ },
+ {
+  "id": "SVTR",
+  "series": "朱＆紫",
+  "title": "戰術牌組「密勒頓ex」",
+  "release": "2024-07-19"
+ },
+ {
+  "id": "SVTS",
+  "series": "朱＆紫",
+  "title": "戰術牌組「沙奈朵ex」",
+  "release": "2024-07-19"
+ },
+ {
+  "id": "SVTG",
+  "series": "朱＆紫",
+  "title": "戰術牌組「太晶烈咬陸鯊ex」",
+  "release": "2024-07-19"
+ },
+ {
+  "id": "SVTH",
+  "series": "朱＆紫",
+  "title": "戰術牌組「巨鉗螳螂ex」",
+  "release": "2024-07-19"
+ },
+ {
+  "id": "SV6a",
+  "series": "朱＆紫",
+  "title": "強化擴充包「黑夜漫遊者」",
+  "release": "2024-06-21"
+ },
+ {
+  "id": "SV6",
+  "series": "朱＆紫",
+  "title": "擴充包「變幻假面」",
+  "release": "2024-05-10"
+ },
+ {
+  "id": "SV5a",
+  "series": "朱＆紫",
+  "title": "強化擴充包「緋紅薄霧」",
+  "release": "2024-04-03"
+ },
+ {
+  "id": "SV5K",
+  "series": "朱＆紫",
+  "title": "擴充包「狂野之力」",
+  "release": "2024-02-02"
+ },
+ {
+  "id": "SV5M",
+  "series": "朱＆紫",
+  "title": "擴充包「異度審判」",
+  "release": "2024-02-02"
+ },
+ {
+  "id": "SVHK",
+  "series": "朱＆紫",
+  "title": "起始組合「古代故勒頓ex」",
+  "release": "2024-02-02"
+ },
+ {
+  "id": "SVHM",
+  "series": "朱＆紫",
+  "title": "起始組合「未來密勒頓ex」",
+  "release": "2024-02-02"
+ },
+ {
+  "id": "SV4a",
+  "series": "朱＆紫",
+  "title": "高級擴充包「閃色寶藏ex」",
+  "release": "2023-12-22"
+ },
+ {
+  "id": "SV4M",
+  "series": "朱＆紫",
+  "title": "擴充包「未來閃光」",
+  "release": "2023-11-10"
+ },
+ {
+  "id": "SV4K",
+  "series": "朱＆紫",
+  "title": "擴充包「古代咆哮」",
+  "release": "2023-11-10"
+ },
+ {
+  "id": "SVEL",
+  "series": "朱＆紫",
+  "title": "起始組合 太晶 骨紋巨聲鱷ex",
+  "release": "2023-09-29"
+ },
+ {
+  "id": "SVEM",
+  "series": "朱＆紫",
+  "title": "起始組合 太晶 超夢ex",
+  "release": "2023-09-29"
+ },
+ {
+  "id": "SV3a",
+  "series": "朱＆紫",
+  "title": "強化擴充包「激狂駭浪」",
+  "release": "2023-09-29"
+ },
+ {
+  "id": "SV3",
+  "series": "朱＆紫",
+  "title": "擴充包「黯焰支配者」",
+  "release": "2023-08-11"
+ },
+ {
+  "id": "SVF",
+  "series": "朱＆紫",
+  "title": "牌組構築BOX黯焰支配者",
+  "release": "2023-08-11"
+ },
+ {
+  "id": "SVD",
+  "series": "朱＆紫",
+  "title": "ex初階牌組",
+  "release": "2023-07-21"
+ },
+ {
+  "id": "SV2a",
+  "series": "朱＆紫",
+  "title": "強化擴充包「寶可夢卡牌151」",
+  "release": "2023-06-30"
+ },
+ {
+  "id": "SVP1",
+  "series": "朱＆紫",
+  "title": "ex特別組合",
+  "release": "2023-06-02"
+ },
+ {
+  "id": "SV2D",
+  "series": "朱＆紫",
+  "title": "擴充包「碟旋暴擊」",
+  "release": "2023-04-28"
+ },
+ {
+  "id": "SV2P",
+  "series": "朱＆紫",
+  "title": "擴充包「冰雪險境」",
+  "release": "2023-04-28"
+ },
+ {
+  "id": "SVC",
+  "series": "朱＆紫",
+  "title": "起始組合ex 皮卡丘特別組合",
+  "release": "2023-04-28"
+ },
+ {
+  "id": "SV1a",
+  "series": "朱＆紫",
+  "title": "強化擴充包「三連音爆」",
+  "release": "2023-03-24"
+ },
+ {
+  "id": "SVB",
+  "series": "朱＆紫",
+  "title": "頂級訓練家收藏箱ex",
+  "release": "2023-03-03"
+ },
+ {
+  "id": "SV1S",
+  "series": "朱＆紫",
+  "title": "擴充包「朱ex」",
+  "release": "2023-02-03"
+ },
+ {
+  "id": "SV1V",
+  "series": "朱＆紫",
+  "title": "擴充包「紫ex」",
+  "release": "2023-02-03"
+ },
+ {
+  "id": "SVAL",
+  "series": "朱＆紫",
+  "title": "起始組合ex 呆火鱷&電龍 ex",
+  "release": "2023-02-03"
+ },
+ {
+  "id": "SVAM",
+  "series": "朱＆紫",
+  "title": "起始組合ex 新葉喵&路卡利歐 ex",
+  "release": "2023-02-03"
+ },
+ {
+  "id": "SVAW",
+  "series": "朱＆紫",
+  "title": "起始組合ex 潤水鴨&謎擬Ｑ ex",
+  "release": "2023-02-03"
+ },
+ {
+  "id": "SV-P",
+  "series": "朱＆紫",
+  "title": "特典卡 朱&紫",
+  "release": "2023-01-26"
+ },
+ {
+  "id": "SO",
+  "series": "劍＆盾",
+  "title": "特別牌組組合 「噴火龍VSTAR vs 烈空坐VMAX」",
+  "release": "2023-01-13"
+ },
+ {
+  "id": "S12a",
+  "series": "劍＆盾",
+  "title": "高級擴充包「天地萬物VSTAR」",
+  "release": "2022-12-16"
+ },
+ {
+  "id": "S-P",
+  "series": "劍＆盾",
+  "title": "特典卡 劍&盾",
+  "release": "2022-12-15"
+ },
+ {
+  "id": "S12",
+  "series": "劍＆盾",
+  "title": "擴充包「思維激盪」",
+  "release": "2022-11-04"
+ },
+ {
+  "id": "SDL",
+  "series": "劍＆盾",
+  "title": "V初階牌組 「噴火龍」",
+  "release": "2022-11-04"
+ },
+ {
+  "id": "SDP",
+  "series": "劍＆盾",
+  "title": "V初階牌組 「皮卡丘」",
+  "release": "2022-11-04"
+ },
+ {
+  "id": "SDM",
+  "series": "劍＆盾",
+  "title": "V初階牌組 「超夢」",
+  "release": "2022-11-04"
+ },
+ {
+  "id": "SN",
+  "series": "劍＆盾",
+  "title": "初階牌組100 特別版",
+  "release": "2022-10-02"
+ },
+ {
+  "id": "S11a",
+  "series": "劍＆盾",
+  "title": "強化擴充包「白熱奧祕」",
+  "release": "2022-09-16"
+ },
+ {
+  "id": "SPZ",
+  "series": "劍＆盾",
+  "title": "VSTAR&VMAX 高級牌組 捷拉奧拉",
+  "release": "2022-08-26"
+ },
+ {
+  "id": "SPD",
+  "series": "劍＆盾",
+  "title": "VSTAR&VMAX 高級牌組 代歐奇希斯",
+  "release": "2022-08-26"
+ },
+ {
+  "id": "SP6",
+  "series": "劍＆盾",
+  "title": "VSTAR特別組合",
+  "release": "2022-08-26"
+ },
+ {
+  "id": "S11",
+  "series": "劍＆盾",
+  "title": "擴充包 「迷途深淵」",
+  "release": "2022-07-29"
+ },
+ {
+  "id": "S10b",
+  "series": "劍＆盾",
+  "title": "強化擴充包「Pokémon GO」",
+  "release": "2022-06-17"
+ },
+ {
+  "id": "S10a",
+  "series": "劍＆盾",
+  "title": "強化擴充包「黑暗亡靈」",
+  "release": "2022-05-27"
+ },
+ {
+  "id": "S10D",
+  "series": "劍＆盾",
+  "title": "擴充包「時間觀察者」",
+  "release": "2022-04-22"
+ },
+ {
+  "id": "S10P",
+  "series": "劍＆盾",
+  "title": "擴充包「空間魔術師」",
+  "release": "2022-04-22"
+ },
+ {
+  "id": "S9a",
+  "series": "劍＆盾",
+  "title": "強化擴充包「對戰地區」",
+  "release": "2022-03-11"
+ },
+ {
+  "id": "SLL",
+  "series": "劍＆盾",
+  "title": "起始組合VSTAR 路卡利歐",
+  "release": "2022-03-11"
+ },
+ {
+  "id": "SLD",
+  "series": "劍＆盾",
+  "title": "起始組合VSTAR 達克萊伊",
+  "release": "2022-03-11"
+ },
+ {
+  "id": "SI",
+  "series": "劍＆盾",
+  "title": "初階牌組100",
+  "release": "2022-02-18"
+ },
+ {
+  "id": "SJ",
+  "series": "劍＆盾",
+  "title": "特別牌組組合 蒼響・藏瑪然特VS無極汰那",
+  "release": "2022-01-28"
+ },
+ {
+  "id": "S9",
+  "series": "劍＆盾",
+  "title": "擴充包「星星誕生」",
+  "release": "2022-01-28"
+ },
+ {
+  "id": "SK",
+  "series": "劍＆盾",
+  "title": "頂級訓練家收藏箱 VSTAR",
+  "release": "2022-01-28"
+ },
+ {
+  "id": "S8b",
+  "series": "劍＆盾",
+  "title": "高級擴充包「VMAX絕群壓軸」",
+  "release": "2021-12-17"
+ },
+ {
+  "id": "S8a",
+  "series": "劍＆盾",
+  "title": "擴充包「25週年收藏款」",
+  "release": "2021-10-20"
+ },
+ {
+  "id": "S8",
+  "series": "劍＆盾",
+  "title": "擴充包「匯流藝術」",
+  "release": "2021-10-01"
+ },
+ {
+  "id": "SCD",
+  "series": "劍＆盾",
+  "title": "V起始牌組 「強大」",
+  "release": "2021-10-01"
+ },
+ {
+  "id": "SP5",
+  "series": "劍＆盾",
+  "title": "超夢V-UNION",
+  "release": "2021-08-27"
+ },
+ {
+  "id": "SP5",
+  "series": "劍＆盾",
+  "title": "甲賀忍蛙V-UNION",
+  "release": "2021-08-27"
+ },
+ {
+  "id": "SP5",
+  "series": "劍＆盾",
+  "title": "蒼響V-UNION",
+  "release": "2021-08-27"
+ },
+ {
+  "id": "SH",
+  "series": "劍＆盾",
+  "title": "寶可夢卡牌家庭組合",
+  "release": "2021-08-06"
+ },
+ {
+  "id": "S7D",
+  "series": "劍＆盾",
+  "title": "擴充包「摩天巔峰」",
+  "release": "2021-07-23"
+ },
+ {
+  "id": "S7R",
+  "series": "劍＆盾",
+  "title": "擴充包「蒼空烈流」",
+  "release": "2021-07-23"
+ },
+ {
+  "id": "S6a",
+  "series": "劍＆盾",
+  "title": "強化擴充包「伊布英雄」",
+  "release": "2021-06-11"
+ },
+ {
+  "id": "SCC",
+  "series": "劍＆盾",
+  "title": "V起始牌組 「進化」",
+  "release": "2021-06-11"
+ },
+ {
+  "id": "S6H",
+  "series": "劍＆盾",
+  "title": "擴充包「銀白戰槍」",
+  "release": "2021-05-07"
+ },
+ {
+  "id": "S6K",
+  "series": "劍＆盾",
+  "title": "擴充包「漆黑幽魂」",
+  "release": "2021-05-07"
+ },
+ {
+  "id": "S5a",
+  "series": "劍＆盾",
+  "title": "強化擴充包「雙璧戰士」",
+  "release": "2021-04-02"
+ },
+ {
+  "id": "S5I",
+  "series": "劍＆盾",
+  "title": "擴充包「一撃大師」",
+  "release": "2021-01-29"
+ },
+ {
+  "id": "S5R",
+  "series": "劍＆盾",
+  "title": "擴充包「連撃大師」",
+  "release": "2021-01-29"
+ },
+ {
+  "id": "SCB",
+  "series": "劍＆盾",
+  "title": "V起始牌組 「挑戰」",
+  "release": "2021-01-29"
+ },
+ {
+  "id": "S4a",
+  "series": "劍＆盾",
+  "title": "高級擴充包「閃色明星V」",
+  "release": "2020-11-27"
+ },
+ {
+  "id": "SCA",
+  "series": "劍＆盾",
+  "title": "V起始牌組 「搭檔」",
+  "release": "2020-11-27"
+ },
+ {
+  "id": "S4",
+  "series": "劍＆盾",
+  "title": "擴充包『驚天伏特攻擊』",
+  "release": "2020-10-09"
+ },
+ {
+  "id": "SC2a",
+  "series": "劍＆盾",
+  "title": "擴充包「無極力量」SET A",
+  "release": "2020-08-21"
+ },
+ {
+  "id": "SC2b",
+  "series": "劍＆盾",
+  "title": "擴充包「無極力量」SET B",
+  "release": "2020-08-21"
+ },
+ {
+  "id": "SC2D",
+  "series": "劍＆盾",
+  "title": "V起始牌組「無極力量」",
+  "release": "2020-08-21"
+ },
+ {
+  "id": "SC1b",
+  "series": "劍＆盾",
+  "title": "擴充包「劍&盾」SET B",
+  "release": "2020-06-19"
+ },
+ {
+  "id": "SC1a",
+  "series": "劍＆盾",
+  "title": "擴充包「劍&盾」SET A",
+  "release": "2020-06-19"
+ },
+ {
+  "id": "SC1D",
+  "series": "劍＆盾",
+  "title": "V起始牌組「劍&盾」",
+  "release": "2020-06-19"
+ },
+ {
+  "id": "AS6a",
+  "series": "太陽＆月亮",
+  "title": "擴充包「傳說交鋒」SET A",
+  "release": "2020-04-10"
+ },
+ {
+  "id": "AS6b",
+  "series": "太陽＆月亮",
+  "title": "擴充包「傳說交鋒」SET B",
+  "release": "2020-04-10"
+ },
+ {
+  "id": "AS6D",
+  "series": "太陽＆月亮",
+  "title": "G超起始牌組「傳說交鋒」",
+  "release": "2020-04-10"
+ },
+ {
+  "id": "AS5a",
+  "series": "太陽＆月亮",
+  "title": "擴充包「雙倍爆擊」SET A",
+  "release": "2020-02-21"
+ },
+ {
+  "id": "As5b",
+  "series": "太陽＆月亮",
+  "title": "擴充包「雙倍爆擊」SET B",
+  "release": "2020-02-21"
+ },
+ {
+  "id": "AS5D",
+  "series": "太陽＆月亮",
+  "title": "G超起始牌組「雙倍爆擊」",
+  "release": "2020-02-21"
+ },
+ {
+  "id": "AC2a",
+  "series": "太陽＆月亮",
+  "title": "擴充包「美夢成真組合篇」SET A",
+  "release": "2019-12-20"
+ },
+ {
+  "id": "AC2b",
+  "series": "太陽＆月亮",
+  "title": "擴充包「美夢成真組合篇」SET B",
+  "release": "2019-12-20"
+ },
+ {
+  "id": "AC2D",
+  "series": "太陽＆月亮",
+  "title": "G超起始牌組「美夢成真組合篇」",
+  "release": "2019-12-20"
+ },
+ {
+  "id": "AC1a",
+  "series": "太陽＆月亮",
+  "title": "擴充包「眾星雲集組合篇」SET A",
+  "release": "2019-10-09"
+ },
+ {
+  "id": "AC1b",
+  "series": "太陽＆月亮",
+  "title": "擴充包「眾星雲集組合篇」SET B",
+  "release": "2019-10-09"
+ },
+ {
+  "id": "AC1D",
+  "series": "太陽＆月亮",
+  "title": "G超起始牌組「眾星雲集組合篇」",
+  "release": "2019-10-09"
+ },
+ {
+  "id": "SM-P",
+  "series": "太陽＆月亮",
+  "title": "特典卡 太陽&月亮",
+  "release": "2019-10-09"
+ }
+]

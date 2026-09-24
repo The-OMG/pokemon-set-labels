@@ -193,6 +193,22 @@
   .label .symbox.star + .symbox { margin-left: 0; }
   .label .logo img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
   .label .logo .txtlogo { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 700; text-transform: uppercase; text-align: center; font-size: calc(var(--min) * 0.11); line-height: 1.05; }
+  /* Japanese / Korean / Chinese sets: the label font keeps Latin text and digits, CJK glyphs fall through to Noto */
+  .label:lang(ja), .row .nm:lang(ja) { font-family: var(--lfont, "Jost"), "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif; }
+  .label:lang(ko), .row .nm:lang(ko) { font-family: var(--lfont, "Jost"), "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+  .label:lang(zh-Hant), .row .nm:lang(zh-Hant) { font-family: var(--lfont, "Jost"), "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  .label:lang(zh-Hans), .row .nm:lang(zh-Hans) { font-family: var(--lfont, "Jost"), "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; }
+  .label:lang(ja) .txtlogo { font-family: "Noto Sans JP", "Hiragino Sans", sans-serif; }
+  .label:lang(ko) .txtlogo { font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; }
+  .label:lang(zh-Hant) .txtlogo { font-family: "Noto Sans TC", "PingFang TC", sans-serif; }
+  .label:lang(zh-Hans) .txtlogo { font-family: "Noto Sans SC", "PingFang SC", sans-serif; }
+  .label:not(:lang(en)) .txtlogo { text-transform: none; font-weight: 800; }
+  .label .logo.with-en { flex-direction: column; gap: calc(var(--min) * 0.02); }
+  .label .logo.with-en > img { min-height: 0; }
+  .label .logo .en { font-family: var(--lfont, "Jost"), sans-serif; font-weight: 500; font-size: calc(var(--min) * 0.055); text-align: center; line-height: 1.1; flex: none; }
+  .langrow { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); }
+  .langrow select { flex: 1; min-width: 0; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--ground); color: var(--ink); }
+  .loading { color: var(--muted); padding: 14px; font-size: 13px; }
   .label table { border-collapse: collapse; flex: none; font-size: calc(var(--min) * 0.07); line-height: 1.25; margin-top: auto; align-self: center; }
   .label th { font-weight: 400; text-align: right; padding: 0 0.4em 0 0; white-space: nowrap; }
   .label td { text-align: left; padding: 0; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
@@ -351,6 +367,14 @@
 
   <aside class="left" aria-label="Choose sets">
     <div class="side-head">
+      <label class="langrow" id="langrow"><span>Cards</span>
+        <select id="lang" aria-label="Card language">
+          <option value="en">English</option>
+          <option value="ja">日本語 · Japanese</option>
+          <option value="ko">한국어 · Korean</option>
+          <option value="zh-tw">繁體中文 · Traditional Chinese</option>
+          <option value="zh-cn">简体中文 · Simplified Chinese</option>
+        </select></label>
       <input class="search" id="q" type="search" placeholder="Search set, abbreviation, year…" autocomplete="off" aria-label="Search sets">
       <div class="chips" id="type-chips">
         <button class="chip" type="button" data-type="Main Series Expansion" aria-pressed="true">Main sets</button>
@@ -379,7 +403,7 @@
 
     <section class="about" id="about">
       <h2>What this is</h2>
-      <p>A free label press for Pokémon Trading Card Game collectors. Tick the expansions you own, choose a label size, and print binder or storage-box labels that carry the set symbol, the HD set logo, the expansion number, release date, generation and card count, including secret rares. It covers every English expansion from Base Set (1999) through the current Mega Evolution series, plus special sets, McDonald's promos, POP packs and Trick or Trade.</p>
+      <p>A free label press for Pokémon Trading Card Game collectors. Tick the expansions you own, choose a label size, and print binder or storage-box labels that carry the set symbol, the HD set logo, the expansion number, release date, generation and card count, including secret rares. It covers every English expansion from Base Set (1999) through the current Mega Evolution series, plus special sets, McDonald's promos, POP packs and Trick or Trade. Collect Asian cards? Pick Japanese, Korean, Traditional Chinese or Simplified Chinese under <em>Cards</em> at the top of the set list: every Japanese expansion since 1996, Korean since 2011, Traditional Chinese since 2019 and Simplified Chinese since 2020.</p>
       <h2>Pokémon labels</h2>
       <p>Switch to <em>Pokémon</em> at the top to label by character instead of by set, for binders or bulk boxes sorted by species. Each label has the National Pokédex number, types, name, official artwork, the card-style category / height / weight strip, a one-sentence Pokédex entry and the generation with the year the Pokémon debuted. All 1,025 species, filterable by generation or legendary status.</p>
       <h2>How to print</h2>
@@ -389,7 +413,7 @@
         <li><strong>Avery label sheets</strong>: choose the Avery number under Size (address, shipping, square, round, business card, file folder, and the cardstock <em>binder spine inserts</em> 89103 to 89109 that slide into a view binder's clear spine pocket). Each label is placed exactly where Avery's own template puts it on a US Letter sheet, so print at 100% with margins None. Spine inserts turn the label on its side to read top-to-bottom, like a book on a shelf.</li>
       </ol>
       <h2>Where the data comes from</h2>
-      <p>Set names, expansion numbering, release dates, card counts, symbols and logos come from Bulbapedia's list of Pokémon TCG expansions; Base Set artwork from pokemontcg.io. Pokémon species data, Pokédex entries and official artwork come from <a href="https://pokeapi.co/">PokeAPI</a>. The sequential expansion numbers count main-series sets and special sets separately. Data snapshot: <span id="snap"></span>. Missing a new set? Open an issue on GitHub.</p>
+      <p>Set names, expansion numbering, release dates, card counts, symbols and logos come from Bulbapedia's list of Pokémon TCG expansions; Base Set artwork from pokemontcg.io. Japanese sets come from Bulbapedia's Japanese expansion list, with set codes from <a href="https://tcgdex.dev/">TCGdex</a>. Korean release dates come from the official Korean site (pokemoncard.co.kr) and Traditional Chinese codes and dates from the official Pokémon Asia site; both are localizations of Japanese sets, so their card counts and symbols come from the matching Japanese set. Simplified Chinese (mainland) sets come from TCGdex. Pokémon species data, Pokédex entries and official artwork come from <a href="https://pokeapi.co/">PokeAPI</a>. The sequential expansion numbers count main-series sets and special sets separately. Data snapshot: <span id="snap"></span>. Missing a new set? Open an issue on GitHub.</p>
       <h2>Open source</h2>
       <p>Source code, data pipeline and issue tracker: <a href="https://github.com/The-OMG/pokemon-set-labels">github.com/The-OMG/pokemon-set-labels</a>. Runs entirely in your browser; nothing you select is sent anywhere. Settings are remembered on this device only.</p>
       <p>Pokémon and all set names, symbols and logos are trademarks of Nintendo, Creatures Inc. and GAME FREAK inc. This is an unofficial fan-made tool for personal, non-commercial use and is not affiliated with or endorsed by The Pokémon Company.</p>
@@ -538,8 +562,11 @@
         <select id="cards"><option value="total">Total, e.g. 196</option><option value="printed-total">Both, e.g. 181 (196)</option><option value="printed-secret">Printed + secrets, e.g. 181 (+15)</option><option value="printed">Printed only, e.g. 181</option></select></label>
       <div class="field" style="grid-template-columns:1fr"><span class="lbl">Extra card rows <small>Adds a row for each type the set has, e.g. Shiny Vault 94.</small></span>
         <div class="chips" id="extra-kinds"></div></div>
+      <label class="field" data-cjk><span class="lbl">Table headings <small>Row names in English, or in the language of the cards.</small></span>
+        <select id="headings"><option value="en">English</option><option value="native">Card language</option></select></label>
+      <label class="field" data-cjk><span class="lbl">English name under logo <small>e.g. ストームエメラルダ / Storm Emeralda.</small></span><input type="checkbox" id="showen"></label>
       <details class="adv" id="contentadv"><summary>Advanced</summary>
-        <label class="field"><span class="lbl">Code box language tag <small>English cards print a small EN beside the code. Blank hides it.</small></span>
+        <label class="field"><span class="lbl">Code box language tag <small>English cards print a small EN beside the code. Blank hides it. Japanese, Korean and Chinese cards print the code alone.</small></span>
           <select id="codelang"><option value="EN">EN (English cards)</option><option value="none">None (code only)</option><option value="FR">FR</option><option value="DE">DE</option><option value="ES">ES</option><option value="IT">IT</option><option value="PT">PT</option></select></label>
         <label class="field"><span class="lbl">Set abbreviation <small>Off by default: icon sets never printed one, and code-box sets show it in the icon.</small></span>
           <select id="abbrmode"><option value="never">Hide</option><option value="auto">Icon sets only</option><option value="show">Always show</option></select></label>
@@ -570,7 +597,46 @@
 <script>
 (function () {
   'use strict';
-  const SETS = (window.POKEMON_SETS || []).map((s, i) => ({ ...s, i }));
+  const EN_SETS = (window.POKEMON_SETS || []).map((s, i) => ({ ...s, i }));
+  let SETS = EN_SETS;
+  let LANG = 'en', LANGDATA = null;
+  // Card-language datasets (built by pipeline/cjk) load on demand, with a Noto font for the script.
+  const LANGS = {
+    'ja': { file: 'sets_ja.js', font: 'Noto+Sans+JP', tag: 'ja', name: 'Japanese', h: ['番号', '発売日', 'シリーズ', 'カード'], special: '特別' },
+    'ko': { file: 'sets_ko.js', font: 'Noto+Sans+KR', tag: 'ko', name: 'Korean', h: ['번호', '발매일', '시리즈', '카드'], special: '스페셜' },
+    'zh-tw': { file: 'sets_zhtw.js', font: 'Noto+Sans+TC', tag: 'zh-Hant', name: 'Traditional Chinese', h: ['編號', '發售日', '系列', '卡牌'], special: '特別' },
+    'zh-cn': { file: 'sets_zhcn.js', font: 'Noto+Sans+SC', tag: 'zh-Hans', name: 'Simplified Chinese', h: ['编号', '发售日', '系列', '卡牌'], special: '特别' },
+  };
+  const loadedJs = {};
+  function loadScript(src) {
+    if (!loadedJs[src]) loadedJs[src] = new Promise((res, rej) => {
+      const el = document.createElement('script'); el.src = src; el.onload = res;
+      el.onerror = () => { delete loadedJs[src]; el.remove(); rej(new Error('Could not load ' + src)); };
+      document.head.appendChild(el);
+    });
+    return loadedJs[src];
+  }
+  const loadedFonts = {};
+  function loadFont(family) {   // resolves once the stylesheet and the weights the labels use are ready
+    if (!loadedFonts[family]) loadedFonts[family] = new Promise(res => {
+      const l = document.createElement('link'); l.rel = 'stylesheet';
+      l.href = 'https://fonts.googleapis.com/css2?family=' + family + ':wght@400;500;700;800&display=swap';
+      l.onload = () => { const f = family.replace(/\+/g, ' '); Promise.all(['400', '500', '800'].map(w => document.fonts ? document.fonts.load(w + ' 12px "' + f + '"') : 0)).then(res, res); };
+      l.onerror = res; document.head.appendChild(l);
+    });
+    return loadedFonts[family];
+  }
+  const fontsReady = () => LANG === 'en' ? Promise.resolve() : loadFont(LANGS[LANG].font);
+  async function datasetFor(lang) {
+    if (lang === 'en') return { sets: EN_SETS, meta: null };
+    const L = LANGS[lang];
+    loadFont(L.font);
+    await loadScript(L.file);
+    const meta = window.SLP_LANG && window.SLP_LANG[lang];
+    if (!meta) throw new Error('No data for ' + lang);
+    if (!meta._sets) meta._sets = meta.sets.map((s, i) => ({ ...s, i }));
+    return { sets: meta._sets, meta };
+  }
   const MONS = (window.POKEMON_SPECIES || []).map((p, i) => ({ ...p, i, kind: 'mon' }));
   const $ = (id) => document.getElementById(id);
   // Roll presets use the dimensions the Phomemo Windows driver reports (40 mm rolls are 39.9 mm, the M110 print head
@@ -613,6 +679,7 @@
     abbrmode: 'never', abbrsize: 'small', icondate: '2023-03-31', numbering: 'seq', special: 'badge', cards: 'total', extras: {}, codelang: 'EN',
     paper: 'letter', porient: 'auto', place: 'center', idxShow: 'name', idxPage: 'full', margin: 0, gap: 0, guides: true, zoom: 3, preview: 'label', v: 3,
     types: { 'Main Series Expansion': true, 'Special Expansion': true, 'Other': false }, onlyNew: false, series: null, selected: [], current: null,
+    lang: 'en', headings: 'en', showen: false, perLang: {},
     mode: 'sets', monSel: [], monCur: null, monCopies: {}, monGen: null, monLegend: false,
     monArt: true, monArtMode: 'dither', monNo: true, monTypes: true, monTColor: true, monDex: true, monText: 'short', monFoot: true, monUnits: 'imperial'
   };
@@ -665,8 +732,9 @@
   }
 
   // ---------- filters & list ----------
-  const seriesOrder = [];
-  SETS.forEach(s => { if (!seriesOrder.includes(s.series)) seriesOrder.push(s.series); });
+  let seriesOrder = [];
+  function computeSeries() { seriesOrder = []; SETS.forEach(s => { if (!seriesOrder.includes(s.series)) seriesOrder.push(s.series); }); }
+  computeSeries();
   const typeOf = (s) => (s.type === 'Main Series Expansion' || s.type === 'Special Expansion') ? s.type : 'Other';
 
   function visible() {
@@ -675,9 +743,9 @@
       .filter(p => !state.monLegend || p.legendary || p.mythical)
       .filter(p => !needle || (p.name + ' ' + p.n + ' ' + pad4(p.n) + ' ' + p.types.join(' ') + ' ' + p.genus).toLowerCase().includes(needle));
     return SETS.filter(s => state.types[typeOf(s)])
-      .filter(s => !state.onlyNew || !s.printed2023)
+      .filter(s => LANG !== 'en' || !state.onlyNew || !s.printed2023)
       .filter(s => !state.series || s.series === state.series)
-      .filter(s => !needle || (s.name + ' ' + s.abbr + ' ' + s.release + ' ' + s.series + ' ' + (s.setno || '')).toLowerCase().includes(needle));
+      .filter(s => !needle || (s.name + ' ' + (s.name_en || '') + ' ' + s.abbr + ' ' + s.release + ' ' + s.series + ' ' + (s.setno || '')).toLowerCase().includes(needle));
   }
 
   function renderSeriesChips() {
@@ -693,6 +761,7 @@
     });
     document.querySelectorAll('#type-chips .chip[data-type]').forEach(c => c.setAttribute('aria-pressed', String(!!state.types[c.dataset.type])));
     $('chip-new').setAttribute('aria-pressed', String(!!state.onlyNew));
+    $('chip-new').hidden = LANG !== 'en';
   }
 
   function renderGenChips() {
@@ -723,8 +792,9 @@
       else { img = s.symbol_img ? document.createElement('img') : document.createElement('span'); if (s.symbol_img) { img.alt = ''; img.src = s.symbol_img; } }   // span keeps the grid column when a set has no symbol
       const nm = document.createElement('div'); nm.innerHTML = '<div class="nm"></div><div class="sub"></div>';
       nm.querySelector('.nm').textContent = s.name;
+      if (!mons && LANG !== 'en') nm.querySelector('.nm').lang = LANGS[LANG].tag;
       nm.querySelector('.sub').textContent = mons ? s.types.join(' / ') + ' · ' + s.genus
-        : s.release + (s.expno ? ' · No. ' + s.expno : '') + (s.printed2023 ? ' · printed 2023' : '');
+        : s.release + (s.name_en ? ' · ' + s.name_en : '') + (s.expno ? ' · No. ' + s.expno : '') + (s.printed2023 ? ' · printed 2023' : '');
       const ab = document.createElement('span'); ab.className = 'abbr'; ab.textContent = mons ? pad4(s.n) : (s.abbr || '');
       const cp = document.createElement('input'); cp.type = 'number'; cp.min = 1; cp.max = 50; cp.step = 1; cp.className = 'cp'; cp.title = 'Copies of this label';
       cp.value = copiesOf(s); cp.hidden = !sel.has(s.i); cp.setAttribute('aria-label', 'Copies of ' + s.name);
@@ -773,14 +843,19 @@
     return !(state.icondate && s.release >= state.icondate && s.symbol_img);   // auto: hidden once the symbol is the code
   }
 
+  const native = () => LANG !== 'en' && state.headings === 'native';
+  const specialWord = () => native() ? LANGS[LANG].special : 'Special';
   function rows(s) {
     const out = [];
-    if (state.numbering === 'seq' && s.expno != null) out.push(['Exp No.', String(s.expno)]);
-    else if (state.numbering === 'code' && s.setno) out.push(['Exp No.', s.setno]);
-    out.push(['Release', s.release || '—']);
-    let gen = s.series === 'Base' ? 'Original' : s.series;   // the 2023 cards called the first era "Original"
-    if (s.type === 'Special Expansion') gen = { word: 'SPECIAL', suffix: gen + '\n(Special)', star: '★ ' + gen }[state.special] ?? gen;
-    out.push(['Gen', gen]);
+    const nat = native();
+    const H = nat ? LANGS[LANG].h : ['Exp No.', 'Release', 'Gen', 'Cards'];
+    if (state.numbering === 'seq' && s.expno != null) out.push([H[0], String(s.expno)]);
+    else if (state.numbering === 'code' && s.setno) out.push([H[0], s.setno]);
+    out.push([H[1], s.release || '—']);
+    let gen = nat ? (s.series_native || s.series) : s.series === 'Base' ? 'Original' : s.series;   // the 2023 cards called the first era "Original"
+    const sp = specialWord();
+    if (s.type === 'Special Expansion') gen = { word: sp.toUpperCase(), suffix: gen + '\n(' + sp + ')', star: '★ ' + gen }[state.special] ?? gen;
+    out.push([H[2], gen]);
     const total = (s.cards || 0) + (s.secret || 0);
     let cards = s.cards != null ? String(s.cards) : '—';
     if (s.secret > 0) {
@@ -788,7 +863,7 @@
       else if (state.cards === 'printed-secret') cards = s.cards + ' (+' + s.secret + ')';
       else if (state.cards === 'total') cards = String(total);
     }
-    out.push(['Cards', cards]);
+    out.push([H[3], cards]);
     for (const e of (s.extras || [])) {
       if (state.extras && state.extras[e.kind]) out.push([EXTRA_LABELS[e.kind] || e.kind, String(e.n)]);
     }
@@ -926,6 +1001,7 @@
     const side = over ? w > h * 1.15 : (state.layout === 'side' || (state.layout === 'auto' && w > h * 1.15));
     const ab = showAbbr(s);
     const el = document.createElement('div');
+    if (LANG !== 'en') el.lang = LANGS[LANG].tag;
     el.className = 'label' + (state.mono ? ' mono' : '') + (side ? ' side' : '') + (state.abbrsize === 'large' ? ' abbr-large' : '') + (state.tstyle === 'caps' ? ' caps' : '') + (state.rule ? ' rule' : '') + (!over && averyTpl()?.round ? ' round' : '');
     const min = Math.min(w, h);
     el.style.setProperty('--lfont', JSON.stringify(state.font || 'Jost'));
@@ -938,7 +1014,7 @@
     if (ab || badge) {
       const blk = document.createElement('div'); blk.className = 'abbrblock';
       if (ab) { const a = document.createElement('span'); a.className = 'abbr'; a.textContent = s.abbr; blk.appendChild(a); }   // no abbreviation: the badge rises to the top, level with the icon
-      if (badge) { const b = document.createElement('span'); b.className = 'badge'; b.textContent = 'Special'; blk.appendChild(b); }
+      if (badge) { const b = document.createElement('span'); b.className = 'badge'; b.textContent = specialWord(); blk.appendChild(b); }
       top.appendChild(blk);
     }
     const codeEra = !!(state.icondate && s.release >= state.icondate && s.abbr && !/Prize Pack|Trick or Trade/i.test(s.name));
@@ -946,7 +1022,7 @@
     if (codeEra) {   // draw the code box ourselves so every text-code icon is the same size and weight
       const box = document.createElement('div'); box.className = 'symbox code'; const cb = document.createElement('div'); cb.className = 'codebox' + (s.abbr.length > 3 ? ' long' : '');
       const inner = document.createElement('div'); inner.className = 'inner'; const txt = document.createElement('span'); txt.className = 'txt'; txt.textContent = s.abbr;
-      if (state.codelang !== 'none') {
+      if (state.codelang !== 'none' && LANG === 'en') {   // Asian cards print the code alone
         cb.classList.add('en'); const grp = document.createElement('div'); grp.className = 'grp'; const lang = document.createElement('span'); lang.className = 'lang'; lang.textContent = state.codelang || 'EN';
         grp.append(txt, lang); inner.appendChild(grp);
       } else inner.appendChild(txt);
@@ -962,9 +1038,10 @@
       const im = document.createElement('img'); im.className = 'logoimg'; im.alt = s.name; im.src = useSolid() ? solidBlack(promoLogo, 'logo:' + promoLogo) : promoLogo; logo.appendChild(im);
     } else if (s.logo_img) { const im = document.createElement('img'); im.alt = s.name; im.src = useSolid() ? solidBlack(s.logo_img, 'logo:' + s.slug) : s.logo_img; logo.appendChild(im); }
     else { const t = document.createElement('div'); t.className = 'txtlogo'; t.textContent = s.name; logo.appendChild(t); }
+    if (LANG !== 'en' && state.showen && s.name_en && s.name_en.toLowerCase() !== s.name.toLowerCase()) { logo.classList.add('with-en'); const e = document.createElement('div'); e.className = 'en'; e.lang = 'en'; e.textContent = s.name_en; logo.appendChild(e); }
     const table = document.createElement('table'); const tb = document.createElement('tbody');
     rows(s).forEach(([k, v]) => {
-      const tr = document.createElement('tr'); if (k === 'Gen') tr.className = 'gen';
+      const tr = document.createElement('tr'); if (k === 'Gen' || (native() && k === LANGS[LANG].h[2])) tr.className = 'gen';
       const th = document.createElement('th'); th.textContent = state.tstyle === 'caps' ? k : k + ':'; th.style.verticalAlign = 'top';
       const td = document.createElement('td');
       v.split('\n').forEach((line, n) => { if (n) td.appendChild(document.createElement('br')); td.appendChild(document.createTextNode(line)); });
@@ -1304,6 +1381,7 @@
   const pageStyle = document.createElement('style'); document.head.appendChild(pageStyle);
   async function print(mode) {
     await preloadArt(selectedItems());
+    await fontsReady();   // table sizing is measured, so the CJK font must be in before labels are built
     const root = $('print-root'); root.innerHTML = ''; root.className = mode;
     const [w, h] = dims();
     if (mode === 'labels') {
@@ -1327,8 +1405,9 @@
       pageStyle.textContent = '@page { size: ' + b.paper.css + '; margin: 0; }';
       b.pages.forEach(pg => root.appendChild(pg));
     }
-    const imgs = [...root.querySelectorAll('img')].filter(im => !im.complete);
-    Promise.all(imgs.map(im => new Promise(r => { im.onload = im.onerror = r; }))).then(() => window.print());
+    await Promise.all([...root.querySelectorAll('img')].map(im => im.decode ? im.decode().catch(() => {})
+      : im.complete ? 0 : new Promise(r => { im.addEventListener('load', r, { once: true }); im.addEventListener('error', r, { once: true }); })));
+    window.print();
   }
   $('btn-labels').onclick = () => print('labels');
   $('btn-sheet').onclick = () => print('sheet');
@@ -1342,7 +1421,7 @@
     const [w, h] = labelDims(); const dpi = 203; const scale = dpi / 96;
     btn.disabled = true; const label = btn.textContent;
     try {
-      btn.textContent = 'Loading art…'; await preloadArt(sets);
+      btn.textContent = 'Loading art…'; await preloadArt(sets); await fontsReady();
       const host = document.createElement('div'); host.style.cssText = 'position:absolute;left:0;top:0;z-index:-1;opacity:1;pointer-events:none;background:#fff;';
       document.body.appendChild(host);
       const zip = new JSZip(); const els = makeLabels(sets);
@@ -1368,7 +1447,7 @@
 
   // ---------- wiring ----------
   const fields = ['target', 'preset', 'cw', 'ch', 'orient', 'pw', 'ph', 'layout', 'pad', 'sym', 'fs', 'mono', 'font', 'tstyle', 'rule',
-    'abbrmode', 'abbrsize', 'icondate', 'codelang', 'numbering', 'special', 'cards', 'paper', 'porient', 'place', 'margin', 'gap', 'guides', 'zoom', 'preview', 'idxShow', 'idxPage', 'cIcon', 'cAbbr', 'cTh', 'cTd', 'tintIcon', 'monoLogos', 'monoCut',
+    'abbrmode', 'abbrsize', 'icondate', 'codelang', 'headings', 'showen', 'numbering', 'special', 'cards', 'paper', 'porient', 'place', 'margin', 'gap', 'guides', 'zoom', 'preview', 'idxShow', 'idxPage', 'cIcon', 'cAbbr', 'cTh', 'cTd', 'tintIcon', 'monoLogos', 'monoCut',
     'monArt', 'monArtMode', 'monNo', 'monTypes', 'monTColor', 'monDex', 'monText', 'monFoot', 'monUnits'];
   const noReset = new Set(['target', 'zoom', 'preview']);
   function bind() {
@@ -1419,12 +1498,13 @@
     const mons = isMons();
     document.querySelectorAll('.modes button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.mode === state.mode)));
     $('set-contents').hidden = mons; $('mon-contents').hidden = !mons;
-    $('type-chips').hidden = $('series-chips').hidden = mons; $('gen-chips').hidden = !mons;
+    $('type-chips').hidden = $('series-chips').hidden = $('langrow').hidden = mons; $('gen-chips').hidden = !mons;
+    document.querySelectorAll('[data-cjk]').forEach(n => { n.hidden = LANG === 'en'; });
     $('monArtModeRow').hidden = !state.mono || !state.monArt; $('monTColorRow').hidden = !!state.mono || !state.monTypes;
     $('q').placeholder = mons ? 'Search name, number, type…' : 'Search set, abbreviation, year…';
     $('q').setAttribute('aria-label', mons ? 'Search Pokémon' : 'Search sets');
     $('list').setAttribute('aria-label', mons ? 'Pokémon' : 'Sets');
-    $('tagline').textContent = mons ? 'Pokémon labels, all 1,025 species' : 'Pokémon TCG set labels, every English expansion';
+    $('tagline').textContent = mons ? 'Pokémon labels, all 1,025 species' : 'Pokémon TCG set labels, every ' + (LANG === 'en' ? 'English' : LANGS[LANG].name) + ' expansion';
     $('tab-pick').textContent = mons ? 'Pokémon' : 'Sets';
     $('btn-sheet').hidden = roll; $('btn-labels').hidden = !roll; $('btn-index').hidden = roll || mons; $('idxopts').hidden = roll || mons;
     [...$('preview').options].forEach(o => { o.hidden = ((o.value === 'sheet' || o.value === 'index') && roll) || (o.value === 'roll' && !roll); });
@@ -1437,7 +1517,7 @@
   $('sel-none').onclick = () => { state[selKey()] = []; save(); renderList(); renderPreview(); };
   $('sel-invert').onclick = () => { const sk = selKey(); const sel = new Set(state[sk]); visible().forEach(s => sel.has(s.i) ? sel.delete(s.i) : sel.add(s.i)); state[sk] = [...sel].sort((a, b) => a - b); save(); renderList(); renderPreview(); };
   $('reset').onclick = () => {
-    const keep = { selected: state.selected, current: state.current, monSel: state.monSel, monCur: state.monCur, mode: state.mode };
+    const keep = { selected: state.selected, current: state.current, series: state.series, copiesBy: state.copiesBy, monSel: state.monSel, monCur: state.monCur, mode: state.mode, lang: state.lang, perLang: state.perLang };
     state = { ...defaults, ...keep }; save(); bind(); syncUI(); renderAll();
   };
   document.querySelectorAll('.modes button').forEach(b => b.onclick = () => {
@@ -1457,9 +1537,40 @@
   let savedTab = 'sets'; try { savedTab = localStorage.getItem('setLabelPress.tab') || 'sets'; } catch (e) { /* ignore */ }
   setTab(savedTab);
   $('snap').textContent = window.POKEMON_SETS_DATE || 'unknown';
-  if (state.current == null) state.current = SETS.findIndex(s => s.abbr === 'TEU');
   if (state.monCur == null) state.monCur = Math.max(0, MONS.findIndex(p => p.n === 25));
-  bind(); syncUI(); renderAll();
+
+  // Each card language keeps its own selection, highlighted set, series filter and copy counts.
+  const PER_LANG = ['selected', 'current', 'series', 'copiesBy'];
+  let langRequest = 0;
+  async function setLanguage(lang, first) {
+    const req = ++langRequest;
+    if (!first) state.perLang = { ...(state.perLang || {}), [LANG]: Object.fromEntries(PER_LANG.map(k => [k, state[k]])) };
+    if (lang !== 'en') $('list').innerHTML = '<div class="loading">Loading ' + LANGS[lang].name + ' sets…</div>';
+    let d;
+    try { d = await datasetFor(lang); }
+    catch (e) {
+      if (req !== langRequest) return;
+      $('list').innerHTML = '<div class="loading">Couldn’t load the ' + LANGS[lang].name + ' set list. Check your connection and pick it again.</div>';
+      if (!first) { $('lang').value = LANG; return; }
+      lang = 'en'; d = await datasetFor('en');
+    }
+    if (req !== langRequest) return;   // a newer pick won the race
+    LANG = lang; LANGDATA = d.meta; SETS = d.sets; state.lang = lang; $('lang').value = lang;
+    if (!first) {
+      const saved = (state.perLang || {})[lang];
+      PER_LANG.forEach(k => { state[k] = saved ? saved[k] : (Array.isArray(defaults[k]) ? [] : defaults[k] && typeof defaults[k] === 'object' ? {} : defaults[k]); });
+    }
+    state.selected = (state.selected || []).filter(i => i < SETS.length);
+    if (state.series && !SETS.some(s => s.series === state.series)) state.series = null;
+    if (state.current == null || !SETS[state.current]) state.current = lang === 'en' ? SETS.findIndex(s => s.abbr === 'TEU') : SETS.length - 1;
+    $('snap').textContent = lang === 'en' ? (window.POKEMON_SETS_DATE || 'unknown') : LANGDATA.date;
+    computeSeries(); save(); syncUI(); renderAll();
+    fontsReady().then(() => { if (req === langRequest) renderPreview(); });
+  }
+  $('lang').addEventListener('change', () => setLanguage($('lang').value));
+  $('lang').value = LANGS[state.lang] ? state.lang : 'en';
+  bind(); syncUI();
+  setLanguage($('lang').value, true);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(renderPreview);
   let rs; window.addEventListener('resize', () => { clearTimeout(rs); rs = setTimeout(renderPreview, 120); });
 })();

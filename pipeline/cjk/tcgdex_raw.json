@@ -1,0 +1,9128 @@
+{
+ "ja": [
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 28,
+    "normal": 176,
+    "official": 102,
+    "reverse": 0,
+    "total": 102
+   },
+   "id": "PMCG1",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "拡張パック",
+   "releaseDate": "1996-10-20",
+   "serie": {
+    "id": "PMCG",
+    "name": "ポケットモンスターカードゲーム"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 16,
+    "normal": 32,
+    "official": 48,
+    "reverse": 0,
+    "total": 48
+   },
+   "id": "PMCG2",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ポケモンジャングル",
+   "releaseDate": "1997-03-05",
+   "serie": {
+    "id": "PMCG",
+    "name": "ポケットモンスターカードゲーム"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 16,
+    "normal": 32,
+    "official": 48,
+    "reverse": 0,
+    "total": 48
+   },
+   "id": "PMCG3",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "化石の秘密",
+   "releaseDate": "1997-06-21",
+   "serie": {
+    "id": "PMCG",
+    "name": "ポケットモンスターカードゲーム"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 17,
+    "normal": 49,
+    "official": 65,
+    "reverse": 0,
+    "total": 65
+   },
+   "id": "PMCG4",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ロケット団",
+   "releaseDate": "1997-11-21",
+   "serie": {
+    "id": "PMCG",
+    "name": "ポケットモンスターカードゲーム"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 16,
+    "normal": 80,
+    "official": 96,
+    "reverse": 0,
+    "total": 96
+   },
+   "id": "PMCG5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "リーダーズスタジアム",
+   "releaseDate": "1998-10-24",
+   "serie": {
+    "id": "PMCG",
+    "name": "ポケットモンスターカードゲーム"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 16,
+    "normal": 83,
+    "official": 98,
+    "reverse": 0,
+    "total": 98
+   },
+   "id": "PMCG6",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "闇からの挑戦",
+   "releaseDate": "1999-06-25",
+   "serie": {
+    "id": "PMCG",
+    "name": "ポケットモンスターカードゲーム"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 16,
+    "normal": 80,
+    "official": 96,
+    "reverse": 0,
+    "total": 96
+   },
+   "id": "neo1",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "金、銀、新世界へ...",
+   "releaseDate": "2000-02-04",
+   "serie": {
+    "id": "neo",
+    "name": "ポケモンカード★neo"
+   },
+   "symbol": "https://assets.tcgdex.net/univ/neo/neo1/symbol"
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 20,
+    "normal": 37,
+    "official": 56,
+    "reverse": 0,
+    "total": 57
+   },
+   "id": "neo2",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "遺跡をこえて...",
+   "releaseDate": "2000-07-07",
+   "serie": {
+    "id": "neo",
+    "name": "ポケモンカード★neo"
+   },
+   "symbol": "https://assets.tcgdex.net/univ/neo/neo2/symbol"
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 17,
+    "normal": 38,
+    "official": 57,
+    "reverse": 0,
+    "total": 57
+   },
+   "id": "neo3",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "めざめる伝説",
+   "releaseDate": "2000-11-23",
+   "serie": {
+    "id": "neo",
+    "name": "ポケモンカード★neo"
+   },
+   "symbol": "https://assets.tcgdex.net/univ/neo/neo3/symbol"
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 16,
+    "normal": 82,
+    "official": 113,
+    "reverse": 0,
+    "total": 113
+   },
+   "id": "neo4",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "闇、そして光へ...",
+   "releaseDate": "2001-04-20",
+   "serie": {
+    "id": "neo",
+    "name": "ポケモンカード★neo"
+   },
+   "symbol": "https://assets.tcgdex.net/univ/neo/neo4/symbol"
+  },
+  {
+   "cardCount": {
+    "firstEd": 142,
+    "holo": 26,
+    "normal": 258,
+    "official": 141,
+    "reverse": 0,
+    "total": 143
+   },
+   "id": "VS1",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ポケモンカード★VS",
+   "releaseDate": "2001-07-19",
+   "serie": {
+    "id": "VS",
+    "name": "VS"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 16,
+    "normal": 78,
+    "official": 48,
+    "reverse": 0,
+    "total": 48
+   },
+   "id": "web1",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ポケモンカード★web",
+   "releaseDate": "2001-10-20",
+   "serie": {
+    "id": "web",
+    "name": "web"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 54,
+    "normal": 202,
+    "official": 128,
+    "reverse": 0,
+    "total": 128
+   },
+   "id": "E1",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "基本拡張パック",
+   "releaseDate": "2001-12-01",
+   "serie": {
+    "id": "e",
+    "name": "ポケモンカードe"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 44,
+    "normal": 164,
+    "official": 92,
+    "reverse": 0,
+    "total": 92
+   },
+   "id": "E2",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "地図にない町",
+   "releaseDate": "2002-03-08",
+   "serie": {
+    "id": "e",
+    "name": "ポケモンカードe"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 22,
+    "normal": 163,
+    "official": 87,
+    "reverse": 0,
+    "total": 90
+   },
+   "id": "E3",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "海からの風",
+   "releaseDate": "2002-05-24",
+   "serie": {
+    "id": "e",
+    "name": "ポケモンカードe"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 26,
+    "normal": 156,
+    "official": 88,
+    "reverse": 0,
+    "total": 91
+   },
+   "id": "E4",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "裂けた大地",
+   "releaseDate": "2002-08-23",
+   "serie": {
+    "id": "e",
+    "name": "ポケモンカードe"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 22,
+    "normal": 160,
+    "official": 88,
+    "reverse": 0,
+    "total": 91
+   },
+   "id": "E5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "神秘なる山",
+   "releaseDate": "2002-10-04",
+   "serie": {
+    "id": "e",
+    "name": "ポケモンカードe"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 55,
+    "reverse": 0,
+    "total": 55
+   },
+   "id": "ADV1",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "拡張パック",
+   "releaseDate": "2003-01-31",
+   "serie": {
+    "id": "ADV",
+    "name": "ADV"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 53,
+    "reverse": 0,
+    "total": 53
+   },
+   "id": "ADV2",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "砂漠のきせき",
+   "releaseDate": "2003-04-18",
+   "serie": {
+    "id": "ADV",
+    "name": "ADV"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 54,
+    "reverse": 0,
+    "total": 54
+   },
+   "id": "ADV3",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "天空の覇者",
+   "releaseDate": "2003-06-25",
+   "serie": {
+    "id": "ADV",
+    "name": "ADV"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 80,
+    "reverse": 0,
+    "total": 80
+   },
+   "id": "ADV4",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "強化拡張パックex1マグマVSアクア ふたつの野望",
+   "releaseDate": "2003-10-24",
+   "serie": {
+    "id": "ADV",
+    "name": "ADV"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 83,
+    "reverse": 0,
+    "total": 83
+   },
+   "id": "ADV5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "とかれた封印",
+   "releaseDate": "2004-01-16",
+   "serie": {
+    "id": "ADV",
+    "name": "ADV"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 18,
+    "normal": 146,
+    "official": 82,
+    "reverse": 0,
+    "total": 82
+   },
+   "id": "PCG1",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "伝説の飛翔",
+   "releaseDate": "2004-04-09",
+   "serie": {
+    "id": "PCG",
+    "name": "PCG"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 26,
+    "normal": 138,
+    "official": 82,
+    "reverse": 0,
+    "total": 82
+   },
+   "id": "PCG2",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "蒼空の激突",
+   "releaseDate": "2004-07-01",
+   "serie": {
+    "id": "PCG",
+    "name": "PCG"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 18,
+    "normal": 152,
+    "official": 84,
+    "reverse": 0,
+    "total": 85
+   },
+   "id": "PCG3",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ロケット団の逆襲",
+   "releaseDate": "2004-10-15",
+   "serie": {
+    "id": "PCG",
+    "name": "PCG"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 32,
+    "normal": 180,
+    "official": 106,
+    "reverse": 0,
+    "total": 106
+   },
+   "id": "PCG4",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "金の空、銀の海",
+   "releaseDate": "2005-04-08",
+   "serie": {
+    "id": "PCG",
+    "name": "PCG"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 18,
+    "normal": 154,
+    "official": 86,
+    "reverse": 0,
+    "total": 86
+   },
+   "id": "PCG5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "まぼろしの森",
+   "releaseDate": "2005-06-30",
+   "serie": {
+    "id": "PCG",
+    "name": "PCG"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 20,
+    "normal": 152,
+    "official": 86,
+    "reverse": 0,
+    "total": 86
+   },
+   "id": "PCG6",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ホロンの研究塔",
+   "releaseDate": "2005-10-28",
+   "serie": {
+    "id": "PCG",
+    "name": "PCG"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 18,
+    "normal": 86,
+    "official": 52,
+    "reverse": 0,
+    "total": 52
+   },
+   "id": "PCG7",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ホロンの幻影",
+   "releaseDate": "2006-01-27",
+   "serie": {
+    "id": "PCG",
+    "name": "PCG"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 30,
+    "normal": 120,
+    "official": 75,
+    "reverse": 0,
+    "total": 75
+   },
+   "id": "PCG8",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "きせきの結晶",
+   "releaseDate": "2006-03-10",
+   "serie": {
+    "id": "PCG",
+    "name": "PCG"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 24,
+    "normal": 112,
+    "official": 68,
+    "reverse": 0,
+    "total": 68
+   },
+   "id": "PCG9",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "さいはての攻防",
+   "releaseDate": "2006-06-29",
+   "serie": {
+    "id": "PCG",
+    "name": "PCG"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 108,
+    "reverse": 0,
+    "total": 108
+   },
+   "id": "PCG10",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ワールドチャンピオンズパック",
+   "releaseDate": "2007-07-05",
+   "serie": {
+    "id": "PCG",
+    "name": "PCG"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "L1a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ハートゴールドコレクション",
+   "releaseDate": "2009-10-09",
+   "serie": {
+    "id": "L",
+    "name": "LEGEND"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "L1b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ソウルシルバーコレクション",
+   "releaseDate": "2009-10-09",
+   "serie": {
+    "id": "L",
+    "name": "LEGEND"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "L2",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "よみがえる伝説",
+   "releaseDate": "2010-02-11",
+   "serie": {
+    "id": "L",
+    "name": "LEGEND"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 40,
+    "reverse": 0,
+    "total": 40
+   },
+   "id": "LL",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "強化パック ロストリンク",
+   "releaseDate": "2010-04-16",
+   "serie": {
+    "id": "L",
+    "name": "LEGEND"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "L3",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "頂上大激突",
+   "releaseDate": "2010-07-08",
+   "serie": {
+    "id": "L",
+    "name": "LEGEND"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 60,
+    "reverse": 0,
+    "total": 60
+   },
+   "id": "XY1b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "コレクションY",
+   "releaseDate": "2013-12-13",
+   "serie": {
+    "id": "XY",
+    "name": "XY"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 60,
+    "reverse": 0,
+    "total": 60
+   },
+   "id": "XY1a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "コレクションX",
+   "releaseDate": "2013-12-13",
+   "serie": {
+    "id": "XY",
+    "name": "XY"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 80,
+    "reverse": 0,
+    "total": 80
+   },
+   "id": "XY2",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ワイルドブレイズ",
+   "releaseDate": "2014-03-15",
+   "serie": {
+    "id": "XY",
+    "name": "XY"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 96,
+    "reverse": 0,
+    "total": 96
+   },
+   "id": "XY3",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ライジングフィスト",
+   "releaseDate": "2014-09-13",
+   "serie": {
+    "id": "XY",
+    "name": "XY"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 88,
+    "reverse": 0,
+    "total": 88
+   },
+   "id": "XY4",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ファントムゲート",
+   "releaseDate": "2014-09-13",
+   "serie": {
+    "id": "XY",
+    "name": "XY"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "XY5a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ガイアボルケーノ",
+   "releaseDate": "2014-12-13",
+   "serie": {
+    "id": "XY",
+    "name": "XY"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "XY5b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "タイダルストーム",
+   "releaseDate": "2014-12-13",
+   "serie": {
+    "id": "XY",
+    "name": "XY"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 8,
+    "normal": 26,
+    "official": 34,
+    "reverse": 0,
+    "total": 34
+   },
+   "id": "CP1",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "マグマ団VSアクア団 ダブルクライシス",
+   "releaseDate": "2015-01-30",
+   "serie": {
+    "id": "XY",
+    "name": "XY"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 78,
+    "reverse": 0,
+    "total": 78
+   },
+   "id": "XY6",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "エメラルドブレイク",
+   "releaseDate": "2015-03-14",
+   "serie": {
+    "id": "XY",
+    "name": "XY"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 81,
+    "reverse": 0,
+    "total": 81
+   },
+   "id": "XY7",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "バンデットリング",
+   "releaseDate": "2015-06-20",
+   "serie": {
+    "id": "XY",
+    "name": "XY"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 12,
+    "normal": 15,
+    "official": 27,
+    "reverse": 0,
+    "total": 27
+   },
+   "id": "CP2",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "伝説キラコレクション",
+   "releaseDate": "2015-07-18",
+   "serie": {
+    "id": "XY",
+    "name": "XY"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 59,
+    "reverse": 0,
+    "total": 59
+   },
+   "id": "XY8a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "青い衝撃",
+   "releaseDate": "2015-09-26",
+   "serie": {
+    "id": "XYb",
+    "name": "XY BREAK"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 59,
+    "reverse": 0,
+    "total": 59
+   },
+   "id": "XY8b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "赤い閃光",
+   "releaseDate": "2015-09-26",
+   "serie": {
+    "id": "XYb",
+    "name": "XY BREAK"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 80,
+    "reverse": 0,
+    "total": 80
+   },
+   "id": "XY9",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "破天の怒り",
+   "releaseDate": "2015-12-11",
+   "serie": {
+    "id": "XYb",
+    "name": "XY BREAK"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 32,
+    "reverse": 0,
+    "total": 32
+   },
+   "id": "CP3",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ポケキュンコレクション",
+   "releaseDate": "2016-01-29",
+   "serie": {
+    "id": "XYb",
+    "name": "XY BREAK"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 78,
+    "reverse": 0,
+    "total": 78
+   },
+   "id": "XY10",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "めざめる超王",
+   "releaseDate": "2016-03-18",
+   "serie": {
+    "id": "XYb",
+    "name": "XY BREAK"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 131,
+    "reverse": 0,
+    "total": 131
+   },
+   "id": "CP4",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "プレミアムチャンピオンパック EX×M×BREAK",
+   "releaseDate": "2016-04-16",
+   "serie": {
+    "id": "XYb",
+    "name": "XY BREAK"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 54,
+    "reverse": 0,
+    "total": 54
+   },
+   "id": "XY11b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "冷酷の反逆者",
+   "releaseDate": "2016-06-17",
+   "serie": {
+    "id": "XYb",
+    "name": "XY BREAK"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 54,
+    "reverse": 0,
+    "total": 54
+   },
+   "id": "XY11a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "爆熱の闘士",
+   "releaseDate": "2016-06-17",
+   "serie": {
+    "id": "XYb",
+    "name": "XY BREAK"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 36,
+    "reverse": 0,
+    "total": 36
+   },
+   "id": "CP5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "冷酷の反逆者",
+   "releaseDate": "2016-07-16",
+   "serie": {
+    "id": "XYb",
+    "name": "XY BREAK"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 87,
+    "reverse": 0,
+    "total": 87
+   },
+   "id": "CP6",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ポケットモンスターカードゲーム 拡張パック 20th Anniversary",
+   "releaseDate": "2016-09-16",
+   "serie": {
+    "id": "XYb",
+    "name": "XY BREAK"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 4,
+    "reverse": 0,
+    "total": 4
+   },
+   "id": "SM0",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ピカチュウと新しい仲間たち",
+   "releaseDate": "2016-11-18",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 25,
+    "normal": 48,
+    "official": 60,
+    "reverse": 0,
+    "total": 73
+   },
+   "id": "SM1S",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "コレクションサン",
+   "releaseDate": "2016-12-09",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 25,
+    "normal": 48,
+    "official": 60,
+    "reverse": 0,
+    "total": 73
+   },
+   "id": "SM1M",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "コレクションムーン",
+   "releaseDate": "2016-12-09",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 51,
+    "reverse": 0,
+    "total": 51
+   },
+   "id": "SM1+",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "サン＆ムーン",
+   "releaseDate": "2017-01-27",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 22,
+    "normal": 40,
+    "official": 50,
+    "reverse": 0,
+    "total": 62
+   },
+   "id": "SM2L",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "アローラの月光",
+   "releaseDate": "2017-03-17",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 21,
+    "normal": 40,
+    "official": 50,
+    "reverse": 0,
+    "total": 61
+   },
+   "id": "SM2K",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "キミを待つ島々",
+   "releaseDate": "2017-03-17",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 49,
+    "reverse": 0,
+    "total": 49
+   },
+   "id": "sm2+",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "新たなる試練の向こう",
+   "releaseDate": "2017-04-21",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 23,
+    "normal": 41,
+    "official": 51,
+    "reverse": 0,
+    "total": 64
+   },
+   "id": "SM3H",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "闘う虹を見たか",
+   "releaseDate": "2017-06-16",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 23,
+    "normal": 41,
+    "official": 51,
+    "reverse": 0,
+    "total": 64
+   },
+   "id": "SM3N",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "光を喰らう闇",
+   "releaseDate": "2017-06-16",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 72,
+    "reverse": 0,
+    "total": 72
+   },
+   "id": "SM3+",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ひかる伝説",
+   "releaseDate": "2017-07-15",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 23,
+    "normal": 39,
+    "official": 50,
+    "reverse": 0,
+    "total": 62
+   },
+   "id": "SM4S",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "覚醒の勇者",
+   "releaseDate": "2017-09-15",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 22,
+    "normal": 39,
+    "official": 50,
+    "reverse": 0,
+    "total": 61
+   },
+   "id": "SM4A",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "超次元の暴獣",
+   "releaseDate": "2017-09-15",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 114,
+    "reverse": 0,
+    "total": 114
+   },
+   "id": "SM4+",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "GXバトルブースト",
+   "releaseDate": "2017-10-20",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 26,
+    "normal": 52,
+    "official": 66,
+    "reverse": 0,
+    "total": 78
+   },
+   "id": "SM5S",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ウルトラサン",
+   "releaseDate": "2017-12-08",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 26,
+    "normal": 52,
+    "official": 66,
+    "reverse": 0,
+    "total": 78
+   },
+   "id": "SM5M",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ウルトラムーン",
+   "releaseDate": "2017-12-08",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 50,
+    "reverse": 0,
+    "total": 50
+   },
+   "id": "SM5+",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ウルトラフォース",
+   "releaseDate": "2018-01-19",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 34,
+    "normal": 76,
+    "official": 94,
+    "reverse": 0,
+    "total": 110
+   },
+   "id": "SM6",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "禁断の光",
+   "releaseDate": "2018-03-02",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 26,
+    "normal": 40,
+    "official": 53,
+    "reverse": 0,
+    "total": 66
+   },
+   "id": "SM6a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ドラゴンストーム",
+   "releaseDate": "2018-04-06",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 35,
+    "normal": 51,
+    "official": 66,
+    "reverse": 0,
+    "total": 86
+   },
+   "id": "SM6b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "チャンピオンロード",
+   "releaseDate": "2018-05-30",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 34,
+    "normal": 78,
+    "official": 96,
+    "reverse": 0,
+    "total": 112
+   },
+   "id": "SM7",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "裂空のカリスマ",
+   "releaseDate": "2018-06-01",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 25,
+    "normal": 38,
+    "official": 50,
+    "reverse": 0,
+    "total": 63
+   },
+   "id": "SM7b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "フェアリーライズ",
+   "releaseDate": "2018-08-03",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 26,
+    "normal": 47,
+    "official": 50,
+    "reverse": 0,
+    "total": 73
+   },
+   "id": "SM7a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "迅雷スパーク",
+   "releaseDate": "2018-08-03",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 34,
+    "normal": 77,
+    "official": 95,
+    "reverse": 0,
+    "total": 111
+   },
+   "id": "SM8",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "超爆インパクト",
+   "releaseDate": "2018-09-07",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 125,
+    "normal": 125,
+    "official": 150,
+    "reverse": 0,
+    "total": 250
+   },
+   "id": "SM8b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "GXウルトラシャイニー",
+   "releaseDate": "2018-10-05",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 26,
+    "normal": 39,
+    "official": 52,
+    "reverse": 0,
+    "total": 65
+   },
+   "id": "SM8a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ダークオーダー",
+   "releaseDate": "2018-10-05",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 43,
+    "normal": 75,
+    "official": 95,
+    "reverse": 0,
+    "total": 118
+   },
+   "id": "SM9",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "タッグボルト",
+   "releaseDate": "2018-12-07",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 30,
+    "normal": 40,
+    "official": 55,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "SM9a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ナイトユニゾン",
+   "releaseDate": "2019-01-11",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 30,
+    "normal": 39,
+    "official": 54,
+    "reverse": 0,
+    "total": 69
+   },
+   "id": "SM9b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "フルメタルウォール",
+   "releaseDate": "2019-02-01",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 41,
+    "normal": 75,
+    "official": 95,
+    "reverse": 0,
+    "total": 116
+   },
+   "id": "SM10",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ダブルブレイズ",
+   "releaseDate": "2019-03-01",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 30,
+    "normal": 39,
+    "official": 54,
+    "reverse": 0,
+    "total": 69
+   },
+   "id": "SM10a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ジージーエンド",
+   "releaseDate": "2019-04-05",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 24,
+    "reverse": 0,
+    "total": 24
+   },
+   "id": "SMP2",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "名探偵ピカチュウ",
+   "releaseDate": "2019-04-26",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 30,
+    "normal": 39,
+    "official": 56,
+    "reverse": 0,
+    "total": 69
+   },
+   "id": "SM10b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "スカイレジェンド",
+   "releaseDate": "2019-04-26",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 41,
+    "normal": 74,
+    "official": 94,
+    "reverse": 0,
+    "total": 115
+   },
+   "id": "SM11",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ミラクルツイン",
+   "releaseDate": "2019-05-31",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 31,
+    "normal": 49,
+    "official": 64,
+    "reverse": 0,
+    "total": 80
+   },
+   "id": "SM11a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "リミックスバウト",
+   "releaseDate": "2019-07-05",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 37,
+    "normal": 38,
+    "official": 49,
+    "reverse": 0,
+    "total": 75
+   },
+   "id": "SM11b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ドリームリーグ",
+   "releaseDate": "2019-08-02",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 42,
+    "normal": 75,
+    "official": 95,
+    "reverse": 0,
+    "total": 117
+   },
+   "id": "SM12",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "オルタージェネシス",
+   "releaseDate": "2019-09-06",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 92,
+    "normal": 134,
+    "official": 173,
+    "reverse": 0,
+    "total": 226
+   },
+   "id": "SM12a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "TAG TEAM GX タッグオールスターズ",
+   "releaseDate": "2019-10-04",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 60,
+    "reverse": 0,
+    "total": 60
+   },
+   "id": "S1W",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ソード",
+   "releaseDate": "2019-12-06",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 60,
+    "reverse": 0,
+    "total": 60
+   },
+   "id": "S1H",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "シールド",
+   "releaseDate": "2019-12-06",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "S1a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "VMAXライジング",
+   "releaseDate": "2020-02-07",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 96,
+    "reverse": 0,
+    "total": 96
+   },
+   "id": "S2",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "反逆クラッシュ",
+   "releaseDate": "2020-03-06",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 100,
+    "reverse": 0,
+    "total": 100
+   },
+   "id": "S3",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ムゲンゾーン",
+   "releaseDate": "2020-06-05",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 76,
+    "reverse": 0,
+    "total": 76
+   },
+   "id": "S3a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "伝説の鼓動",
+   "releaseDate": "2020-07-10",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS2b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "トリプレットビート",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS2.5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "トリプレットビート",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS4",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "トリプレットビート",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS1.5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "トリプレットビート",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS3.5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "トリプレットビート",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS3b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "トリプレットビート",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS2a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "トリプレットビート",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS3a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "トリプレットビート",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS4a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "トリプレットビート",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS1a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "トリプレットビート",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS1b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "トリプレットビート",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS4b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "トリプレットビート",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CSA",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "トリプレットビート",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS3D",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "トリプレットビート",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS4Da",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "トリプレットビート",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "S5a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "双璧のファイター",
+   "releaseDate": "2021-03-19",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 42,
+    "normal": 53,
+    "official": 70,
+    "reverse": 0,
+    "total": 95
+   },
+   "id": "S6K",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "漆黒のガイスト",
+   "releaseDate": "2021-04-23",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 145,
+    "normal": 140,
+    "official": 184,
+    "reverse": 110,
+    "total": 285
+   },
+   "id": "S8b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "VMAXクライマックス",
+   "releaseDate": "2021-12-03",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 190,
+    "reverse": 0,
+    "total": 190
+   },
+   "id": "S4a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "シャイニースターV",
+   "releaseDate": "2020-11-20",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 71,
+    "reverse": 0,
+    "total": 71
+   },
+   "id": "S10b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "Pokémon GO",
+   "releaseDate": "2022-06-17",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 67,
+    "reverse": 0,
+    "total": 67
+   },
+   "id": "S10D",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "タイムゲイザー",
+   "releaseDate": "2022-04-08",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 139,
+    "normal": 119,
+    "official": 172,
+    "reverse": 89,
+    "total": 258
+   },
+   "id": "S12a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "VSTARユニバース",
+   "releaseDate": "2022-12-02",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 48,
+    "normal": 45,
+    "official": 67,
+    "reverse": 45,
+    "total": 93
+   },
+   "id": "S9a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "バトルリージョン",
+   "releaseDate": "2022-02-25",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 38,
+    "normal": 53,
+    "official": 70,
+    "reverse": 0,
+    "total": 91
+   },
+   "id": "S5I",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "一撃マスター",
+   "releaseDate": "2021-01-22",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 50,
+    "normal": 49,
+    "official": 71,
+    "reverse": 49,
+    "total": 99
+   },
+   "id": "S10a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ダークファンタズマ",
+   "releaseDate": "2022-05-13",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 28,
+    "reverse": 0,
+    "total": 28
+   },
+   "id": "S8a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "25th アニバーサリーコレクション",
+   "releaseDate": "2021-10-22",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 42,
+    "normal": 53,
+    "official": 70,
+    "reverse": 0,
+    "total": 95
+   },
+   "id": "S6H",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "白銀のランス",
+   "releaseDate": "2021-04-23",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 49,
+    "normal": 78,
+    "official": 100,
+    "reverse": 0,
+    "total": 127
+   },
+   "id": "S11",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ロストアビス",
+   "releaseDate": "2022-07-15",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 48,
+    "normal": 46,
+    "official": 68,
+    "reverse": 46,
+    "total": 94
+   },
+   "id": "S11a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "白熱のアルカナ",
+   "releaseDate": "2022-09-02",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 67,
+    "reverse": 0,
+    "total": 67
+   },
+   "id": "S7R",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "蒼空ストリーム",
+   "releaseDate": "2021-07-09",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 49,
+    "normal": 78,
+    "official": 100,
+    "reverse": 0,
+    "total": 127
+   },
+   "id": "S9",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "スターバース",
+   "releaseDate": "2022-01-14",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "S5R",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "連撃マスター",
+   "releaseDate": "2021-01-22",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "S2a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "爆炎ウォーカー",
+   "releaseDate": "2020-04-24",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 40,
+    "normal": 50,
+    "official": 67,
+    "reverse": 0,
+    "total": 90
+   },
+   "id": "S7D",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "摩天パーフェクト",
+   "releaseDate": "2021-07-09",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 100,
+    "reverse": 0,
+    "total": 100
+   },
+   "id": "S4",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "仰天のボルテッカー",
+   "releaseDate": "2020-09-18",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 69,
+    "reverse": 0,
+    "total": 69
+   },
+   "id": "S6a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "イーブイヒーローズ",
+   "releaseDate": "2021-05-28",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 51,
+    "normal": 78,
+    "official": 100,
+    "reverse": 0,
+    "total": 129
+   },
+   "id": "S8",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "フュージョンアーツ",
+   "releaseDate": "2021-09-24",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 49,
+    "normal": 76,
+    "official": 98,
+    "reverse": 0,
+    "total": 125
+   },
+   "id": "S12",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "パラダイムトリガー",
+   "releaseDate": "2022-10-21",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 38,
+    "normal": 50,
+    "official": 67,
+    "reverse": 0,
+    "total": 88
+   },
+   "id": "S10P",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "スペースジャグラー",
+   "releaseDate": "2022-04-08",
+   "serie": {
+    "id": "S",
+    "name": "剣と盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 44,
+    "normal": 64,
+    "official": 78,
+    "reverse": 0,
+    "total": 108
+   },
+   "id": "SV1V",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "バイオレットex",
+   "releaseDate": "2023-01-20",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 18,
+    "normal": 114,
+    "official": 100,
+    "reverse": 0,
+    "total": 132
+   },
+   "id": "SV9",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "バトルパートナーズ",
+   "releaseDate": "2025-01-24",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 104,
+    "normal": 70,
+    "official": 174,
+    "reverse": 152,
+    "total": 174
+   },
+   "id": "SV11B",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ブラックボルト",
+   "releaseDate": "2025-06-06",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 43,
+    "normal": 52,
+    "official": 66,
+    "reverse": 0,
+    "total": 95
+   },
+   "id": "SV4M",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "未来の一閃",
+   "releaseDate": "2023-10-27",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 189,
+    "normal": 131,
+    "official": 190,
+    "reverse": 93,
+    "total": 320
+   },
+   "id": "SV4a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "レイジングサーフ",
+   "releaseDate": "2023-12-01",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 288,
+    "official": 0,
+    "reverse": 0,
+    "total": 288
+   },
+   "id": "SV-P",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "スカーレット&バイオレット プロモカード",
+   "releaseDate": "2022-11-29",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 52,
+    "normal": 81,
+    "official": 101,
+    "reverse": 0,
+    "total": 133
+   },
+   "id": "SV6",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "変幻の仮面",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 44,
+    "normal": 48,
+    "official": 62,
+    "reverse": 0,
+    "total": 92
+   },
+   "id": "SV3a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "レイジングサーフ",
+   "releaseDate": "2023-09-22",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 46,
+    "normal": 48,
+    "official": 64,
+    "reverse": 0,
+    "total": 94
+   },
+   "id": "SV6a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ナイトワンダラー",
+   "releaseDate": "2024-06-07",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 63,
+    "reverse": 0,
+    "total": 92
+   },
+   "id": "SV9a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "熱風のアリーナ",
+   "releaseDate": "2025-03-14",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 51,
+    "normal": 90,
+    "official": 108,
+    "reverse": 0,
+    "total": 141
+   },
+   "id": "SV3",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "黒炎の支配者",
+   "releaseDate": "2023-07-28",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 46,
+    "normal": 50,
+    "official": 66,
+    "reverse": 0,
+    "total": 96
+   },
+   "id": "SV5a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "クリムゾンヘイズ",
+   "releaseDate": "2024-03-22",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 35,
+    "normal": 202,
+    "official": 187,
+    "reverse": 248,
+    "total": 237
+   },
+   "id": "SV8a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "テラスタルフェスex",
+   "releaseDate": "2024-12-06",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 44,
+    "normal": 59,
+    "official": 73,
+    "reverse": 0,
+    "total": 103
+   },
+   "id": "SV1a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "トリプレットビート",
+   "releaseDate": "2023-03-10",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 22,
+    "reverse": 0,
+    "total": 22
+   },
+   "id": "SVLN",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "スターターセット テラスタイプ：ステラ ニンフィアex",
+   "releaseDate": "2024-08-30",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 22,
+    "reverse": 0,
+    "total": 22
+   },
+   "id": "SVLS",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "スターターセット テラスタイプ：ステラ ソウブレイズex",
+   "releaseDate": "2024-08-30",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 44,
+    "reverse": 0,
+    "total": 44
+   },
+   "id": "SVK",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "デッキビルドBOX ステラミラクル",
+   "releaseDate": "2024-07-19",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 42,
+    "normal": 57,
+    "official": 71,
+    "reverse": 0,
+    "total": 99
+   },
+   "id": "SV2P",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "スノーハザード",
+   "releaseDate": "2023-04-14",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 17,
+    "normal": 118,
+    "official": 102,
+    "reverse": 0,
+    "total": 135
+   },
+   "id": "SV7",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ステラミラクル",
+   "releaseDate": "2024-07-19",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 82,
+    "normal": 128,
+    "official": 165,
+    "reverse": 306,
+    "total": 210
+   },
+   "id": "SV2a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ポケモンカード151",
+   "releaseDate": "2023-06-16",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 45,
+    "normal": 55,
+    "official": 71,
+    "reverse": 0,
+    "total": 100
+   },
+   "id": "SV5M",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "サイバージャッジ",
+   "releaseDate": "2024-01-26",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 52,
+    "normal": 80,
+    "official": 98,
+    "reverse": 0,
+    "total": 132
+   },
+   "id": "SV10",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ロケット団の栄光",
+   "releaseDate": "2025-04-18",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 51,
+    "normal": 86,
+    "official": 106,
+    "reverse": 0,
+    "total": 138
+   },
+   "id": "SV8",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "超電ブレイカー",
+   "releaseDate": "2024-10-18",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 13,
+    "normal": 81,
+    "official": 64,
+    "reverse": 0,
+    "total": 94
+   },
+   "id": "SV7a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "楽園ドラゴーナ",
+   "releaseDate": "2024-09-13",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 44,
+    "normal": 64,
+    "official": 78,
+    "reverse": 0,
+    "total": 108
+   },
+   "id": "SV1S",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "スカーレットex",
+   "releaseDate": "2023-01-20",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 43,
+    "normal": 52,
+    "official": 66,
+    "reverse": 0,
+    "total": 95
+   },
+   "id": "SV4K",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "古代の咆哮",
+   "releaseDate": "2023-10-27",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 102,
+    "normal": 72,
+    "official": 86,
+    "reverse": 152,
+    "total": 174
+   },
+   "id": "SV11W",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ホワイトフレア",
+   "releaseDate": "2025-06-06",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 42,
+    "normal": 57,
+    "official": 71,
+    "reverse": 0,
+    "total": 99
+   },
+   "id": "SV2D",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "クレイバースト",
+   "releaseDate": "2023-04-14",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 45,
+    "normal": 55,
+    "official": 71,
+    "reverse": 0,
+    "total": 100
+   },
+   "id": "SV5K",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ワイルドフォース",
+   "releaseDate": "2024-01-26",
+   "serie": {
+    "id": "SV",
+    "name": "ポケモンカードゲーム スカーレット&バイオレット"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 22,
+    "normal": 43,
+    "official": 49,
+    "reverse": 0,
+    "total": 65
+   },
+   "id": "SM2p",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "新たなる試練の向こう",
+   "releaseDate": "2017-04-21",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 34,
+    "normal": 48,
+    "official": 72,
+    "reverse": 0,
+    "total": 82
+   },
+   "id": "SM3p",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ひかる伝説",
+   "releaseDate": "2017-07-15",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 24,
+    "normal": 44,
+    "official": 51,
+    "reverse": 0,
+    "total": 68
+   },
+   "id": "SM1p",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "サン＆ムーン",
+   "releaseDate": "2017-01-27",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 19,
+    "normal": 44,
+    "official": 50,
+    "reverse": 0,
+    "total": 63
+   },
+   "id": "SM5p",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ウルトラフォース",
+   "releaseDate": "2018-01-19",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 29,
+    "normal": 96,
+    "official": 114,
+    "reverse": 0,
+    "total": 125
+   },
+   "id": "SM4p",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "GXバトルブースト",
+   "releaseDate": "2017-10-20",
+   "serie": {
+    "id": "SM",
+    "name": "サン＆ムーン"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 40,
+    "normal": 52,
+    "official": 63,
+    "reverse": 0,
+    "total": 92
+   },
+   "id": "M1L",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "メガブレイブ",
+   "releaseDate": "2025-08-01",
+   "serie": {
+    "id": "M",
+    "name": "ポケモンカードゲーム MEGA"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 84,
+    "normal": 166,
+    "official": 193,
+    "reverse": 236,
+    "total": 250
+   },
+   "id": "M2a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "MEGAドリームex",
+   "releaseDate": "2025-11-28",
+   "serie": {
+    "id": "M",
+    "name": "ポケモンカードゲーム MEGA"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 53,
+    "normal": 64,
+    "official": 80,
+    "reverse": 0,
+    "total": 117
+   },
+   "id": "M3",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ムニキスゼロ",
+   "releaseDate": "2026-01-23",
+   "serie": {
+    "id": "M",
+    "name": "ポケモンカードゲーム MEGA"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 53,
+    "normal": 60,
+    "official": 76,
+    "reverse": 0,
+    "total": 113
+   },
+   "id": "M6",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ストームエメラルダ",
+   "releaseDate": "2026-07-31",
+   "serie": {
+    "id": "M",
+    "name": "ポケモンカードゲーム MEGA"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 53,
+    "normal": 65,
+    "official": 81,
+    "reverse": 0,
+    "total": 118
+   },
+   "id": "M5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "アビスアイ",
+   "releaseDate": "2026-05-22",
+   "serie": {
+    "id": "M",
+    "name": "ポケモンカードゲーム MEGA"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 774,
+    "official": 742,
+    "reverse": 0,
+    "total": 774
+   },
+   "id": "MC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "スタートデッキ100 バトルコレクション",
+   "releaseDate": "2025-12-19",
+   "serie": {
+    "id": "M",
+    "name": "ポケモンカードゲーム MEGA"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 132,
+    "official": 0,
+    "reverse": 0,
+    "total": 132
+   },
+   "id": "M-P",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "メガ プロモカード",
+   "releaseDate": "2025-07-28",
+   "serie": {
+    "id": "M",
+    "name": "ポケモンカードゲーム MEGA"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 52,
+    "normal": 64,
+    "official": 80,
+    "reverse": 0,
+    "total": 116
+   },
+   "id": "M2",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "インフェルノX",
+   "releaseDate": "2025-09-26",
+   "serie": {
+    "id": "M",
+    "name": "ポケモンカードゲーム MEGA"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 40,
+    "normal": 52,
+    "official": 63,
+    "reverse": 0,
+    "total": 92
+   },
+   "id": "M1S",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "メガシンフォニア",
+   "releaseDate": "2025-08-01",
+   "serie": {
+    "id": "M",
+    "name": "ポケモンカードゲーム MEGA"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 53,
+    "normal": 67,
+    "official": 83,
+    "reverse": 0,
+    "total": 120
+   },
+   "id": "M4",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ニンジャスピナー",
+   "releaseDate": "2026-03-13",
+   "serie": {
+    "id": "M",
+    "name": "ポケモンカードゲーム MEGA"
+   }
+  }
+ ],
+ "ko": [
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 60,
+    "reverse": 0,
+    "total": 60
+   },
+   "id": "SM1S",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "썬 컬렉션",
+   "releaseDate": "2016-12-09",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 60,
+    "reverse": 0,
+    "total": 60
+   },
+   "id": "SM1M",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "문 컬렉션",
+   "releaseDate": "2016-12-09",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 51,
+    "reverse": 0,
+    "total": 51
+   },
+   "id": "SM1+",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "썬&문",
+   "releaseDate": "2017-01-27",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 50,
+    "reverse": 0,
+    "total": 50
+   },
+   "id": "SM2L",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "알로라의 달빛",
+   "releaseDate": "2017-03-17",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 50,
+    "reverse": 0,
+    "total": 50
+   },
+   "id": "SM2K",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "알로라의 햇빛",
+   "releaseDate": "2017-03-17",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 51,
+    "reverse": 0,
+    "total": 51
+   },
+   "id": "SM3H",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "어둠을 밝힌 무지개",
+   "releaseDate": "2017-06-16",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 51,
+    "reverse": 0,
+    "total": 51
+   },
+   "id": "SM3N",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "빛을 삼킨 어둠",
+   "releaseDate": "2017-06-16",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 72,
+    "reverse": 0,
+    "total": 72
+   },
+   "id": "SM3+",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "빛나는 전설",
+   "releaseDate": "2017-07-15",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 50,
+    "reverse": 0,
+    "total": 50
+   },
+   "id": "SM4S",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "각성의 용사",
+   "releaseDate": "2017-09-15",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 50,
+    "reverse": 0,
+    "total": 50
+   },
+   "id": "SM4A",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "초차원의 침략자",
+   "releaseDate": "2017-09-15",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 114,
+    "reverse": 0,
+    "total": 114
+   },
+   "id": "SM4+",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "GX 배틀부스트",
+   "releaseDate": "2017-10-20",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 66,
+    "reverse": 0,
+    "total": 66
+   },
+   "id": "SM5S",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "울트라썬",
+   "releaseDate": "2017-12-08",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 66,
+    "reverse": 0,
+    "total": 66
+   },
+   "id": "SM5M",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "울트라문",
+   "releaseDate": "2017-12-08",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 50,
+    "reverse": 0,
+    "total": 50
+   },
+   "id": "SM5+",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "울트라포스",
+   "releaseDate": "2018-01-19",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 94,
+    "reverse": 0,
+    "total": 94
+   },
+   "id": "SM6",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "금단의 빛",
+   "releaseDate": "2018-03-02",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 53,
+    "reverse": 0,
+    "total": 53
+   },
+   "id": "SM6a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "드래곤스톰",
+   "releaseDate": "2018-04-06",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 66,
+    "reverse": 0,
+    "total": 66
+   },
+   "id": "SM6b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "챔피언로드",
+   "releaseDate": "2018-05-30",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 96,
+    "reverse": 0,
+    "total": 96
+   },
+   "id": "SM7",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "창공의 카리스마",
+   "releaseDate": "2018-06-01",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 50,
+    "reverse": 0,
+    "total": 50
+   },
+   "id": "SM7b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "페어리라이즈",
+   "releaseDate": "2018-08-03",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 50,
+    "reverse": 0,
+    "total": 50
+   },
+   "id": "SM7a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "플라스마 스파크",
+   "releaseDate": "2018-08-03",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 95,
+    "reverse": 0,
+    "total": 95
+   },
+   "id": "SM8",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "버스트임팩트",
+   "releaseDate": "2018-09-07",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 150,
+    "reverse": 0,
+    "total": 150
+   },
+   "id": "SM8b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "GX 울트라샤이니 ULTIMATE",
+   "releaseDate": "2018-10-05",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 52,
+    "reverse": 0,
+    "total": 52
+   },
+   "id": "SM8a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "다크오더",
+   "releaseDate": "2018-10-05",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 95,
+    "reverse": 0,
+    "total": 95
+   },
+   "id": "SM9",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "태그볼트",
+   "releaseDate": "2018-12-07",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 55,
+    "reverse": 0,
+    "total": 55
+   },
+   "id": "SM9a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "나이트유니슨",
+   "releaseDate": "2019-01-11",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 54,
+    "reverse": 0,
+    "total": 54
+   },
+   "id": "SM9b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "풀메탈월",
+   "releaseDate": "2019-02-01",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 95,
+    "reverse": 0,
+    "total": 95
+   },
+   "id": "SM10",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "더블블레이즈",
+   "releaseDate": "2019-03-01",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 54,
+    "reverse": 0,
+    "total": 54
+   },
+   "id": "SM10a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "GG엔드",
+   "releaseDate": "2019-04-05",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 24,
+    "reverse": 0,
+    "total": 24
+   },
+   "id": "SMP2",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "명탐정 피카츄",
+   "releaseDate": "2019-04-26",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 56,
+    "reverse": 0,
+    "total": 56
+   },
+   "id": "SM10b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "스카이레전드",
+   "releaseDate": "2019-04-26",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 94,
+    "reverse": 0,
+    "total": 94
+   },
+   "id": "SM11",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "미라클트윈",
+   "releaseDate": "2019-05-31",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 64,
+    "reverse": 0,
+    "total": 64
+   },
+   "id": "SM11a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "리믹스바우트",
+   "releaseDate": "2019-07-05",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 49,
+    "reverse": 0,
+    "total": 49
+   },
+   "id": "SM11b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "드림리그",
+   "releaseDate": "2019-08-02",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 95,
+    "reverse": 0,
+    "total": 95
+   },
+   "id": "SM12",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "얼터제네시스",
+   "releaseDate": "2019-09-06",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 173,
+    "reverse": 0,
+    "total": 173
+   },
+   "id": "SM12a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "TAG TEAM GX 태그올스타즈",
+   "releaseDate": "2019-10-04",
+   "serie": {
+    "id": "SM",
+    "name": "썬&문"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 60,
+    "reverse": 0,
+    "total": 60
+   },
+   "id": "S1W",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "소드",
+   "releaseDate": "2019-12-06",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 60,
+    "reverse": 0,
+    "total": 60
+   },
+   "id": "S1H",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "실드",
+   "releaseDate": "2019-12-06",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "S1a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "VMAX라이징",
+   "releaseDate": "2020-02-07",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 96,
+    "reverse": 0,
+    "total": 96
+   },
+   "id": "S2",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "반역크래시",
+   "releaseDate": "2020-03-06",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 100,
+    "reverse": 0,
+    "total": 100
+   },
+   "id": "S3",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "무한존",
+   "releaseDate": "2020-06-05",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 76,
+    "reverse": 0,
+    "total": 76
+   },
+   "id": "S3a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "전설의 고동",
+   "releaseDate": "2020-07-10",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS2b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "트리플렛비트",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS2.5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "트리플렛비트",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS4",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "트리플렛비트",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS1.5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "트리플렛비트",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS3.5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "트리플렛비트",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS3b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "트리플렛비트",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS2a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "트리플렛비트",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS3a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "트리플렛비트",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS4a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "트리플렛비트",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS1a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "트리플렛비트",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS1b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "트리플렛비트",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS4b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "트리플렛비트",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CSA",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "트리플렛비트",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS3D",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "트리플렛비트",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS4Da",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "트리플렛비트",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "S5a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "쌍벽의 파이터",
+   "releaseDate": "2021-03-19",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "S6K",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "칠흑의 가이스트",
+   "releaseDate": "2021-04-23",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 184,
+    "reverse": 0,
+    "total": 184
+   },
+   "id": "S8b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "VMAX 클라이맥스",
+   "releaseDate": "2021-12-03",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 190,
+    "reverse": 0,
+    "total": 190
+   },
+   "id": "S4a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "샤이니스타V",
+   "releaseDate": "2020-11-20",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 71,
+    "reverse": 0,
+    "total": 71
+   },
+   "id": "S10b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "Pokémon GO",
+   "releaseDate": "2022-06-17",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 67,
+    "reverse": 0,
+    "total": 67
+   },
+   "id": "S10D",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "타임게이저",
+   "releaseDate": "2022-04-08",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 172,
+    "reverse": 0,
+    "total": 172
+   },
+   "id": "S12a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "VSTAR 유니버스",
+   "releaseDate": "2022-12-02",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 67,
+    "reverse": 0,
+    "total": 67
+   },
+   "id": "S9a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "배틀리전",
+   "releaseDate": "2022-02-25",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "S5I",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "일격마스터",
+   "releaseDate": "2021-01-22",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 71,
+    "reverse": 0,
+    "total": 71
+   },
+   "id": "S10a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "다크판타스마",
+   "releaseDate": "2022-05-13",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 28,
+    "reverse": 0,
+    "total": 28
+   },
+   "id": "S8a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "25th Anniversary",
+   "releaseDate": "2021-10-22",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "S6H",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "백은의 랜스",
+   "releaseDate": "2021-04-23",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 100,
+    "reverse": 0,
+    "total": 100
+   },
+   "id": "S11",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "트리플렛비트",
+   "releaseDate": "2022-07-15",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 68,
+    "reverse": 0,
+    "total": 68
+   },
+   "id": "S11a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "백열의 아르카나",
+   "releaseDate": "2022-09-02",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 67,
+    "reverse": 0,
+    "total": 67
+   },
+   "id": "S7R",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "창공의스트림",
+   "releaseDate": "2021-07-09",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 100,
+    "reverse": 0,
+    "total": 100
+   },
+   "id": "S9",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "스타버스",
+   "releaseDate": "2022-01-14",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "S5R",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "연격마스터",
+   "releaseDate": "2021-01-22",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "S2a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "폭염워커",
+   "releaseDate": "2020-04-24",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 67,
+    "reverse": 0,
+    "total": 67
+   },
+   "id": "S7D",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "마천퍼펙트",
+   "releaseDate": "2021-07-09",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 100,
+    "reverse": 0,
+    "total": 100
+   },
+   "id": "S4",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "앙천의 볼트태클",
+   "releaseDate": "2020-09-18",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 69,
+    "reverse": 0,
+    "total": 69
+   },
+   "id": "S6a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "이브이 히어로즈",
+   "releaseDate": "2021-05-28",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 100,
+    "reverse": 0,
+    "total": 100
+   },
+   "id": "S8",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "퓨전아츠",
+   "releaseDate": "2021-09-24",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 98,
+    "reverse": 0,
+    "total": 98
+   },
+   "id": "S12",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "패러다임트리거",
+   "releaseDate": "2022-10-21",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 67,
+    "reverse": 0,
+    "total": 67
+   },
+   "id": "S10P",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "스페이스저글러",
+   "releaseDate": "2022-04-08",
+   "serie": {
+    "id": "S",
+    "name": "검과 방패"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 78,
+    "reverse": 0,
+    "total": 78
+   },
+   "id": "SV1V",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "바이올렛ex",
+   "releaseDate": "2023-01-20",
+   "serie": {
+    "id": "SV",
+    "name": "스칼렛・바이올렛"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 43,
+    "normal": 52,
+    "official": 66,
+    "reverse": 0,
+    "total": 95
+   },
+   "id": "SV4M",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "미래의 일섬",
+   "releaseDate": "2023-10-27",
+   "serie": {
+    "id": "SV",
+    "name": "스칼렛・바이올렛"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 190,
+    "reverse": 0,
+    "total": 190
+   },
+   "id": "SV4a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "샤이니트레저 ex",
+   "releaseDate": "2023-12-01",
+   "serie": {
+    "id": "SV",
+    "name": "스칼렛・바이올렛"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "SV6",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "변환의 가면",
+   "releaseDate": "2024-06-21",
+   "serie": {
+    "id": "SV",
+    "name": "스칼렛・바이올렛"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 62,
+    "reverse": 0,
+    "total": 62
+   },
+   "id": "SV3a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "레이징서프",
+   "releaseDate": "2023-09-22",
+   "serie": {
+    "id": "SV",
+    "name": "스칼렛・바이올렛"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 108,
+    "reverse": 0,
+    "total": 108
+   },
+   "id": "SV3",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "흑염의 지배자",
+   "releaseDate": "2023-07-28",
+   "serie": {
+    "id": "SV",
+    "name": "스칼렛・바이올렛"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 66,
+    "reverse": 0,
+    "total": 66
+   },
+   "id": "SV5a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "크림슨헤이즈",
+   "releaseDate": "2024-05-24",
+   "serie": {
+    "id": "SV",
+    "name": "스칼렛・바이올렛"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 73,
+    "reverse": 0,
+    "total": 73
+   },
+   "id": "SV1a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "트리플렛비트",
+   "releaseDate": "2023-03-10",
+   "serie": {
+    "id": "SV",
+    "name": "스칼렛・바이올렛"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 71,
+    "reverse": 0,
+    "total": 71
+   },
+   "id": "SV2P",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "스노해저드",
+   "releaseDate": "2023-04-14",
+   "serie": {
+    "id": "SV",
+    "name": "스칼렛・바이올렛"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 165,
+    "reverse": 0,
+    "total": 165
+   },
+   "id": "SV2a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "포켓몬 카드 151",
+   "releaseDate": "2023-06-16",
+   "serie": {
+    "id": "SV",
+    "name": "스칼렛・바이올렛"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 71,
+    "reverse": 0,
+    "total": 71
+   },
+   "id": "SV5M",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "사이버저지",
+   "releaseDate": "2024-01-26",
+   "serie": {
+    "id": "SV",
+    "name": "스칼렛・바이올렛"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 78,
+    "reverse": 0,
+    "total": 78
+   },
+   "id": "SV1S",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "스칼렛ex",
+   "releaseDate": "2023-01-20",
+   "serie": {
+    "id": "SV",
+    "name": "스칼렛・바이올렛"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 43,
+    "normal": 52,
+    "official": 66,
+    "reverse": 0,
+    "total": 95
+   },
+   "id": "SV4K",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "고대의 포효",
+   "releaseDate": "2023-10-27",
+   "serie": {
+    "id": "SV",
+    "name": "스칼렛・바이올렛"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 71,
+    "reverse": 0,
+    "total": 71
+   },
+   "id": "SV2D",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "클레이버스트",
+   "releaseDate": "2023-04-14",
+   "serie": {
+    "id": "SV",
+    "name": "스칼렛・바이올렛"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 31,
+    "normal": 18,
+    "official": 71,
+    "reverse": 0,
+    "total": 71
+   },
+   "id": "SV5K",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "와일드포스",
+   "releaseDate": "2024-01-26",
+   "serie": {
+    "id": "SV",
+    "name": "스칼렛・바이올렛"
+   }
+  }
+ ],
+ "zh-tw": [
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 157,
+    "reverse": 0,
+    "total": 157
+   },
+   "id": "SC2D",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "無極力量",
+   "releaseDate": "2020-08-21",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 144,
+    "reverse": 0,
+    "total": 144
+   },
+   "id": "SC2b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "無極力量 SET B",
+   "releaseDate": "2020-08-21",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 145,
+    "reverse": 0,
+    "total": 145
+   },
+   "id": "SC2a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "無極力量 SET A",
+   "releaseDate": "2020-08-21",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS2b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "三連音爆",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS2.5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "三連音爆",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS4",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "三連音爆",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS1.5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "三連音爆",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS3.5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "三連音爆",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS3b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "三連音爆",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS2a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "三連音爆",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS3a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "三連音爆",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS4a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "三連音爆",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS1a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "三連音爆",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS1b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "三連音爆",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS4b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "三連音爆",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CSA",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "三連音爆",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS3D",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "三連音爆",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 101,
+    "reverse": 0,
+    "total": 101
+   },
+   "id": "CS4Da",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "三連音爆",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 22,
+    "reverse": 0,
+    "total": 22
+   },
+   "id": "SDM",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "超夢",
+   "releaseDate": "2022-11-04",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "S5a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "雙璧戰士",
+   "releaseDate": "2021-04-02",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 17,
+    "normal": 53,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "S6K",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "漆黑幽魂",
+   "releaseDate": "2021-05-07",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 164,
+    "reverse": 0,
+    "total": 164
+   },
+   "id": "SC1D",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "劍&盾",
+   "releaseDate": "2020-06-19",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 21,
+    "reverse": 0,
+    "total": 22
+   },
+   "id": "SLL",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "起始組合VSTAR 路卡利歐",
+   "releaseDate": "2022-03-11",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 41,
+    "normal": 140,
+    "official": 184,
+    "reverse": 110,
+    "total": 184
+   },
+   "id": "S8b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "VMAX絕群壓軸",
+   "releaseDate": "2021-12-17",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 6,
+    "reverse": 0,
+    "total": 6
+   },
+   "id": "SP6",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "VSTAR特別組合",
+   "releaseDate": "2022-08-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 190,
+    "reverse": 0,
+    "total": 190
+   },
+   "id": "S4a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "閃色明星V",
+   "releaseDate": "2020-11-27",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 71,
+    "reverse": 0,
+    "total": 79
+   },
+   "id": "S10b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "Pokémon GO",
+   "releaseDate": "2022-06-17",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 67,
+    "reverse": 0,
+    "total": 67
+   },
+   "id": "S10D",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "時間觀察者",
+   "releaseDate": "2022-04-22",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 131,
+    "normal": 119,
+    "official": 172,
+    "reverse": 89,
+    "total": 250
+   },
+   "id": "S12a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "天地萬物VSTAR",
+   "releaseDate": "2022-12-02",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 21,
+    "reverse": 0,
+    "total": 21
+   },
+   "id": "SDL",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "噴火龍",
+   "releaseDate": "2022-11-04",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 20,
+    "reverse": 0,
+    "total": 21
+   },
+   "id": "SLD",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "起始組合VSTAR 達克萊伊",
+   "releaseDate": "2022-03-11",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 22,
+    "normal": 45,
+    "official": 67,
+    "reverse": 45,
+    "total": 67
+   },
+   "id": "S9a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "對戰地區",
+   "releaseDate": "2022-03-11",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 20,
+    "reverse": 0,
+    "total": 20
+   },
+   "id": "SPD",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "VSTAR&VMAX 高級牌組 代歐奇希斯",
+   "releaseDate": "2022-08-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 153,
+    "reverse": 0,
+    "total": 171
+   },
+   "id": "SC1b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "劍&盾 SET B",
+   "releaseDate": "2020-06-19",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 38,
+    "reverse": 0,
+    "total": 59
+   },
+   "id": "SH",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "寶可夢卡牌家庭組合",
+   "releaseDate": "2021-06-28",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 17,
+    "normal": 53,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "S5I",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "一撃大師",
+   "releaseDate": "2021-01-29",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 28,
+    "reverse": 0,
+    "total": 30
+   },
+   "id": "SJ",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "藏瑪然特VS無極汰那",
+   "releaseDate": "2022-01-28",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 30,
+    "reverse": 0,
+    "total": 30
+   },
+   "id": "SK",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "頂級訓練家收藏箱 VSTAR",
+   "releaseDate": "2022-01-28",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 22,
+    "normal": 49,
+    "official": 71,
+    "reverse": 49,
+    "total": 71
+   },
+   "id": "S10a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "黑暗亡靈",
+   "releaseDate": "2022-05-27",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 28,
+    "reverse": 0,
+    "total": 33
+   },
+   "id": "S8a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "25週年收藏款",
+   "releaseDate": "2021-10-20",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 0,
+    "reverse": 0,
+    "total": 4
+   },
+   "id": "SP5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "強大",
+   "releaseDate": "2021-08-27",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 17,
+    "normal": 53,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "S6H",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "銀白戰槍",
+   "releaseDate": "2021-05-07",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 22,
+    "normal": 78,
+    "official": 100,
+    "reverse": 0,
+    "total": 100
+   },
+   "id": "S11",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "三連音爆",
+   "releaseDate": "2022-07-29",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 22,
+    "normal": 46,
+    "official": 68,
+    "reverse": 46,
+    "total": 68
+   },
+   "id": "S11a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "白熱奧祕",
+   "releaseDate": "2022-09-16",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 67,
+    "reverse": 0,
+    "total": 67
+   },
+   "id": "S7R",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "蒼空烈流",
+   "releaseDate": "2021-07-23",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 22,
+    "normal": 78,
+    "official": 100,
+    "reverse": 0,
+    "total": 100
+   },
+   "id": "S9",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "星星誕生",
+   "releaseDate": "2022-01-28",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 20,
+    "reverse": 0,
+    "total": 20
+   },
+   "id": "SPZ",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "VSTAR&VMAX 高級牌組 捷拉奧拉",
+   "releaseDate": "2022-08-26",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 154,
+    "reverse": 0,
+    "total": 172
+   },
+   "id": "SC1a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "劍&盾 SET A",
+   "releaseDate": "2020-06-19",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 70,
+    "reverse": 0,
+    "total": 70
+   },
+   "id": "S5R",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "連撃大師",
+   "releaseDate": "2021-01-29",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 22,
+    "reverse": 0,
+    "total": 22
+   },
+   "id": "SDP",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "皮卡丘",
+   "releaseDate": "2022-11-04",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 17,
+    "normal": 50,
+    "official": 67,
+    "reverse": 0,
+    "total": 67
+   },
+   "id": "S7D",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "摩天巔峰",
+   "releaseDate": "2021-07-23",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 100,
+    "reverse": 0,
+    "total": 100
+   },
+   "id": "S4",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "驚天伏特攻擊",
+   "releaseDate": "2020-10-09",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 69,
+    "reverse": 0,
+    "total": 69
+   },
+   "id": "S6a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "伊布英雄",
+   "releaseDate": "2021-06-11",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 22,
+    "normal": 78,
+    "official": 100,
+    "reverse": 0,
+    "total": 100
+   },
+   "id": "S8",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "匯流藝術",
+   "releaseDate": "2021-10-01",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 135,
+    "reverse": 0,
+    "total": 135
+   },
+   "id": "SCA",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "搭檔",
+   "releaseDate": "2020-11-27",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 24,
+    "reverse": 0,
+    "total": 25
+   },
+   "id": "SN",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "初階牌組100 特別版",
+   "releaseDate": "2022-10-02",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 172,
+    "reverse": 0,
+    "total": 172
+   },
+   "id": "SCC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "進化",
+   "releaseDate": "2021-06-11",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 38,
+    "normal": 76,
+    "official": 98,
+    "reverse": 0,
+    "total": 114
+   },
+   "id": "S12",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "思維激盪",
+   "releaseDate": "2022-11-04",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 17,
+    "normal": 50,
+    "official": 67,
+    "reverse": 0,
+    "total": 67
+   },
+   "id": "S10P",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "空間魔術師",
+   "releaseDate": "2022-04-22",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 414,
+    "reverse": 0,
+    "total": 422
+   },
+   "id": "SI",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "初階牌組100",
+   "releaseDate": "2022-02-18",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 159,
+    "reverse": 0,
+    "total": 159
+   },
+   "id": "SCD",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "強大",
+   "releaseDate": "2021-10-01",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 156,
+    "reverse": 0,
+    "total": 156
+   },
+   "id": "SCB",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "挑戰",
+   "releaseDate": "2021-01-29",
+   "serie": {
+    "id": "S",
+    "name": "劍＆盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 14,
+    "normal": 64,
+    "official": 78,
+    "reverse": 0,
+    "total": 78
+   },
+   "id": "SV1V",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "紫ex",
+   "releaseDate": "2023-02-03",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 18,
+    "normal": 82,
+    "official": 100,
+    "reverse": 0,
+    "total": 100
+   },
+   "id": "SV9",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "對戰搭檔",
+   "releaseDate": "2025-02-07",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 14,
+    "normal": 52,
+    "official": 66,
+    "reverse": 0,
+    "total": 66
+   },
+   "id": "SV4M",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "未來閃光",
+   "releaseDate": "2023-11-10",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 183,
+    "normal": 131,
+    "official": 190,
+    "reverse": 93,
+    "total": 314
+   },
+   "id": "SV4a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "閃色寶藏ex",
+   "releaseDate": "2023-12-22",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 81,
+    "official": 0,
+    "reverse": 0,
+    "total": 94
+   },
+   "id": "SV-P",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "特典卡 朱&紫",
+   "releaseDate": "2023-01-26",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 49,
+    "normal": 81,
+    "official": 101,
+    "reverse": 0,
+    "total": 130
+   },
+   "id": "SV6",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "變幻假面",
+   "releaseDate": "2024-05-10",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 22,
+    "reverse": 0,
+    "total": 24
+   },
+   "id": "SVHM",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "閃色寶藏ex",
+   "releaseDate": "2024-02-02",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 41,
+    "normal": 48,
+    "official": 62,
+    "reverse": 0,
+    "total": 89
+   },
+   "id": "SV3a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "激狂駭浪",
+   "releaseDate": "2023-09-29",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 20,
+    "reverse": 0,
+    "total": 21
+   },
+   "id": "SVEM",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "超夢ex",
+   "releaseDate": "2023-09-29",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 16,
+    "normal": 48,
+    "official": 64,
+    "reverse": 0,
+    "total": 64
+   },
+   "id": "SV6a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "黑夜漫遊者",
+   "releaseDate": "2024-06-21",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 23,
+    "reverse": 0,
+    "total": 25
+   },
+   "id": "SVAM",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "起始組合ex 新葉喵&路卡利歐 ex",
+   "releaseDate": "2023-08-11",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 63,
+    "reverse": 0,
+    "total": 92
+   },
+   "id": "SV9a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "熱風競技場",
+   "releaseDate": "2025-03-28",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 48,
+    "normal": 90,
+    "official": 108,
+    "reverse": 0,
+    "total": 138
+   },
+   "id": "SV3",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "黯焰支配者",
+   "releaseDate": "2023-08-11",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 16,
+    "normal": 50,
+    "official": 66,
+    "reverse": 0,
+    "total": 66
+   },
+   "id": "SV5a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "緋紅薄霧",
+   "releaseDate": "2024-04-03",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 35,
+    "normal": 202,
+    "official": 187,
+    "reverse": 248,
+    "total": 237
+   },
+   "id": "SV8a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "太晶慶典ex",
+   "releaseDate": "2024-12-20",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 14,
+    "normal": 59,
+    "official": 73,
+    "reverse": 0,
+    "total": 73
+   },
+   "id": "SV1a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "三連音爆",
+   "releaseDate": "2023-03-24",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 14,
+    "normal": 57,
+    "official": 71,
+    "reverse": 0,
+    "total": 71
+   },
+   "id": "SV2P",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "冰雪險境",
+   "releaseDate": "2023-04-28",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 17,
+    "normal": 115,
+    "official": 102,
+    "reverse": 0,
+    "total": 132
+   },
+   "id": "SV7",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "星晶奇跡",
+   "releaseDate": "2024-08-02",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 79,
+    "normal": 128,
+    "official": 165,
+    "reverse": 306,
+    "total": 207
+   },
+   "id": "SV2a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "寶可夢卡牌151",
+   "releaseDate": "2023-06-30",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 42,
+    "normal": 55,
+    "official": 71,
+    "reverse": 0,
+    "total": 97
+   },
+   "id": "SV5M",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "異度審判",
+   "releaseDate": "2024-02-02",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 18,
+    "normal": 80,
+    "official": 98,
+    "reverse": 0,
+    "total": 98
+   },
+   "id": "SV10",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "火箭隊的榮耀",
+   "releaseDate": "2025-05-02",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 7,
+    "reverse": 0,
+    "total": 7
+   },
+   "id": "SVP1",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ex特別組合",
+   "releaseDate": "2023-06-02",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 19,
+    "normal": 86,
+    "official": 106,
+    "reverse": 0,
+    "total": 106
+   },
+   "id": "SV8",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "超電突圍",
+   "releaseDate": "2024-10-25",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 22,
+    "reverse": 0,
+    "total": 24
+   },
+   "id": "SVHK",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "未來密勒頓ex",
+   "releaseDate": "2024-02-02",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 21,
+    "reverse": 0,
+    "total": 22
+   },
+   "id": "SVC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "皮卡丘特別組合",
+   "releaseDate": "2023-04-28",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 28,
+    "reverse": 0,
+    "total": 36
+   },
+   "id": "SVB",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "頂級訓練家收藏箱ex",
+   "releaseDate": "2023-03-03",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 139,
+    "reverse": 0,
+    "total": 147
+   },
+   "id": "SVD",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "ex初階牌組",
+   "releaseDate": "2023-07-21",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 13,
+    "normal": 51,
+    "official": 64,
+    "reverse": 0,
+    "total": 64
+   },
+   "id": "SV7a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "樂園騰龍",
+   "releaseDate": "2024-09-27",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 23,
+    "reverse": 0,
+    "total": 25
+   },
+   "id": "SVAW",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "起始組合ex 潤水鴨&謎擬Ｑ ex",
+   "releaseDate": "2023-08-11",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 20,
+    "reverse": 0,
+    "total": 21
+   },
+   "id": "SVEL",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "骨紋巨聲鱷ex",
+   "releaseDate": "2023-09-29",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 21,
+    "reverse": 0,
+    "total": 23
+   },
+   "id": "SVAL",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "起始組合ex 呆火鱷&電龍 ex",
+   "releaseDate": "2023-08-11",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 14,
+    "normal": 64,
+    "official": 78,
+    "reverse": 0,
+    "total": 78
+   },
+   "id": "SV1S",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "朱ex",
+   "releaseDate": "2023-02-03",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 14,
+    "normal": 52,
+    "official": 66,
+    "reverse": 0,
+    "total": 66
+   },
+   "id": "SV4K",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "古代咆哮",
+   "releaseDate": "2023-11-10",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 38,
+    "reverse": 0,
+    "total": 46
+   },
+   "id": "SVF",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "黯焰支配者",
+   "releaseDate": "2023-08-11",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 14,
+    "normal": 57,
+    "official": 71,
+    "reverse": 0,
+    "total": 71
+   },
+   "id": "SV2D",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "碟旋暴擊",
+   "releaseDate": "2023-04-28",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 28,
+    "normal": 18,
+    "official": 71,
+    "reverse": 0,
+    "total": 71
+   },
+   "id": "SV5K",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "狂野之力",
+   "releaseDate": "2024-02-02",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫系列"
+   }
+  }
+ ],
+ "zh-cn": [
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 151,
+    "reverse": 0,
+    "total": 151
+   },
+   "id": "CSM1aC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "横空出世 赫",
+   "releaseDate": "2020-10-28",
+   "serie": {
+    "id": "SM",
+    "name": "太阳&月亮"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 151,
+    "reverse": 0,
+    "total": 151
+   },
+   "id": "CSM1cC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "横空出世 泽",
+   "releaseDate": "2020-10-28",
+   "serie": {
+    "id": "SM",
+    "name": "太阳&月亮"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 151,
+    "reverse": 0,
+    "total": 151
+   },
+   "id": "CSM1bC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "横空出世 苍",
+   "releaseDate": "2020-10-28",
+   "serie": {
+    "id": "SM",
+    "name": "太阳&月亮"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 204,
+    "reverse": 0,
+    "total": 204
+   },
+   "id": "csm1b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "风暴涌现",
+   "releaseDate": "2022-10-22",
+   "serie": {
+    "id": "SM",
+    "name": "太阳&月亮"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 211,
+    "reverse": 0,
+    "total": 211
+   },
+   "id": "csm1a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "风暴涌现",
+   "releaseDate": "2022-10-22",
+   "serie": {
+    "id": "SM",
+    "name": "太阳&月亮"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 212,
+    "reverse": 0,
+    "total": 212
+   },
+   "id": "csm1c",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "风暴涌现",
+   "releaseDate": "2022-10-22",
+   "serie": {
+    "id": "SM",
+    "name": "太阳&月亮"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 151,
+    "reverse": 0,
+    "total": 151
+   },
+   "id": "csm1.5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "战斗精英",
+   "releaseDate": "2022-12-16",
+   "serie": {
+    "id": "SM",
+    "name": "太阳&月亮"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 60,
+    "reverse": 0,
+    "total": 60
+   },
+   "id": "CSM1.5C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "对战精英",
+   "releaseDate": "2022-12-16",
+   "serie": {
+    "id": "SM",
+    "name": "太阳&月亮"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 192,
+    "reverse": 0,
+    "total": 192
+   },
+   "id": "csm2c",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "闪耀协同效应",
+   "releaseDate": "2023-01-18",
+   "serie": {
+    "id": "SM",
+    "name": "太阳&月亮"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 193,
+    "reverse": 0,
+    "total": 193
+   },
+   "id": "csm2b",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "闪耀协同效应",
+   "releaseDate": "2023-01-18",
+   "serie": {
+    "id": "SM",
+    "name": "太阳&月亮"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 150,
+    "reverse": 0,
+    "total": 150
+   },
+   "id": "CSM2bC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "交相辉映 魁",
+   "releaseDate": "2023-01-18",
+   "serie": {
+    "id": "SM",
+    "name": "太阳&月亮"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 194,
+    "reverse": 0,
+    "total": 194
+   },
+   "id": "csm2a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "闪耀协同效应",
+   "releaseDate": "2023-01-18",
+   "serie": {
+    "id": "SM",
+    "name": "太阳&月亮"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 150,
+    "reverse": 0,
+    "total": 150
+   },
+   "id": "CSM2cC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "交相辉映 唤",
+   "releaseDate": "2023-01-18",
+   "serie": {
+    "id": "SM",
+    "name": "太阳&月亮"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 150,
+    "reverse": 0,
+    "total": 150
+   },
+   "id": "CSM2aC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "交相辉映 沐",
+   "releaseDate": "2023-01-18",
+   "serie": {
+    "id": "SM",
+    "name": "太阳&月亮"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 151,
+    "reverse": 0,
+    "total": 151
+   },
+   "id": "csm2.5",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "精彩的比赛",
+   "releaseDate": "2023-03-13",
+   "serie": {
+    "id": "SM",
+    "name": "太阳&月亮"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 61,
+    "reverse": 0,
+    "total": 61
+   },
+   "id": "CSM2.5C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "炫奇争胜",
+   "releaseDate": "2023-03-17",
+   "serie": {
+    "id": "SM",
+    "name": "太阳&月亮"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 48,
+    "normal": 0,
+    "official": 24,
+    "reverse": 0,
+    "total": 48
+   },
+   "id": "CSMPiC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "对战派对组合 奖励包",
+   "releaseDate": "2023-04-15",
+   "serie": {
+    "id": "SM",
+    "name": "太阳&月亮"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 136,
+    "reverse": 0,
+    "total": 136
+   },
+   "id": "CS1bC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "极巨争锋 焰",
+   "releaseDate": "2023-05-19",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 135,
+    "reverse": 0,
+    "total": 135
+   },
+   "id": "CS1aC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "横空出世 赫",
+   "releaseDate": "2023-05-19",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 55,
+    "reverse": 0,
+    "total": 55
+   },
+   "id": "CS1.5C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "极巨攻防",
+   "releaseDate": "2023-06-28",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 115,
+    "reverse": 0,
+    "total": 115
+   },
+   "id": "CS2aC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "浓墨重彩 黎",
+   "releaseDate": "2023-08-18",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 115,
+    "reverse": 0,
+    "total": 115
+   },
+   "id": "CS2bC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "浓墨重彩 靛",
+   "releaseDate": "2023-08-18",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 59,
+    "reverse": 0,
+    "total": 59
+   },
+   "id": "CS2.5C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "璀璨反击",
+   "releaseDate": "2023-09-29",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 125,
+    "reverse": 0,
+    "total": 125
+   },
+   "id": "CS3aC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "洪荒演武 茂",
+   "releaseDate": "2023-11-17",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 122,
+    "reverse": 0,
+    "total": 122
+   },
+   "id": "CS3bC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "洪荒演武 激",
+   "releaseDate": "2023-11-17",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 66,
+    "reverse": 0,
+    "total": 66
+   },
+   "id": "CS3.5C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "怒炎灼天",
+   "releaseDate": "2024-01-05",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 132,
+    "reverse": 0,
+    "total": 132
+   },
+   "id": "CS4aC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "九彩汇聚 朋",
+   "releaseDate": "2024-03-01",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 132,
+    "reverse": 0,
+    "total": 132
+   },
+   "id": "CS4bC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "九彩汇聚 源",
+   "releaseDate": "2024-03-01",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 63,
+    "reverse": 0,
+    "total": 63
+   },
+   "id": "CS4.5C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "终末炎舞",
+   "releaseDate": "2024-04-26",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 128,
+    "reverse": 0,
+    "total": 128
+   },
+   "id": "CS5bC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "勇魅群星 勇",
+   "releaseDate": "2024-06-18",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 127,
+    "reverse": 0,
+    "total": 127
+   },
+   "id": "CS5aC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "勇魅群星 魅",
+   "releaseDate": "2024-06-18",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 66,
+    "reverse": 0,
+    "total": 66
+   },
+   "id": "CS5.5C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "暗影夺辉",
+   "releaseDate": "2024-08-02",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 131,
+    "reverse": 0,
+    "total": 131
+   },
+   "id": "CS6bC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "碧海暗影 逐",
+   "releaseDate": "2024-09-20",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 131,
+    "reverse": 0,
+    "total": 131
+   },
+   "id": "CS6aC",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "碧海暗影 啸",
+   "releaseDate": "2024-09-20",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 72,
+    "reverse": 0,
+    "total": 72
+   },
+   "id": "CS6.5C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "胜象星引",
+   "releaseDate": "2024-11-15",
+   "serie": {
+    "id": "S",
+    "name": "剑&盾"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 127,
+    "reverse": 0,
+    "total": 127
+   },
+   "id": "CSV1C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "亘古开来",
+   "releaseDate": "2025-01-17",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 127,
+    "reverse": 0,
+    "total": 127
+   },
+   "id": "CSV1C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "亘古开来",
+   "releaseDate": "2025-01-17",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 128,
+    "reverse": 0,
+    "total": 128
+   },
+   "id": "CSV2C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "奇迹启程",
+   "releaseDate": "2025-03-21",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 15,
+    "reverse": 0,
+    "total": 15
+   },
+   "id": "CBB2C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "宝石包Vol.2",
+   "releaseDate": "2025-05-16",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 130,
+    "reverse": 0,
+    "total": 130
+   },
+   "id": "CSV3C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "无畏太晶",
+   "releaseDate": "2025-05-16",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 129,
+    "reverse": 0,
+    "total": 129
+   },
+   "id": "CSV4C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "嘉奖回合",
+   "releaseDate": "2025-07-18",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 129,
+    "reverse": 0,
+    "total": 129
+   },
+   "id": "CSV5C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "黑晶炽诚",
+   "releaseDate": "2025-09-12",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 7,
+    "reverse": 0,
+    "total": 7
+   },
+   "id": "CBB3C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "宝石包Vol.3",
+   "releaseDate": "2025-09-26",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 128,
+    "reverse": 0,
+    "total": 128
+   },
+   "id": "CSV6C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "真实玄虚",
+   "releaseDate": "2025-11-07",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 204,
+    "reverse": 0,
+    "total": 204
+   },
+   "id": "CSV7C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "利刃猛醒",
+   "releaseDate": "2026-01-16",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 7,
+    "reverse": 0,
+    "total": 7
+   },
+   "id": "CBB4C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "宝石包 Vol.4",
+   "releaseDate": "2026-02-26",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 207,
+    "reverse": 0,
+    "total": 207
+   },
+   "id": "CSV8C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "璀璨诡幻",
+   "releaseDate": "2026-03-13",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 7,
+    "reverse": 0,
+    "total": 7
+   },
+   "id": "CBB5C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "宝石包 Vol.5",
+   "releaseDate": "2026-04-24",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 208,
+    "reverse": 0,
+    "total": 208
+   },
+   "id": "CSV9C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "星彩晶璃",
+   "releaseDate": "2026-05-15",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 208,
+    "reverse": 0,
+    "total": 208
+   },
+   "id": "CSV9.5C",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "太晶盛聚",
+   "releaseDate": "2026-06-12",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 18,
+    "normal": 82,
+    "official": 100,
+    "reverse": 0,
+    "total": 100
+   },
+   "id": "SV9",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "對戰搭檔",
+   "releaseDate": "2025-02-07",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 0,
+    "normal": 0,
+    "official": 63,
+    "reverse": 0,
+    "total": 92
+   },
+   "id": "SV9a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "熱風競技場",
+   "releaseDate": "2025-03-28",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 35,
+    "normal": 202,
+    "official": 187,
+    "reverse": 248,
+    "total": 237
+   },
+   "id": "SV8a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "太晶慶典ex",
+   "releaseDate": "2024-12-20",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 17,
+    "normal": 115,
+    "official": 102,
+    "reverse": 0,
+    "total": 132
+   },
+   "id": "SV7",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "星晶奇跡",
+   "releaseDate": "2024-08-02",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 18,
+    "normal": 80,
+    "official": 98,
+    "reverse": 0,
+    "total": 98
+   },
+   "id": "SV10",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "火箭隊的榮耀",
+   "releaseDate": "2025-05-02",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 19,
+    "normal": 86,
+    "official": 106,
+    "reverse": 0,
+    "total": 106
+   },
+   "id": "SV8",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "超電突圍",
+   "releaseDate": "2024-10-25",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  },
+  {
+   "cardCount": {
+    "firstEd": 0,
+    "holo": 13,
+    "normal": 51,
+    "official": 64,
+    "reverse": 0,
+    "total": 64
+   },
+   "id": "SV7a",
+   "legal": {
+    "expanded": false,
+    "standard": false
+   },
+   "name": "樂園騰龍",
+   "releaseDate": "2024-09-27",
+   "serie": {
+    "id": "SV",
+    "name": "朱&紫"
+   }
+  }
+ ]
+}

@@ -2,3 +2,4 @@ node_modules/
 .wrangler/
 pipeline/pokecsv/
 __pycache__/
+pipeline/cjk/img/

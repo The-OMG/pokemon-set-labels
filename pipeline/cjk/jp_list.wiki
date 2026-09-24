@@ -1,0 +1,1777 @@
+This is a list of all the Japanese [[Pokémon Trading Card Game]] main expansions. For English sets, see the [[list of Pokémon Trading Card Game expansions]].
+
+==Main Sets==
+===Original Era===
+{| style="margin:auto; text-align: center; width:60%; background:#{{red color}}; border:3px solid #{{blue color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}" | Set no.
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:200px" | English equivalent
+! style="background-color:#EEE" | No. of cards
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| 1
+| —
+| —
+| 拡張パック<br>{{TCG|Expansion Pack}}
+| Base Set
+| 102
+| October 20, 1996
+|- style="background:#FFF"
+| 2
+| [[File:SetSymbolJungle.png|40px]]
+| <!--[[File:Pokémon Jungle Logo.png|100px]]-->
+| ポケモンジャングル<br>{{TCG|Pokémon Jungle}}
+| Jungle
+| 48
+| March 5, 1997
+|- style="background:#FFF"
+| 3
+| [[File:SetSymbolFossil.png|40px]]
+| <!--[[File:Mystery of the Fossils Logo.png|100px]]-->
+| 化石の秘密<br>{{TCG|Mystery of the Fossils}}
+| Fossil
+| 48
+| June 21, 1997
+|- style="background:#FFF"
+| 4
+| [[File:SetSymbolTeam Rocket.png|40px]]
+| <!--[[File:Rocket Gang Logo.png|100px]]-->
+| ロケット団<br>{{TCG|Rocket Gang}}
+| Team Rocket
+| 65
+| November 21, 1997
+|- style="background:#FFF"
+| 5
+| rowspan=2 | [[File:SetSymbolGym Booster.png|40px]]
+| <!--[[G1 Logo.png|100px]]-->
+| リーダーズスタジアム<br>{{TCG|Leaders' Stadium}}
+| Gym Heroes
+| 96
+| October 24, 1998
+|- style="background:#FFF"
+| 6
+| <!--[[File:G2 Logo.png|100px]]-->
+| 闇からの挑戦<br>{{TCG|Challenge from the Darkness}}
+| Gym Challenge
+| 98
+| June 25, 1999
+|}
+
+===neo Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{gold color}}; border:3px solid #{{silver color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}" | Set no.
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:200px" | English equivalent
+! style="background-color:#EEE" | No. of cards
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| 1
+| [[File:SetSymbolNeo Genesis.png|40px]]
+| <!--[[File:neo1 Logo.png|100px]]-->
+| 金、銀、新世界へ...<br>{{TCG|Gold, Silver, to a New World...}}
+| Neo Genesis
+| 96
+| February 4, 2000
+|- style="background:#FFF"
+| 2
+| [[File:SetSymbolNeo Discovery.png|40px]]
+| <!--[[File:neo2 Logo.png|100px]]-->
+| 遺跡をこえて...<br>{{TCG|Crossing the Ruins...}}
+| Neo Discovery
+| 56
+| July 7, 2000
+|- style="background:#FFF"
+| 3
+| [[File:SetSymbolNeo Revelation.png|40px]]
+| [[File:neo3 Logo.png|100px]]
+| めざめる伝説<br>{{TCG|Awakening Legends}}
+| Neo Revelation
+| 57
+| November 23, 2000
+|- style="background:#FFF"
+| 4
+| [[File:SetSymbolNeo Destiny.png|40px]]
+| [[File:neo4 Logo.png|100px]]
+| 闇、そして光へ...<br>{{TCG|Darkness, and to Light...}}
+| Neo Destiny
+| 113
+| April 20, 2001
+|}
+
+===VS Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{yellow color light}}; border:3px solid #{{yellow color dark}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}" | Set no.
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:200px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| 1
+| [[File:SetSymbolVS.png|40px]]
+| [[File:Pokémon Card VS Logo.png|75px]]
+| ポケモンカード★VS<br>{{TCG|Pokémon VS|Pokémon Card★VS}}
+| N/A
+| 141 (1)
+| July 19, 2001
+|}
+
+===web Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{yellow color light}}; border:3px solid #{{yellow color dark}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}" | Set no.
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:200px" | English equivalent
+! style="background-color:#EEE" | No. of cards
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| 1
+| <!--[[File:SetSymbolweb.png|30px]]-->
+| [[File:Pokémon Card web Logo.png|75px]]
+| ポケモンカード★web<br>{{TCG|Pokémon Web|Pokémon Card★web}}
+| N/A
+| 48
+| October 20, 2001
+|}
+
+===e-Card Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{crystal color light}}; border:3px solid #{{crystal color dark}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}" | Set no.
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:200px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| 1
+| [[File:SetSymbolBase Expansion Pack.png|30px]]
+| <!--[[File:E1 Logo.png|100px]]-->
+| 基本拡張パック<br>{{TCG|Base Expansion Pack}}
+| Expedition Base Set
+| 128
+| December 1, 2001
+|- style="background:#FFF"
+| 2
+| [[File:SetSymbolThe Town on No Map.png|30px]]
+| <!--[[File:E2 Logo.png|100px]]-->
+| 地図にない町<br>{{TCG|The Town on No Map}}
+| Aquapolis
+| 92
+| March 8, 2002
+|- style="background:#FFF"
+| 3
+| [[File:SetSymbolWind from the Sea.png|30px]]
+| [[File:E3 Logo.png|100px]]
+| 海からの風<br>{{TCG|Wind from the Sea}}
+| Aquapolis
+| 87 (3)
+| May 24, 2002
+|- style="background:#FFF"
+| 4
+| [[File:SetSymbolSplit Earth.png|30px]]
+| [[File:E4 Logo.png|100px]]
+| 裂けた大地<br>{{TCG|Split Earth}}
+| Skyridge
+| 88 (3)
+| August 23, 2002
+|- style="background:#FFF"
+| 5
+| [[File:SetSymbolMysterious Mountains.png|30px]]
+| [[File:E5 Logo.png|100px]]
+| 神秘なる山<br>{{TCG|Mysterious Mountains}}
+| Skyridge
+| 88 (3)
+| October 4, 2002
+|}
+
+===ADV Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{ruby color}}; border:3px solid #{{sapphire color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}" | Set no.
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:200px" | English equivalent
+! style="background-color:#EEE" | No. of cards
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| 1
+| [[File:SetSymbolRuby and Sapphire.png|40px]]
+| <!--[[File:ADV1 Logo.png|100px]]-->
+| 拡張パック<br>{{TCG|ADV Expansion Pack}}
+| EX Ruby & Sapphire
+| 55
+| January 31, 2003
+|- style="background:#FFF"
+| 2
+| [[File:SetSymbolSandstorm.png|40px]]
+| <!--[[File:ADV2 Logo.png|100px]]-->
+| 砂漠のきせき<br>{{TCG|Miracle of the Desert}}
+| EX Sandstorm
+| 53
+| April 18, 2003
+|- style="background:#FFF"
+| 3
+| [[File:SetSymbolDragon.png|40px]]
+| <!--[[File:ADV3 Logo.png|100px]]-->
+| 天空の覇者<br>{{TCG|Rulers of the Heavens}}
+| EX Dragon
+| 54
+| June 25, 2003
+|- style="background:#FFF"
+| 4
+| [[File:SetSymbolHidden Legends.png|40px]]
+| <!--[[File:ADV4 Logo.png|100px]]-->
+| とかれた封印<br>{{TCG|Undone Seal}}
+| EX Hidden Legends
+| 83
+| January 16, 2004
+|}
+
+===PCG Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{leafgreen color}}; border:3px solid #{{firered color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}" | Set no.
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:200px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| 1
+| [[File:SetSymbolFlight of Legends.png|40px]]
+| <!--[[File:PCG1 Logo.png|100px]]-->
+| 伝説の飛翔<br>{{TCG|Flight of Legends}}
+| EX FireRed & LeafGreen
+| 82
+| April 9, 2004
+|- style="background:#FFF"
+| 2
+| [[File:SetSymbolDeoxys.png|40px]]
+| <!--[[File:PCG2 Logo.png|100px]]-->
+| 蒼空の激突<br>{{TCG|Clash of the Blue Sky}}
+| EX Deoxys
+| 82
+| July 1, 2004
+|- style="background:#FFF"
+| 3
+| [[File:SetSymbolTeam Rocket Returns.png|40px]]
+| <!--[[File:PCG3 Logo.png|100px]]-->
+| ロケット団の逆襲<br>{{TCG|Rocket Gang Strikes Back}}
+| EX Team Rocket Returns
+| 84 (1)
+| October 15, 2004
+|- style="background:#FFF"
+| 4
+| [[File:SetSymbolUnseen Forces.png|40px]]
+| <!--[[File:PCG4 Logo.png|100px]]-->
+| 金の空、銀の海<br>{{TCG|Golden Sky, Silvery Ocean}}
+| EX Unseen Forces
+| 106
+| April 8, 2005
+|- style="background:#FFF"
+| 5
+| [[File:SetSymbolLegend Maker.png|40px]]
+| <!--[[File:PCG5 Logo.png|100px]]-->
+| まぼろしの森<br>{{TCG|Mirage Forest}}
+| EX Legend Maker
+| 86
+| June 30, 2005
+|- style="background:#FFF"
+| 6
+| [[File:SetSymbolDelta Species.png|40px]]
+| <!--[[File:PCG6 Logo.png|100px]]-->
+| ホロンの研究塔<br>{{TCG|Holon Research Tower}}
+| EX Delta Species
+| 86
+| October 28, 2005
+|- style="background:#FFF"
+| 7
+| [[File:SetSymbolHolon Phantoms.png|40px]]
+| <!--[[File:PCG7 Logo.png|100px]]-->
+| ホロンの幻影<br>{{TCG|Holon Phantom}}
+| EX Holon Phantoms
+| 52
+| January 27, 2006
+|- style="background:#FFF"
+| 8
+| [[File:SetSymbolCrystal Guardians.png|40px]]
+| <!--[[File:PCG8 Logo.png|100px]]-->
+| きせきの結晶<br>{{TCG|Miracle Crystal}}
+| EX Crystal Guardians
+| 75
+| March 10, 2006
+|- style="background:#FFF"
+| 9
+| [[File:SetSymbolDragon Frontiers.png|40px]]
+| <!--[[File:PCG9 Logo.png|100px]]-->
+| さいはての攻防<br>{{TCG|Offense and Defense of the Furthest Ends}}
+| EX Dragon Frontiers
+| 68
+| June 29, 2006
+|- style="background:#FFF"
+| 10
+| [[File:SetSymbolPower Keepers.png|40px]]
+| <!--[[File:PCG10 Logo.png|100px]]-->
+| ワールドチャンピオンズパック<br>{{TCG|World Champions Pack}}
+| EX Power Keepers
+| 108
+| July 5, 2007
+|}
+
+===DP Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{pearl color}}; border:3px solid #{{diamond color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}" | Set no.
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:200px" | English equivalent
+! style="background-color:#EEE" | No. of cards
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| 1
+| [[File:SetSymbolSpace-Time Creation.png|60px]]
+| <!--[[File:DP1 Logo.png|100px]]-->
+| 時空の創造: ダイヤモンドコレクション • パールコレクション<br>{{TCG|Space-Time Creation|Space-Time Creation: Diamond Collection • Pearl Collection}}
+| Diamond & Pearl
+| <br>117<br>119
+| November 30, 2006
+|- style="background:#FFF"
+| 2
+| [[File:SetSymbolSecret of the Lakes.png|60px]]
+| <!--[[File:DP2 Logo.png|100px]]-->
+| 湖の秘密<br>{{TCG|Secret of the Lakes}}
+| Mysterious Treasures
+| 123
+| March 2, 2007
+|- style="background:#FFF"
+| 3
+| [[File:SetSymbolShining Darkness.png|60px]]
+| <!--[[File:DP3 Logo.png|100px]]-->
+| ひかる闇<br>{{TCG|Shining Darkness}}
+| Secret Wonders
+| 119
+| July 5, 2007
+|- style="background:#FFF"
+| 4
+| [[File:SetSymbolMoonlit Pursuit Dawn Dash.png|40px]]
+| <!--[[File:DP4 Logo.png|100px]]-->
+| 月光の追跡 • 夜明けの疾走<br>{{TCG|Moonlit Pursuit/Dawn Dash|Moonlit Pursuit • Dawn Dash}}
+| {{TCG|Great Encounters}}<br>{{TCG|Majestic Dawn}}
+| 70<br>70
+| October 26, 2007
+|- style="background:#FFF"
+| 5
+| [[File:SetSymbolCry from the Mysterious Temple of Anger.png|60px]]
+| <!--[[File:DP5 Logo.png|100px]]-->
+| 秘境の叫び • 怒りの神殿<br>{{TCG|Cry from the Mysterious/Temple of Anger|Cry from the Mysterious • Temple of Anger}}
+| Legends Awakened
+| 65<br>65
+| March 14, 2008
+|- style="background:#FFF"
+| 6
+| [[File:SetSymbolIntense Fight in the Destroyed Sky.png|40px]]
+| <!--[[File:DP6 Logo.png|100px]]-->
+| 破空の激闘<br>{{TCG|Intense Fight in the Destroyed Sky}}
+| Stormfront
+| 92
+| July 10, 2008
+|}
+
+===DPt Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{platinum color light}}; border:3px solid #{{platinum color dark}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}" | Set no.
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:200px" | English equivalent
+! style="background-color:#EEE" | No. of cards
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| 1
+| [[File:SetSymbolGalactic Conquest.png|60px]]
+| [[File:DPt1 Logo.png|140px]]
+| ギンガの覇道<br>{{TCG|Galactic's Conquest}}
+| Platinum
+| 96
+| October 10, 2008
+|- style="background:#FFF"
+| 2
+| [[File:SetSymbolBonds to the End of Time.png|60px]]
+| [[File:DPt2 Logo.png|140px]]
+| 時の果ての絆<br>{{TCG|Bonds to the End of Time}}
+| Rising Rivals
+| 90
+| December 26, 2008
+|- style="background:#FFF"
+| 3
+| [[File:SetSymbolBeat of the Frontier.png|60px]]
+| [[File:DPt3 Logo.png|140px]]
+| フロンティアの鼓動<br>{{TCG|Beat of the Frontier}}
+| Supreme Victors
+| 100
+| March 6, 2009
+|- style="background:#FFF"
+| 4
+| [[File:SetSymbolAdvent of Arceus.png|60px]]
+| [[File:DPt4 Logo.png|140px]]
+| アルセウス光臨<br>{{TCG|Advent of Arceus}}
+| Arceus
+| 90
+| July 8, 2009
+|}
+
+===LEGEND Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{heartgold color}}; border:3px solid #{{soulsilver color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}" | Set no.
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:200px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| 1
+| [[File:SetSymbolHeartGold Collection.png|40px]]<br>[[File:SetSymbolSoulSilver Collection.png|40px]]
+| [[File:L1 Logo.png|120px]]
+| ハートゴールドコレクション • ソウルシルバーコレクション<br>{{TCG|HeartGold Collection/SoulSilver Collection|HeartGold Collection • SoulSilver Collection}}
+| HeartGold & SoulSilver
+| 70 (1)<br>70 (1)
+| October 9, 2009
+|- style="background:#FFF"
+| 2
+| [[File:SetSymbolReviving Legends.png|40px]]
+| [[File:L2 Logo.png|120px]]
+| よみがえる伝説<br>{{TCG|Reviving Legends}}
+| Undaunted
+| 80 (1)
+| February 11, 2010
+|- style="background:#FFF"
+| 3
+| [[File:SetSymbolClash at the Summit.png|40px]]
+| [[File:L3 Logo.png|120px]]
+| 頂上大激突<br>{{TCG|Clash at the Summit}}
+| Triumphant
+| 80 (1)
+| July 8, 2010
+|}
+
+===BW Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{white color}}; border:3px solid #{{black color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}" | Set no.
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| 1
+| [[File:SetSymbolBlack Collection.png|40px]]<br>[[File:SetSymbolWhite Collection.png|40px]]
+| [[File:BW1 Logo.png|150px]]
+| ブラックコレクション • ホワイトコレクション<br>{{TCG|Black Collection/White Collection|Black Collection • White Collection}}
+| Black & White<br>Part of {{TCG|Emerging Powers}}
+| 53 (3)<br>53 (3)
+| December 17, 2010
+|- style="background:#FFF"
+| 2
+| [[File:SetSymbolRed Collection.png|40px]]
+| [[File:BW2 Logo.png|160px]]
+| レッドコレクション<br>{{TCG|Red Collection}}
+| Noble Victories
+| 66 (6)
+| July 15, 2011
+|- style="background:#FFF"
+| 3
+| [[File:SetSymbolPsycho Drive.png|40px]]<br>[[File:SetSymbolHail Blizzard.png|40px]]
+| [[File:BW3 Logo.png|140px]]
+| サイコドライブ • ヘイルブリザード<br>{{TCG|Psycho Drive/Hail Blizzard|Psycho Drive • Hail Blizzard}}
+| Next Destinies
+| 52 (5)<br>52 (5)
+| September 16, 2011
+|- style="background:#FFF"
+| 4
+| [[File:SetSymbolDark Rush.png|40px]]
+| [[File:BW4 Logo.png|150px]]
+| ダークラッシュ<br>{{TCG|Dark Rush}}
+| Dark Explorers
+| 69 (7)
+| December 16, 2011
+|- style="background:#FFF"
+| 5
+| [[File:SetSymbolDragon Blast.png|40px]]<br>[[File:SetSymbolDragon Blade.png|40px]]
+| [[File:BW5 Logo.png|150px]]
+| リューズブラスト • リューノブレード<br>{{TCG|Dragon Blast/Dragon Blade|Dragon Blast • Dragon Blade}}
+| Dragons Exalted
+| 50 (5)<br>50 (5)
+| March 16, 2012
+|- style="background:#FFF"
+| 6
+| [[File:SetSymbolFreeze Bolt.png|40px]]<br>[[File:SetSymbolCold Flare.png|40px]]
+| [[File:BW6 Logo.png|150px]]
+| フリーズボルト • コールドフレア<br>{{TCG|Freeze Bolt/Cold Flare|Freeze Bolt • Cold Flare}}
+| Boundaries Crossed
+| 59 (6)<br>59 (6)
+| July 13, 2012
+|- style="background:#FFF"
+| 7
+| [[File:SetSymbolPlasma Gale.png|40px]]
+| [[File:BW7 Logo.png|150px]]
+| プラズマゲイル<br>{{TCG|Plasma Gale}}
+| Plasma Storm
+| 70 (9)
+| September 14, 2012
+|- style="background:#FFF"
+| 8
+| [[File:SetSymbolSpiral Force.png|40px]]<br>[[File:SetSymbolThunder Knuckle.png|40px]]
+| [[File:BW8 Logo.png|150px]]
+| ラセンフォース • ライデンナックル<br>{{TCG|Spiral Force/Thunder Knuckle|Spiral Force • Thunder Knuckle}}
+| Plasma Freeze
+| 51 (7)<br>51 (7)
+| December 14, 2012
+|- style="background:#FFF"
+| 9
+| [[File:SetSymbolMegalo Cannon.png|40px]]
+| [[File:BW9 Logo.png|150px]]
+| メガロキャノン<br>{{TCG|Megalo Cannon}}
+| Plasma Blast
+| 76 (10)
+| March 15, 2013
+|}
+
+===XY Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{y color}}; border:3px solid #{{x color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}" | Set no.
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| 1
+| [[File:SetSymbolCollection X.png|40px]]<br>[[File:SetSymbolCollection Y.png|40px]]
+| [[File:XY1 Logo.png|120px]]
+| コレクションX • コレクションY<br>{{TCG|Collection X/Collection Y|Collection X • Collection Y}}
+| XY
+| 60 (3)<br>60 (3)
+| December 13, 2013
+|- style="background:#FFF"
+| 2
+| [[File:SetSymbolWild Blaze.png|40px]]
+| [[File:XY2 Logo.png|120px]]
+| ワイルドブレイズ<br>{{TCG|Wild Blaze}}
+| Flashfire
+| 80 (10)
+| March 15, 2014
+|- style="background:#FFF"
+| 3
+| [[File:SetSymbolRising Fist.png|40px]]
+| [[File:XY3 Logo.png|120px]]
+| ライジングフィスト<br>{{TCG|Rising Fist}}
+| Furious Fists
+| 96 (9)
+| June 14, 2014
+|- style="background:#FFF"
+| 4
+| [[File:SetSymbolPhantom Gate.png|40px]]
+| [[File:XY4 Logo.png|120px]]
+| ファントムゲート<br>{{TCG|Phantom Gate}}
+| Phantom Forces
+| 88 (9)
+| September 13, 2014
+|- style="background:#FFF"
+| 5
+| [[File:SetSymbolGaia Volcano.png|40px]]<br>[[File:SetSymbolTidal Storm.png|40px]]
+| [[File:XY5 Logo.png|120px]]
+| ガイアボルケーノ • タイダルストーム<br>{{TCG|Gaia Volcano/Tidal Storm|Gaia Volcano • Tidal Storm}}
+| Primal Clash
+| 70 (10)<br>70 (10)
+| December 13, 2014
+|- style="background:#FFF"
+| 6
+| [[File:SetSymbolEmerald Break.png|40px]]
+| [[File:XY6 Logo.png|120px]]
+| エメラルドブレイク<br>{{TCG|Emerald Break}}
+| Roaring Skies
+| 78 (13)
+| March 14, 2015
+|- style="background:#FFF"
+| 7
+| [[File:SetSymbolBandit Ring.png|40px]]
+| [[File:XY7 Logo.png|120px]]
+| バンデットリング<br>{{TCG|Bandit Ring}}
+| Ancient Origins
+| 81 (16)
+| June 20, 2015
+|}
+
+===XY BREAK Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{omega ruby color}}; border:3px solid #{{alpha sapphire color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}" | Set no.
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| 1
+| [[File:SetSymbolBlue Shock.png|40px]]<br>[[File:SetSymbolRed Flash.png|40px]]
+| [[File:XY8 Logo.png|100px]]
+| 青い衝撃 • 赤い閃光<br>{{TCG|Blue Shock/Red Flash|Blue Shock • Red Flash}}
+| BREAKthrough
+| 59 (6)<br>59 (6)
+| September 26, 2015
+|- style="background:#FFF"
+| 2
+| [[File:SetSymbolRage of the Broken Heavens.png|40px]]
+| [[File:XY9 Logo.png|100px]]
+| 破天の怒り<br>{{TCG|Rage of the Broken Heavens}}
+| BREAKpoint
+| 80 (9)
+| December 11, 2015
+|- style="background:#FFF"
+| 3
+| [[File:SetSymbolAwakening Psychic King.png|40px]]
+| [[File:XY10 Logo.png|110px]]
+| めざめる超王<br>{{TCG|Awakening Psychic King}}
+| Fates Collide
+| 78 (10)
+| March 18, 2016
+|- style="background:#FFF"
+| 4
+| [[File:SetSymbolFever-Burst Fighter.png|40px]]<br>[[File:SetSymbolCruel Traitor.png|40px]]
+| [[File:XY11 Logo.png|100px]]
+| 爆熱の闘士 • 冷酷の反逆者<br>{{TCG|Fever-Burst Fighter/Cruel Traitor|Fever-Burst Fighter • Cruel Traitor}}
+| Steam Siege
+| 54 (5)<br>54 (5)
+| June 17, 2016
+|}
+
+===Sun & Moon Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{sun color}}; border:3px solid #{{moon color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}" | Set no.
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| 0
+| [[File:SetSymbolPikachu New Friends.png|40px]]
+| 
+| ピカチュウと新しい仲間たち<br>{{TCG|Pikachu's New Friends}}
+| N/A
+| 4
+| November 18, 2016
+|- style="background:#FFF"
+| 1
+| [[File:SetSymbolCollection Sun.png|40px]][[File:SetSymbolCollection Moon.png|40px]]
+| [[File:SM1 Logo.png|130px]]
+| コレクション サン • コレクション ムーン<br>{{TCG|Collection Sun/Collection Moon|Collection Sun • Collection Moon}}
+| Sun & Moon
+| 60 (13)<br>60 (13)
+| December 9, 2016
+|- style="background:#FFF"
+| 2
+| [[File:SetSymbolIslands Await You.png|40px]][[File:SetSymbolAlolan Moonlight.png|40px]]
+| [[File:SM2 Logo.png|100px]]
+| キミを待つ島々 • アローラの月光<br>{{TCG|Islands Await You/Alolan Moonlight|Islands Await You • Alolan Moonlight}}
+| Guardians Rising
+| 50 (12)<br>50 (12)
+| March 17, 2017
+|- style="background:#FFF"
+| 3
+| [[File:SetSymbolTo Have Seen the Battle Rainbow.png|40px]][[File:SetSymbolDarkness that Consumes Light.png|40px]]
+| [[File:SM3 Logo.png|100px]]
+| 闘う虹を見たか • 光を喰らう闇<br>{{TCG|To Have Seen the Battle Rainbow/Darkness that Consumes Light|To Have Seen the Battle Rainbow • Darkness that Consumes Light}}
+| Burning Shadows
+| 51 (13)<br>51 (13)
+| June 16, 2017
+|- style="background:#FFF"
+| 4
+| [[File:SetSymbolAwakened Heroes.png|40px]][[File:SetSymbolUltradimensional Beasts.png|40px]]
+| [[File:SM4 Logo.png|100px]]
+| 覚醒の勇者 • 超次元の暴獣<br>{{TCG|Awakened Heroes/Ultradimensional Beasts|Awakened Heroes • Ultradimensional Beasts}}
+| Crimson Invasion
+| 50 (12)<br>50 (12)
+| September 15, 2017
+|- style="background:#FFF"
+| 5
+| [[File:SetSymbolUltra Sun.png|40px]][[File:SetSymbolUltra Moon.png|40px]]
+| [[File:SM5 Logo.png|140px]]
+| ウルトラサン • ウルトラムーン<br>{{TCG|Ultra Sun/Ultra Moon|Ultra Sun • Ultra Moon}}
+| Ultra Prism
+| 66 (12)<br>66 (12)
+| December 8, 2017
+|- style="background:#FFF"
+| 6
+| [[File:SetSymbolForbiddenLight.png|40px]]
+| [[File:SM6 Logo.png|100px]]
+| 禁断の光<br>{{TCG|Forbidden Light}}
+| Forbidden Light
+| 94 (16)
+| March 2, 2018
+|- style="background:#FFF"
+| 7
+| [[File:SetSymbolSky-Splitting Charisma.png|40px]]
+| [[File:SM7 Logo.png|100px]]
+| 裂空のカリスマ<br>{{TCG|Sky-Splitting Charisma}}
+| Celestial Storm
+| 96 (16)
+| June 1, 2018
+|- style="background:#FFF"
+| 8
+| [[File:SetSymbolSuper-Burst Impact.png|40px]]
+| [[File:SM8 Logo.png|100px]]
+| 超爆インパクト<br>{{TCG|Super-Burst Impact}}
+| Lost Thunder
+| 95 (16)
+| September 7, 2018
+|- style="background:#FFF"
+| 9
+| [[File:SetSymbolTag Bolt.png|40px]]
+| [[File:SM9 Logo.png|100px]]
+| タッグボルト<br>{{TCG|Tag Bolt}}
+| Team Up
+| 95 (23)
+| December 7, 2018
+|- style="background:#FFF"
+| 10
+| [[File:SetSymbolDouble Blaze.png|40px]]
+| [[File:SM10 Logo.png|100px]]
+| ダブルブレイズ<br>{{TCG|Double Blaze}}
+| Unbroken Bonds
+| 95 (21)
+| March 1, 2019
+|- style="background:#FFF"
+| 11
+| [[File:SetSymbolMiracle Twin.png|40px]]
+| [[File:SM11 Logo.png|100px]]
+| ミラクルツイン<br>{{TCG|Miracle Twin}}
+| Unified Minds
+| 94 (21)
+| May 31, 2019
+|- style="background:#FFF"
+| 12
+| [[File:SetSymbolAlter Genesis.png|40px]]
+| [[File:SM12 Logo.png|100px]]
+| オルタージェネシス<br>{{TCG|Alter Genesis}}
+| Cosmic Eclipse
+| 95 (22)
+| September 6, 2019
+|}
+
+===Sword & Shield Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{sword color}}; border:3px solid #{{shield color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}" | Set no.
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| 1
+| [[File:SetSymbolSword.png|40px]][[File:SetSymbolShield.png|40px]]
+| [[File:S1 Logo.png|110px]]
+| ソード • シールド<br>{{TCG|Sword/Shield|Sword • Shield}}
+| Sword & Shield
+| 60 (15)<br>60 (15)
+| December 6, 2019
+|- style="background:#FFF"
+| 2
+| [[File:SetSymbolRebellion Crash.png|40px]]
+| [[File:S2 Logo.png|120px]]
+| 反逆クラッシュ<br>{{TCG|Rebellion Crash}}
+| Rebel Clash
+| 96 (19)
+| March 6, 2020
+|- style="background:#FFF"
+| 3
+| [[File:SetSymbolInfinity Zone.png|40px]]
+| [[File:S3 Logo.png|120px]]
+| ムゲンゾーン<br>{{TCG|Infinity Zone}}
+| Darkness Ablaze
+| 100 (19)
+| June 5, 2020
+|- style="background:#FFF"
+| 4
+| [[File:SetSymbolAmazing Volt Tackle.png|40px]]
+| [[File:S4 Logo.png|120px]]
+| 仰天のボルテッカー<br>{{TCG|Amazing Volt Tackle}}
+| Vivid Voltage
+| 100 (21)
+| September 18, 2020
+|- style="background:#FFF"
+| 5
+| [[File:SetSymbolSingle Strike Master.png|40px]][[File:SetSymbolRapid Strike Master.png|40px]]
+| [[File:S5 Logo.png|120px]]
+| 一撃マスター • 連撃マスター<br>{{TCG|Single Strike Master/Rapid Strike Master|Single Strike Master • Rapid Strike Master}}
+| Battle Styles
+| 70 (21)<br>70 (21)
+| January 22, 2021
+|- style="background:#FFF"
+| 6
+| [[File:SetSymbolSilver Lance.png|40px]][[File:SetSymbolJet-Black Spirit.png|40px]]
+| [[File:S6 Logo.png|120px]]
+| 白銀のランス • 漆黒のガイスト<br>{{TCG|Silver Lance/Jet-Black Spirit|Silver Lance • Jet-Black Spirit}}
+| Chilling Reign
+| 70 (25)<br>70 (25)
+| April 23, 2021
+|- style="background:#FFF"
+| 7
+| [[File:SetSymbolSkyscraping Perfection.png|40px]][[File:SetSymbolBlue Sky Stream.png|40px]]
+| [[File:S7 Logo.png|120px]]
+| 摩天パーフェクト • 蒼空ストリーム<br>{{TCG|Skyscraping Perfection/Blue Sky Stream|Skyscraping Perfection • Blue Sky Stream}}
+| Evolving Skies
+| 67 (23)<br>67 (23)
+| July 9, 2021
+|- style="background:#FFF"
+| 8
+| [[File:SetSymbolFusion Arts.png|40px]]
+| [[File:S8 Logo.png|120px]]
+| フュージョンアーツ<br>{{TCG|Fusion Arts}}
+| Fusion Strike
+| 100 (29)
+| September 24, 2021
+|- style="background:#FFF"
+| 9
+| [[File:SetSymbolStar Birth.png|40px]]
+| [[File:S9 Logo.png|120px]]
+| スターバース<br>{{TCG|Star Birth}}
+| Brilliant Stars
+| 100 (27)
+| January 14, 2022
+|- style="background:#FFF"
+| 10
+| [[File:SetSymbolTime Gazer.png|40px]][[File:SetSymbolSpace Juggler.png|40px]]
+| [[File:S10 Logo.png|120px]]
+| タイムゲイザー • スペースジャグラー<br>{{TCG|Time Gazer/Space Juggler|Time Gazer • Space Juggler}}
+| Astral Radiance
+| 67 (21)<br>67 (21)
+| April 8, 2022
+|- style="background:#FFF"
+| 11
+| [[File:SetSymbolLost Abyss.png|40px]]
+| [[File:S11 Logo.png|120px]]
+| ロストアビス<br>{{TCG|Lost Abyss}}
+| Lost Origin
+| 100 (27)
+| July 15, 2022
+|- style="background:#FFF"
+| 12
+| [[File:SetSymbolParadigm Trigger.png|40px]]
+| [[File:S12 Logo.png|120px]]
+| パラダイムトリガー<br>{{TCG|Paradigm Trigger}}
+| Silver Tempest
+| 98 (27)
+| October 21, 2022
+|}
+
+===Scarlet & Violet Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{scarlet color}}; border:3px solid #{{violet color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}" | Set no.
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px; {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| 1
+| [[File:SetSymbolScarlet ex.png|40px]][[File:SetSymbolViolet ex.png|40px]]
+| [[File:SV1S Logo JP.png|110px]]<br>[[File:SV1V Logo JP.png|110px]]
+| スカーレットex • バイオレットex<br>{{TCG|Scarlet ex/Violet ex|Scarlet ex • Violet ex}}
+| {{TCG|Scarlet & Violet}}
+| 78 (30)<br>78 (30)
+| January 20, 2023
+|- style="background:#FFF"
+| 2
+| [[File:SetSymbolSnow Hazard.png|40px]][[File:SetSymbolClay Burst.png|40px]]
+| [[File:SV2 Logo JP.png|110px]]
+| スノーハザード • クレイバースト<br>{{TCG|Snow Hazard/Clay Burst|Snow Hazard • Clay Burst}}
+| ⅔ of {{TCG|Paldea Evolved}}
+| 71 (28)<br>71 (28)
+| April 14, 2023
+|- style="background:#FFF"
+| 3
+| [[File:SetSymbolRuler of the Black Flame.png|40px]]
+| [[File:SV3 Logo JP.png|110px]]
+| 黒炎の支配者<br>{{TCG|Ruler of the Black Flame}}
+| {{TCG|Obsidian Flames}}
+| 108 (33)
+| July 28, 2023
+|- style="background:#FFF"
+| 4
+| [[File:SetSymbolAncient Roar.png|40px]][[File:SetSymbolFuture Flash.png|40px]]
+| [[File:SV4 Logo JP.png|110px]]
+| 古代の咆哮 • 未来の一閃<br>{{TCG|Ancient Roar/Future Flash|Ancient Roar • Future Flash}}
+| ⅔ of {{TCG|Paradox Rift}}
+| 66 (29)<br>66 (29)
+| October 27, 2023
+|- style="background:#FFF"
+| 5
+| [[File:SetSymbolWild Force.png|40px]][[File:SetSymbolCyber Judge.png|40px]]
+| [[File:SV5 Logo JP.png|110px]]
+| ワイルドフォース• サイバージャッジ<br>{{TCG|Wild Force/Cyber Judge|Wild Force • Cyber Judge}}
+| {{TCG|Temporal Forces}}
+| 71 (29)<br>71 (29)
+| January 26, 2024
+|- style="background:#FFF"
+| 6
+| [[File:SetSymbolTransformation Mask.png|40px]]
+| [[File:SV6 Logo JP.png|110px]]
+| 変幻の仮面<br>{{TCG|Transformation Mask}}
+| ⅔ of {{TCG|Twilight Masquerade}}
+| 101 (32)
+| April 26, 2024
+|- style="background:#FFF"
+| 7
+| [[File:SetSymbolStellar Miracle.png|40px]]
+| [[File:SV7 Logo JP.png|110px]]
+| ステラミラクル<br>{{TCG|Stellar Miracle}}
+| {{TCG|Stellar Crown}}
+| 102 (33)
+| July 19, 2024
+|- style="background:#FFF"
+| 8
+| [[File:SetSymbolSuper Electric Breaker.png|40px]]
+| [[File:SV8 Logo JP.png|110px]]
+| 超電ブレイカー<br>{{TCG|Super Electric Breaker}}
+| ⅔ of {{TCG|Surging Sparks}}
+| 106 (32)
+| October 18, 2024
+|- style="background:#FFF"
+| 9
+| [[File:SetSymbolBattle Partners.png|40px]]
+| [[File:SV9 Logo JP.png|110px]]
+| バトルパートナーズ<br>{{TCG|Battle Partners}}
+| {{TCG|Journey Together}}
+| 100 (32)
+| January 24, 2025
+|- style="background:#FFF"
+|10
+| [[File:SetSymbolGlory of the Rocket Gang.png|40px]]
+| [[File:SV10 Logo JP.png|110px]]
+|ロケット団の栄光<br>{{TCG|Glory of the Rocket Gang}}
+|⅔ of {{TCG|Destined Rivals}}
+|98 (34)
+|April 18, 2025
+|- style="background:#FFF"
+| 11
+| [[File:SetSymbolBlackBolt.png|40px]]<br>[[File:SetSymbolWhiteFlare.png|40px]]
+| [[File:SV11 Logo JP.png|110px]]
+| ブラックボルト • ホワイトフレア<br>{{TCG|Black Bolt/White Flare|Black Bolt • White Flare}}
+| {{TCG|Black Bolt & White Flare}}
+| 86 (88)<br>86 (88)
+| June 6, 2025
+|}
+
+===MEGA Series===
+{| style="margin:auto; width:60%; text-align: center; background:#545454; border:3px solid #e9e612; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}" | Set no.
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px; {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| 1
+| [[File:SetSymbolMega Brave.png|40px]][[File:SetSymbolMega Symphonia.png|40px]]
+| [[File:M1 Logo JP.png|110px]]
+| メガブレイブ • メガシンフォニア<br>{{TCG|Mega Brave/Mega Symphonia|Mega Brave • Mega Symphonia}}
+| {{TCG|Mega Evolution}}
+| 63 (29)<br>63 (29)
+| August 1, 2025
+|- style="background:#FFF"
+| 2
+| [[File:SetSymbolInferno X.png|40px]]
+| [[File:M2 Logo JP.png|110px]]
+| インフェルノX<br>{{TCG|Inferno X}}
+| {{TCG|Phantasmal Flames}}
+| 80 (36)
+| September 26, 2025
+|- style="background:#FFF"
+| 3
+| [[File:SetSymbolNihil Zero.png|40px]]
+| [[File:M3 Logo JP.png|110px]]
+| ムニキスゼロ<br>{{TCG|Nihil Zero}}
+| {{TCG|Perfect Order}}
+| 80 (37)
+| January 23, 2026
+|- style="background:#FFF"
+| 4
+| [[File:SetSymbolNinja Spinner.png|40px]]
+| [[File:M4 Logo JP.png|110px]]
+| ニンジャスピナー<br>{{TCG|Ninja Spinner}}
+| {{TCG|Chaos Rising}}
+| 83 (37)
+| March 13, 2026
+|- style="background:#FFF"
+| 5
+| [[File:SetSymbolAbyss Eye.png|40px]]
+| [[File:M5 Logo JP.png|110px]]
+| アビスアイ<br>{{TCG|Abyss Eye}}
+| {{TCG|Pitch Black}}
+| 81 (37)
+| May 22, 2026
+|- style="background:#FFF"
+| 6
+| [[File:SetSymbolStorm Emeralda.png|40px]]
+| [[File:M6 Logo JP.png|110px]]
+| ストームエメラルダ<br>{{TCG|Storm Emeralda}}
+| {{TCG|Delta Reign}}
+| 76 (37)
+| July 31, 2026
+|- style="background:#FFF"
+| 7
+| [[File:SetSymbolAura Seeker.png|40px]]
+| <!--[[File:M7 Logo JP.png|110px]]-->
+| ハドウシーカー<br>{{TCG|Aura Seeker}}
+| "{{TCG|FLO}}"
+| TBD
+| TBD
+|}
+
+==Subsets==
+===ADV Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{ruby color}}; border:3px solid #{{sapphire color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:200px" | English equivalent
+! style="background-color:#EEE" | No. of cards
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| [[File:SetSymbolTeam Magma vs Team Aqua.png|40px]]
+| 
+| マグマVSアクア ふたつの野望<br>{{TCG|Magma VS Aqua: Two Ambitions}}
+| EX Team Magma vs Team Aqua
+| 80
+| October 24, 2003
+|- style="background:#FFF"
+|}
+
+===LEGEND Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{heartgold color}}; border:3px solid #{{soulsilver color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:200px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| [[File:SetSymbolLost Link.png|40px]]
+| [[File:Lost Link Logo.png|120px]]
+| ロストリンク<br>{{TCG|Lost Link}}
+| Parts of {{TCG|Triumphant}} and {{TCG|Call of Legends}}
+| 40
+| April 16, 2010
+|}
+
+===BW Era===
+{| style="margin:auto; width:60%; text-align: center; background:#{{white color}}; border:3px solid #{{black color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| [[File:SetSymbolDragon Selection.png|40px]]
+| [[File:Dragon Selection Logo.png|120px]]
+| ドラゴンセレクション<br>{{TCG|Dragon Selection}}
+| Dragon Vault
+| 20
+| January 27, 2012
+|- style="background:#FFF"
+| [[File:SetSymbolShiny Collection.png|40px]]
+| [[File:Shiny Collection Logo.png|120px]]
+| シャイニーコレクション<br>{{TCG|Shiny Collection}}
+| {{TCG|Legendary Treasures}}'s Radiant Collection
+| 20 (5)
+| February 1, 2013
+|- style="background:#FFF"
+| [[File:SetSymbolEX Battle Boost.png|40px]]
+| [[File:EX Battle Boost Logo.png|120px]]
+| EXバトルブースト<br>{{TCG|EX Battle Boost}}
+| Legendary Treasures
+| 93 (6)
+| July 13, 2013
+|}
+
+===XY Era===
+====Concept Packs====
+{| style="margin:auto; width:60%; text-align: center; background:#{{y color}}; border:3px solid #{{x color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| [[File:SetSymbolDoubleCrisis.png|40px]]
+| [[File:CP1 Logo.png|120px]]
+| マグマ団VSアクア団 ダブルクライシス<br>{{TCG|Magma Gang VS Aqua Gang: Double Crisis}}
+| Double Crisis
+| 34
+| January 30, 2015
+|- style="background:#FFF"
+| [[File:SetSymbolLegendary Shine Collection.png|40px]]
+| [[File:CP2 Logo.png|120px]]
+| 伝説キラコレクション<br>{{TCG|Legendary Shine Collection}}
+| Part of {{TCG|BREAKthrough}}
+| 27
+| July 18, 2015
+|}
+
+===XY BREAK Era===
+====Concept Packs====
+{| style="margin:auto; width:60%; text-align: center; background:#{{omega ruby color}}; border:3px solid #{{alpha sapphire color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| [[File:SetSymbolPokéKyun Collection.png|40px]]
+| [[File:CP3 Logo.png|120px]]
+| ポケキュンコレクション<br>{{TCG|PokéKyun Collection}}
+| {{TCG|Generations}}'s Radiant Collection
+| 32
+| January 29, 2016
+|- style="background:#FFF"
+| [[File:SetSymbolPremium Champion Pack.png|40px]]
+| [[File:CP4 Logo.png|120px]]
+| プレミアムチャンピオンパック EX×M×BREAK<br>{{TCG|Premium Champion Pack}} EX×M×BREAK
+| N/A
+| 131
+| April 16, 2016
+|- style="background:#FFF"
+| [[File:SetSymbolMythical Legendary Dream Shine Collection.png|40px]]
+| [[File:CP5 Logo.png|120px]]
+| 幻・伝説ドリームキラコレクション<br>{{TCG|Mythical & Legendary Dream Shine Collection}}
+| N/A
+| 36 (2)
+| July 16, 2016
+|- style="background:#FFF"
+| [[File:SetSymbolExpansion Pack 20th Anniversary.png|40px]]
+| 
+| 拡張パック 20th Anniversary<br>{{TCG|Expansion Pack 20th Anniversary}}
+| Evolutions
+| 87 (16)
+| September 16, 2016
+|}
+
+====High Class Expansion Packs====
+{| style="margin:auto; width:60%; text-align: center; background:#{{omega ruby color}}; border:3px solid #{{alpha sapphire color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| [[File:SetSymbolXY reprint.png|40px]]
+| [[File:The Best of XY Logo.png|120px]]
+| THE BEST OF XY<br>{{TCG|The Best of XY|THE BEST OF XY}}
+| N/A
+| 171 (17)
+| April 21, 2017
+|}
+
+===Sun & Moon Era===
+====Enhanced Expansion Packs====
+{| style="margin:auto; width:60%; text-align: center; background:#{{sun color}}; border:3px solid #{{moon color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| [[File:SetSymbolSM1Plus.png|40px]]
+| [[File:SM1Plus Logo.png|120px]]
+| サン＆ムーン<br>{{TCG|Enhanced Expansion Pack Sun & Moon|Sun & Moon}}
+| Part of {{TCG|Guardians Rising}}
+| 51 (17)
+| January 27, 2017
+|- style="background:#FFF"
+| [[File:SetSymbolFacing a New Trial.png|40px]]
+| [[File:SM2Plus Logo.png|120px]]
+| 新たなる試練の向こう<br>{{TCG|Facing a New Trial}}
+| Part of {{TCG|Burning Shadows}}
+| 49 (17)
+| April 21, 2017
+|- style="background:#FFF"
+| [[File:SetSymbolShiningLegends.png|40px]]
+| [[File:SM3Plus Logo.png|120px]]
+| ひかる伝説<br>{{TCG|Shining Legends}}
+| Shining Legends
+| 72 (10)
+| July 15, 2017
+|- style="background:#FFF"
+| [[File:SetSymbolUltra Force.png|40px]]
+| [[File:SM5Plus Logo.png|120px]]
+| ウルトラフォース<br>{{TCG|Ultra Force}}
+| Part of {{TCG|Forbidden Light}}
+| 50 (13)
+| January 19, 2018
+|- style="background:#FFF"
+| [[File:SetSymbolDragon Storm.png|40px]]
+| [[File:SM6a Logo.png|120px]]
+| ドラゴンストーム<br>{{TCG|Dragon Storm}}
+| Dragon Majesty
+| 53 (13)
+| April 6, 2018
+|- style="background:#FFF"
+| [[File:SetSymbolChampion Road.png|40px]]
+| [[File:SM6b Logo.png|120px]]
+| チャンピオンロード<br>{{TCG|Champion Road}}
+| Part of {{TCG|Celestial Storm}}
+| 66 (20)
+| May 30, 2018
+|- style="background:#FFF"
+| [[File:SetSymbolThunderclap Spark.png|40px]]
+| [[File:SM7a Logo.png|120px]]
+| 迅雷スパーク<br>{{TCG|Thunderclap Spark}}
+| Part of {{TCG|Lost Thunder}}
+| 60 (13)
+| July 6, 2018
+|- style="background:#FFF"
+| [[File:SetSymbolFairy Rise.png|40px]]
+| [[File:SM7b Logo.png|120px]]
+| フェアリーライズ<br>{{TCG|Fairy Rise}}
+| Part of {{TCG|Lost Thunder}}
+| 50 (13)
+| August 3, 2018
+|- style="background:#FFF"
+| [[File:SetSymbolDark Order.png|40px]]
+| [[File:SM8a Logo.png|120px]]
+| ダークオーダー<br>{{TCG|Dark Order}}
+| Part of {{TCG|Team Up}}
+| 52 (13)
+| October 5, 2018
+|- style="background:#FFF"
+| [[File:SetSymbolNight Unison.png|40px]]
+| [[File:SM9a Logo.png|120px]]
+| ナイトユニゾン<br>{{TCG|Night Unison}}
+| Part of {{TCG|Unbroken Bonds}}
+| 55 (15)
+| January 11, 2019
+|- style="background:#FFF"
+| [[File:SetSymbolFull Metal Wall.png|40px]]
+| [[File:SM9b Logo.png|120px]]
+| フルメタルウォール<br>{{TCG|Full Metal Wall}}
+| Part of {{TCG|Unbroken Bonds}}
+| 54 (15)
+| February 1, 2019
+|- style="background:#FFF"
+| [[File:SetSymbolGG End.png|40px]]
+| [[File:SM10a Logo.png|120px]]
+| ジージーエンド<br>{{TCG|GG End}}
+| Part of {{TCG|Unified Minds}}
+| 54 (15)
+| April 5, 2019
+|- style="background:#FFF"
+| [[File:SetSymbolSky Legend.png|40px]]
+| [[File:SM10b Logo.png|120px]]
+| スカイレジェンド<br>{{TCG|Sky Legend}}
+| Parts of {{TCG|Hidden Fates}} and {{TCG|Unified Minds}}
+| 54 (15)
+| April 26, 2019
+|- style="background:#FFF"
+| [[File:SetSymbolRemix Bout.png|40px]]
+| [[File:SM11a Logo.png|120px]]
+| リミックスバウト<br>{{TCG|Remix Bout}}
+| Part of {{TCG|Cosmic Eclipse}}
+| 64 (16)
+| July 5, 2019
+|- style="background:#FFF"
+| [[File:SetSymbolDream League.png|40px]]
+| [[File:SM11b Logo.png|120px]]
+| ドリームリーグ<br>{{TCG|Dream League}}
+| Part of {{TCG|Cosmic Eclipse}}
+| 49 (26)
+| August 2, 2019
+|}
+
+====High Class Expansion Packs====
+{| style="margin:auto; width:60%; text-align: center; background:#{{sun color}}; border:3px solid #{{moon color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| [[File:SetSymbolGX Battle Boost.png|40px]]
+| [[File:SM4Plus Logo.png|120px]]
+| GXバトルブースト<br>{{TCG|GX Battle Boost}}
+| Part of {{TCG|Ultra Prism}}
+| 114 (11)
+| October 20, 2017
+|- style="background:#FFF"
+| [[File:SetSymbolGX Ultra Shiny.png|40px]]
+| [[File:SM8b Logo.png|120px]]
+| GXウルトラシャイニー<br>{{TCG|GX Ultra Shiny}}
+| Hidden Fates's Shiny Vault
+| 150 (100)
+| November 2, 2018
+|- style="background:#FFF"
+| [[File:SetSymbolTag All Stars.png|40px]]
+| [[File:SM12a Logo.png|120px]]
+| TAG TEAM GX タッグオールスターズ<br>{{TCG|Tag All Stars|TAG TEAM GX: Tag All Stars}}
+| N/A
+| 173 (53)
+| October 4, 2019
+|}
+
+===Sword & Shield Era===
+====Enhanced Expansion Packs====
+{| style="margin:auto; width:60%; text-align: center; background:#{{sword color}}; border:3px solid #{{shield color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| [[File:SetSymbolVMAX Rising.png|40px]]
+| [[File:S1a Logo.png|110px]]
+| VMAXライジング<br>{{TCG|VMAX Rising}}
+| Part of {{TCG|Rebel Clash}}
+| 70 (16)
+| February 7, 2020
+|- style="background:#FFF"
+| [[File:SetSymbolExplosive Walker.png|40px]]
+| [[File:S2a Logo.png|120px]]
+| 爆炎ウォーカー<br>{{TCG|Explosive Walker}}
+| Part of {{TCG|Darkness Ablaze}}
+| 70 (16)
+| April 24, 2020
+|- style="background:#FFF"
+| [[File:SetSymbolLegendary Heartbeat.png|40px]]
+| [[File:S3a Logo.png|120px]]
+| 伝説の鼓動<br>{{TCG|Legendary Heartbeat}}
+| Part of {{TCG|Vivid Voltage}}
+| 76 (18)
+| July 10, 2020
+|- style="background:#FFF"
+| [[File:SetSymbolPeerless Fighters.png|40px]]
+| [[File:S5a Peerless Fighters Logo.png|120px]]
+| 双璧のファイター<br>{{TCG|Peerless Fighters}}
+| Part of {{TCG|Chilling Reign}}
+| 70 (16)
+| March 19, 2021
+|- style="background:#FFF"
+| [[File:SetSymbolEevee Heroes.png|40px]]
+| [[File:S6a Eevee Heroes Logo.png|120px]]
+| イーブイヒーローズ<br>{{TCG|Eevee Heroes}}
+| Parts of {{TCG|Fusion Strike}} and {{TCG|Evolving Skies}}
+| 69 (32)
+| May 28, 2021
+|- style="background:#FFF"
+| [[File:SetSymbol25th Anniversary Collection.png|40px]]
+| [[File:S8a 25th Anniversary Collection Logo.png|120px]]
+| 25th ANNIVERSARY COLLECTION<br>{{TCG|25th Anniversary Collection}}
+| Celebrations
+| 28 (2) + 8 special<br>Holo Energy cards
+| October 22, 2021
+|- style="background:#FFF"
+| [[File:SetSymbolBattle Region.png|40px]]
+| [[File:S9a Battle Region Logo.png|120px]]
+| バトルリージョン<br>{{TCG|Battle Region}}
+| Parts of {{TCG|Astral Radiance}} and {{TCG|Lost Origin}}
+| 67 (26)
+| February 25, 2022
+|- style="background:#FFF"
+| [[File:SetSymbolDark Phantasma.png|40px]]
+| [[File:S10a Dark Phantasma Logo.png|120px]]
+| ダークファンタズマ<br>{{TCG|Dark Phantasma}}
+| Part of {{TCG|Lost Origin}}
+| 71 (28)
+| May 13, 2022
+|- style="background:#FFF"
+| [[File:SetSymbolS10b.png|40px]]
+| [[File:Pokémon GO logo.png|120px]]
+| {{TCG|Pokémon GO}}
+| Pokémon GO
+| 71 (22) + 8 special<br>Holo Energy cards
+| June 17, 2022
+|- style="background:#FFF"
+| [[File:SetSymbolIncandescent Arcana.png|40px]]
+| [[File:S11a Incandescent Arcana Logo.png|120px]]
+| 白熱のアルカナ<br>{{TCG|Incandescent Arcana}}
+| Part of {{TCG|Silver Tempest}}
+| 68 (26)
+| September 2, 2022
+|}
+
+====High Class Expansion Packs====
+{| style="margin:auto; width:60%; text-align: center; background:#{{sword color}}; border:3px solid #{{shield color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| [[File:SetSymbolShiny Star V.png|40px]]
+| [[File:S4a Logo.png|110px]]
+| シャイニースターV<br>{{TCG|Shiny Star V}}
+| Shining Fates
+| 190 (140)
+| November 20, 2020
+|- style="background:#FFF"
+| [[File:SetSymbolVMAX Climax.png|40px]]
+| [[File:S8b VMAX Climax Logo.png|110px]]
+| VMAXクライマックス<br>{{TCG|VMAX Climax}}
+| Trainer Galleries of {{TCG|Brilliant Stars}}, {{TCG|Astral Radiance}}, {{TCG|Lost Origin}}, and {{TCG|Silver Tempest}}
+| 184 (101) + 8 special<br>Holo Energy cards
+| December 3, 2021
+|- style="background:#FFF"
+| [[File:SetSymbolVSTAR Universe.png|40px]]
+| [[File:S12a VSTAR Universe Logo.png|110px]]
+| VSTARユニバース<br>{{TCG|VSTAR Universe}}
+| Crown Zenith
+| 172 (90)
+| December 2, 2022
+|}
+
+===Scarlet & Violet Era===
+====Enhanced Expansion Packs====
+{| style="margin:auto; width:60%; text-align: center; background:#{{scarlet color}}; border:3px solid #{{violet color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| [[File:SetSymbolTriplet Beat.png|40px]]
+| [[File:SV1a Triplet Beat Logo.png|120px]]
+| トリプレットビート<br>{{TCG|Triplet Beat}}
+| ⅓ of {{TCG|Paldea Evolved}}
+| 73 (30)
+| March 10, 2023
+|- style="background:#FFF"
+| [[File:SetSymbolPokémon Card 151.png|40px]]
+| [[File:SV2a Pokémon Card 151 Logo.png|110px]]
+| ポケモンカード151<br>{{TCG|Pokémon Card 151}}
+| {{TCG|151}}
+| 165 (45)
+| June 16, 2023
+|- style="background:#FFF"
+| [[File:SetSymbolRaging Surf.png|40px]]
+| [[File:SV3a Raging Surf Logo.png|110px]]
+| レイジングサーフ<br>{{TCG|Raging Surf}}
+| ⅓ of {{TCG|Paradox Rift}}
+| 62 (30)
+| September 22, 2023
+|- style="background:#FFF"
+| [[File:SetSymbolCrimson Haze.png|40px]]
+| [[File:SV5a Crimson Haze Logo.png|120px]]
+| クリムゾンヘイズ<br>{{TCG|Crimson Haze}}
+| ⅓ of {{TCG|Twilight Masquerade}}
+| 66 (30)
+| March 22, 2024
+|- style="background:#FFF"
+| [[File:SetSymbolNight Wanderer.png|40px]]
+| [[File:SV6a Night Wanderer Logo.png|120px]]
+| ナイトワンダラー<br>{{TCG|Night Wanderer}}
+| {{TCG|Shrouded Fable}}
+| 64 (30)
+| June 7, 2024
+|- style="background:#FFF"
+| [[File:SetSymbolParadise Dragona.png|40px]]
+| [[File:SV7a Paradise Dragona Logo.png|120px]]
+| 楽園ドラゴーナ<br>{{TCG|Paradise Dragona}}
+| ⅓ of {{TCG|Surging Sparks}}
+| 64 (30)
+| September 13, 2024
+|- style="background:#FFF"
+| [[File:SetSymbolHot Wind Arena.png|40px]]
+| [[File:SV9a Hot Wind Arena Logo.png|120px]]
+| 熱風のアリーナ <br>{{TCG|Hot Wind Arena}}
+| ⅓ of {{TCG|Destined Rivals}}
+| 63 (29)
+| March 14, 2025
+|}
+
+====High Class Expansion Packs====
+{| style="margin:auto; width:60%; text-align: center; background:#{{scarlet color}}; border:3px solid #{{violet color}}; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| [[File:SetSymbolShiny Treasure ex.png|40px]]
+| [[File:SV4a Shiny Treasure ex Logo.png|110px]]
+| シャイニートレジャーex<br>{{TCG|Shiny Treasure ex}}
+| {{TCG|Paldean Fates}}
+| 190 (170)
+| December 1, 2023
+|- style="background:#FFF"
+| [[File:SetSymbolTerastal Fest ex.png|40px]]
+| [[File:SV8a Terastal Fest ex Logo.png|120px]]
+| テラスタルフェスex<br>{{TCG|Terastal Fest ex}}
+| {{TCG|Prismatic Evolutions}}
+| 187 (50)
+| December 6, 2024
+|}
+
+===MEGA Series===
+====Enhanced Expansion Packs====
+{| style="margin:auto; width:60%; text-align: center; background:#545454; border:3px solid #e9e612; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| [[File:SetSymbol30th Celebration M6a.png|40px]]
+| [[File:30th Celebration Logo JP.png|110px]]
+| 30th CELEBRATION<br>{{TCG|30th Celebration}}
+| {{TCG|30th Celebration}}
+| 103 (TBA)
+| September 16, 2026
+|}
+====High Class Expansion Packs====
+{| style="margin:auto; width:60%; text-align: center; background:#545454; border:3px solid #e9e612; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; {{roundytl|5px}}; width:50px" | Symbol
+! style="background-color:#EEE; width:150px" | Logo
+! style="background-color:#EEE; width:200px" | Japanese name<br>Translated name
+! style="background-color:#EEE; width:250px" | English equivalent
+! style="background-color:#EEE" | No. of cards (Secrets)
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date
+|- style="background:#FFF"
+| [[File:SetSymbolMEGA Dream ex.png|40px]]
+| [[File:M2a Logo JP.png|110px]]
+| MEGAドリームex<br>{{TCG|MEGA Dream ex}}
+| {{TCG|Ascended Heroes}}
+| 193 (57)
+| November 28, 2025
+|}
+
+==Promotional sets==
+{| style="margin:auto; width:90%; text-align: center; background:#545454; border:3px solid #e9e612; {{roundy|10px}}"
+|-
+! style="background-color:#EEE; width:50px" | Symbol
+! style="background-color:#EEE; width:200px" | Japanese name
+! style="background-color:#EEE; width:250px" | Translated name
+! style="background-color:#EEE; width:180px" | No. of cards
+! style="background-color:#EEE; width:150px" {{roundytr|5px}}" | Release date/period
+|- style="background:#FFF"
+| rowspan=3 | [[File:SetSymbolVending.png|30px]]
+| rowspan=3 | 拡張シート
+| {{TCG|Vending Machine cards|Expansion Sheet: Vending Machine cards Series 1 (Blue)}}
+| 36
+| March 23, 1998
+|- style="background:#FFF"
+| {{TCG|Vending Machine cards|Expansion Sheet: Vending Machine cards Series 2 (Red)}}
+| 36
+| June 17, 1998
+|- style="background:#FFF"
+| {{TCG|Vending Machine cards|Expansion Sheet: Vending Machine cards Series 3 (Green)}}
+| 36 standard cards<br>17 non-standard cards
+| November 24, 1998
+|- style="background:#FFF"
+| [[File:SetSymbolSouthern Islands.png|40px]]
+| サザンアイランド
+| {{TCG|Southern Islands}}
+| 18
+| July 17, 1999
+|- style="background:#FFF"
+| rowspan=3 | [[File:SetSymbolPromo.png|40px]]
+| rowspan=3 | —
+| {{TCG|P Promotional cards}}
+| 47
+| July 2001 – July 2002
+|- style="background:#FFF"
+| {{TCG|J Promotional cards}}
+| 2
+| August 2001 – July 2002
+|- style="background:#FFF"
+| {{TCG|T Promotional cards}}
+| 24
+| January 2002 – March 2003
+|- style="background:#FFF"
+| [[File:SetSymbolMcDonalds Minimum Pack.png|30px]]
+| マクドナルドオリジナル ミニマム★パック
+| {{TCG|McDonald's Pokémon-e Minimum Pack|McDonald's Original Minimum★Pack}}
+| 30
+| January 26 – February 24, 2002
+|- style="background:#FFF"
+| [[File:SetSymbolPromo.png|40px]]
+| —
+| {{TCG|ADV-P Promotional cards}}
+| 63
+| January 2003 – February 2004
+|- style="background:#FFF"
+| [[File:SetSymbolPokémon Players.png|30px]]
+| —
+| {{TCG|PLAY Promotional cards}}
+| 32
+| January 2003 – January 2006
+|- style="background:#FFF"
+| rowspan=2 | [[File:SetSymbolPromo.png|40px]]
+| rowspan=2 | —
+| {{TCG|PCG-P Promotional cards}}
+| 154
+| February 2004 – July 2006
+|- style="background:#FFF"
+| {{TCG|DP-P Promotional cards}}
+| 127
+| December 2006 – January 2009
+|- style="background:#FFF"
+| [[File:SetSymbolPokémon Players.png|30px]]
+| —
+| {{TCG|PPP Promotional cards}}
+| 7
+| May 2007
+|- style="background:#FFF"
+| [[File:SetSymbol10th Movie Commemoration Set.png|50px]]
+| 映画10周年記念　プレミアムシート
+| {{TCG|10th Movie Commemoration Set|Movie 10: 10th Anniversary Premium Sheet}}
+| 11
+| July 14, 2007
+|- style="background:#FFF"
+| [[File:SetSymbol11th Movie Commemoration Set.png|50px]]
+| 映画公開記念　プレミアムシート
+| {{TCG|11th Movie Commemoration Set|Movie Commemoration Premium Sheet}}
+| 9
+| July 19, 2008
+|- style="background:#FFF"
+| rowspan=2 | [[File:SetSymbolPromo.png|40px]]
+| rowspan=2 | —
+| {{TCG|DPt-P Promotional cards}}
+| 51
+| October 2008 – August 2009
+|- style="background:#FFF"
+| {{TCG|L-P Promotional cards}}
+| 79
+| September 2009 – August 2010
+|- style="background:#FFF"
+| [[File:SetSymbolPikachu World Collection 2010.png|SetSymbolPikachu World Collection 2010.png]]
+|  —
+| {{TCG|World Collection}}
+| 10<br>Including 1 that has a green background variant, found only in Pokémon Centers and 7-11 stores
+| July 8, 2010
+|- style="background:#FFF"
+| [[File:SetSymbolPromo.png|40px]]
+| —
+| {{TCG|BW-P Promotional cards}}
+| 229<br>Numbered up to 236, but 7 cards remain unreleased
+| December 2010 – September 2013
+|- style="background:#FFF"
+| [[File:SetSymbolJourney Partners Collection.png|40px]]
+| コレクションシート 旅立ちの仲間
+| {{TCG|McDonald's Collection|Collection Sheet Journey Partners}}
+| 9
+| September 18, 2010
+|- style="background:#FFF"
+| [[File:SetSymbolPromo.png|40px]]
+| —
+| {{TCG|XY-P Promotional cards}}
+| 298 numbered<br>155 unnumbered with unique attributes
+| August 2013 – February 2017
+|- style="background:#FFF"
+| [[File:SetSymbol SMPromo.png|40px]]
+| —
+| {{TCG|SM-P Promotional cards}}
+| 408 numbered<br>29 unnumbered with unique attributes
+| November 2016 – October 2019
+|- style="background:#FFF"
+| [[File:SetSymbol SMPromo.png|40px]]
+| —
+| {{TCG|S-P Promotional cards}}
+| 350 numbered<br>24 unnumbered with unique attributes
+| November 2019 - December 2022
+|- style="background:#FFF"
+| [[File:SetSymbolGreat Detective Pikachu.png|40px]]
+| ムービースペシャルパック 名探偵ピカチュウ
+| Movie Special Pack {{TCG|Great Detective Pikachu}}
+| 24 (1)
+| April 26, 2019
+|- style="background:#FFF"
+| [[File:SetSymbolPromo Card Pack 25th Anniversary Edition.png|40px]]
+| プロモカードパック 25th ANNIVERSARY edition
+| {{TCG|Promo Card Pack 25th Anniversary Edition}}
+| 25
+| October 22, 2021
+|- style="background:#FFF"
+| [[File:SetSymbol SMPromo.png|40px]]
+| —
+| {{TCG|SV-P Promotional cards}}
+| 290 numbered<br>13 unnumbered with unique attributes
+| November 2022 - August 2025
+|- style="background:#FFF"
+| [[File:SetSymbol SMPromo.png|40px]]
+| —
+| {{TCG|M-P Promotional cards}}
+| {{tt|Ongoing|44 numbered, 18 unannounced}}
+| August 1, 2025 - Present
+|}
+
+==See also==
+* [[List of Pokémon Trading Card Game expansions]]
+* [[List of Pokémon Trading Card Game expansions in other languages]]
+
+<noinclude>{{-}}
+{{Project TCG notice}}
+
+{{TCG Releases}}
+
+[[Category:Pokémon Trading Card Game expansions]]
+[[Category:Pokémon Trading Card Game releases]]
+[[Category:TCG lists]]
+</noinclude>
+
+[[es:Lista de expansiones japonesas del Juego de Cartas Coleccionables Pokémon]]
+[[it:Elenco delle espansioni giapponesi del Gioco di Carte Collezionabili Pokémon]]
