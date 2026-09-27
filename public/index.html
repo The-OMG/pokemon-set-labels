@@ -251,6 +251,26 @@
 
   #measure { position: absolute; left: -100000px; top: 0; visibility: hidden; pointer-events: none; }
 
+  /* ---------- generation index pages ---------- */
+  .idxpage { background: #fff; color: #111; display: flex; overflow: hidden; font-family: "Jost", "Segoe UI", system-ui, sans-serif; }
+  .idxpage .cut { flex: none; width: 0; border-left: 0.2mm dashed #9a9a9a; align-self: stretch; }
+  .idxpanel { --pw: 190mm; flex: 1 1 0; min-width: 0; padding: 8mm; display: flex; flex-direction: column; gap: 4mm; }
+  .idxhead { display: flex; align-items: baseline; gap: 4mm; border-bottom: 0.4mm solid #111; padding-bottom: 2mm; }
+  .idxhead h2 { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; text-transform: uppercase; font-weight: 700; font-size: calc(var(--pw) * 0.05); margin: 0; letter-spacing: .02em; }
+  .idxhead .yrs { font-size: calc(var(--pw) * 0.02); color: #444; font-variant-numeric: tabular-nums; }
+  .idxhead .n { margin-left: auto; font-size: calc(var(--pw) * 0.018); color: #444; }
+  .idxgrid { display: grid; grid-template-columns: repeat(var(--cols, 3), 1fr); gap: 2mm 4mm; align-content: start; }
+  .idxcell { display: flex; align-items: center; gap: 2.5mm; padding: 1.5mm 0; border-bottom: 0.2mm solid #ddd; min-width: 0; }
+  .idxcell .label.idx { --sym: calc(var(--pw) * 0.06); width: auto; height: auto; padding: 0; gap: 0; display: block; overflow: visible; flex: none; }
+  .idxcell .label.idx .symbox { margin: 0; }
+  .idxcell .nm { font-size: calc(var(--pw) * 0.018); font-weight: 500; line-height: 1.15; min-width: 0; }
+  .idxcell .nm small { display: block; font-size: 0.8em; color: #555; font-weight: 400; font-variant-numeric: tabular-nums; }
+  .idxcell .lg { height: calc(var(--pw) * 0.055); width: calc(var(--pw) * 0.16); object-fit: contain; object-position: left center; flex: none; }
+  .idxgrid.logos .idxcell { flex-direction: column; align-items: flex-start; gap: 1mm; }
+  .idxgrid.logos .idxcell .top { display: flex; align-items: center; gap: 2.5mm; width: 100%; }
+  .idxgrid.logos .lg { width: 100%; height: calc(var(--pw) * 0.075); object-position: center center; }
+  .idxpanel .foot { margin-top: auto; font-size: calc(var(--pw) * 0.014); color: #777; text-align: right; }
+
   /* ---------- PRINT ---------- */
   #print-root { display: none; }
   @media print {
@@ -259,7 +279,8 @@
     #print-root { display: block; }
     #print-root.labels .label:not(:last-child) { page-break-after: always; break-after: page; }
     #print-root.sheet .sheetpage:not(:last-child) { page-break-after: always; break-after: page; }
-    .label, .sheetpage { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    #print-root.index .idxpage:not(:last-child) { page-break-after: always; break-after: page; }
+    .label, .sheetpage, .idxpage { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   }
 
   .tabbar { display: none; }
@@ -323,6 +344,7 @@
     <span class="count" id="count">0 selected</span>
     <span class="spacer"></span>
     <button class="btn" id="btn-png" type="button" title="Download every selected label as a PNG at 203 dpi (thermal label printer resolution), zipped. Print them from the Phomemo app.">Download PNGs</button>
+    <button class="btn" id="btn-index" type="button" title="Print one index page per generation: every set with its icon and name or logo">Print index</button>
     <button class="btn" id="btn-sheet" type="button" title="Lay the selected labels out on paper (Letter, A4, 3×5 cards or Avery label sheets) for a color printer">Print sheet</button>
     <button class="btn primary" id="btn-labels" type="button" title="One label per page at the roll size, for a label printer such as the Phomemo M110">Print labels</button>
   </header>
@@ -349,7 +371,7 @@
 
   <main>
     <div class="previewbar"><label for="preview">Preview</label>
-      <select id="preview"><option value="label">One label (the highlighted row)</option><option value="roll">Roll: every selected label</option><option value="sheet">Sheet: pages exactly as they print</option></select>
+      <select id="preview"><option value="label">One label (the highlighted row)</option><option value="roll">Roll: every selected label</option><option value="sheet">Sheet: pages exactly as they print</option><option value="index">Index: one page per generation</option></select>
       <span id="zoomwrap" class="zoomrow"><span>Zoom</span><input type="range" id="zoom" min="1" max="6" step="0.25" value="3" aria-label="Preview zoom"><span id="zoom-v">3×</span></span>
     </div>
     <div class="stage" id="stage"></div>
@@ -401,6 +423,7 @@
           </optgroup>
           <optgroup label="Cards" id="og-paper">
             <option value="card">Pokémon card (63 × 88 mm, fits a sleeve)</option>
+            <option value="card2">Double-width card (126 × 88 mm, spans two side-load slots)</option>
             <option value="index">Half of a 3 × 5 index card</option>
           </optgroup>
           <optgroup label="Avery sheets (US Letter)" id="og-avery">
@@ -439,6 +462,12 @@
         <label class="field" data-paper><span class="lbl">Placement on the page</span>
           <select id="place"><option value="center">Centered</option><option value="top">Top, centered</option><option value="topleft">Top-left</option></select></label>
         <label class="field"><span class="lbl">Dashed cut guides</span><input type="checkbox" id="guides" checked></label>
+      </div>
+      <div id="idxopts" class="group">
+        <label class="field"><span class="lbl">Generation index pages <small>One page per generation listing every set with its icon. Print with the Index button.</small></span>
+          <select id="idxShow"><option value="name">Icon + set name</option><option value="logo">Icon + set logo</option></select></label>
+        <label class="field"><span class="lbl">Index page size</span>
+          <select id="idxPage"><option value="full">Full sheet</option><option value="half">Half sheet (2 per page, cut)</option></select></label>
       </div>
       <details class="adv" id="printadv"><summary>Advanced</summary>
         <div id="sheetadv">
@@ -546,7 +575,7 @@
   const $ = (id) => document.getElementById(id);
   // Roll presets use the dimensions the Phomemo Windows driver reports (40 mm rolls are 39.9 mm, the M110 print head
   // is 48 mm so every "50 mm" roll is 48 mm), so the browser's print dialog auto-selects the matching paper size.
-  const PRESETS = { 'index': [63.5, 76.2], 'card': [63, 88] };
+  const PRESETS = { 'index': [63.5, 76.2], 'card': [63, 88], 'card2': [126, 88] };
   ['25x15', '30x15', '30x20', '40x20', '40x25', '40x30', '40x40', '40x60', '45x30', '50x30', '50x40', '50x50', '50x70', '50x80', '60x40', '70x40']
     .forEach(k => { let [w, h] = k.split('x').map(Number); if (w === 40) w = 39.9; if (w === 50) w = 48; if (k === '50x70') h = 69.8; PRESETS[k] = [w, h]; });
   const PAPERS = { letter: { w: 215.9, h: 279.4, css: 'letter' }, a4: { w: 210, h: 297, css: 'A4' }, index: { w: 127, h: 76.2, css: '5in 3in' } };
@@ -582,7 +611,7 @@
     target: 'roll', copiesBy: {}, preset: '40x60', cw: 40, ch: 60, orient: 'auto', pw: '', ph: '', layout: 'auto', pad: 2, sym: 20, fs: 100, mono: true,
     font: 'Jost', tstyle: 'caps', rule: true, monoLogos: false, monoCut: 175, tintIcon: false, cIcon: '#111111', cAbbr: '#111111', cTh: '#111111', cTd: '#111111',
     abbrmode: 'never', abbrsize: 'small', icondate: '2023-03-31', numbering: 'seq', special: 'badge', cards: 'total', extras: {}, codelang: 'EN',
-    paper: 'letter', porient: 'auto', place: 'center', margin: 0, gap: 0, guides: true, zoom: 3, preview: 'label', v: 3,
+    paper: 'letter', porient: 'auto', place: 'center', idxShow: 'name', idxPage: 'full', margin: 0, gap: 0, guides: true, zoom: 3, preview: 'label', v: 3,
     types: { 'Main Series Expansion': true, 'Special Expansion': true, 'Other': false }, onlyNew: false, series: null, selected: [], current: null,
     mode: 'sets', monSel: [], monCur: null, monCopies: {}, monGen: null, monLegend: false,
     monArt: true, monArtMode: 'dither', monNo: true, monTypes: true, monTColor: true, monDex: true, monText: 'short', monFoot: true, monUnits: 'imperial'
@@ -708,6 +737,7 @@
     });
     updateCount();
     $('btn-labels').disabled = $('btn-sheet').disabled = $('btn-png').disabled = state[sk].length === 0;
+    $('btn-index').disabled = false;
   }
 
   function updateCount() {
@@ -731,7 +761,7 @@
   }
   // Roll presets: the @page is the driver's media size; the label itself is 0.3 mm smaller on each axis so
   // rounding in the driver (its 30 mm is really 29.97) can never spill a label onto an extra blank page.
-  const isRoll = () => !['index', 'card', 'custom'].includes(state.preset) && !averyTpl();
+  const isRoll = () => !['index', 'card', 'card2', 'custom'].includes(state.preset) && !averyTpl();
   function labelDims() { const [w, h] = dims(); return isRoll() ? [+(w - 0.3).toFixed(2), +(h - 0.3).toFixed(2)] : [w, h]; }
   // Round labels keep the content inside the inscribed square, whatever the edge spacing says.
   function padMm(w, h) { const p = Number(state.pad) || 0; const av = averyTpl(); return av && av.round ? Math.max(p, +(0.1465 * Math.min(w, h)).toFixed(2)) : p; }
@@ -824,6 +854,73 @@
   }
   const useSolid = () => !!(state.mono && state.monoLogos);
   // `over` = [w, h] to build at a size other than the current label (a spine strip builds its wide inner label this way).
+  // The set's corner icon as a standalone element (same rules as on the label): used by the index pages.
+  function iconEl(s) {
+    const host = document.createElement('div'); host.className = 'label idx' + (state.mono ? ' mono' : '');
+    host.style.setProperty('--lfont', JSON.stringify(state.font || 'Jost'));
+    const promo = s.type === 'Promo';
+    const codeEra = !!(state.icondate && s.release >= state.icondate && s.abbr && !/Prize Pack|Trick or Trade/i.test(s.name));
+    if (codeEra) {
+      const box = document.createElement('div'); box.className = 'symbox code'; const cb = document.createElement('div'); cb.className = 'codebox' + (s.abbr.length > 3 ? ' long' : '');
+      const inner = document.createElement('div'); inner.className = 'inner'; const txt = document.createElement('span'); txt.className = 'txt'; txt.textContent = s.abbr;
+      if (state.codelang !== 'none') { cb.classList.add('en'); const grp = document.createElement('div'); grp.className = 'grp'; const lang = document.createElement('span'); lang.className = 'lang'; lang.textContent = state.codelang || 'EN'; grp.append(txt, lang); inner.appendChild(grp); }
+      else inner.appendChild(txt);
+      cb.appendChild(inner); box.appendChild(cb); host.appendChild(box); fitCode(cb);
+    } else if (promo) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = solidBlack(PROMO_ICON, 'sym:promo', 200); box.appendChild(im); host.appendChild(box); }
+    else if (s.symbol_img) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = solidBlack(s.symbol_img, 'sym:' + s.slug, 200); box.appendChild(im); host.appendChild(box); }
+    else { const box = document.createElement('div'); box.className = 'symbox'; host.appendChild(box); }
+    return host;
+  }
+
+  // One index panel per generation: header (name, years, count) + grid of every set in it (respecting the filters).
+  function buildIndexPages() {
+    const base = paperSpec();
+    const half = state.idxPage === 'half';
+    const pw = half ? Math.max(base.w, base.h) : Math.min(base.w, base.h), ph = half ? Math.min(base.w, base.h) : Math.max(base.w, base.h);
+    const css = /^[A-Za-z]+$/.test((PAPERS[state.paper] || PAPERS.letter).css) ? (PAPERS[state.paper] || PAPERS.letter).css + (half ? ' landscape' : ' portrait') : pw + 'mm ' + ph + 'mm';
+    const needle = q.trim().toLowerCase();
+    const vis = SETS.filter(x => state.types[typeOf(x)]).filter(x => !state.onlyNew || !x.printed2023).filter(x => !state.series || x.series === state.series)
+      .filter(x => !needle || (x.name + ' ' + x.abbr + ' ' + x.release + ' ' + x.series + ' ' + (x.setno || '')).toLowerCase().includes(needle));
+    const selSeries = new Set(state.selected.map(i => SETS[i]).filter(Boolean).map(x => x.series));
+    const gens = seriesOrder.filter(g => vis.some(x => x.series === g) && (!selSeries.size || selSeries.has(g)));
+    const panelW = half ? pw / 2 : pw;
+    const panels = gens.map(g => {
+      const sets = vis.filter(x => x.series === g);
+      const years = sets.map(x => (x.release || '').slice(0, 4)).filter(Boolean).sort();
+      const panel = document.createElement('div'); panel.className = 'idxpanel'; panel.style.setProperty('--pw', (panelW - 16) + 'mm');
+      const head = document.createElement('div'); head.className = 'idxhead';
+      const h2 = document.createElement('h2'); h2.textContent = g === 'Base' ? 'Original' : g;
+      const yrs = document.createElement('span'); yrs.className = 'yrs'; yrs.textContent = years.length ? (years[0] === years[years.length - 1] ? years[0] : years[0] + ' – ' + years[years.length - 1]) : '';
+      const n = document.createElement('span'); n.className = 'n'; n.textContent = sets.length + ' set' + (sets.length === 1 ? '' : 's');
+      head.append(h2, yrs, n); panel.appendChild(head);
+      const grid = document.createElement('div'); grid.className = 'idxgrid' + (state.idxShow === 'logo' ? ' logos' : '');
+      const cols = state.idxShow === 'logo' ? (half ? 2 : 3) : (half ? 2 : (sets.length > 24 ? 4 : 3));
+      grid.style.setProperty('--cols', cols);
+      sets.forEach(x => {
+        const cell = document.createElement('div'); cell.className = 'idxcell';
+        const nm = document.createElement('div'); nm.className = 'nm'; nm.textContent = x.name;
+        const sm = document.createElement('small'); sm.textContent = (x.release || '') + (x.expno != null ? ' · No. ' + x.expno : '') + (x.type === 'Special Expansion' ? ' · Special' : x.type === 'Promo' ? ' · Promo' : ''); nm.appendChild(sm);
+        if (state.idxShow === 'logo') {
+          const top = document.createElement('div'); top.className = 'top'; top.append(iconEl(x), nm); cell.appendChild(top);
+          const lg = document.createElement('img'); lg.className = 'lg'; lg.alt = ''; const promoLogo = x.type === 'Promo' && PROMO_LOGO[x.abbr] ? 'img/logos/' + PROMO_LOGO[x.abbr] + '.png' : x.logo_img;
+          if (promoLogo) { lg.src = promoLogo; cell.appendChild(lg); }
+        } else cell.append(iconEl(x), nm);
+        grid.appendChild(cell);
+      });
+      panel.appendChild(grid);
+      const foot = document.createElement('div'); foot.className = 'foot'; foot.textContent = 'labels.omg.irish'; panel.appendChild(foot);
+      return panel;
+    });
+    const pages = [];
+    for (let i = 0; i < panels.length; i += half ? 2 : 1) {
+      const pg = document.createElement('div'); pg.className = 'idxpage'; pg.style.width = pw + 'mm'; pg.style.height = ph + 'mm';
+      pg.appendChild(panels[i]);
+      if (half) { const cut = document.createElement('div'); cut.className = 'cut'; pg.appendChild(cut); if (panels[i + 1]) pg.appendChild(panels[i + 1]); else { const blank = document.createElement('div'); blank.className = 'idxpanel'; pg.appendChild(blank); } }
+      pages.push(pg);
+    }
+    return { pages, w: pw, h: ph, css, gens: gens.length };
+  }
+
   function labelEl(s, over) {
     const [w, h] = over || labelDims();
     const side = over ? w > h * 1.15 : (state.layout === 'side' || (state.layout === 'auto' && w > h * 1.15));
@@ -1176,6 +1273,14 @@
         + (b.fits ? '' : ' · WARNING: a label is larger than the printable area');
       return;
     }
+    if (state.preview === 'index') {
+      const b = buildIndexPages();
+      const k = Math.min(1.2, availPx / (b.w * MM));
+      if (!b.pages.length) { $('note').textContent = 'No generations to index with the current filters.'; return; }
+      b.pages.forEach(pg => stage.appendChild(scaled(pg, b.w, b.h, k)));
+      $('note').textContent = b.gens + ' generation page' + (b.gens === 1 ? '' : 's') + (state.idxPage === 'half' ? ' as half sheets, two per page' : '') + ' · ' + (state.selected.length ? 'generations of the selected sets' : 'every generation shown by the filters');
+      return;
+    }
     if (state.preview === 'roll') {
       const sets = withCopies(selectedItems());
       if (!sets.length) { $('note').textContent = 'Nothing selected yet. Tick ' + noun() + ' on the left to add them to the roll.'; return; }
@@ -1213,6 +1318,10 @@
         pg.style.gridTemplateColumns = lw + 'mm'; pg.style.gridAutoRows = lh + 'mm'; pg.appendChild(el); root.appendChild(pg);
       });
       root.className = 'sheet';   // one page per label, page break after each
+    } else if (mode === 'index') {
+      const b = buildIndexPages();
+      pageStyle.textContent = '@page { size: ' + b.css + '; margin: 0; }';
+      b.pages.forEach(pg => root.appendChild(pg));
     } else {
       const b = buildPages();
       pageStyle.textContent = '@page { size: ' + b.paper.css + '; margin: 0; }';
@@ -1223,6 +1332,7 @@
   }
   $('btn-labels').onclick = () => print('labels');
   $('btn-sheet').onclick = () => print('sheet');
+  $('btn-index').onclick = () => print('index');
 
   // ---------- PNG export (203 dpi, the M110's native resolution) ----------
   async function exportPngs() {
@@ -1258,7 +1368,7 @@
 
   // ---------- wiring ----------
   const fields = ['target', 'preset', 'cw', 'ch', 'orient', 'pw', 'ph', 'layout', 'pad', 'sym', 'fs', 'mono', 'font', 'tstyle', 'rule',
-    'abbrmode', 'abbrsize', 'icondate', 'codelang', 'numbering', 'special', 'cards', 'paper', 'porient', 'place', 'margin', 'gap', 'guides', 'zoom', 'preview', 'cIcon', 'cAbbr', 'cTh', 'cTd', 'tintIcon', 'monoLogos', 'monoCut',
+    'abbrmode', 'abbrsize', 'icondate', 'codelang', 'numbering', 'special', 'cards', 'paper', 'porient', 'place', 'margin', 'gap', 'guides', 'zoom', 'preview', 'idxShow', 'idxPage', 'cIcon', 'cAbbr', 'cTh', 'cTd', 'tintIcon', 'monoLogos', 'monoCut',
     'monArt', 'monArtMode', 'monNo', 'monTypes', 'monTColor', 'monDex', 'monText', 'monFoot', 'monUnits'];
   const noReset = new Set(['target', 'zoom', 'preview']);
   function bind() {
@@ -1316,9 +1426,9 @@
     $('list').setAttribute('aria-label', mons ? 'Pokémon' : 'Sets');
     $('tagline').textContent = mons ? 'Pokémon labels, all 1,025 species' : 'Pokémon TCG set labels, every English expansion';
     $('tab-pick').textContent = mons ? 'Pokémon' : 'Sets';
-    $('btn-sheet').hidden = roll; $('btn-labels').hidden = !roll;
-    [...$('preview').options].forEach(o => { o.hidden = (o.value === 'sheet' && roll) || (o.value === 'roll' && !roll); });
-    if ((state.preview === 'sheet' && roll) || (state.preview === 'roll' && !roll)) { state.preview = roll ? 'roll' : 'sheet'; $('preview').value = state.preview; }
+    $('btn-sheet').hidden = roll; $('btn-labels').hidden = !roll; $('btn-index').hidden = roll || mons; $('idxopts').hidden = roll || mons;
+    [...$('preview').options].forEach(o => { o.hidden = ((o.value === 'sheet' || o.value === 'index') && roll) || (o.value === 'roll' && !roll); });
+    if (((state.preview === 'sheet' || state.preview === 'index') && roll) || (state.preview === 'roll' && !roll)) { state.preview = roll ? 'roll' : 'sheet'; $('preview').value = state.preview; }
   }
   $('q').addEventListener('input', () => { q = $('q').value; renderList(); });
   document.querySelectorAll('#type-chips .chip[data-type]').forEach(c => c.onclick = () => { state.types[c.dataset.type] = !state.types[c.dataset.type]; save(); renderAll(); });
